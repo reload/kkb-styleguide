@@ -1,0 +1,21 @@
+{
+  "name": "bibliotek.kk.dk",
+  "version": "0.0.0",
+  "authors": [
+    "David Adalberth Andersen <david@stupid-studio.com>"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.0.3",
+    "holderjs": "~2.2.0",
+    "modernizr": "~2.7.1",
+    "respond": "~1.4.2"
+  }
+}
