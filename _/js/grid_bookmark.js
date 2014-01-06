@@ -1,8 +1,8 @@
 (function($) {
     $(document).ready(function() {
         
-        var vgrid = '<div id="vgrid" style="position: absolute;z-index: 100000;height: '+$(document).height()+'px;width: 100%;background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 0, 0, 0.1)), color-stop(50%, rgba(255, 0, 0, 0.1)), color-stop(50%, rgba(255, 0, 0, 0)), color-stop(100%, rgba(255, 0, 0, 0)));background: -webkit-linear-gradient(top, rgba(255, 0, 0, 0.1) 0%, rgba(255, 0, 0, 0.1) 50%, rgba(255, 0, 0, 0) 50%, rgba(255, 0, 0, 0));background: linear-gradient(to bottom,rgba(255, 0, 0, 0.1) 0%, rgba(255, 0, 0, 0.1) 50%, rgba(255, 0, 0, 0) 50%, rgba(255, 0, 0, 0));background-size: auto 24px; background-position: left 0px;pointer-events: none;"><div id="vgrid-box" style="background: rgba(0,0,0,0.5);color: white;font-family: monospace;font-size: 11px;padding: 5px;display: inline-block;position: fixed;top: 0px;left: 0px;"></div></div>';
-        var bgrid = '<div id="bgrid" style="position:fixed;left:0px;top:0px;width:100%;height:100%;z-index:10000;overflow:hidden;pointer-events: none;"><div class="container"><div class="row"><div class="col-sm-1 hidden-xs"><div style="height:2000px;background-color:rgba(0,0,255,0.1)"></div></div><div class="col-sm-1 hidden-xs"><div style="height:2000px;background-color:rgba(0,0,255,0.1)"></div></div><div class="col-sm-1 hidden-xs"><div style="height:2000px;background-color:rgba(0,0,255,0.1)"></div></div><div class="col-sm-1 hidden-xs"><div style="height:2000px;background-color:rgba(0,0,255,0.1)"></div></div><div class="col-sm-1 hidden-xs"><div style="height:2000px;background-color:rgba(0,0,255,0.1)"></div></div><div class="col-sm-1 hidden-xs"><div style="height:2000px;background-color:rgba(0,0,255,0.1)"></div></div><div class="col-sm-1 hidden-xs"><div style="height:2000px;background-color:rgba(0,0,255,0.1)"></div></div><div class="col-sm-1 hidden-xs"><div style="height:2000px;background-color:rgba(0,0,255,0.1)"></div></div><div class="col-sm-1 hidden-xs"><div style="height:2000px;background-color:rgba(0,0,255,0.1)"></div></div><div class="col-sm-1 hidden-xs"><div style="height:2000px;background-color:rgba(0,0,255,0.1)"></div></div><div class="col-sm-1 hidden-xs"><div style="height:2000px;background-color:rgba(0,0,255,0.1)"></div></div><div class="col-sm-1 hidden-xs"><div style="height:2000px;background-color:rgba(0,0,255,0.1)"></div></div></div></div></div>'
+        var vgrid = '<div id="vgrid" style="position: absolute;z-index: 100000;height: '+$(document).height()+'px;width: 100%; display:none; background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 0, 0, 0.1)), color-stop(50%, rgba(255, 0, 0, 0.1)), color-stop(50%, rgba(255, 0, 0, 0)), color-stop(100%, rgba(255, 0, 0, 0)));background: -webkit-linear-gradient(top, rgba(255, 0, 0, 0.1) 0%, rgba(255, 0, 0, 0.1) 50%, rgba(255, 0, 0, 0) 50%, rgba(255, 0, 0, 0));background: linear-gradient(to bottom,rgba(255, 0, 0, 0.1) 0%, rgba(255, 0, 0, 0.1) 50%, rgba(255, 0, 0, 0) 50%, rgba(255, 0, 0, 0));background-size: auto 24px; background-position: left 0px;pointer-events: none;"><div id="vgrid-box" style="background: rgba(0,0,0,0.5);color: white;font-family: monospace;font-size: 11px;padding: 5px;display: inline-block;position: fixed;top: 0px;left: 0px;"></div></div>';
+        var bgrid = '<div id="bgrid" style="position:fixed;left:0px;top:0px;width:100%;height:100%;z-index:10000;overflow:hidden;pointer-events: none; display:none;"><div class="container"><div class="row"><div class="col-sm-1 hidden-xs"><div style="height:2000px;background-color:rgba(0,0,255,0.1)"></div></div><div class="col-sm-1 hidden-xs"><div style="height:2000px;background-color:rgba(0,0,255,0.1)"></div></div><div class="col-sm-1 hidden-xs"><div style="height:2000px;background-color:rgba(0,0,255,0.1)"></div></div><div class="col-sm-1 hidden-xs"><div style="height:2000px;background-color:rgba(0,0,255,0.1)"></div></div><div class="col-sm-1 hidden-xs"><div style="height:2000px;background-color:rgba(0,0,255,0.1)"></div></div><div class="col-sm-1 hidden-xs"><div style="height:2000px;background-color:rgba(0,0,255,0.1)"></div></div><div class="col-sm-1 hidden-xs"><div style="height:2000px;background-color:rgba(0,0,255,0.1)"></div></div><div class="col-sm-1 hidden-xs"><div style="height:2000px;background-color:rgba(0,0,255,0.1)"></div></div><div class="col-sm-1 hidden-xs"><div style="height:2000px;background-color:rgba(0,0,255,0.1)"></div></div><div class="col-sm-1 hidden-xs"><div style="height:2000px;background-color:rgba(0,0,255,0.1)"></div></div><div class="col-sm-1 hidden-xs"><div style="height:2000px;background-color:rgba(0,0,255,0.1)"></div></div><div class="col-sm-1 hidden-xs"><div style="height:2000px;background-color:rgba(0,0,255,0.1)"></div></div></div></div></div>'
         $('body').prepend(bgrid);
         $('body').prepend(vgrid);
         
@@ -10,20 +10,23 @@
             $bgrid = $("#bgrid"),
             $box = $("#vgrid-box", $grid),
             down = [],
-            show = true,
-            bshow = true,
-            display = "block",
+            show = false,
+            bshow = false,
+            display = "none",
             size = 24,
             top = 0;
+        
         $box.html("top: "+top+"px gridsize: "+ size +"px");
+        
+        
         $(document).keydown(function(e) {
             down[e.keyCode] = true;
         }).keyup(function(e) {
-            if (down[16] && down[38])top++;
-            if (down[16] && down[40])top--;
+            if (down[16] && down[38])top--;
+            if (down[16] && down[40])top++;
             if (down[16] && down[39])size++;
             if (down[16] && down[37])size--;
-            if (down[16] && down[72]) {
+            if (down[16] && down[86]) {
                 show = !show;
                 if (show) {
                     display = "block";
@@ -45,6 +48,7 @@
                 "background-position": "left " + top + "px",
                 "display": display
             });
+            
             $box.html("top: "+top+"px gridsize: "+ size +"px");
             down[e.keyCode] = false;
         });

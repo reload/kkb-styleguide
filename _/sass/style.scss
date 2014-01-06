@@ -166,6 +166,9 @@ p{
     @include lineHeight(3);
     @include margin(0,3);
     
+    &.light{
+        color:$color-grey-light;    
+    }
     a{
         display:inline;
         line-height:inherit;
@@ -391,6 +394,10 @@ img{
         margin-bottom:20px;
         line-height:40px;
     }
+    
+    &.img-grid{
+        margin-top: 6px;
+    }
 }
 
 // ----- B U T T O N S -----
@@ -424,8 +431,24 @@ img{
 
 
 
-
-
+// ----- T A B L E -----
+.table {
+    margin-bottom: 0;
+    >tbody{
+        >tr{
+            &.odd{
+                background-color: #e9e9e1;
+            }
+            >td{
+                padding: 12px 0 12px 10px;
+                border-top:0px;
+                p{
+                    margin: 0;padding: 0;
+                }                
+            }
+        }
+    }
+}
 
 // ----- M I S C -----
 .show{
