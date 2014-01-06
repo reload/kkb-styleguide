@@ -4840,7 +4840,7 @@ a.thumbnail.active {
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear, 45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent;
   background-size: 40px 40px;
 }
 
@@ -4856,7 +4856,7 @@ a.thumbnail.active {
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear, 45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent;
 }
 
 .progress-bar-info {
@@ -4866,7 +4866,7 @@ a.thumbnail.active {
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear, 45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent;
 }
 
 .progress-bar-warning {
@@ -4876,7 +4876,7 @@ a.thumbnail.active {
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear, 45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent;
 }
 
 .progress-bar-danger {
@@ -4886,7 +4886,7 @@ a.thumbnail.active {
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear, 45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent;
 }
 
 .media,
@@ -5711,7 +5711,7 @@ button.close {
   background-image: -webkit-gradient(linear, 0% top, 100% top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));
   background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0%), color-stop(rgba(0, 0, 0, 0.0001) 100%));
   background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: linear, to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%;
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
 }
@@ -5721,7 +5721,7 @@ button.close {
   background-image: -webkit-gradient(linear, 0% top, 100% top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
   background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0%), color-stop(rgba(0, 0, 0, 0.5) 100%));
   background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: linear, to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%;
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
 }
@@ -6348,6 +6348,33 @@ td.visible-print {
     display: none !important;
   }
 }
+#resso {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  height: 1px;
+}
+
+@media (max-width: 767px) {
+  #resso {
+    border-top: 2px red solid;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #resso {
+    border-top: 2px orange solid;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #resso {
+    border-top: 2px yellow solid;
+  }
+}
+@media (min-width: 1200px) {
+  #resso {
+    border-top: 2px white solid;
+  }
+}
 body {
   background-color: #f1f1e7;
   min-height: 1600px;
@@ -6379,6 +6406,9 @@ h1 .results {
   color: #798881;
   display: inline-block;
 }
+h1.subject {
+  font-size: 26px;
+}
 
 h2 {
   font-family: 'Merriweather', serif;
@@ -6398,6 +6428,11 @@ h3 {
   line-height: 24px;
   margin-top: 0px;
   margin-bottom: 24px;
+}
+h3.title {
+  min-height: 48px;
+  padding-top: 21px;
+  padding-bottom: 3px;
 }
 
 h4 {
@@ -6442,12 +6477,130 @@ a:hover {
   color: #3e7e5e;
 }
 
+header {
+  margin: 0;
+  padding: 0;
+  min-height: 456px;
+  position: relative;
+  background-color: #7cbf9e;
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+header .header-content {
+  padding-top: 50px;
+}
+header img.header-background {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-left: -585px;
+}
+
+body.category-children header {
+  background-color: #dc90b5;
+}
+body.category-children .search-bar {
+  background-color: #8d2c5b;
+}
+body.category-children h1.subject {
+  color: #8d2c5b;
+}
+
+.logo {
+  background-image: url('/_/img/kk_bib_logo.png?1389002268');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 201px;
+  height: 50px;
+}
+
+.navbar {
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.nav.navbar-nav {
+  display: table;
+  width: 100%;
+}
+.nav.navbar-nav > li {
+  display: table-cell;
+  float: none;
+}
+.nav.navbar-nav > li a {
+  display: inline-block;
+  width: auto;
+  padding-left: 0;
+  padding-right: 0;
+  min-width: 60px;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+  margin-bottom: 0;
+}
+.nav.navbar-nav > li a:hover {
+  color: white;
+  border-bottom: 5px solid white;
+  background-color: transparent;
+}
+.nav.navbar-nav > li.active {
+  background-color: transparent;
+}
+.nav.navbar-nav > li.active a, .nav.navbar-nav > li.active a:hover {
+  color: white;
+  border-bottom: 5px solid white;
+  background-color: transparent;
+}
+
+aside h3 {
+  margin-top: 0px;
+}
+aside a {
+  margin-bottom: 0;
+  color: #b1b1ad;
+}
+aside ul {
+  margin: 0;
+  padding: 0;
+}
+aside ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+aside ul li a {
+  margin: 0;
+  padding: 0;
+  color: #b1b1ad;
+}
+aside ul li a:hover {
+  color: #929395;
+}
+aside ul li a:active {
+  color: #f47049;
+}
+aside ul li.active a, aside ul li.active a:hover {
+  color: #f47049;
+}
+aside.filter {
+  padding-bottom: 24px;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #d6d6d4;
+}
+
 .search-bar {
   width: 100%;
   min-height: 72px;
-  position: absolute;
+  position: relative;
   left: 0px;
-  bottom: 0px;
+  top: 0px;
   background-color: #3e7e5e;
 }
 .search-bar form {
@@ -6470,17 +6623,15 @@ a:hover {
   padding: 20px 0 0 50%;
 }
 
-header {
-  height: 456px;
-  position: relative;
-  background-color: #7cbf9e;
+.search-result {
+  min-height: 260px;
+  margin-bottom: 4px;
 }
 
-.category-children {
-  background-color: #dc90b5;
-}
-.category-children .search-bar {
-  background-color: #8d2c5b;
+img.margin {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  line-height: 40px;
 }
 
 .btn {
@@ -6508,52 +6659,22 @@ header {
   box-shadow: 0px 1px 2px #00664f;
 }
 
-.search-result {
-  min-height: 260px;
-  margin-bottom: 4px;
-}
-.search-result img {
-  margin-right: 20px;
-  margin-bottom: 20px;
-  line-height: 40px;
-}
-
-.menu-filter {
-  padding-bottom: 24px;
-  margin-bottom: 23px;
-  border-bottom: 1px solid #d6d6d4;
-}
-.menu-filter h3 {
-  margin-top: 0px;
-}
-.menu-filter a {
-  margin-bottom: 0;
-  color: #b1b1ad;
-}
-.menu-filter ul {
-  margin: 0;
-  padding: 0;
-}
-.menu-filter ul li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.menu-filter ul li a {
-  margin: 0;
-  padding: 0;
-  color: #b1b1ad;
-}
-.menu-filter ul li a:hover {
-  color: #929395;
-}
-.menu-filter ul li a:active {
-  color: #f47049;
-}
-.menu-filter ul li.active a, .menu-filter ul li.active a:hover {
-  color: #f47049;
-}
-
 .show {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.red {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.yellow {
+  background-color: rgba(255, 255, 0, 0.1);
+}
+
+.green {
+  background-color: rgba(0, 128, 0, 0.1);
+}
+
+.blue {
+  background-color: rgba(0, 0, 255, 0.1);
 }

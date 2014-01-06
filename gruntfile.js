@@ -9,7 +9,7 @@ module.exports = function (grunt) {
             }
         },
         watch: {
-            files: ['_/sass/**/*.{scss,sass}','index.html', 'gruntfile.js', 'config.rb'],
+            files: ['_/sass/**/*.{scss,sass}','_/js/**/*.js','index.html', 'gruntfile.js', 'config.rb'],
             tasks:['compass:dev'],
             options: {
                 livereload: true,
