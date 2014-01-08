@@ -9,7 +9,8 @@
     "dependencies": {
         "grunt": "*",
         "grunt-contrib-watch": "*",
-        "grunt-contrib-compass": "*"
+        "grunt-contrib-compass": "*",
+        "grunt-shell": "*"
     },
     "author": "Adalberth",
     "license": "BSD-2-Clause"

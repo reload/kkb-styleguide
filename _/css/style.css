@@ -1,16 +1,33 @@
-body {
-  background-color: #f1f1e7;
-  min-height: 1600px;
-  font-family: 'proxima-nova',sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-}
-
 h1, h2, h3, h4, h5, h6, p, a {
   margin: 0;
   padding: 0;
 }
 
+/*
+Typography
+
+Main typography across the pages
+
+Styleguide 1
+*/
+/*Header
+
+Main typography across the pages
+
+
+Markup:
+<h1 class="{$modifiers}">Harry Potter </h1>
+
+.subject             - Use to display page subject in header
+
+Markup:
+<h1>Harry Potter <span class="results">24 resultater</span></h1>
+
+Markup:
+<h2>Hello World</h2>
+
+Styleguide 1.1
+*/
 h1 {
   font-family: 'Merriweather', serif;
   font-weight: 700;
@@ -103,12 +120,7 @@ a:hover {
   color: #3e7e5e;
 }
 
-div {
-  min-height: 100px;
-}
-
 .container {
-  background-color: grey;
   max-width: 1170px;
   margin: auto;
 }
@@ -119,83 +131,3 @@ div {
 .container:after {
   clear: both;
 }
-
-.block-1 {
-  background-color: red;
-  float: left;
-  width: 33.33333%;
-  margin-left: 0%;
-  margin-right: -33.33333%;
-  padding-left: 15px;
-  padding-right: 15px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-}
-
-.block-2 {
-  background-color: yellow;
-  float: left;
-  width: 33.33333%;
-  margin-left: 33.33333%;
-  margin-right: -66.66667%;
-  padding-left: 15px;
-  padding-right: 15px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-}
-
-.block-3 {
-  background-color: green;
-  float: left;
-  width: 33.33333%;
-  margin-left: 66.66667%;
-  margin-right: -100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-}
-
-.block-4 {
-  background-color: blue;
-  float: left;
-  width: 33.33333%;
-  margin-left: 0%;
-  margin-right: -33.33333%;
-  padding-left: 15px;
-  padding-right: 15px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-}
-
-.block-5 {
-  background-color: brown;
-  float: left;
-  width: 33.33333%;
-  margin-left: 0%;
-  margin-right: -33.33333%;
-  padding-left: 15px;
-  padding-right: 15px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-}
-
-/*
-http://www.chromaticsites.com/blog/responsive-grid-building-sass-and-zen-grids-tale-breakpoint-grid-breakdown-mixin
-http://zengrids.com/
-*/

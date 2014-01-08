@@ -2,6 +2,12 @@
 
 @import 'zen';
 
+
+// ----- O P T I O N S -----
+
+$typo: "Styleguide 1";
+
+
 // ----- M A I N  C O L O R S -----
 
 $color-sand: #f1f1e7;
@@ -59,20 +65,45 @@ $vertical-grid-size: 8px; //pxtoem(8, $basepx);
 
 // ----- T Y P O -----
 
-body{
-    background-color: $color-sand;
-    min-height:1600px;
-    
-    font-family: 'proxima-nova',sans-serif;
-    font-size: 16px;
-    @include lineHeight(3);
-}
+//body{
+//    background-color: $color-sand;
+//    font-family: 'proxima-nova',sans-serif;
+//    font-size: 16px;
+//    @include lineHeight(3);
+//}
 
 
 h1,h2,h3,h4,h5,h6,p,a{
     margin:0; padding: 0;
     //background-color: rgba(255,0,0,0.5);
 }
+
+/*
+Typography
+
+Main typography across the pages
+
+#{$typo}
+*/
+
+/*Header
+
+Main typography across the pages
+
+
+Markup:
+<h1 class="{$modifiers}">Harry Potter </h1>
+
+.subject             - Use to display page subject in header
+
+Markup:
+<h1>Harry Potter <span class="results">24 resultater</span></h1>
+
+Markup:
+<h2>Hello World</h2>
+
+#{$typo}.1
+*/
 
 h1{
     font-family: 'Merriweather', serif;
@@ -169,38 +200,36 @@ a{
 $zen-column-count: 12;
 $zen-gutter-width: 30px; 
 
-div{
-    min-height:100px;
-}
 .container{
-    background-color: grey;
     @include zen-grid-container;
     max-width:1170px;
     margin:auto;
 }
 
-.block-1{
-    background-color: red;
-    @include zen-grid-item(4, 1);
-}
-.block-2{
-    background-color: yellow;
-    @include zen-grid-item(4,5);
-}
-.block-3{
-    background-color: green;
-    @include zen-grid-item(4, 9);
-}
-.block-4{
-    background-color: blue;
-    @include zen-grid-item(4, 1);
-}
-.block-5{
-    background-color: brown;
-    @include zen-grid-item(4, 1);
-}
+//.block-1{
+//    background-color: red;
+//    @include zen-grid-item(4, 1);
+//}
+//.block-2{
+//    background-color: yellow;
+//    @include zen-grid-item(4,5);
+//}
+//.block-3{
+//    background-color: green;
+//    @include zen-grid-item(4, 9);
+//}
+//.block-4{
+//    background-color: blue;
+//    @include zen-grid-item(4, 1);
+//}
+//.block-5{
+//    background-color: brown;
+//    @include zen-grid-item(4, 1);
+//}
 
-/*
-http://www.chromaticsites.com/blog/responsive-grid-building-sass-and-zen-grids-tale-breakpoint-grid-breakdown-mixin
-http://zengrids.com/
-*/
+// http://www.chromaticsites.com/blog/responsive-grid-building-sass-and-zen-grids-tale-breakpoint-grid-breakdown-mixin
+// http://zengrids.com/
+
+
+
+

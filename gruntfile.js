@@ -1,6 +1,13 @@
 module.exports = function (grunt) {
 
     grunt.initConfig({
+        watch: {
+            files: ['_/sass/*.scss', 'styleguide-template/**','gruntfile.js', 'config.rb'],
+            tasks: ['compass:dev','shell'],
+            options: {
+                livereload: true,
+            }
+        },
         compass: {
             dev: {
                 options: {
@@ -8,21 +15,18 @@ module.exports = function (grunt) {
                 }
             }
         },
-        watch: {
-            files: ['_/sass/**/*.{scss,sass}','_/js/**/*.js','index.html', 'gruntfile.js', 'config.rb'],
-            tasks:['compass:dev'],
-            options: {
-                livereload: true,
-            }
+        shell: {
+          styleguide: {
+              command: 'kss-node _/css styleguide --css _/css/style.css --template styleguide-template'
+          }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-compass');
-
+    grunt.loadNpmTasks('grunt-shell');
+    
     grunt.registerTask('default', ['watch']);
 
 };
-
-
 
