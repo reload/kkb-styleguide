@@ -25,6 +25,7 @@ $color-pink:#dc90b5;
 $color-grey: #5f6062;
 $color-grey-light: #b1b1ad;
 $color-orange-bright: #f47049;
+$color-dark-sand: #e9e9e1;
 
 // ----- V G R I D -----
 $basepx: 16;
@@ -63,47 +64,49 @@ $vertical-grid-size: 8px; //pxtoem(8, $basepx);
     @return $b;
 }
 
+
+// ----- G R I D -----
+$zen-column-count: 12;
+$zen-gutter-width: 30px; 
+
+.container{
+    @include zen-grid-container;
+    padding-top:unit(3);
+    //max-width:1170px;
+    margin:auto;
+}
+
+.g6-1{@include zen-grid-item(6, 1);}
+.g6-2{@include zen-grid-item(6, 7);}
+
+.g4-1{@include zen-grid-item(4, 1);}
+.g4-2{@include zen-grid-item(4, 5);}
+.g4-3{@include zen-grid-item(4, 9);}
+
+.g3-1{@include zen-grid-item(3, 1);}
+.g3-2{@include zen-grid-item(3, 4);}
+.g3-3{@include zen-grid-item(3, 7);}
+.g3-4{@include zen-grid-item(3, 10);}
+
+.gclear{@include zen-clear();height: unit(12);}
+// http://www.chromaticsites.com/blog/responsive-grid-building-sass-and-zen-grids-tale-breakpoint-grid-breakdown-mixin
+// http://zengrids.com/
+
+
 // ----- T Y P O -----
 
-//body{
-//    background-color: $color-sand;
-//    font-family: 'proxima-nova',sans-serif;
-//    font-size: 16px;
-//    @include lineHeight(3);
-//}
+body{
+    background-color: $color-sand;
+    font-family: 'proxima-nova',sans-serif;
+    font-size: 16px;
+    @include lineHeight(3);
+}
 
 
 h1,h2,h3,h4,h5,h6,p,a{
     margin:0; padding: 0;
     //background-color: rgba(255,0,0,0.5);
 }
-
-/*
-Typography
-
-Main typography across the pages
-
-#{$typo}
-*/
-
-/*Header
-
-Main typography across the pages
-
-
-Markup:
-<h1 class="{$modifiers}">Harry Potter </h1>
-
-.subject             - Use to display page subject in header
-
-Markup:
-<h1>Harry Potter <span class="results">24 resultater</span></h1>
-
-Markup:
-<h2>Hello World</h2>
-
-#{$typo}.1
-*/
 
 h1{
     font-family: 'Merriweather', serif;
@@ -184,7 +187,7 @@ p{
 a{
    font-family: 'proxima-nova',sans-serif;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     text-decoration: none;
     color:$color-green; 
     @include lineHeight(3);
@@ -194,42 +197,94 @@ a{
         text-decoration: none;
         color: darken($color-green, 25);
     }
+    
+    .list-item{
+            
+    }
 }
 
-// ----- G R I D -----
-$zen-column-count: 12;
-$zen-gutter-width: 30px; 
 
-.container{
-    @include zen-grid-container;
-    max-width:1170px;
-    margin:auto;
+
+// ----- V E R T I C A L  L I S T -----
+.vertical-list {
+    h2, h3 {
+        margin-top: 0;
+    }
+    h4,
+    h5,
+    h6 {
+        margin-bottom: unit(1);
+    }
+    ul.vertical-list-list {
+        margin: 0;
+        padding: 0;
+        >li {
+            margin: 0;
+            padding: unit(1) 0 0 0;
+            list-style: none;
+            
+            // -- LINK --
+            &:first-child {
+                padding: 0;
+            }
+            
+            a {
+                margin: 0; padding: 0;
+                font-weight: 300;
+                color: $color-grey-light;
+                &:hover {
+                    color: lighten($color-grey, 20);
+                }
+                
+                &:active{
+                    color: $color-orange-bright;
+                }
+            }
+            
+            &.active {
+                a, a:hover {
+                    color: $color-orange-bright;
+                }
+            }
+            
+            // -- PARAGRAPH --
+            p{
+                margin: 0; padding: 0;
+            }
+        }
+    }
 }
 
-//.block-1{
-//    background-color: red;
-//    @include zen-grid-item(4, 1);
-//}
-//.block-2{
-//    background-color: yellow;
-//    @include zen-grid-item(4,5);
-//}
-//.block-3{
-//    background-color: green;
-//    @include zen-grid-item(4, 9);
-//}
-//.block-4{
-//    background-color: blue;
-//    @include zen-grid-item(4, 1);
-//}
-//.block-5{
-//    background-color: brown;
-//    @include zen-grid-item(4, 1);
-//}
-
-// http://www.chromaticsites.com/blog/responsive-grid-building-sass-and-zen-grids-tale-breakpoint-grid-breakdown-mixin
-// http://zengrids.com/
-
+// ----- T A B L E -----
+.table {
+    min-width:100%;
+    margin-top: 5px;
+    >thead{
+        border-bottom:1px solid darken($color-dark-sand, 10);
+    }
+    >tbody, >thead{
+        >tr{
+            vertical-align:top;
+            
+            &.odd{
+                background-color: $color-dark-sand;
+            }
+            
+            >td{
+                padding: 6px 10px 6px 10px;
+                border: 0px;
+                
+                &.center{
+                    text-align: center;
+                }
+                
+                >p{
+                    margin: 0;padding: 0;
+                }                
+            }
+        }
+    }
+}
 
 
 

@@ -13,7 +13,7 @@
             show = false,
             bshow = false,
             display = "none",
-            size = 24,
+            size = 12,
             top = 0;
         
         $box.html("top: "+top+"px gridsize: "+ size +"px");
