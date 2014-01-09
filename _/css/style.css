@@ -146,6 +146,7 @@ body {
   font-family: 'proxima-nova',sans-serif;
   font-size: 16px;
   line-height: 24px;
+  color: #798881;
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
@@ -200,7 +201,7 @@ h3.title {
   padding-bottom: 3px;
 }
 
-h4 {
+h4, h5, h6 {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -253,36 +254,84 @@ a:hover {
 .vertical-list h6 {
   margin-bottom: 8px;
 }
-.vertical-list ul.vertical-list-list {
+.vertical-list ul, .vertical-list ol {
   margin: 0;
   padding: 0;
 }
-.vertical-list ul.vertical-list-list > li {
+.vertical-list ul > li, .vertical-list ol > li {
   margin: 0;
   padding: 8px 0 0 0;
+  color: #798881;
   list-style: none;
 }
-.vertical-list ul.vertical-list-list > li:first-child {
+.vertical-list ul > li:first-child, .vertical-list ol > li:first-child {
   padding: 0;
 }
-.vertical-list ul.vertical-list-list > li a {
+.vertical-list ul > li a, .vertical-list ol > li a {
   margin: 0;
   padding: 0;
   font-weight: 300;
   color: #b1b1ad;
 }
-.vertical-list ul.vertical-list-list > li a:hover {
+.vertical-list ul > li a:hover, .vertical-list ol > li a:hover {
   color: #929395;
 }
-.vertical-list ul.vertical-list-list > li a:active {
+.vertical-list ul > li a:active, .vertical-list ol > li a:active {
   color: #f47049;
 }
-.vertical-list ul.vertical-list-list > li.active a, .vertical-list ul.vertical-list-list > li.active a:hover {
+.vertical-list ul > li.active a, .vertical-list ul > li.active a:hover, .vertical-list ol > li.active a, .vertical-list ol > li.active a:hover {
   color: #f47049;
 }
-.vertical-list ul.vertical-list-list > li p {
+.vertical-list ul > li p, .vertical-list ol > li p {
   margin: 0;
   padding: 0;
+}
+.vertical-list ul.vertical-list-plain > li {
+  list-style: none;
+}
+.vertical-list ul.vertical-list-bullet {
+  margin: 0px 0px 0px 20px;
+}
+.vertical-list ul.vertical-list-bullet > li {
+  list-style: disc;
+}
+.vertical-list ol, .vertical-list ol.vertical-list-number {
+  margin: 0px 0px 0px 23px;
+}
+.vertical-list ol > li, .vertical-list ol.vertical-list-number > li {
+  list-style: decimal;
+}
+.vertical-list ul.vertical-list-number {
+  counter-reset: item;
+}
+.vertical-list ul.vertical-list-number > li {
+  position: relative;
+  padding-left: 25px;
+}
+.vertical-list ul.vertical-list-number > li:before {
+  content: counter(item) ". ";
+  counter-increment: item;
+  width: 1em;
+  text-align: center;
+  float: left;
+  position: absolute;
+  left: 0px;
+}
+.vertical-list ul.vertical-list-check > li {
+  position: relative;
+  padding-left: 25px;
+}
+.vertical-list ul.vertical-list-check > li:before {
+  content: "";
+  background-image: url('/_/img/checkmark2.png?1389272246');
+  background-position: 0 5px;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  float: left;
+  position: absolute;
+  left: 0px;
+  color: #ff7275;
 }
 
 .table {
