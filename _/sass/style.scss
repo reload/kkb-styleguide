@@ -6,6 +6,8 @@
 // ----- O P T I O N S -----
 
 $typo: "Styleguide 1";
+$icon-font-path:          "../css/fonts/" !default;
+$icon-font-name:          "glyphicons-halflings-regular" !default;
 
 
 // ----- M A I N  C O L O R S -----
@@ -26,6 +28,8 @@ $color-grey: #5f6062;
 $color-grey-light: #b1b1ad;
 $color-orange-bright: #f47049;
 $color-dark-sand: #e9e9e1;
+
+$color-mint-green: #00b38a;
 
 // ----- V G R I D -----
 $basepx: 16;
@@ -76,19 +80,30 @@ $zen-gutter-width: 30px;
     margin:auto;
 }
 
-.g6-1{@include zen-grid-item(6, 1);}
-.g6-2{@include zen-grid-item(6, 7);}
+@for $i from 1 through $zen-column-count{
+    @for $u from 1 through $zen-column-count{
+        @for $y from 1 through 3{
+            @if $y == 1 {
+                .g#{$i}-#{$u}{
+                    @include zen-grid-item($i, $u)
+                };
+            }@elseif $y == 2{
+                .g#{$i}-#{$u}-left{
+                    @include zen-grid-item($i, $u, left)
+                };
+            }@else{
+                .g#{$i}-#{$u}-right{
+                    @include zen-grid-item($i, $u, right)
+                };
+            }        
+        }    
+    }    
+}
 
-.g4-1{@include zen-grid-item(4, 1);}
-.g4-2{@include zen-grid-item(4, 5);}
-.g4-3{@include zen-grid-item(4, 9);}
-
-.g3-1{@include zen-grid-item(3, 1);}
-.g3-2{@include zen-grid-item(3, 4);}
-.g3-3{@include zen-grid-item(3, 7);}
-.g3-4{@include zen-grid-item(3, 10);}
-
-.gclear{@include zen-clear();height: unit(12);}
+.gclear{@include zen-clear();}
+.gclear-right{@include zen-clear(right);}
+.gclear-left{@include zen-clear(left);}
+.spacer{height: unit(12);}
 // http://www.chromaticsites.com/blog/responsive-grid-building-sass-and-zen-grids-tale-breakpoint-grid-breakdown-mixin
 // http://zengrids.com/
 
@@ -193,14 +208,27 @@ a{
     color:$color-green; 
     @include lineHeight(3);
     @include margin(0,1);
-    display:block;
-    &:hover{
+    &:hover, &:active{
         text-decoration: none;
-        color: darken($color-green, 25);
+        color: darken($color-green, 20);
     }
     
-    .list-item{
-            
+    &.link{
+        display:inline-block;
+    }
+    
+    &.link-primary{}
+    &.link-secondary{
+        color:$color-grey-light;
+        &:hover, &:active{
+            color: darken($color-grey-light, 20);    
+        }
+    }
+    &.link-danger{
+        color:$color-orange;
+        &:hover, &:active{
+            color: darken($color-orange, 30);    
+        }
     }
 }
 
@@ -251,21 +279,37 @@ a{
             p{
                 margin: 0; padding: 0;
             }
-        }
-    }
+        } // >li
+    }// ul, ol
     
+    
+    &.vertical-list-menu{
+        padding-bottom: unit(1);
+        margin-bottom: unit(6) - 1px;
+        border-bottom: 1px solid lighten($color-grey-light, 15);
+
+        >a{
+            margin-top: unit(1);
+            color: $color-grey-light;
+            font-weight: 300;
+            &:hover {
+                color: lighten($color-grey, 20);
+            }
+        }
+    } // &.vertical-list-menu
+
     ul.vertical-list-plain{
         >li{
             list-style: none;
         }
-    }
+    } // ul.vertical-list-plain
     
     ul.vertical-list-bullet{
         margin:0px 0px 0px 20px;
         >li{
             list-style: disc ;
         }
-    }
+    } // ul.vertical-list-bullet
     
     ol, ol.vertical-list-number{
         margin:0px 0px 0px 23px;
@@ -273,7 +317,7 @@ a{
         >li{
             list-style: decimal;    
         }
-    }
+    } // ol, ol.vertical-list-number
     
     ul.vertical-list-number{
         counter-reset: item;
@@ -291,7 +335,7 @@ a{
                 left:0px;
             }
         }
-    }
+    } // ul.vertical-list-number
     
     ul.vertical-list-check{
         >li{
@@ -314,8 +358,9 @@ a{
                 color: $color-orange;
             }
         }
-    }
-}
+    } // ul.vertical-list-check
+    
+} // .vertical-list
 
 // ----- T A B L E -----
 .table {
@@ -346,7 +391,90 @@ a{
             }
         }
     }
+} // .table
+
+
+// ----- B U T T O N S -----
+
+button, .btn{
+    display: inline-block;
+    padding: 5px unit(2);
+    margin-bottom: unit(2) - 2px;
+    font-weight: normal;
+    line-height: unit(3);
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline:0;
+    color:white;
+    font-weight: 400;
+    
+    background-color: $color-mint-green;
+    box-shadow:0px 1px 2px darken($color-mint-green, 20);
+
+    span.glyphicon{
+        color:black;
+        -moz-opacity: 0.25;
+        opacity:.25;
+        filter: alpha(opacity=25);
+        top: 3px;
+        margin-right:unit(1);
+        display:inline-block;
+    }
+    
+    &:active{
+        padding: 4px unit(2) 6px unit(2);
+        box-shadow:inset 1px 1px 4px darken($color-mint-green, 10);
+        color: tint($color-mint-green, 85);
+    }
+
+    &:hover{
+        background-color: darken($color-mint-green, 2);
+    }
+}
+
+.btn-small{
+    font-size: 12px;
+    line-height:22px;
+    padding: 0px 6px;
+    
+    &:active{
+        padding: 0px 6px 1px 6px;
+        line-height:21px;
+    }
 }
 
 
+.btn-secondary{
+    background-color: $color-grey-light;
+    box-shadow:0px 1px 2px darken($color-grey-light, 30);
+    
+    &:hover{
+        background-color: darken($color-grey-light, 4);
+    }
+    &:active{
+        box-shadow:inset 1px 1px 4px darken($color-grey-light, 15);
+        color: tint($color-grey-light, 80);
+    }
+}
 
+.btn-danger{
+    background-color: $color-orange;
+    box-shadow:0px 1px 2px darken($color-orange, 30);
+    
+    &:hover{
+        background-color: darken($color-orange, 4);
+    }
+    &:active{
+        box-shadow:inset 1px 1px 4px darken($color-orange, 15);
+        color: tint($color-orange, 80);
+    }
+}
+
+
+// ----- I M P O R T S -----
+@import 'bootstrap/glyphicons';
