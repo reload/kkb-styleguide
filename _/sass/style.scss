@@ -9,6 +9,7 @@ $typo: "Styleguide 1";
 $icon-font-path:          "../css/fonts/" !default;
 $icon-font-name:          "glyphicons-halflings-regular" !default;
 
+$border-radius: 4px;
 
 // ----- M A I N  C O L O R S -----
 
@@ -201,13 +202,13 @@ p{
 }
 
 a{
-   font-family: 'proxima-nova',sans-serif;
+    font-family: 'proxima-nova',sans-serif;
     font-size: 16px;
     font-weight: 400;
     text-decoration: none;
     color:$color-green; 
     @include lineHeight(3);
-    @include margin(0,1);
+    
     &:hover, &:active{
         text-decoration: none;
         color: darken($color-green, 20);
@@ -215,6 +216,7 @@ a{
     
     &.link{
         display:inline-block;
+        margin-bottom: unit(1);
     }
     
     &.link-primary{}
@@ -245,10 +247,15 @@ a{
         margin-bottom: unit(1);
     }
     
+    >a{
+        margin-top: unit(1);
+        display: inline-block;
+    }
+    
     ul, ol {
         margin: 0; padding: 0;
         
-        >li {
+        li {
             margin: 0; padding: unit(1) 0 0 0;
             color:$color-mudgreen;
             list-style: none;
@@ -284,7 +291,7 @@ a{
     
     
     &.vertical-list-menu{
-        padding-bottom: unit(1);
+        padding-bottom: unit(2);
         margin-bottom: unit(6) - 1px;
         border-bottom: 1px solid lighten($color-grey-light, 15);
 
@@ -299,14 +306,14 @@ a{
     } // &.vertical-list-menu
 
     ul.vertical-list-plain{
-        >li{
+        li{
             list-style: none;
         }
     } // ul.vertical-list-plain
     
     ul.vertical-list-bullet{
         margin:0px 0px 0px 20px;
-        >li{
+        li{
             list-style: disc ;
         }
     } // ul.vertical-list-bullet
@@ -314,14 +321,14 @@ a{
     ol, ol.vertical-list-number{
         margin:0px 0px 0px 23px;
         
-        >li{
+        li{
             list-style: decimal;    
         }
     } // ol, ol.vertical-list-number
     
     ul.vertical-list-number{
         counter-reset: item;
-        >li{
+        li{
             position:relative;
             padding-left:25px;
             
@@ -338,15 +345,14 @@ a{
     } // ul.vertical-list-number
     
     ul.vertical-list-check{
-        >li{
+        li{
             position:relative;
             padding-left:25px;
             
             &:before{
                 content: "";
-                //background: inline-image('checkmark2.svg') no-repeat 0 5px;
-                
-                background-image: image-url('checkmark2.png');
+                background: inline-image('checkmark2.svg') no-repeat 0 5px;
+                background-image: image-url('checkmark2.png')\9;
                 background-position: 0 5px;
                 background-repeat: no-repeat;
 
@@ -408,7 +414,7 @@ button, .btn{
     cursor: pointer;
     background-image: none;
     border: 1px solid transparent;
-    border-radius: 4px;
+    border-radius: $border-radius;
     outline:0;
     color:white;
     font-weight: 400;
@@ -433,6 +439,7 @@ button, .btn{
     }
 
     &:hover{
+        color: white;
         background-color: darken($color-mint-green, 2);
     }
 }
@@ -475,6 +482,74 @@ button, .btn{
     }
 }
 
+// ----- F O R M S -----
+input, textarea{
+    color: $color-mudgreen;
+    border-radius:$border-radius;
+    box-shadow:inset 1px 1px 2px $color-grey-light;
+    border: 0;
+    border: 1px solid #d6d6d6\9; /*<=IE8*/
+    padding: 5px 10px;
+    outline:0;
+    width:100%;
+}
+
+input[type="checkbox"], input[type="submit"], input[type="radio"]{
+    width:auto;
+    margin-right: 15px;
+}
+
+textarea{
+    padding: 10px;
+}
+
+input[type="radio"].input, input[type="checkbox"].input{
+    display: none;
+}
+
+
+input[type="radio"].input + label.label, input[type="checkbox"].input + label.label{
+    display:inline-block;
+    cursor:pointer;
+    position:relative;
+    padding-left:30px;
+    
+    &:before{
+        content: "";  
+        display: inline-block;  
+        width: 16px;  
+        height: 16px;  
+        position: absolute;  
+        top:3px; left: 0;  
+        background-color: white;
+        border-radius:3px;
+        box-shadow:inset 0px 1px 2px $color-grey-light;
+    }
+
+    &.label-radio:before{
+        border-radius: 8px;      
+    }
+}
+
+input[type="radio"].input:checked + label.label:before, input[type="checkbox"].input:checked + label.label:before{
+    background-color: $color-mint-green;
+    box-shadow:0px 1px 1px darken($color-grey-light, 20);
+    color:white;
+    text-align: center;  
+}
+
+input[type="radio"].input:checked + label.label:before{
+    content: "\2022";
+    font-size: 22px;
+    line-height: 14px;
+    
+}
+input[type="checkbox"].input:checked + label.label:before {  
+    content: "";
+    background-image: inline-image("checkmark2_small.svg");
+    background-position: 3px center;
+    background-repeat: no-repeat;
+}
 
 // ----- I M P O R T S -----
 @import 'bootstrap/glyphicons';
