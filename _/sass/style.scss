@@ -743,8 +743,57 @@ fieldset{
     }
 }
 
+// ----- T E X T  &  I M A G E S -----
 
+.text{
+    display:inline-block;
+}
 
+img{
+    &.img-left{
+        float:left;
+    }
+    
+    &.img-clear{
+        clear:both;
+    }
+    &.img-right{
+        float:right;
+    }
+    
+    &.img-left-side{
+        margin-right: 20px;
+    }
+    
+    &.img-right-side{
+        margin-left: 20px;
+    }
+}
 
 // ----- I M P O R T S -----
 @import 'bootstrap/glyphicons';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
