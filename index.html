@@ -20,6 +20,10 @@
 
     <script>
     </script>
+    <!-- http://ie7-js.googlecode.com/svn/test/index.html -->
+    <!--[if lt IE 9]>
+        <script src="_/js/IE9.js"></script>
+    <![endif]-->
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,900,700italic,900italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="_/css/style.css">
@@ -282,62 +286,76 @@
                 <ul class="">
                     <form action="">
                         <li>
-                            <input id="checkbox1" class="input" type="checkbox" name="vehicle" value="Bike"><label class="label label-checkbox" for="checkbox1">I have a bike</label>
+                            <input id="checkbox1" class="input" type="checkbox" name="vehicle" value="Bike">
+                            <label class="label label-checkbox" for="checkbox1">I have a bike</label>
                         </li>
                         <li>
-                            <input id="checkbox2" class="input" type="checkbox" name="vehicle" value="Car"><label class="label label-checkbox" for="checkbox2">I have a car</label>
+                            <input id="checkbox2" class="input" type="checkbox" name="vehicle" value="Car">
+                            <label class="label label-checkbox" for="checkbox2">I have a car</label>
                         </li>
                         <li>
-                            <input id="radio1" class="input" type="radio" name="sex" value="male"><label class="label label-radio" for="radio1">Male</label>
+                            <input id="radio1" class="input" type="radio" name="sex" value="male">
+                            <label class="label label-radio" for="radio1">Male</label>
                         </li>
                         <li>
-                            <input id="radio2" class="input" type="radio" name="sex" value="female"><label class="label label-radio" for="radio2">Female</label>
+                            <input id="radio2" class="input" type="radio" name="sex" value="female">
+                            <label class="label label-radio" for="radio2">Female</label>
                         </li>
                     </form>
                 </ul>
             </div>
         </div>
         <div class="g3-10">
-            
+
         </div>
 
         <div class="gclear spacer"></div>
 
-        <div class="g6-4">
+        <div class="g6-4" style="background:rgba(0,0,0,0.1);">
             <form action="">
-                First name:
-                <input type="text" name="firstname">
-                <br>Last name:
-                <input type="text" name="lastname">
-                <br>
-
-                <input id="checkbox5" class="input" type="checkbox" name="vehicle" value="Bike"><label class="label label-checkbox" for="checkbox5">I have a bike</label>
-                <br>
-                <input id="checkbox6" class="input" type="checkbox" name="vehicle" value="Car"><label class="label label-checkbox" for="checkbox6">I have a car</label>
-                <br>
                 
-                <input id="radio5" class="input" type="radio" name="sex" value="male"><label class="label label-radio" for="radio5">Male</label>
-                <br>
-                <input id="radio6" class="input" type="radio" name="sex" value="female"><label class="label label-radio" for="radio6">Female</label>
-                <br>
-                <br>
-                
-                <input id="checkbox3" class="" type="checkbox" name="vehicle" value="Bike"><label class="" for="checkbox3">I have a bike</label>
-                <br>
-                <input id="checkbox4" class="" type="checkbox" name="vehicle" value="Car"><label class="" for="checkbox4">I have a car</label>
-                <br>
-                
-                <input id="radio3" class="" type="radio" name="sex" value="male"><label class="" for="radio3">Male</label>
-                <br>
-                <input id="radio4" class="" type="radio" name="sex" value="female"><label class="" for="radio4">Female</label>
-                <br>
-                
-                <textarea rows="4" cols="50">
-At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies. 
-</textarea><br>
-                <input type="submit" value="Submit" class="btn btn-small">
-                <button class="btn btn-small btn-danger">Stop</button>
-                <a href="" class="btn btn-small btn-secondary">Info</a>
+                <div class="form-group">First name:
+                    <input type="text" name="firstname">
+                    <br>Last name:
+                    <input type="text" name="lastname">
+                </div>   
+                     
+                <div class="form-group">
+                    <input id="checkbox5" class="input" type="checkbox" name="vehicle" value="Bike">
+                    <label class="label label-checkbox" for="checkbox5">I have a bike</label>
+                    <br>
+                    <input id="checkbox6" class="input" type="checkbox" name="vehicle" value="Car">
+                    <label class="label label-checkbox" for="checkbox6">I have a car</label>
+                </div>
+                    
+                    <input id="radio5" class="input" type="radio" name="sex" value="male">
+                    <label class="label label-radio" for="radio5">Male</label>
+                    <br>
+                    <input id="radio6" class="input" type="radio" name="sex" value="female">
+                    <label class="label label-radio" for="radio6">Female</label>
+                    <br>
+                    <br>
+                    
+                    <input id="checkbox3" class="" type="checkbox" name="vehicle" value="Bike">
+                    <label class="" for="checkbox3">I have a bike</label>
+                    <br>
+                    <input id="checkbox4" class="" type="checkbox" name="vehicle" value="Car">
+                    <label class="" for="checkbox4">I have a car</label>
+                    <br>
+                    
+                    <input id="radio3" class="" type="radio" name="sex" value="male">
+                    <label class="" for="radio3">Male</label>
+                    <br>
+                    <input id="radio4" class="" type="radio" name="sex" value="female">
+                    <label class="" for="radio4">Female</label>
+                    <br>
+                    
+                    <textarea rows="4" cols="50">At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+                    </textarea>
+                    <br>
+                    <input type="submit" value="Submit" class="btn btn-small">
+                    <button class="btn btn-small btn-danger">Stop</button>
+                    <a href="" class="btn btn-small btn-secondary">Info</a>
             </form>
 
             <br>
@@ -355,6 +373,15 @@ At w3schools.com you will learn how to make a website. We offer free tutorials i
 
             <br>
             <form action="">
+                <select name="cars" class="select">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat" selected>Fiat</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </form>
+            <br>
+            <form action="">
                 <select name="cars">
                     <option value="volvo">Volvo</option>
                     <option value="saab">Saab</option>
@@ -362,6 +389,87 @@ At w3schools.com you will learn how to make a website. We offer free tutorials i
                     <option value="audi">Audi</option>
                 </select>
             </form>
+
+            <br>
+            <br>
+
+            <div class="dropdown">
+                <input type="checkbox" id="dropdown1">
+                <label for="dropdown1">
+                    <span class="dropdown-title">Dropdown
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </span>
+                </label>
+                <div class="dropdown-content">
+                    <ul class="dropdown-list">
+                        <li>
+                            <a href="">Lorem ipsum dolor.</a>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor.</p>
+                        </li>
+                        <li>
+                            <a href="">Lorem ipsum dolor.</a>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <input type="checkbox" id="dropdown2">
+                <label for="dropdown2">
+                    <span class="dropdown-title secondary">Dropdown
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </span>
+                </label>
+                <div class="dropdown-content">
+                    <div class="dropdown-content-wrap">
+                        <h1>Lorem ipsum dolor.</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, similique, adipisci, explicabo velit facilis enim provident odio porro iste quas perferendis quo corporis laudantium eveniet culpa soluta eos deleniti harum beatae eaque sunt esse eligendi earum blanditiis nam dicta libero obcaecati sequi aliquid ducimus pariatur ea molestias dolor maxime cum officia ipsa officiis nobis amet consectetur! Minima, nemo explicabo iure id corrupti nesciunt ratione qui nam maiores animi unde laboriosam sint officia? Omnis, dolorem magnam fugit consequuntur sit vel ratione ab illum dignissimos quod? Consequuntur, rerum, aliquam reiciendis pariatur molestiae obcaecati aspernatur ut sequi in dolorem mollitia hic culpa cupiditate!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <input type="checkbox" id="dropdown3">
+                <label for="dropdown3">
+                    <span class="dropdown-title danger">Instillinger
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </span>
+                </label>
+                <div class="dropdown-content">
+                    <div class="dropdown-content-wrap">
+                        <div class="vertical-list">
+                            <h4>Instilling 1</h4>
+                            <ul class="">
+                                <form action="">
+                                    <li>
+                                        <input id="checkbox1a" class="input" type="checkbox" name="vehicle" value="Bike">
+                                        <label class="label label-checkbox" for="checkbox1a">I have a bike</label>
+                                    </li>
+                                    <li>
+                                        <input id="checkbox2a" class="input" type="checkbox" name="vehicle" value="Car">
+                                        <label class="label label-checkbox" for="checkbox2a">I have a car</label>
+                                    </li>
+                                    <li>
+                                        <input id="radio1a" class="input" type="radio" name="sex" value="male">
+                                        <label class="label label-radio" for="radio1a">Male</label>
+                                    </li>
+                                    <li>
+                                        <input id="radio2a" class="input" type="radio" name="sex" value="female">
+                                        <label class="label label-radio" for="radio2a">Female</label>
+                                    </li>
+                                    
+                                    
+                                </form>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
         <div class="gclear spacer"></div>
@@ -560,6 +668,7 @@ At w3schools.com you will learn how to make a website. We offer free tutorials i
     <script src="bower_components/jquery/jquery.min.js"></script>
     <script src="bower_components/holderjs/holder.js"></script>
     <script src="bower_components/respond/dest/respond.min.js"></script>
+
     <script src="_/js/grid_bookmark.js"></script>
 
 </body>
