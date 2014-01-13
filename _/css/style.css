@@ -15,8 +15,6 @@ h1, h2, h3, h4, h5, h6, p, a {
  /*
 Basic Typografi
 
-Her ser de 4 forskellige størrelse på overskrifter.
-
 Markup: <h1>Lorem ipsum dolor sit.</h1>
 <h2>Lorem ipsum dolor sit.</h2>
 <h3>Lorem ipsum dolor sit.</h3>
@@ -26,8 +24,6 @@ Styleguide 1.0
 */
  /*
 Header Brødtekst
-
-Mere om header og brødtekst
 
 Markup: <h1>Lorem ipsum dolor sit.</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, expedita, eum, vero in provident nulla unde commodi nam ullam asperiores quia temporibus eligendi rerum minus eius. Voluptas, doloremque sequi modi!</p>
@@ -121,15 +117,15 @@ p a {
   margin-bottom: 0;
 }
 
- /*
+/*
 Links
-
-Om typografi
 
 Markup: <a href="#" class="{$modifiers}">Lorem ipsum color deme</a>
 
 :hover - Highlight the button when hovered.
 :active - Highlight when active.
+.link-secondary - Secondary link.
+.link-danger - Warning/danger link.
 
 Styleguide 1.2
 */
@@ -141,7 +137,7 @@ a {
   color: #7cbf9e;
   line-height: 24px;
 }
-a:hover, a:active {
+a:hover, a:active, a.pseudo-class-hover, a.pseudo-class-active {
   text-decoration: none;
   color: #468f6b;
 }
@@ -178,6 +174,76 @@ a.link-danger:hover, a.link-danger:active {
   display: inline-block;
 }
 
+/*
+Vertical List
+
+Markup: <div class="vertical-list">
+<h4>Vertical List</h4>
+<ul class="{$modifiers}">
+    <li><p>Lorem ipsum dolor sit.</p></li>
+    <li><p>Eligendi, commodi nemo similique.</p></li>
+    <li><p>Et, nesciunt cupiditate aliquid.</p></li>
+    <li><p>Cum, officia cumque dolores!</p></li>
+    <li><p>Itaque, obcaecati omnis doloribus.</p></li>
+</ul>
+</div>
+
+.vertical-list-plain - A plain vertical list
+.vertical-list-bullet - A vertical list with bullets
+.vertical-list-number - A vertical list with numbers
+.vertical-list-check - A vertical list with checkmarks
+
+Styleguide 3.0
+*/
+/*
+Vertical List
+
+Markup: <div class="vertical-list vertical-list">
+<h3>Vertical List With Links</h3>
+<ul class="vertical-list-plain">
+    <li><a href="">Lorem ipsum dolor sit.</a></li>
+    <li><a href="">Molestiae, unde delectus laborum.</a></li>
+    <li><a href="" class="active">Nesciunt porro fuga delectus.</a></li>
+    <li><a href="">Accusantium, incidunt dignissimos quos?</a></li>
+</ul>
+</div>
+
+Styleguide 3.1
+*/
+/*
+Vertical List Menu
+
+Markup: <div class="vertical-list vertical-list-menu">
+<h3>Filtrér din søgning</h3>
+<h4>Efter materialetype</h4>
+<ul class="vertical-list-plain">
+    <li><a href="">Resumé</a></li>
+    <li><a href="">Anmeldelser</a></li>
+    <li class="active"><a href="">Om Joanne K. Rowling</a></li>
+    <li><a href="">Se alle eksemplarer</a></li>
+</ul>
+<a href="">+ Flere typer</a>
+</div>
+
+Styleguide 3.2
+*/
+/*
+Vertical List With Forms
+
+Markup: <div class="vertical-list">
+    <h4>Form Elements</h4>
+    <ul class="">
+        <form action="">
+            <li><input id="checkbox1" class="input" type="checkbox" name="vehicle" value="Bike"><label class="label label-checkbox" for="checkbox1">I have a bike</label></li>
+            <li><input id="checkbox2" class="input" type="checkbox" name="vehicle" value="Car"><label class="label label-checkbox" for="checkbox2">I have a car</label></li>
+            <li><input id="radio1" class="input" type="radio" name="sex" value="male"><label class="label label-radio" for="radio1">Male</label></li>
+            <li><input id="radio2" class="input" type="radio" name="sex" value="female"><label class="label label-radio" for="radio2">Female</label></li>
+        </form>
+    </ul>
+</div>
+
+Styleguide 3.3
+*/
 .vertical-list h2, .vertical-list h3 {
   margin-top: 0;
 }
@@ -284,6 +350,85 @@ a.link-danger:hover, a.link-danger:active {
   color: #ff7275;
 }
 
+/*
+Tables
+
+Markup: <table class="table">
+    <tbody>
+        <tr>
+            <td><h4>Serie</h4></td>
+            <td><p>7. del af Harry Potter og de vise sten</p></td>
+        </tr>
+        <tr class="odd">
+            <td><h4>Type</h4></td>
+            <td><p>Bog</p></td>
+        </tr>
+        <tr>
+            <td><h4>Sprog</h4></td>
+            <td><p>Dansk</p></td></tr>
+            <tr class="odd"><td><h4>Genre</h4></td>
+            <td><p>Fiktion</p></td>
+        </tr>
+        <tr>
+            <td><h4>Emneord</h4></td>
+            <td><p><a href="">Fantasy</a><br><a href="">Magi</a><br><a href="">Troldmænd</a></p></td>
+        </tr>
+        <tr class="odd">
+            <td><h4>Original title</h4></td>
+            <td><p>Harry Potter and the deathly hallows</p></td>
+        </tr>
+    </tbody>
+</table>
+
+Styleguide 4.0
+*/
+/*
+Tables for data
+
+Markup: <table class="table">
+    <thead>
+        <tr>
+            <td><h4>Biblioteker og opstilling</h4></td>
+            <td class="center"><h4>Antal</h4></td>
+            <td class="center"><h4>På hylden</h4></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><p>Beder-Malling &gt; Børn &gt; Fantasi/Fantasy &gt; Rowling</p></td>
+            <td class="center"><p>1</p></td>
+            <td class="center"><p>1</p></td>
+        </tr>
+        <tr class="odd">
+            <td><p>Egå &gt; Børn &gt; Rowling</p></td>
+            <td class="center"><p>2</p></td>
+            <td class="center"><p>1</p></td>
+        </tr>
+        <tr>
+            <td><p>Egå &gt; Skolebibliotek &gt; Sølystskolen &gt; Rowling</p></td>
+            <td class="center"><p>1</p></td>
+            <td class="center"><p>1</p></td>
+        </tr>
+        <tr class="odd">
+            <td><p>Gellerup &gt; Børn &gt; Fantasi/Fantasy &gt; Rowling</p></td>
+            <td class="center"><p>2</p></td>
+            <td class="center"><p>1</p></td>
+        </tr>
+        <tr>
+            <td><p>Kolt-Hasselager &gt; Børn &gt; Fantasi/Fantasy &gt; Rowling</p></td>
+            <td class="center"><p>1</p></td>
+            <td class="center"><p>1</p></td>
+        </tr>
+        <tr class="odd">
+            <td><p>Kolt-Hasselager &gt; Børn &gt; Rowling</p></td>
+            <td class="center"><p>2</p></td>
+            <td class="center"><p>2</p></td>
+        </tr>
+    </tbody>
+</table>
+
+Styleguide 4.1
+*/
 .table {
   min-width: 100%;
   margin-top: 5px;
@@ -309,6 +454,23 @@ a.link-danger:hover, a.link-danger:active {
   padding: 0;
 }
 
+/*
+Buttons
+
+Buttons description
+
+Markup: <button type="button" class="btn {$modifiers}">
+<span class="glyphicon glyphicon-briefcase"></span>Reservér bogen nu</button>
+<br/>
+<button type="button" class="btn btn-small {$modifiers}">Reservér bogen nu</button>
+
+:hover - Highlight the button when hovered.
+:active - Highlight when active.
+.btn-secondary - Secondary color.
+.btn-danger - Danger / Warning color.
+
+Styleguide 2.0
+*/
 button, .btn {
   display: inline-block;
   padding: 5px 16px;
@@ -324,6 +486,7 @@ button, .btn {
   border-radius: 4px;
   outline: 0;
   color: white;
+  font-size: 16px;
   background-color: #00b38a;
   box-shadow: 0px 1px 2px #004d3b;
 }
@@ -336,13 +499,12 @@ button span.glyphicon, .btn span.glyphicon {
   margin-right: 8px;
   display: inline-block;
 }
-button:active, .btn:active {
+button:active, button.pseudo-class-active, .btn:active, .btn.pseudo-class-active {
   padding: 4px 16px 6px 16px;
   box-shadow: inset 1px 1px 4px #008063;
   color: #d8f3ed;
 }
-button:hover, .btn:hover {
-  color: white;
+button:hover, button.pseudo-class-hover, .btn:hover, .btn.pseudo-class-hover {
   background-color: #00a982;
 }
 
@@ -360,10 +522,10 @@ button:hover, .btn:hover {
   background-color: #b1b1ad;
   box-shadow: 0px 1px 2px #656560;
 }
-.btn-secondary:hover, .dropdown .dropdown-title.secondary:hover {
+.btn-secondary:hover, .dropdown .dropdown-title.secondary:hover, .btn-secondary.pseudo-class-hover, .dropdown .pseudo-class-hover.dropdown-title.secondary {
   background-color: #a7a7a3;
 }
-.btn-secondary:active, .dropdown .dropdown-title.secondary:active {
+.btn-secondary:active, .dropdown .dropdown-title.secondary:active, .btn-secondary.pseudo-class-active, .dropdown .pseudo-class-active.dropdown-title.secondary {
   box-shadow: inset 1px 1px 4px #8c8c86;
   color: #efefee;
 }
@@ -372,14 +534,122 @@ button:hover, .btn:hover {
   background-color: #ff7275;
   box-shadow: 0px 1px 2px #d80005;
 }
-.btn-danger:hover, .dropdown .dropdown-title.danger:hover {
+.btn-danger:hover, .dropdown .dropdown-title.danger:hover, .btn-danger.pseudo-class-hover, .dropdown .pseudo-class-hover.dropdown-title.danger {
   background-color: #ff5e61;
 }
-.btn-danger:active, .dropdown .dropdown-title.danger:active {
+.btn-danger:active, .dropdown .dropdown-title.danger:active, .btn-danger.pseudo-class-active, .dropdown .pseudo-class-active.dropdown-title.danger {
   box-shadow: inset 1px 1px 4px #ff252a;
   color: #ffe2e3;
 }
 
+/*
+Dropdown
+
+Markup: <div class="dropdown">
+    <input type="checkbox" id="dropdown-{$modifiers}"> <!-- ID must be uniq -->
+    <label for="dropdown-{$modifiers}"> <!-- and same ID here --> 
+        <span class="dropdown-title {$modifiers}">Dropdown
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </span>
+    </label>
+    <div class="dropdown-content">
+        <ul class="dropdown-list">
+            <li><a href="">Lorem ipsum dolor.</a></li>
+            <li><p>Lorem ipsum dolor.</p></li>
+            <li><a href="">Lorem ipsum dolor.</a></li>
+            <li><p>Lorem ipsum dolor.</p></li>
+        </ul>
+    </div>
+</div>
+
+.secondary - Secondary color
+.danger - Danger color
+
+Styleguide 5.0
+*/
+/*
+Dropdown with links
+
+Markup: <div class="dropdown">
+    <input type="checkbox" id="dropdown1">
+    <label for="dropdown1">
+        <span class="dropdown-title">Dropdown with links
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </span>
+    </label>
+    <div class="dropdown-content">
+        <ul class="dropdown-list">
+            <li><a href="">Lorem ipsum dolor.</a></li>
+            <li><p>Lorem ipsum dolor.</p></li>
+            <li><a href="">Lorem ipsum dolor.</a></li>
+            <li><p>Lorem ipsum dolor.</p></li>
+        </ul>
+    </div>
+</div>
+
+Styleguide 5.1
+*/
+/*
+Dropdown with content
+
+Markup: <div class="dropdown">
+    <input type="checkbox" id="dropdown2">
+    <label for="dropdown2">
+        <span class="dropdown-title secondary">Dropdown
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </span>
+    </label>
+    <div class="dropdown-content">
+        <div class="dropdown-content-wrap">
+            <h1>Lorem ipsum dolor.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, similique, adipisci, explicabo velit facilis enim     provident odio porro iste quas perferendis quo corporis laudantium eveniet culpa soluta eos deleniti harum beatae eaque sunt esse eligendi earum blanditiis nam dicta libero obcaecati sequi aliquid ducimus pariatur ea molestias dolor maxime cum officia ipsa officiis nobis amet consectetur! Minima, nemo explicabo iure id corrupti nesciunt ratione qui nam maiores animi unde laboriosam sint officia? Omnis, dolorem magnam fugit consequuntur sit vel ratione ab illum dignissimos quod? Consequuntur, rerum, aliquam reiciendis pariatur molestiae obcaecati aspernatur ut sequi in dolorem mollitia hic culpa cupiditate!</p>
+        </div>
+    </div>
+</div>
+
+Styleguide 5.2
+*/
+/*
+Dropdown with Vertical list
+
+Markup: <div class="dropdown">
+    <input type="checkbox" id="dropdown3">
+    <label for="dropdown3">
+        <span class="dropdown-title danger">Dropdown with vertical list
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </span>
+    </label>
+    <div class="dropdown-content">
+        <div class="dropdown-content-wrap">
+            <div class="vertical-list">
+                <h4>Instilling 1</h4>
+                <ul class="">
+                    <form action="">
+                        <li>
+                            <input id="checkbox1a" class="input" type="checkbox" name="vehicle" value="Bike">
+                            <label class="label label-checkbox" for="checkbox1a">I have a bike</label>
+                        </li>
+                        <li>
+                            <input id="checkbox2a" class="input" type="checkbox" name="vehicle" value="Car">
+                            <label class="label label-checkbox" for="checkbox2a">I have a car</label>
+                        </li>
+                        <li>
+                            <input id="radio1a" class="input" type="radio" name="sex" value="male">
+                            <label class="label label-radio" for="radio1a">Male</label>
+                        </li>
+                        <li>
+                            <input id="radio2a" class="input" type="radio" name="sex" value="female">
+                            <label class="label label-radio" for="radio2a">Female</label>
+                        </li>
+                    </form>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+Styleguide 5.3
+*/
 .dropdown {
   display: block;
   margin: 10px 0 10px 0;
@@ -513,6 +783,46 @@ button:hover, .btn:hover {
   background-color: #e3e3e1;
 }
 
+/*
+Form
+
+Markup: <form action="">
+    <div class="form-group">First name:
+        <input type="text" name="firstname">
+        <br>Last name:
+        <input type="text" name="lastname">
+    </div>
+    <div class="form-group">
+        <textarea rows="4" cols="50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, id, illo, error quo repellat quasi atque doloribus ducimus asperiores modi adipisci rerum aperiam beatae eveniet voluptates dolorum culpa maiores sit.</textarea>
+    </div>
+     <div class="form-group">
+        <input id="checkbox5" class="input" type="checkbox" name="vehicle" value="Bike" checked >
+        <label class="label label-checkbox" for="checkbox5">I have a bike</label>
+        <br>
+        <input id="checkbox6" class="input" type="checkbox" name="vehicle" value="Car">
+        <label class="label label-checkbox" for="checkbox6">I have a car</label>
+    </div>
+    <div class="form-group">
+        <input id="radio5" class="input" type="radio" name="sex" value="male" checked>
+        <label class="label label-radio" for="radio5">Male</label>
+        <br>
+        <input id="radio6" class="input" type="radio" name="sex" value="female" >
+        <label class="label label-radio" for="radio6"  >Female</label>
+    </div>
+    <div class="form-group">
+        <select name="cars" class="select">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat" selected="">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+    </div>
+    <input type="submit" value="Submit" class="btn btn-small">
+    <button class="btn btn-small btn-secondary">Cancel</button>
+</form>
+
+Styleguide 6.0
+*/
 form {
   padding: 0px 20px 0px 0px;
 }
@@ -549,6 +859,7 @@ select.select {
   background-image: none;
   border: 1px solid #ccc;
   border-radius: 4px;
+  font-size: 16px;
 }
 
 input[type="checkbox"], input[type="submit"], input[type="radio"] {
@@ -596,7 +907,7 @@ input[type="radio"].input:checked + label.label:before, input[type="checkbox"].i
 input[type="radio"].input:checked + label.label:before {
   content: "\2022";
   font-size: 22px;
-  line-height: 14px;
+  line-height: 18px;
 }
 
 input[type="checkbox"].input:checked + label.label:before {

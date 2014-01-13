@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <title>Styleguide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../bower_components/modernizr/modernizr.js"></script>
+    <script type="text/javascript" src="//use.typekit.net/qqr6kuv.js"></script>
+    <script type="text/javascript">
+        try {
+            Typekit.load();
+        } catch (e) {}
+    </script>
+
+    <script>
+    </script>
+    <!-- http://ie7-js.googlecode.com/svn/test/index.html -->
+    <!--[if lt IE 9]>
+        <script src="_/js/IE9.js"></script>
+    <![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,900,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="public/normalize-css/normalize.css">
+    <link rel="stylesheet" href="public/zengrid.css">
+    <link rel="stylesheet" href="public/style.css">
+    
+    <style>
+        .kss-head{
+            padding-top: 20px;
+        }
+        
+        .kss-head ul{
+            margin:0 0 0 10px; padding: 0;
+        }
+        .kss-head ul li{
+            list-style:none;
+        }
+        .kss-section{
+           margin: 50px 100px 100px 0px;
+        }
+        
+        .kss-header{
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            margin-bottom:24px;
+        }
+        
+        .kss-title{
+            font-family: 'proxima-nova',sans-serif;
+            font-size: 24px;
+            font-weight: 100;
+            line-height: 24px;         
+        }
+        .kss-reference{
+            font-weight: 400;
+            color: #00b38a;
+        }
+        .kss-description{
+            margin:0 0 50px 0;
+        }
+        .kss-description>p{
+        }
+        .kss-markup{
+            margin-bottom:50px;
+        }
+        
+        
+        /* MODIFIER */
+        .kss-modifier{
+            margin:20px 0 20px 0;
+            border-radius:4px;
+            background-color: rgba(255,255,255,0.3);
+            border: 1px solid rgba(0,0,0,0.1);
+            position:relative;
+            padding: 30px;
+            padding-top: 50px;
+        }
+        
+        .kss-modifier div, .kss-modifier .kss-description > p{
+            margin: 0;padding: 0;
+        }
+        .kss-modifier p{
+            line-height:auto;
+        }
+        
+        .kss-modifier .kss-description{
+            margin: 0 0 10px 0; padding: 0;
+            position:absolute;
+            top:-1px; left:-1px;
+            background-color: white;
+            width:100%;
+            border-radius:4px;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+        
+        .kss-modifier .kss-description p {
+            margin: 5px 5px 5px 10px;
+            font-size: 15px;
+             color:rgba(0,0,0,0.5);
+        }
+        
+        .kss-modifier .kss-name{
+            background-color: rgba(0,0,0,0.5);
+            float:right;
+            border-radius:4px;
+            color:white;
+            padding: 5px 8px 5px 8px;
+            position:absolute;
+            top:0px; right:-1px;
+            
+            font-size: 12px;
+        }
+        .kss-modifier .kss-markup{
+        }
+        
+        .kss-code{
+/*            margin:50px 0 0 0;*/
+        }
+        .kss-code pre{
+            background-color: rgba(255,255,255,0.75);
+            border-radius:10px;
+            padding:20px;
+            border: 1px solid rgba(0,0,0,0.1);
+            font-size: 13px;
+            font-weight: 200;
+        }
+    </style> 
+</head>
+
+<body>
+  
+ 
+<div class="g3-1">
+    <div class="kss-head">
+        <h1>Ding2 Styleguide</h1>
+        <ul>
+            <li><a href="index.html">0.0: Overview</a></li>
+            
+                <li><a href="section-1.html">1.0: Basic Typografi</a></li>
+            
+                <li><a href="section-2.html">2.0: Buttons</a></li>
+            
+                <li><a href="section-3.html">3.0: Vertical List</a></li>
+            
+                <li><a href="section-4.html">4.0: Tables</a></li>
+            
+                <li><a href="section-5.html">5.0: Dropdown</a></li>
+            
+                <li><a href="section-6.html">6.0: Form</a></li>
+            
+            
+        </ul>
+    </div>
+</div>
+    
+<div class="g9-4">
+    <div class="kss-body">
+    
+        
+        
+            <div class="kss-section" id="5">
+                <div class="kss-header">
+                    
+                          <h1 class="kss-title"><span class="kss-reference">5.0</span> Dropdown</h1>
+                      
+                    
+                </div>
+                
+                        
+                    
+                    
+                    <div class="kss-markup">
+                        <div class="dropdown">
+    <input type="checkbox" id="dropdown-{$modifiers}"> <!-- ID must be uniq -->
+    <label for="dropdown-{$modifiers}"> <!-- and same ID here --> 
+        <span class="dropdown-title {$modifiers}">Dropdown
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </span>
+    </label>
+    <div class="dropdown-content">
+        <ul class="dropdown-list">
+            <li><a href="">Lorem ipsum dolor.</a></li>
+            <li><p>Lorem ipsum dolor.</p></li>
+            <li><a href="">Lorem ipsum dolor.</a></li>
+            <li><p>Lorem ipsum dolor.</p></li>
+        </ul>
+    </div>
+</div>
+                    </div>  
+                    
+                    
+                        
+                        <div class="kss-modifier" style="">
+                            <div class="kss-description"><p>Secondary color</p>
+</div>
+                            <div class="kss-name">.secondary</div>
+                            <div class="kss-markup"><div class="dropdown">
+    <input type="checkbox" id="dropdown-secondary"> <!-- ID must be uniq -->
+    <label for="dropdown-secondary"> <!-- and same ID here --> 
+        <span class="dropdown-title secondary">Dropdown
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </span>
+    </label>
+    <div class="dropdown-content">
+        <ul class="dropdown-list">
+            <li><a href="">Lorem ipsum dolor.</a></li>
+            <li><p>Lorem ipsum dolor.</p></li>
+            <li><a href="">Lorem ipsum dolor.</a></li>
+            <li><p>Lorem ipsum dolor.</p></li>
+        </ul>
+    </div>
+</div></div>
+                        </div>
+                        
+                    
+                        
+                        <div class="kss-modifier" style="">
+                            <div class="kss-description"><p>Danger color</p>
+</div>
+                            <div class="kss-name">.danger</div>
+                            <div class="kss-markup"><div class="dropdown">
+    <input type="checkbox" id="dropdown-danger"> <!-- ID must be uniq -->
+    <label for="dropdown-danger"> <!-- and same ID here --> 
+        <span class="dropdown-title danger">Dropdown
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </span>
+    </label>
+    <div class="dropdown-content">
+        <ul class="dropdown-list">
+            <li><a href="">Lorem ipsum dolor.</a></li>
+            <li><p>Lorem ipsum dolor.</p></li>
+            <li><a href="">Lorem ipsum dolor.</a></li>
+            <li><p>Lorem ipsum dolor.</p></li>
+        </ul>
+    </div>
+</div></div>
+                        </div>
+                        
+                    
+                    
+                    <div class="kss-code">
+                        <pre class="prettyprint lang-html">&lt;div class=&quot;dropdown&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;dropdown-{$modifiers}&quot;&gt; &lt;!-- ID must be uniq --&gt;
+    &lt;label for=&quot;dropdown-{$modifiers}&quot;&gt; &lt;!-- and same ID here --&gt; 
+        &lt;span class=&quot;dropdown-title {$modifiers}&quot;&gt;Dropdown
+            &lt;span class=&quot;glyphicon glyphicon-chevron-down&quot;&gt;&lt;/span&gt;
+        &lt;/span&gt;
+    &lt;/label&gt;
+    &lt;div class=&quot;dropdown-content&quot;&gt;
+        &lt;ul class=&quot;dropdown-list&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;Lorem ipsum dolor.&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;p&gt;Lorem ipsum dolor.&lt;/p&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;Lorem ipsum dolor.&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;p&gt;Lorem ipsum dolor.&lt;/p&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                    </div>
+                    
+                
+                
+              
+          </div>
+        
+            <div class="kss-section" id="5.1">
+                <div class="kss-header">
+                    
+                           <h1 class="kss-title"><span class="kss-reference">5.1</span> Dropdown with links</h1>
+                      
+                    
+                </div>
+                
+                        
+                    
+                    
+                    <div class="kss-markup">
+                        <div class="dropdown">
+    <input type="checkbox" id="dropdown1">
+    <label for="dropdown1">
+        <span class="dropdown-title">Dropdown with links
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </span>
+    </label>
+    <div class="dropdown-content">
+        <ul class="dropdown-list">
+            <li><a href="">Lorem ipsum dolor.</a></li>
+            <li><p>Lorem ipsum dolor.</p></li>
+            <li><a href="">Lorem ipsum dolor.</a></li>
+            <li><p>Lorem ipsum dolor.</p></li>
+        </ul>
+    </div>
+</div>
+                    </div>  
+                    
+                    
+                    
+                    <div class="kss-code">
+                        <pre class="prettyprint lang-html">&lt;div class=&quot;dropdown&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;dropdown1&quot;&gt;
+    &lt;label for=&quot;dropdown1&quot;&gt;
+        &lt;span class=&quot;dropdown-title&quot;&gt;Dropdown with links
+            &lt;span class=&quot;glyphicon glyphicon-chevron-down&quot;&gt;&lt;/span&gt;
+        &lt;/span&gt;
+    &lt;/label&gt;
+    &lt;div class=&quot;dropdown-content&quot;&gt;
+        &lt;ul class=&quot;dropdown-list&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;Lorem ipsum dolor.&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;p&gt;Lorem ipsum dolor.&lt;/p&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;Lorem ipsum dolor.&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;p&gt;Lorem ipsum dolor.&lt;/p&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                    </div>
+                    
+                
+                
+              
+          </div>
+        
+            <div class="kss-section" id="5.2">
+                <div class="kss-header">
+                    
+                           <h1 class="kss-title"><span class="kss-reference">5.2</span> Dropdown with content</h1>
+                      
+                    
+                </div>
+                
+                        
+                    
+                    
+                    <div class="kss-markup">
+                        <div class="dropdown">
+    <input type="checkbox" id="dropdown2">
+    <label for="dropdown2">
+        <span class="dropdown-title secondary">Dropdown
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </span>
+    </label>
+    <div class="dropdown-content">
+        <div class="dropdown-content-wrap">
+            <h1>Lorem ipsum dolor.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, similique, adipisci, explicabo velit facilis enim     provident odio porro iste quas perferendis quo corporis laudantium eveniet culpa soluta eos deleniti harum beatae eaque sunt esse eligendi earum blanditiis nam dicta libero obcaecati sequi aliquid ducimus pariatur ea molestias dolor maxime cum officia ipsa officiis nobis amet consectetur! Minima, nemo explicabo iure id corrupti nesciunt ratione qui nam maiores animi unde laboriosam sint officia? Omnis, dolorem magnam fugit consequuntur sit vel ratione ab illum dignissimos quod? Consequuntur, rerum, aliquam reiciendis pariatur molestiae obcaecati aspernatur ut sequi in dolorem mollitia hic culpa cupiditate!</p>
+        </div>
+    </div>
+</div>
+                    </div>  
+                    
+                    
+                    
+                    <div class="kss-code">
+                        <pre class="prettyprint lang-html">&lt;div class=&quot;dropdown&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;dropdown2&quot;&gt;
+    &lt;label for=&quot;dropdown2&quot;&gt;
+        &lt;span class=&quot;dropdown-title secondary&quot;&gt;Dropdown
+            &lt;span class=&quot;glyphicon glyphicon-chevron-down&quot;&gt;&lt;/span&gt;
+        &lt;/span&gt;
+    &lt;/label&gt;
+    &lt;div class=&quot;dropdown-content&quot;&gt;
+        &lt;div class=&quot;dropdown-content-wrap&quot;&gt;
+            &lt;h1&gt;Lorem ipsum dolor.&lt;/h1&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, similique, adipisci, explicabo velit facilis enim     provident odio porro iste quas perferendis quo corporis laudantium eveniet culpa soluta eos deleniti harum beatae eaque sunt esse eligendi earum blanditiis nam dicta libero obcaecati sequi aliquid ducimus pariatur ea molestias dolor maxime cum officia ipsa officiis nobis amet consectetur! Minima, nemo explicabo iure id corrupti nesciunt ratione qui nam maiores animi unde laboriosam sint officia? Omnis, dolorem magnam fugit consequuntur sit vel ratione ab illum dignissimos quod? Consequuntur, rerum, aliquam reiciendis pariatur molestiae obcaecati aspernatur ut sequi in dolorem mollitia hic culpa cupiditate!&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                    </div>
+                    
+                
+                
+              
+          </div>
+        
+            <div class="kss-section" id="5.3">
+                <div class="kss-header">
+                    
+                           <h1 class="kss-title"><span class="kss-reference">5.3</span> Dropdown with Vertical list</h1>
+                      
+                    
+                </div>
+                
+                        
+                    
+                    
+                    <div class="kss-markup">
+                        <div class="dropdown">
+    <input type="checkbox" id="dropdown3">
+    <label for="dropdown3">
+        <span class="dropdown-title danger">Dropdown with vertical list
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </span>
+    </label>
+    <div class="dropdown-content">
+        <div class="dropdown-content-wrap">
+            <div class="vertical-list">
+                <h4>Instilling 1</h4>
+                <ul class="">
+                    <form action="">
+                        <li>
+                            <input id="checkbox1a" class="input" type="checkbox" name="vehicle" value="Bike">
+                            <label class="label label-checkbox" for="checkbox1a">I have a bike</label>
+                        </li>
+                        <li>
+                            <input id="checkbox2a" class="input" type="checkbox" name="vehicle" value="Car">
+                            <label class="label label-checkbox" for="checkbox2a">I have a car</label>
+                        </li>
+                        <li>
+                            <input id="radio1a" class="input" type="radio" name="sex" value="male">
+                            <label class="label label-radio" for="radio1a">Male</label>
+                        </li>
+                        <li>
+                            <input id="radio2a" class="input" type="radio" name="sex" value="female">
+                            <label class="label label-radio" for="radio2a">Female</label>
+                        </li>
+                    </form>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+                    </div>  
+                    
+                    
+                    
+                    <div class="kss-code">
+                        <pre class="prettyprint lang-html">&lt;div class=&quot;dropdown&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;dropdown3&quot;&gt;
+    &lt;label for=&quot;dropdown3&quot;&gt;
+        &lt;span class=&quot;dropdown-title danger&quot;&gt;Dropdown with vertical list
+            &lt;span class=&quot;glyphicon glyphicon-chevron-down&quot;&gt;&lt;/span&gt;
+        &lt;/span&gt;
+    &lt;/label&gt;
+    &lt;div class=&quot;dropdown-content&quot;&gt;
+        &lt;div class=&quot;dropdown-content-wrap&quot;&gt;
+            &lt;div class=&quot;vertical-list&quot;&gt;
+                &lt;h4&gt;Instilling 1&lt;/h4&gt;
+                &lt;ul class=&quot;&quot;&gt;
+                    &lt;form action=&quot;&quot;&gt;
+                        &lt;li&gt;
+                            &lt;input id=&quot;checkbox1a&quot; class=&quot;input&quot; type=&quot;checkbox&quot; name=&quot;vehicle&quot; value=&quot;Bike&quot;&gt;
+                            &lt;label class=&quot;label label-checkbox&quot; for=&quot;checkbox1a&quot;&gt;I have a bike&lt;/label&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;input id=&quot;checkbox2a&quot; class=&quot;input&quot; type=&quot;checkbox&quot; name=&quot;vehicle&quot; value=&quot;Car&quot;&gt;
+                            &lt;label class=&quot;label label-checkbox&quot; for=&quot;checkbox2a&quot;&gt;I have a car&lt;/label&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;input id=&quot;radio1a&quot; class=&quot;input&quot; type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;male&quot;&gt;
+                            &lt;label class=&quot;label label-radio&quot; for=&quot;radio1a&quot;&gt;Male&lt;/label&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;input id=&quot;radio2a&quot; class=&quot;input&quot; type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;female&quot;&gt;
+                            &lt;label class=&quot;label label-radio&quot; for=&quot;radio2a&quot;&gt;Female&lt;/label&gt;
+                        &lt;/li&gt;
+                    &lt;/form&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                    </div>
+                    
+                
+                
+              
+          </div>
+        
+      
+    </div>
+</div>
+      
+
+  <!-- SCRIPTS -->
+  <script src="public/kss.js"></script>
+  <script src="public/prettify.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</div>
+</body>
+</html>
