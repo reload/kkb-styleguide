@@ -26,10 +26,12 @@
     <![endif]-->
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,900,700italic,900italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="_/css/zengrid.css">
     <link rel="stylesheet" href="_/css/style.css">
 </head>
 
 <body>
+
 
 
     <div class="container">
@@ -661,42 +663,167 @@
             <a href="" class="link link-secondary">Føj til huskeliste</a>
             <a href="" class="link link-danger">Er du sikker?</a>
         </div>
-        <div class="gclear"></div>
-
-        <div class="g6-1">
-            <img src="holder.js/300x200/#00b38a:#fff" class="img-left img-clear img-left-side" alt="">
-            <div class="text">
-                <h3>Biblioteket <br> Rentemestervej</h3>
-                <p>Rentemestervej 76
-                    <br>2400 København NV
-                    <br>
-                    <br>+45 82321600
-                    <br>
-                    <a href="">bibbro@kff.kk.dk</a>
-                </p>
+        <div class="gclear spacer"></div>
+        
+        <div class="g6-1 responsive">
+            <div class="imgtext">
+                <div class="img-wrap">
+                    <a href="#"><img src="holder.js/270x190/#00b38a:#fff" class="img-responsive" alt=""></a>
+                </div>
+                <div class="text">
+                    <h3>Biblioteket <br> Rentemestervej</h3>
+                    <p>Rentemestervej 76
+                        <br>2400 København NV
+                        <br>
+                        <br>+45 82321600
+                        <br>
+                        <a href="">bibbro@kff.kk.dk</a>
+                    </p>
+                </div>
             </div>
-            
-            <img src="holder.js/200x150/#00b38a:#fff" class="img-left img-clear img-left-side" alt="">
-            <div class="text">
-                <h3>Biblioteket <br> Rentemestervej</h3>
-                <p>Rentemestervej 76
-                    <br>2400 København NV
-                    <br>
-                    <br>+45 82321600
-                    <br>
-                    <a href="">bibbro@kff.kk.dk</a>
-                </p>
+        </div>  
+        <div class="g6-7 responsive">
+            <div class="imgtext">
+                <div class="img-wrap">
+                    <a href="#"><img src="holder.js/170x145/#00b38a:#fff" class="img-responsive" alt=""></a>
+                </div>
+                <div class="text">
+                    <div class="meta">
+                        <span class="date">21 okt. 2013</span> <span class="category">kort nyt</span>
+                    </div>
+                    <h2>Alle børn har ret til et godt liv</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, animi, aperiam laboriosam molestias illum nihil sit neque ipsam quasi nulla doloremque reiciendis odit eveniet dolorem quidem labore facere corrupti ratione.</p>
+                </div>
             </div>
-            
         </div>
-        <div class="g6-7"></div>
+        <div class="gclear spacer"></div>
+        <div class="g4-1 responsive">
+            <div class="imgtext imgtext-underline">
+                <div class="img-wrap">
+                        <a href="#"><img src="holder.js/60x60/#00b38a:#fff" class="img-responsive img-round" alt=""></a>
+                    </div>
+                    <div class="text">
+                        <h4 class="big">Litteratur og lydbøger</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, porro!</p>
+                    </div>
+            </div>
+        </div>
+        <div class="g4-5-right responsive">
+            <div class="imgtext imgtext-underline">
+                <div class="img-wrap">
+                        <a href="#"><img src="holder.js/60x60/#00b38a:#fff" class="img-responsive img-round" alt=""></a>
+                    </div>
+                    <div class="text">
+                        <h4 class="big">Spil</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, porro!</p>
+                    </div>
+            </div>
+        </div>
+        <div class="gclear"></div>
+        <div class="g4-1 responsive">
+            <div class="imgtext imgtext-underline">
+                <div class="img-wrap">
+                        <a href="#"><img src="holder.js/60x60/#00b38a:#fff" class="img-responsive img-round" alt=""></a>
+                    </div>
+                    <div class="text">
+                        <h4 class="big">Musik</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, porro!</p>
+                    </div>
+            </div>
+        </div>
+        <div class="g4-5 responsive">
+            <div class="imgtext imgtext-underline">
+                <div class="img-wrap">
+                        <a href="#"><img src="holder.js/60x60/#00b38a:#fff" class="img-responsive img-round" alt=""></a>
+                    </div>
+                    <div class="text">
+                        <h4 class="big">Arrangementer</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, porro!</p>
+                    </div>
+            </div>
+        </div>
+        <div class="gclear spacer"></div>        
     </div>
 
     <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/jquery.transit/jquery.transit.js"></script>
     <script src="bower_components/holderjs/holder.js"></script>
     <script src="bower_components/respond/dest/respond.min.js"></script>
-
     <script src="_/js/grid_bookmark.js"></script>
+    <script>
+        $(document).ready(function(){
+            var fr = new FakeResponsive();
+//            fr.add( $('.g6-1.responsive')[0] );
+//            fr.add( $('.g6-7.responsive')[0] );
+//            fr.add( $('.g4-1.responsive')[0] );
+//            fr.add( $('.g4-5.responsive')[0] );
+//            fr.add( $('.g4-1.responsive')[1] );
+//            fr.add( $('.g4-5.responsive')[1] );
+            
+            fr.start();
+            
+            window.fr = fr;
+        })
+        
+        function FakeResponsive(){
+            this.items = [];
+            this.timer = 0;
+            this.time = 5000;
+            this.min = 100;
+        }
+        
+        FakeResponsive.prototype = {
+            constructor: FakeResponsive,
+            add: function (item){
+                this.items.push({
+                    el: item,
+                    $el: $(item),
+                    min: this.min,
+                    max: $(item).width(),
+                    toogle: true
+                })
+            },
+            init:function(){
+                var that = this;
+                this.timer = setInterval(function(){
+                    that.animate();
+                },this.time);
+            },
+            start: function (){
+                if(this.items.length){
+                    this.animate();
+                    this.init();
+                }
+            },
+            stop: function (){
+                clearInterval(this.timer);
+                for(var i in this.items){
+                    var item = this.items[i];
+                    item.$el.stop().animate({
+                        width: item.max + "px"
+                    }, this.time);
+                }
+            },
+            animate: function(){
+                var ranWidth = Math.random();
+                for(var i in this.items){
+                    var item = this.items[i];
+                    var width = item.toogle ? item.min : item.max;
+                    item.toogle = !item.toogle;
+                    item.$el.stop().animate({
+                        width: width + "px" //this.map(ranWidth, 0,1, item.min, item.max) + "px"
+                    }, this.time);
+                }
+                
+            },
+            map: function (value, low1, high1, low2, high2) {
+                return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
+            }    
+            
+        }
+        
+    </script>
+
 
 </body>
 

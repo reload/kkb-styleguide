@@ -4,72 +4,131 @@
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <title>Styleguide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../bower_components/modernizr/modernizr.js"></script>
+    <script type="text/javascript" src="//use.typekit.net/qqr6kuv.js"></script>
+    <script type="text/javascript">
+        try {
+            Typekit.load();
+        } catch (e) {}
+    </script>
 
-  <title>Bibliotekernes Styleguide</title>
-  <meta name="description" content="">
-  <meta name="generator" content="kss-node" />
-
-  <meta name="viewport" content="width=device-width">
-
-  <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" href="public/kss.css">
-  <link rel="stylesheet" href="public/style.css">
-
-</head>
-<body><div id="kss-wrapper">
-  <div id="kss-nav">
-    <header id="kss-header">
-      <hgroup><h1>Bibliotekernes Styleguide</h1></hgroup>
-    </header>
-    <aside>
-      <nav><ul>
-        <li><a href="index.html">0.0: Overview</a></li>
-        
-      </ul></nav>
-    </aside>
-  </div>
-  <div role="main" id="kss-main">
-    <article id="kss-content">
-      
-        <h1>Welcomen :D</h1>
-
-      
-    </article>
-  </div>
-  <footer>
+    <script>
+    </script>
+    <!-- http://ie7-js.googlecode.com/svn/test/index.html -->
+    <!--[if lt IE 9]>
+        <script src="_/js/IE9.js"></script>
+    <![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,900,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="../_/css/zengrid.css">
+    <link rel="stylesheet" href="public/style.css">
     
-  </footer>
+    <style>
+        .kss-section{
+           margin: 50px 0px 100px 0px;
+        }
+        
+        .kss-header{
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            margin-bottom:24px;
+        }
+        
+        .kss-title{
+            font-family: 'proxima-nova',sans-serif;
+            font-size: 24px;
+            font-weight: 100;
+            line-height: 24px;         
+        }
+        .kss-reference{
+            font-weight: 400;
+            color: #00b38a;
+        }
+        .kss-description{
+            margin:0 0 50px 0;
+        }
+        .kss-description>p{
+        }
+        .kss-markup{
+        }
+        
+        
+        /* MODIFIER */
+        .kss-modifier{
+            margin:20px 0 20px 0;
+            border-radius:4px;
+            background-color: rgba(255,255,255,0.4);
+            border: 1px solid rgba(0,0,0,0.1);
+            position:relative;
+            padding: 20px;
+        }
+        .kss-modifier div, .kss-modifier .kss-description > p{
+            margin: 0;padding: 0;
+        }
+        .kss-modifier p{
+            line-height:auto;
+        }
+        
+        .kss-modifier .kss-description{
+            margin: 0 0 10px 0; padding: 0;
+        }
+        .kss-modifier .kss-name{
+            float:right;
+            border-radius:4px;
+            color:rgba(0,0,0,0.5);
+            background-color: white;
+            padding: 5px;
+            position:absolute;
+            top:-1px; right:-1px;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+        .kss-modifier .kss-markup{
+        }
+        
+        .kss-code{
+            margin:50px 0 0 0;
+        }
+        .kss-code pre{
+            background-color: rgba(255,255,255,0.75);
+            border-radius:10px;
+            padding:20px;
+            border: 1px solid rgba(0,0,0,0.1);
+            font-size: 13px;
+            font-weight: 200;
+        }
+    </style> 
+</head>
+
+<body>
+  
+ 
+<div class="g3-1">
+    <div class="kss-head">
+        <a href="index.html">0.0: Overview</a></li>
+        
+            <a href="section-1.html">1.0: Basic Typografi</a>
+        
+    </div>
+</div>
+    
+<div class="g9-4">
+    <div class="kss-body">
+    
+            <div class="kss-section">
+                <h1>Welcomen :D</h1>
+
+            </div>
+      
+    </div>
+</div>
+      
+
   <!-- SCRIPTS -->
   <script src="public/kss.js"></script>
   <script src="public/prettify.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      var sidebarAdjust = function() {
-        // Match footer/body height
-        var height = Math.max($(window).height(), $('#kss-main').height());
-
-        if ($(window).width() <= 768) {
-          $('#kss-main, #kss-nav').height('auto');
-        } else {
-          $('#kss-main, #kss-nav').height(height);
-        }
-      };
-
-      $(window).resize(sidebarAdjust);
-      $(window).scroll(sidebarAdjust);
-      sidebarAdjust();
-
-      // Ensure code blocks are highlighted properly...
-      $('pre>code').addClass('prettyprint');
-      prettyPrint();
-
-    });
-  </script>
-
-  
-  
-</div></body>
+</div>
+</body>
 </html>

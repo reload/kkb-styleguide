@@ -4,120 +4,254 @@
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <title>Styleguide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../bower_components/modernizr/modernizr.js"></script>
+    <script type="text/javascript" src="//use.typekit.net/qqr6kuv.js"></script>
+    <script type="text/javascript">
+        try {
+            Typekit.load();
+        } catch (e) {}
+    </script>
 
-  <title>Bibliotekernes Styleguide</title>
-  <meta name="description" content="">
-  <meta name="generator" content="kss-node" />
-
-  <meta name="viewport" content="width=device-width">
-
-  <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" href="public/kss.css">
-  <link rel="stylesheet" href="public/style.css">
-
-</head>
-<body><div id="kss-wrapper">
-  <div id="kss-nav">
-    <header id="kss-header">
-      <hgroup><h1>Bibliotekernes Styleguide</h1></hgroup>
-    </header>
-    <aside>
-      <nav><ul>
-        <li><a href="index.html">0.0: Overview</a></li>
-        
-          <li><a href="section-1.html">1.0: Typography</a></li>
-        
-      </ul></nav>
-    </aside>
-  </div>
-  <div role="main" id="kss-main">
-    <article id="kss-content">
-      
-
-        
-        
-          
-            <h1 class="kss-title"><span class="kss-ref">1.0</span> Typography</h1>
-          
-            
-                
-                  <p>Main typography across the pages</p>
-
-                
-            
-           
-        
-          
-           <section class="kss-depth-2">
-            <h1 class="kss-title"><span class="kss-ref">1.1</span> Header</h1>
-          
-            
-                <div class="kss-box"><p>Main typography across the pages</p>
-</div>
-                <table class="kss-mod-list">
-                  <tr class="kss-mod-desc-group">
-                    <td class="kss-mod-desc"><p>Default styling</p></td>
-                    <td class="kss-mod-name"></td>
-                  </tr>
-                  <tr class="kss-mod-example">
-                    <td colspan="2"><h1 class="{$modifiers}">Harry Potter </h1></td>
-                  </tr>
-                
-                  <tr class="kss-mod-desc-group">
-                    <td class="kss-mod-desc"><p>Use to display page subject in header</p>
-</td>
-                    <td class="kss-mod-name"><p>.subject</p></td>
-                  </tr>
-                  <tr class="kss-mod-example">
-                    <td colspan="2"><h1 class="subject">Harry Potter </h1></td>
-                  </tr>
-                
-                </table>
-                <div class="kss-markup">
-                  <pre class="prettyprint lang-html">&lt;h1 class=&quot;{$modifiers}&quot;&gt;Harry Potter &lt;/h1&gt;</pre>
-                </div>
-            
-          
-            </section>
-          
-        
-      
-    </article>
-  </div>
-  <footer>
+    <script>
+    </script>
+    <!-- http://ie7-js.googlecode.com/svn/test/index.html -->
+    <!--[if lt IE 9]>
+        <script src="_/js/IE9.js"></script>
+    <![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,900,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="../_/css/zengrid.css">
+    <link rel="stylesheet" href="public/style.css">
     
-  </footer>
+    <style>
+        .kss-section{
+           margin: 50px 0px 100px 0px;
+        }
+        
+        .kss-header{
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            margin-bottom:24px;
+        }
+        
+        .kss-title{
+            font-family: 'proxima-nova',sans-serif;
+            font-size: 24px;
+            font-weight: 100;
+            line-height: 24px;         
+        }
+        .kss-reference{
+            font-weight: 400;
+            color: #00b38a;
+        }
+        .kss-description{
+            margin:0 0 50px 0;
+        }
+        .kss-description>p{
+        }
+        .kss-markup{
+        }
+        
+        
+        /* MODIFIER */
+        .kss-modifier{
+            margin:20px 0 20px 0;
+            border-radius:4px;
+            background-color: rgba(255,255,255,0.4);
+            border: 1px solid rgba(0,0,0,0.1);
+            position:relative;
+            padding: 20px;
+        }
+        .kss-modifier div, .kss-modifier .kss-description > p{
+            margin: 0;padding: 0;
+        }
+        .kss-modifier p{
+            line-height:auto;
+        }
+        
+        .kss-modifier .kss-description{
+            margin: 0 0 10px 0; padding: 0;
+        }
+        .kss-modifier .kss-name{
+            float:right;
+            border-radius:4px;
+            color:rgba(0,0,0,0.5);
+            background-color: white;
+            padding: 5px;
+            position:absolute;
+            top:-1px; right:-1px;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+        .kss-modifier .kss-markup{
+        }
+        
+        .kss-code{
+            margin:50px 0 0 0;
+        }
+        .kss-code pre{
+            background-color: rgba(255,255,255,0.75);
+            border-radius:10px;
+            padding:20px;
+            border: 1px solid rgba(0,0,0,0.1);
+            font-size: 13px;
+            font-weight: 200;
+        }
+    </style> 
+</head>
+
+<body>
+  
+ 
+<div class="g3-1">
+    <div class="kss-head">
+        <a href="index.html">0.0: Overview</a></li>
+        
+            <a href="section-1.html">1.0: Basic Typografi</a>
+        
+    </div>
+</div>
+    
+<div class="g9-4">
+    <div class="kss-body">
+    
+        
+        
+            <div class="kss-section">
+                <div class="kss-header">
+                    
+                          <h1 class="kss-title"><span class="kss-reference">1.0</span> Basic Typografi</h1>
+                      
+                    
+                </div>
+                
+                        
+                    <div class="kss-description">
+                        <p>Her ser de 4 forskellige størrelse på overskrifter.</p>
+
+                    </div>
+                    
+                    <div class="kss-markup">
+                        <h1>Lorem ipsum dolor sit.</h1>
+<h2>Lorem ipsum dolor sit.</h2>
+<h3>Lorem ipsum dolor sit.</h3>
+<h4>Lorem ipsum dolor sit.</h4>
+                    </div>  
+                    
+                    
+                    
+                    <div class="kss-code">
+                        <pre class="prettyprint lang-html">&lt;h1&gt;Lorem ipsum dolor sit.&lt;/h1&gt;
+&lt;h2&gt;Lorem ipsum dolor sit.&lt;/h2&gt;
+&lt;h3&gt;Lorem ipsum dolor sit.&lt;/h3&gt;
+&lt;h4&gt;Lorem ipsum dolor sit.&lt;/h4&gt;</pre>
+                    </div>
+                    
+                
+                
+              
+          </div>
+        
+            <div class="kss-section">
+                <div class="kss-header">
+                    
+                           <h1 class="kss-title"><span class="kss-reference">1.1</span> Header Brødtekst</h1>
+                      
+                    
+                </div>
+                
+                        
+                    <div class="kss-description">
+                        <p>Mere om header og brødtekst</p>
+
+                    </div>
+                    
+                    <div class="kss-markup">
+                        <h1>Lorem ipsum dolor sit.</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, expedita, eum, vero in provident nulla unde commodi nam ullam asperiores quia temporibus eligendi rerum minus eius. Voluptas, doloremque sequi modi!</p>
+<h2>Lorem ipsum dolor sit.</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, expedita, eum, vero in provident nulla unde commodi nam ullam asperiores quia temporibus eligendi rerum minus eius. Voluptas, doloremque sequi modi!</p>
+<h3>Lorem ipsum dolor sit.</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, expedita, eum, vero in provident nulla unde commodi nam ullam asperiores quia temporibus eligendi rerum minus eius. Voluptas, doloremque sequi modi!</p>
+<h4>Lorem ipsum dolor sit.</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, expedita, eum, vero in provident nulla unde commodi nam ullam asperiores quia temporibus eligendi rerum minus eius. Voluptas, doloremque sequi modi!</p>
+                    </div>  
+                    
+                    
+                    
+                    <div class="kss-code">
+                        <pre class="prettyprint lang-html">&lt;h1&gt;Lorem ipsum dolor sit.&lt;/h1&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, expedita, eum, vero in provident nulla unde commodi nam ullam asperiores quia temporibus eligendi rerum minus eius. Voluptas, doloremque sequi modi!&lt;/p&gt;
+&lt;h2&gt;Lorem ipsum dolor sit.&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, expedita, eum, vero in provident nulla unde commodi nam ullam asperiores quia temporibus eligendi rerum minus eius. Voluptas, doloremque sequi modi!&lt;/p&gt;
+&lt;h3&gt;Lorem ipsum dolor sit.&lt;/h3&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, expedita, eum, vero in provident nulla unde commodi nam ullam asperiores quia temporibus eligendi rerum minus eius. Voluptas, doloremque sequi modi!&lt;/p&gt;
+&lt;h4&gt;Lorem ipsum dolor sit.&lt;/h4&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, expedita, eum, vero in provident nulla unde commodi nam ullam asperiores quia temporibus eligendi rerum minus eius. Voluptas, doloremque sequi modi!&lt;/p&gt;</pre>
+                    </div>
+                    
+                
+                
+              
+          </div>
+        
+            <div class="kss-section">
+                <div class="kss-header">
+                    
+                           <h1 class="kss-title"><span class="kss-reference">1.2</span> Links</h1>
+                      
+                    
+                </div>
+                
+                        
+                    <div class="kss-description">
+                        <p>Om typografi</p>
+
+                    </div>
+                    
+                    <div class="kss-markup">
+                        <a href="#" class="{$modifiers}">Lorem ipsum color deme</a>
+                    </div>  
+                    
+                    
+                        
+                        <div class="kss-modifier" style="">
+                            <div class="kss-description"><p>Highlight the button when hovered.</p>
+</div>
+                            <div class="kss-name">:hover</div>
+                            <div class="kss-markup"><a href="#" class="pseudo-class-hover">Lorem ipsum color deme</a></div>
+                        </div>
+                        
+                    
+                        
+                        <div class="kss-modifier" style="">
+                            <div class="kss-description"><p>Highlight when active.</p>
+</div>
+                            <div class="kss-name">:active</div>
+                            <div class="kss-markup"><a href="#" class="pseudo-class-active">Lorem ipsum color deme</a></div>
+                        </div>
+                        
+                    
+                    
+                    <div class="kss-code">
+                        <pre class="prettyprint lang-html">&lt;a href=&quot;#&quot; class=&quot;{$modifiers}&quot;&gt;Lorem ipsum color deme&lt;/a&gt;</pre>
+                    </div>
+                    
+                
+                
+              
+          </div>
+        
+      
+    </div>
+</div>
+      
+
   <!-- SCRIPTS -->
   <script src="public/kss.js"></script>
   <script src="public/prettify.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      var sidebarAdjust = function() {
-        // Match footer/body height
-        var height = Math.max($(window).height(), $('#kss-main').height());
-
-        if ($(window).width() <= 768) {
-          $('#kss-main, #kss-nav').height('auto');
-        } else {
-          $('#kss-main, #kss-nav').height(height);
-        }
-      };
-
-      $(window).resize(sidebarAdjust);
-      $(window).scroll(sidebarAdjust);
-      sidebarAdjust();
-
-      // Ensure code blocks are highlighted properly...
-      $('pre>code').addClass('prettyprint');
-      prettyPrint();
-
-    });
-  </script>
-
-  
-  
-</div></body>
+</div>
+</body>
 </html>

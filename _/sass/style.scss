@@ -1,6 +1,5 @@
 // ----- I M P O R T -----
 
-@import 'zen';
 @import 'bourbon/bourbon';
 
 // ----- O P T I O N S -----
@@ -16,7 +15,7 @@ $border-radius: 4px;
 $color-sand: #f1f1e7;
 $color-brown: #b39c86;
 $color-mudgreen: #798881;
-$color-black: #313233;
+$color-black: #5f6062;
 
 $color-orange:#ff7275;
 $color-purple:#696092;
@@ -70,43 +69,7 @@ $vertical-grid-size: 8px; //pxtoem(8, $basepx);
 }
 
 
-// ----- G R I D -----
-$zen-column-count: 12;
-$zen-gutter-width: 30px; 
 
-.container{
-    @include zen-grid-container;
-    padding-top:unit(3);
-    //max-width:1170px;
-    margin:auto;
-}
-
-@for $i from 1 through $zen-column-count{
-    @for $u from 1 through $zen-column-count{
-        @for $y from 1 through 3{
-            @if $y == 1 {
-                .g#{$i}-#{$u}{
-                    @include zen-grid-item($i, $u)
-                };
-            }@elseif $y == 2{
-                .g#{$i}-#{$u}-left{
-                    @include zen-grid-item($i, $u, left)
-                };
-            }@else{
-                .g#{$i}-#{$u}-right{
-                    @include zen-grid-item($i, $u, right)
-                };
-            }        
-        }    
-    }    
-}
-
-.gclear{@include zen-clear();}
-.gclear-right{@include zen-clear(right);}
-.gclear-left{@include zen-clear(left);}
-.spacer{height: unit(12);}
-// http://www.chromaticsites.com/blog/responsive-grid-building-sass-and-zen-grids-tale-breakpoint-grid-breakdown-mixin
-// http://zengrids.com/
 
 
 // ----- T Y P O -----
@@ -122,8 +85,38 @@ body{
 
 h1,h2,h3,h4,h5,h6,p,a{
     margin:0; padding: 0;
-    //background-color: rgba(255,0,0,0.5);
 }
+
+ /*
+Basic Typografi
+
+Her ser de 4 forskellige størrelse på overskrifter.
+
+Markup: <h1>Lorem ipsum dolor sit.</h1>
+<h2>Lorem ipsum dolor sit.</h2>
+<h3>Lorem ipsum dolor sit.</h3>
+<h4>Lorem ipsum dolor sit.</h4>
+
+Styleguide 1.0
+*/
+
+
+ /*
+Header Brødtekst
+
+Mere om header og brødtekst
+
+Markup: <h1>Lorem ipsum dolor sit.</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, expedita, eum, vero in provident nulla unde commodi nam ullam asperiores quia temporibus eligendi rerum minus eius. Voluptas, doloremque sequi modi!</p>
+<h2>Lorem ipsum dolor sit.</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, expedita, eum, vero in provident nulla unde commodi nam ullam asperiores quia temporibus eligendi rerum minus eius. Voluptas, doloremque sequi modi!</p>
+<h3>Lorem ipsum dolor sit.</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, expedita, eum, vero in provident nulla unde commodi nam ullam asperiores quia temporibus eligendi rerum minus eius. Voluptas, doloremque sequi modi!</p>
+<h4>Lorem ipsum dolor sit.</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, expedita, eum, vero in provident nulla unde commodi nam ullam asperiores quia temporibus eligendi rerum minus eius. Voluptas, doloremque sequi modi!</p>
+
+Styleguide 1.1
+*/
 
 h1{
     font-family: 'Merriweather', serif;
@@ -172,6 +165,7 @@ h3{
     }
 }
 
+
 h4,h5,h6, legend{
     font-family: 'proxima-nova',sans-serif;
     font-weight: 400;
@@ -179,7 +173,15 @@ h4,h5,h6, legend{
     color:$color-grey;
     @include lineHeight(3);
     @include margin(0,0);
+    
+    &.big{
+        font-size: 24px;
+        margin-bottom: unit(1);
+        font-weight: 100;
+    }
 }
+
+
 
 p{
     font-family: 'proxima-nova',sans-serif;
@@ -201,6 +203,18 @@ p{
     
 }
 
+ /*
+Links
+
+Om typografi
+
+Markup: <a href="#" class="{$modifiers}">Lorem ipsum color deme</a>
+
+:hover - Highlight the button when hovered.
+:active - Highlight when active.
+
+Styleguide 1.2
+*/
 a{
     font-family: 'proxima-nova',sans-serif;
     font-size: 16px;
@@ -234,7 +248,21 @@ a{
     }
 }
 
+.date{
+    font-size:12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $color-mint-green;
+    margin-right:4px;
+    display:inline-block;
+}
 
+.category{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $color-grey-light;
+    display:inline-block;
+}
 
 // ----- V E R T I C A L  L I S T -----
 .vertical-list {
@@ -743,37 +771,65 @@ fieldset{
     }
 }
 
+
+
 // ----- T E X T  &  I M A G E S -----
 
-.text{
-    display:inline-block;
+ .meta{
+    margin-bottom: unit(1);
 }
 
-img{
-    &.img-left{
-        float:left;
+.imgtext{
+    clear:both;
+    vertical-align:top;
+}
+
+.imgtext-underline{
+    margin-bottom: unit(1);
+    border-bottom: 1px solid lighten($color-grey-light, 15);
+}
+.img-wrap{
+    display:table-cell;
+    height:auto;
+    float:left;
+    margin:0 20px unit(1) 0;
+    
+    &.img-sm{
+        max-width:150px;
     }
     
-    &.img-clear{
-        clear:both;
-    }
-    &.img-right{
-        float:right;
+    &.img-md{
+        max-width:300px;
     }
     
-    &.img-left-side{
-        margin-right: 20px;
-    }
-    
-    &.img-right-side{
-        margin-left: 20px;
+    &.img-lg{
+        max-width:450px;
     }
 }
+
+.img-responsive{
+    width:100%;
+    max-width:100%;
+    height:auto !important;
+    display:table-cell;
+    vertical-align:top;
+    margin: 0 auto;
+}
+
+.img-round{
+    border-radius:100%;
+}
+
+.text{
+    display:table-cell;
+}
+
+//.responsive{
+//    border:1px solid rgba(0,0,0,0.1);
+//}
 
 // ----- I M P O R T S -----
 @import 'bootstrap/glyphicons';
-
-
 
 
 
