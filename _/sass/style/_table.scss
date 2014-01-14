@@ -3,13 +3,13 @@
 /*
 Tables
 
-Markup: <table class="table">
+Markup: <table class="table table-even">
     <tbody>
         <tr>
             <td><h4>Serie</h4></td>
             <td><p>7. del af Harry Potter og de vise sten</p></td>
         </tr>
-        <tr class="odd">
+        <tr>
             <td><h4>Type</h4></td>
             <td><p>Bog</p></td>
         </tr>
@@ -23,7 +23,7 @@ Markup: <table class="table">
             <td><h4>Emneord</h4></td>
             <td><p><a href="">Fantasy</a><br><a href="">Magi</a><br><a href="">Troldmænd</a></p></td>
         </tr>
-        <tr class="odd">
+        <tr>
             <td><h4>Original title</h4></td>
             <td><p>Harry Potter and the deathly hallows</p></td>
         </tr>
@@ -36,7 +36,7 @@ Styleguide 4.0
 /*
 Tables for data
 
-Markup: <table class="table">
+Markup: <table class="table table-even">
     <thead>
         <tr>
             <td><h4>Biblioteker og opstilling</h4></td>
@@ -50,7 +50,7 @@ Markup: <table class="table">
             <td class="center"><p>1</p></td>
             <td class="center"><p>1</p></td>
         </tr>
-        <tr class="odd">
+        <tr>
             <td><p>Egå &gt; Børn &gt; Rowling</p></td>
             <td class="center"><p>2</p></td>
             <td class="center"><p>1</p></td>
@@ -60,7 +60,7 @@ Markup: <table class="table">
             <td class="center"><p>1</p></td>
             <td class="center"><p>1</p></td>
         </tr>
-        <tr class="odd">
+        <tr>
             <td><p>Gellerup &gt; Børn &gt; Fantasi/Fantasy &gt; Rowling</p></td>
             <td class="center"><p>2</p></td>
             <td class="center"><p>1</p></td>
@@ -70,7 +70,7 @@ Markup: <table class="table">
             <td class="center"><p>1</p></td>
             <td class="center"><p>1</p></td>
         </tr>
-        <tr class="odd">
+        <tr>
             <td><p>Kolt-Hasselager &gt; Børn &gt; Rowling</p></td>
             <td class="center"><p>2</p></td>
             <td class="center"><p>2</p></td>
@@ -84,17 +84,15 @@ Styleguide 4.1
 .table {
     min-width:100%;
     margin-top: 5px;
+    
     >thead{
         border-bottom:1px solid darken($color-dark-sand, 10);
     }
+    
     >tbody, >thead{
         >tr{
             vertical-align:top;
-            
-            &.odd{
-                background-color: $color-dark-sand;
-            }
-            
+           
             >td{
                 padding: 6px 10px 6px 10px;
                 border: 0px;
@@ -109,4 +107,13 @@ Styleguide 4.1
             }
         }
     }
+    
+    &.table-even tr:nth-child(even){
+         background-color: $color-dark-sand;
+    }
+    &.table-odd tr:nth-child(odd), tr.highlight{
+        background-color: $color-dark-sand;
+    }
+
+
 } // .table
