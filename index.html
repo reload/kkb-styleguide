@@ -32,7 +32,39 @@
 
 <body>
 
+<!--
+http://reload.github.io/supershop/
 
+MISSING:
+- select multiple
+? logo (Skal have logo fra hvem der har det)
+? favicon (Hvem laver det, og hvad skal det være)
+- (data pairs -> table)
+- menu  
+- tips
+- tabs
+- messages
+            - loader
+- modal (overview/popup)
+- rating
+- copy
+
+MISSING from design:
+- Dato calendar
+- menu
+- modal (popup)
+- søgnings resultat header
+
+EXAMPLE PAGES:
+- http://ding2tal.ting.dk/arrangementer/udstilling/keramiker-susanne-bidstrup-udstiller-paa-viby-bibliotek
+- http://ding2tal.ting.dk/biblioteker
+- http://ding2tal.ting.dk/ting/object/870970-basis%3A26917921
+
+BUGS:
+- checkboks & radio  IE8
+- submit btn FIREFOX
+- responsive imgtext FIREFOX
+-->
 
     <div class="container">
 
@@ -666,7 +698,7 @@
         
         <div class="g6-1 responsive">
             <div class="imgtext">
-                <div class="img-wrap">
+                <div class="img-wrap shrink">
                     <a href="#"><img src="holder.js/270x190/#00b38a:#fff" class="img-responsive" alt=""></a>
                 </div>
                 <div class="text">
@@ -683,7 +715,7 @@
         </div>  
         <div class="g6-7 responsive">
             <div class="imgtext">
-                <div class="img-wrap">
+                <div class="img-wrap hide">
                     <a href="#"><img src="holder.js/170x145/#00b38a:#fff" class="img-responsive" alt=""></a>
                 </div>
                 <div class="text">
@@ -741,7 +773,31 @@
                     </div>
             </div>
         </div>
-        <div class="gclear spacer"></div>        
+        <div class="gclear spacer"></div>
+        
+        <div class="g4-1">
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, pariatur.</p>
+            <p>Suscipit, culpa dolores fugiat veritatis mollitia deleniti ipsam repudiandae excepturi.</p>
+            <p>Beatae nesciunt sint aliquam ullam aliquid fuga magnam deleniti sit. <span class="tip">
+                    <div class="tip-btn">?</div>
+                    <div class="tip-toggle">
+                        <div class="tip-tip">
+                            <div class="tip-tip-content">
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quas eligendi ad itaque unde minima veniam maiores consequatur id ab! Soluta, quis aut quae molestiae quisquam aliquam natus quos magnam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </span></p>
+            
+            <style> 
+                
+            </style>
+            
+        </div>
+        <div class="gclear spacer"></div>
+                        
     </div>
 
     <script src="bower_components/jquery/jquery.min.js"></script>
@@ -749,79 +805,7 @@
     <script src="bower_components/holderjs/holder.js"></script>
     <script src="bower_components/respond/dest/respond.min.js"></script>
     <script src="_/js/grid_bookmark.js"></script>
-    <script>
-        $(document).ready(function(){
-            var fr = new FakeResponsive();
-//            fr.add( $('.g6-1.responsive')[0] );
-//            fr.add( $('.g6-7.responsive')[0] );
-//            fr.add( $('.g4-1.responsive')[0] );
-//            fr.add( $('.g4-5.responsive')[0] );
-//            fr.add( $('.g4-1.responsive')[1] );
-//            fr.add( $('.g4-5.responsive')[1] );
-            
-            fr.start();
-            
-            window.fr = fr;
-        })
-        
-        function FakeResponsive(){
-            this.items = [];
-            this.timer = 0;
-            this.time = 5000;
-            this.min = 100;
-        }
-        
-        FakeResponsive.prototype = {
-            constructor: FakeResponsive,
-            add: function (item){
-                this.items.push({
-                    el: item,
-                    $el: $(item),
-                    min: this.min,
-                    max: $(item).width(),
-                    toogle: true
-                })
-            },
-            init:function(){
-                var that = this;
-                this.timer = setInterval(function(){
-                    that.animate();
-                },this.time);
-            },
-            start: function (){
-                if(this.items.length){
-                    this.animate();
-                    this.init();
-                }
-            },
-            stop: function (){
-                clearInterval(this.timer);
-                for(var i in this.items){
-                    var item = this.items[i];
-                    item.$el.stop().animate({
-                        width: item.max + "px"
-                    }, this.time);
-                }
-            },
-            animate: function(){
-                var ranWidth = Math.random();
-                for(var i in this.items){
-                    var item = this.items[i];
-                    var width = item.toogle ? item.min : item.max;
-                    item.toogle = !item.toogle;
-                    item.$el.stop().animate({
-                        width: width + "px" //this.map(ranWidth, 0,1, item.min, item.max) + "px"
-                    }, this.time);
-                }
-                
-            },
-            map: function (value, low1, high1, low2, high2) {
-                return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
-            }    
-            
-        }
-        
-    </script>
+    
 
 
 </body>

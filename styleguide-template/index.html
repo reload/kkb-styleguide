@@ -27,18 +27,49 @@
     <link rel="stylesheet" href="public/style.css">
     
     <style>
+        
         .kss-head{
             padding-top: 20px;
         }
+        
         
         .kss-head ul{
             margin:0 0 0 10px; padding: 0;
         }
         .kss-head ul li{
+            margin: 0 0 20px 0; padding: 0;
             list-style:none;
         }
+        
+        .kss-head ul li a{
+            display:block;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            padding-bottom: 5px;
+        }
+        
+        
+        .kss-head ul li ul{
+            margin: 5px 0 0 0; padding: 0;            
+        }
+        
+        .kss-head ul li ul li{
+            margin: 0; padding: 0; 
+            border-bottom: none;           
+        }
+        
+        .kss-head ul li ul li a{
+            border-bottom: none;
+            color: rgba(0,0,0,0.3);
+            padding-bottom: 0px;
+        }
+        
+        .kss-head ul li ul li a:hover{
+            color: rgba(0,0,0,0.4);
+        }
+        
+        
         .kss-section{
-           margin: 50px 100px 100px 0px;
+           margin: 25px 100px 100px 0px;
         }
         
         .kss-header{
@@ -50,7 +81,8 @@
             font-family: 'proxima-nova',sans-serif;
             font-size: 24px;
             font-weight: 100;
-            line-height: 24px;         
+            line-height: 24px;
+            padding-top: 25px;         
         }
         .kss-reference{
             font-weight: 400;
@@ -125,22 +157,45 @@
             font-size: 13px;
             font-weight: 200;
         }
+        
+        @media only screen and (max-width: 768px) {
+            .kss-section{
+               margin: 50px 0px 100px 0px;
+            }   
+            
+             .kss-head-menu{
+                position:relative;    
+                width:auto;
+            } 
+        }
     </style> 
+    
+   
+    
 </head>
 
 <body>
-  
  
 <div class="g3-1">
     <div class="kss-head">
-        <h1>Ding2 Styleguide</h1>
-        <ul>
-            <li><a href="index.html">0.0: Overview</a></li>
-            {{#eachRoot}}
-                <li><a href="section-{{reference}}.html">{{reference}}.0: {{header}}</a></li>
-            {{/eachRoot}}
-            
-        </ul>
+        <div class="kss-head-menu">
+            <h1>Ding2 Styleguide</h1>
+            <ul>
+                <li><a href="index.html">0.0: Overview</a></li>
+                {{#eachRoot}}
+                    <li><a href="section-{{reference}}.html">{{reference}}.0: {{header}}</a>
+                        <ul>
+                        {{#eachSection reference}}
+                            {{#whenDepth 1}}
+                              {{else}}
+                                <li><a href="section-{{sectionsRootNumber reference}}.html#{{reference}}">{{reference}} {{header}}</a></li>
+                              {{/whenDepth}}
+                        {{/eachSection}}
+                        </ul>
+                    </li>
+                {{/eachRoot}}
+            </ul>
+        </div>
     </div>
 </div>
     
@@ -196,6 +251,8 @@
                     {{/if}}
                 {{/ifAny}}
                 
+                <a href="#" style="float: right;">to top</a>
+                
               
           </div>
         {{/eachSection}}
@@ -208,6 +265,8 @@
   <script src="public/kss.js"></script>
   <script src="public/prettify.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    
+    
 </div>
 </body>
 </html>

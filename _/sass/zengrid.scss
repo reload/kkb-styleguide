@@ -1,10 +1,11 @@
 // ----- I M P O R T -----
 
 @import 'zen';
+@import 'style/breakpoint';
 
 // ----- G R I D -----
 $zen-column-count: 12;
-$zen-gutter-width: 30px; 
+$zen-gutter-width: 20px;
 
 .container{
     @include zen-grid-container;
@@ -13,25 +14,37 @@ $zen-gutter-width: 30px;
     margin:auto;
 }
 
+@mixin responsive(){
+    @include small-medium(){
+        @include zen-grid-item(12,1);  
+        @include zen-clear();
+        margin:24px 0 24px 0;
+    }
+}
+
 @for $i from 1 through $zen-column-count{
     @for $u from 1 through $zen-column-count{
         @for $y from 1 through 3{
             @if $y == 1 {
                 .g#{$i}-#{$u}{
-                    @include zen-grid-item($i, $u)
+                    @include zen-grid-item($i, $u);
+                    @include responsive();
                 };
             }@elseif $y == 2{
                 .g#{$i}-#{$u}-left{
-                    @include zen-grid-item($i, $u, left)
+                    @include zen-grid-item($i, $u, left);
+                    @include responsive();
                 };
             }@else{
                 .g#{$i}-#{$u}-right{
-                    @include zen-grid-item($i, $u, right)
+                    @include zen-grid-item($i, $u, right);
+                    @include responsive();
                 };
             }        
         }    
     }    
 }
+
 
 .gclear{@include zen-clear();}
 .gclear-right{@include zen-clear(right);}
@@ -39,3 +52,4 @@ $zen-gutter-width: 30px;
 .spacer{height: unit(12);}
 // http://www.chromaticsites.com/blog/responsive-grid-building-sass-and-zen-grids-tale-breakpoint-grid-breakdown-mixin
 // http://zengrids.com/
+

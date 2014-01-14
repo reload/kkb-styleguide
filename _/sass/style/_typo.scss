@@ -1,0 +1,187 @@
+// ----- T Y P O -----
+
+body{
+    background-color: $color-sand;
+    font-family: 'proxima-nova',sans-serif;
+    font-size: 16px;
+    @include lineHeight(3);
+    color:$color-mudgreen;
+}
+
+
+h1,h2,h3,h4,h5,h6,p,a{
+    margin:0; padding: 0;
+}
+
+ /*
+Basic Typografi
+
+Markup: <h1>Lorem ipsum dolor sit.</h1>
+<h2>Lorem ipsum dolor sit.</h2>
+<h3>Lorem ipsum dolor sit.</h3>
+<h4>Lorem ipsum dolor sit.</h4>
+
+Styleguide 1.0
+*/
+
+
+ /*
+Header Brødtekst
+
+Markup: <h1>Lorem ipsum dolor sit.</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, expedita, eum, vero in provident nulla unde commodi nam ullam asperiores quia temporibus eligendi rerum minus eius. Voluptas, doloremque sequi modi!</p>
+<h2>Lorem ipsum dolor sit.</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, expedita, eum, vero in provident nulla unde commodi nam ullam asperiores quia temporibus eligendi rerum minus eius. Voluptas, doloremque sequi modi!</p>
+<h3>Lorem ipsum dolor sit.</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, expedita, eum, vero in provident nulla unde commodi nam ullam asperiores quia temporibus eligendi rerum minus eius. Voluptas, doloremque sequi modi!</p>
+<h4>Lorem ipsum dolor sit.</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, expedita, eum, vero in provident nulla unde commodi nam ullam asperiores quia temporibus eligendi rerum minus eius. Voluptas, doloremque sequi modi!</p>
+
+Styleguide 1.1
+*/
+
+h1{
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 42px; //42
+    color:$color-black;
+    @include lineHeight(6);
+    @include margin(0,3);
+    
+    .results{
+        padding-left:5px;
+        font-size: 26px;
+        height: 26px;
+        font-style:italic;
+        font-weight: 400;
+        color:$color-mudgreen;
+        display:inline-block;
+    }
+    
+    &.subject{
+        font-size: 26px;    
+    }
+}
+
+h2{
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 20px; //26
+    color:$color-black;
+    @include lineHeight(3);
+    @include margin(0,3);
+}
+
+h3{
+    font-family: 'Merriweather',sans-serif;
+    font-size: 18px; // 20
+    font-weight: 300;   
+    color:$color-grey;
+    @include lineHeight(3);
+    @include margin(0,3);
+    
+    &.title{
+        min-height: unit(6);
+        padding-top: 21px;
+        padding-bottom: 3px;
+    }
+}
+
+
+h4,h5,h6, legend{
+    font-family: 'proxima-nova',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color:$color-grey;
+    @include lineHeight(3);
+    @include margin(0,0);
+    
+    &.big{
+        font-size: 24px;
+        margin-bottom: unit(1);
+        font-weight: 100;
+    }
+}
+
+
+
+p{
+    font-family: 'proxima-nova',sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color:$color-mudgreen;
+    @include lineHeight(3);
+    @include margin(0,3);
+    
+    &.light{
+        color:$color-grey-light;    
+    }
+    a{
+        display:inline;
+        line-height:inherit;
+        margin-top:0;
+        margin-bottom:0;
+    }
+    
+}
+
+/*
+Links
+
+Markup: <a href="#" class="{$modifiers}">Lorem ipsum color deme</a>
+
+:hover - Highlight the button when hovered.
+:active - Highlight when active.
+.link-secondary - Secondary link.
+.link-danger - Warning/danger link.
+
+Styleguide 1.2
+*/
+a{
+    font-family: 'proxima-nova',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color:$color-green; 
+    @include lineHeight(3);
+    
+    &:hover, &:active, &.pseudo-class-hover, &.pseudo-class-active{
+        text-decoration: none;
+        color: darken($color-green, 20);
+    }
+    
+    &.link{
+        display:inline-block;
+        margin-bottom: unit(1);
+    }
+    
+    &.link-primary{}
+    &.link-secondary{
+        color:$color-grey-light;
+        &:hover, &:active{
+            color: darken($color-grey-light, 20);    
+        }
+    }
+    &.link-danger{
+        color:$color-orange;
+        &:hover, &:active{
+            color: darken($color-orange, 30);    
+        }
+    }
+}
+
+.date{
+    font-size:12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $color-mint-green;
+    margin-right:4px;
+    display:inline-block;
+}
+
+.category{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $color-grey-light;
+    display:inline-block;
+}

@@ -1,4 +1,10 @@
 @charset "UTF-8";
+/* Breakpoints
+   ========================================================================== */
+/* Media query
+   ========================================================================== */
+/* Breakpoints
+   ========================================================================== */
 body {
   background-color: #f1f1e7;
   font-family: 'proxima-nova',sans-serif;
@@ -935,7 +941,7 @@ fieldset input {
 }
 
 .imgtext-underline {
-  margin-bottom: 8px;
+  margin-bottom: 24px;
   border-bottom: 1px solid #d6d6d4;
 }
 
@@ -954,12 +960,20 @@ fieldset input {
 .img-wrap.img-lg {
   max-width: 450px;
 }
+@media only screen and (max-width: 768px) {
+  .img-wrap.hide {
+    display: none;
+  }
+}
+.img-wrap.shrink {
+  float: none;
+  padding: 0 20px 0 0px;
+}
 
 .img-responsive {
   width: 100%;
   max-width: 100%;
   height: auto !important;
-  display: table-cell;
   vertical-align: top;
   margin: 0 auto;
 }
@@ -970,6 +984,46 @@ fieldset input {
 
 .text {
   display: table-cell;
+}
+
+.tip {
+  position: relative;
+  display: inline-block;
+}
+
+.tip-btn {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tip:hover .tip-toggle {
+  display: block;
+}
+
+.tip-toggle {
+  display: none;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 320px;
+  padding-bottom: 30px;
+}
+
+.tip-tip {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px #b1b1ad;
+}
+
+.tip-tip-content {
+  padding: 20px;
 }
 
 @font-face {

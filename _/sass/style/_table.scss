@@ -1,0 +1,112 @@
+// ----- T A B L E -----
+
+/*
+Tables
+
+Markup: <table class="table">
+    <tbody>
+        <tr>
+            <td><h4>Serie</h4></td>
+            <td><p>7. del af Harry Potter og de vise sten</p></td>
+        </tr>
+        <tr class="odd">
+            <td><h4>Type</h4></td>
+            <td><p>Bog</p></td>
+        </tr>
+        <tr>
+            <td><h4>Sprog</h4></td>
+            <td><p>Dansk</p></td></tr>
+            <tr class="odd"><td><h4>Genre</h4></td>
+            <td><p>Fiktion</p></td>
+        </tr>
+        <tr>
+            <td><h4>Emneord</h4></td>
+            <td><p><a href="">Fantasy</a><br><a href="">Magi</a><br><a href="">Troldmænd</a></p></td>
+        </tr>
+        <tr class="odd">
+            <td><h4>Original title</h4></td>
+            <td><p>Harry Potter and the deathly hallows</p></td>
+        </tr>
+    </tbody>
+</table>
+
+Styleguide 4.0
+*/
+
+/*
+Tables for data
+
+Markup: <table class="table">
+    <thead>
+        <tr>
+            <td><h4>Biblioteker og opstilling</h4></td>
+            <td class="center"><h4>Antal</h4></td>
+            <td class="center"><h4>På hylden</h4></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><p>Beder-Malling &gt; Børn &gt; Fantasi/Fantasy &gt; Rowling</p></td>
+            <td class="center"><p>1</p></td>
+            <td class="center"><p>1</p></td>
+        </tr>
+        <tr class="odd">
+            <td><p>Egå &gt; Børn &gt; Rowling</p></td>
+            <td class="center"><p>2</p></td>
+            <td class="center"><p>1</p></td>
+        </tr>
+        <tr>
+            <td><p>Egå &gt; Skolebibliotek &gt; Sølystskolen &gt; Rowling</p></td>
+            <td class="center"><p>1</p></td>
+            <td class="center"><p>1</p></td>
+        </tr>
+        <tr class="odd">
+            <td><p>Gellerup &gt; Børn &gt; Fantasi/Fantasy &gt; Rowling</p></td>
+            <td class="center"><p>2</p></td>
+            <td class="center"><p>1</p></td>
+        </tr>
+        <tr>
+            <td><p>Kolt-Hasselager &gt; Børn &gt; Fantasi/Fantasy &gt; Rowling</p></td>
+            <td class="center"><p>1</p></td>
+            <td class="center"><p>1</p></td>
+        </tr>
+        <tr class="odd">
+            <td><p>Kolt-Hasselager &gt; Børn &gt; Rowling</p></td>
+            <td class="center"><p>2</p></td>
+            <td class="center"><p>2</p></td>
+        </tr>
+    </tbody>
+</table>
+
+Styleguide 4.1
+*/
+
+.table {
+    min-width:100%;
+    margin-top: 5px;
+    >thead{
+        border-bottom:1px solid darken($color-dark-sand, 10);
+    }
+    >tbody, >thead{
+        >tr{
+            vertical-align:top;
+            
+            &.odd{
+                background-color: $color-dark-sand;
+            }
+            
+            >td{
+                padding: 6px 10px 6px 10px;
+                border: 0px;
+                
+                &.center{
+                    text-align: center;
+                }
+                
+                >p{
+                    margin: 0;padding: 0;
+                }                
+            }
+        }
+    }
+} // .table
