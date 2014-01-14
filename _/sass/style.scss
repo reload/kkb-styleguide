@@ -2,6 +2,8 @@
 
 @import 'bourbon/bourbon';
 @import 'style/breakpoint';
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
 
 // ----- O P T I O N S -----
 
@@ -41,6 +43,8 @@ $color-mint-green: #00b38a;
 @import 'style/dropdown';
 @import 'style/forms';
 @import 'style/textimg';
-@import 'style/tip';
+@import 'style/tip-popover';
+@import 'style/modals';
+@import 'style/alerts';
 @import 'bootstrap/glyphicons';
 

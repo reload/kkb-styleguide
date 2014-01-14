@@ -9,7 +9,7 @@ $zen-gutter-width: 20px;
 
 .container{
     @include zen-grid-container;
-    padding-top:unit(3);
+    padding-top:24px;
     //max-width:1170px;
     margin:auto;
 }
@@ -49,7 +49,7 @@ $zen-gutter-width: 20px;
 .gclear{@include zen-clear();}
 .gclear-right{@include zen-clear(right);}
 .gclear-left{@include zen-clear(left);}
-.spacer{height: unit(12);}
+.spacer{height: 96px;}
 // http://www.chromaticsites.com/blog/responsive-grid-building-sass-and-zen-grids-tale-breakpoint-grid-breakdown-mixin
 // http://zengrids.com/
 

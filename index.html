@@ -41,18 +41,18 @@ MISSING:
 ? favicon (Hvem laver det, og hvad skal det være)
 - (data pairs -> table)
 - menu  
-- tips
+V tips
 - tabs
-- messages
-            - loader
-- modal (overview/popup)
+V messages / alerts
+~ loader
+V modal (overview/popup)
 - rating
 - copy
 
 MISSING from design:
 - Dato calendar
 - menu
-- modal (popup)
+V modal (popup)
 - søgnings resultat header
 
 EXAMPLE PAGES:
@@ -774,40 +774,141 @@ BUGS:
             </div>
         </div>
         <div class="gclear spacer"></div>
-        
         <div class="g4-1">
+            <h1>ToolTip / Popup</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, pariatur. <span data-toggle="popup" data-placement="auto" title="This is a title" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, pariatur.">?</span> </p>
+            <p>Suscipit, culpa dolores fugiat veritatis mollitia deleniti ipsam repudiandae excepturi. <span data-placement="bottom" data-toggle="popup" title="This is a title" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, pariatur.">?</span>
+</p>
             
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, pariatur.</p>
-            <p>Suscipit, culpa dolores fugiat veritatis mollitia deleniti ipsam repudiandae excepturi.</p>
-            <p>Beatae nesciunt sint aliquam ullam aliquid fuga magnam deleniti sit. <span class="tip">
-                    <div class="tip-btn">?</div>
-                    <div class="tip-toggle">
-                        <div class="tip-tip">
-                            <div class="tip-tip-content">
-                                <h2>Lorem ipsum dolor sit amet</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quas eligendi ad itaque unde minima veniam maiores consequatur id ab! Soluta, quis aut quae molestiae quisquam aliquam natus quos magnam.</p>
-                            </div>
-                        </div>
-                    </div>
-                </span></p>
-            
-            <style> 
-                
-            </style>
-            
+            <p>Beatae nesciunt sint aliquam ullam aliquid fuga magnam deleniti sit. <span data-placement="auto" data-toggle="popup" title="This is a title" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, pariatur.">?</span></p>
         </div>
         <div class="gclear spacer"></div>
-                        
+        <div class="g12-1">
+       
+            <h1>Modal</h1>
+            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal_01">
+              Launch demo modal
+            </button>
+            
+            <div class="modal" id="modal_01" tabindex="-1" role="dialog" aria-labelledby="modal_label_01" aria-hidden="true">
+              <div class="modal-dialog" >
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title" id="modal_label_01">Modal title</h3>
+                  </div>
+                  <div class="modal-body">
+                    
+                    <h4>En title her</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, obcaecati </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="gclear spacer"></div>
+        <div class="g12-1">
+            <h1>Alerts</h1>
+            <div class="alert alert-danger fade in">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <h4>Oh snap! You got an error!</h4>
+                <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+                    <button class="btn btn-danger" data-dismiss="alert">Okay jeg forstår</button>
+            </div>
+            <div class="alert alert-warning fade in">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <h4>Oh snap! You got an error!</h4>
+                <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+            </div>
+            <div class="alert alert-info fade in">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <h4>Oh snap! You got an error!</h4>
+                <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+            </div>
+            <div class="alert alert-success fade in">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <h4>Oh snap! You got an error!</h4>
+                <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+            </div>
+        </div>
+        <div class="gclear spacer"></div>
+        <div class="gclear spacer"></div>
     </div>
 
     <script src="bower_components/jquery/jquery.min.js"></script>
     <script src="bower_components/jquery.transit/jquery.transit.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/holderjs/holder.js"></script>
     <script src="bower_components/respond/dest/respond.min.js"></script>
     <script src="_/js/grid_bookmark.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="popup"]').popover();
+            $('.modal').on('shown.bs.modal', function() {
+                var wheight = $(window).height();
+                var initModalHeight = $('.modal-dialog').outerHeight();
+                if(initModalHeight<wheight) $('.modal-dialog').css('margin-top', (wheight/2) - (initModalHeight/2));
+            });
+        })
+    </script>
     
 
 
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -5,7 +5,7 @@
 /* Breakpoints
    ========================================================================== */
 .container {
-  padding-top: "";
+  padding-top: 24px;
   margin: auto;
 }
 .container:before, .container:after {
@@ -13421,5 +13421,5 @@
 }
 
 .spacer {
-  height: "";
+  height: 96px;
 }
