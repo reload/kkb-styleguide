@@ -1,0 +1,124 @@
+@import '../bootstrap/navbar';
+@import '../bootstrap/navs';
+
+.navbar{
+    margin-bottom: 0;
+    width:100%;
+}
+
+.navbar-default, .navbar-collapse{
+    background-color:transparent;
+    border-color:transparent;
+    border:0;
+}
+
+.nav.navbar-nav{
+    display:table;
+    width:100%;
+    
+    li{
+        display:table-cell;
+        float:none;
+        
+        a{
+            display: inline-block;
+            width:auto;
+            padding-left: 0;padding-right: 0;
+            min-width:60px;
+            text-align: center;
+//            color:white;
+            background-color: transparent;
+            margin-bottom: 0;
+            &:hover{
+                //color:white;
+                border-bottom:5px solid white;
+                background-color: transparent;
+            }
+        }
+        
+        &.active{
+            background-color: transparent;
+            a, a:hover{
+                color:white;
+                border-bottom:5px solid white;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.navbar-toggle{
+    outline:0;
+    .sr-only{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        border: 0;
+    }
+}
+.navbar-collapse{
+    @include small-medium(){
+        display: none;
+         &.in{
+            display:block;
+        }
+    }
+}
+
+
+@include small-medium(){
+    .navbar{
+        background-color: rgba(0,0,0,0.1);
+        border-radius:4px;
+    }
+    .navbar-header{
+        border-top: 0;
+        border-bottom: 0;
+    }
+    
+    .nav.navbar-nav{
+        display:block;
+        width:100%;
+        margin: 0; padding: 0;
+    }
+    .nav.navbar-nav li{
+        display:block;
+        float:none;
+        width:100%;
+        margin: 0;padding: 0;
+    }
+    
+    .nav.navbar-nav li:hover{
+        background-color: white;
+    }
+    
+    .nav.navbar-nav li:hover a{
+        border-bottom:0;
+    }
+    
+    .nav.navbar-nav li.active:hover a{
+        color: black;
+        border-bottom:5px solid black;
+    }
+    
+    .nav.navbar-nav li a{
+        width:100%;
+        padding-left: 20px;
+        text-align: left;
+    }
+    
+    .navbar-default .navbar-collapse, .navbar-collapse{
+        margin: 0;
+        padding: 0;
+        border-color:transparent;
+        border-top: 0;
+        border-bottom: 0;
+    }
+    .navbar-toggle.collapsed, .navbar-default .navbar-toggle.collapsed, .navbar-default .navbar-toggle, .navbar-default .navbar-toggle:hover{
+        background-color: white;                
+    }
+}
