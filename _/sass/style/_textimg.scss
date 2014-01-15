@@ -72,18 +72,7 @@ NEW
 
 .imgtext{
     
-    .img-wrap{
-        display:block;
-        height:auto;
-        float:left;
-        margin:0 20px unit(1) 0;
-        
-        &.hide{
-            @include small-medium() {
-                display:none;
-            }
-        }
-    }
+
     
     &.column{
         .img-wrap{
@@ -130,12 +119,30 @@ NEW
     }
 }
 
+.img-wrap{
+    display:block;
+    height:auto;
+    float:left;
+    margin:0 20px unit(1) 0;
+    
+    &.hide{
+        @include small-medium() {
+            display:none;
+        }
+    }
+}
+
 .img-responsive{
     width:100% !important;
     max-width:100% !important;
     height:auto !important;
     vertical-align:top;
     margin: 0 auto;
+    
+    &.limit-height{
+        max-height:400px !important;
+        width:auto !important;
+    }
 }
 
 .img-round{

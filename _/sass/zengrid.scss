@@ -27,6 +27,8 @@ $zen-gutter-width: 20px;
     }
 }
 
+
+
 @for $i from 1 through $zen-column-count{
     @for $u from 1 through $zen-column-count{
         @for $y from 1 through 3{
@@ -50,6 +52,23 @@ $zen-gutter-width: 20px;
     }    
 }
 
+@include small-medium(){
+    .r2-1{
+       @include zen-grid-item(6,1); 
+        clear:none;
+    }
+    .r2-2{
+        @include zen-grid-item(6,7);
+        clear:none;
+    }
+}
+
+@include small(){
+    .r2-1, .r2-2{
+        @include zen-grid-item(12,1);  
+        @include zen-clear();
+    }
+}
 
 .gclear{@include zen-clear();}
 .gclear-right{@include zen-clear(right);}
