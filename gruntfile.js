@@ -3,7 +3,8 @@ module.exports = function (grunt) {
     grunt.initConfig({
         watch: {
             files: ['_/sass/**/*.scss', '*.html','styleguide-template/**','gruntfile.js', 'config.rb'],
-            tasks: ['compass:dev','shell'],
+//            tasks: ['compass:dev', 'shell'],
+            tasks: ['compass:dev'],
             options: {
                 livereload: true,
             }

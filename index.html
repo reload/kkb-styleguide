@@ -11,6 +11,8 @@
     <title>Styleguide</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="bower_components/modernizr/modernizr.js"></script>
+<!--    <script type="text/javascript" src="bower_components/respond/dest/respond.min.js"></script>-->
+    
     <script type="text/javascript" src="//use.typekit.net/qqr6kuv.js"></script>
     <script type="text/javascript">
         try {
@@ -51,9 +53,10 @@ V modal (overview/popup)
 
 MISSING from design:
 - Dato calendar
-- menu
+v menu
 V modal (popup)
 - søgnings resultat header
+- searchbar
 
 EXAMPLE PAGES:
 - http://ding2tal.ting.dk/arrangementer/udstilling/keramiker-susanne-bidstrup-udstiller-paa-viby-bibliotek
@@ -65,11 +68,90 @@ BUGS:
 - submit btn FIREFOX
 - responsive imgtext FIREFOX
 -->
-
+<div id="teller"></div>
     <div class="container">
-        <style>
-            
-        </style>
+        <div class="g6-1">
+            <div class="imgtext column scale">
+                <div class="img-wrap">
+                    <a href="#"><img src="_/img/content/270x190.png" class="img-responsive" alt=""></a>
+                </div>
+                <div class="text">
+                    <h3>Biblioteket <br> Rentemestervej</h3>
+                    <p>Rentemestervej 76<br>2400 København NV</p>
+                    <p>+45 82321600<br><a href="">bibbro@kff.kk.dk</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="g6-7">
+            <div class="imgtext column">
+                <div class="img-wrap">
+                    <a href="#"><img src="_/img/content/270x190.png"  alt=""></a>
+                </div>
+                <div class="text">
+                    <h3>Bibliotekshuset</h3>
+                    <p>Rodosvej 4<br>2300 København S</p>
+                    <p>+45 82321600<br><a href="">bibbro@kff.kk.dk</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="gclear"></div>
+        <div class="g12-1">
+            <div class="imgtext">
+                <div class="img-wrap">
+                    <a href="#"><img src="_/img/content/270x190.png" class="img-responsive" alt=""></a>
+                </div>
+                <div class="text">
+                    <h3>Biblioteket <br> Rentemestervej</h3>
+                    <p>Rentemestervej 76<br>2400 København NV</p>
+                    <p>+45 82321600<br><a href="">bibbro@kff.kk.dk</a></p>
+                </div>
+            </div>
+        </div> 
+        <div class="gclear"></div> 
+        <div class="g12-1">
+            <div class="imgtext column">
+                <div class="img-wrap">
+                    <a href="#"><img src="_/img/content/270x190.png" class="img-responsive" alt=""></a>
+                </div>
+                <div class="text">
+                    <h3>Biblioteket Rentemestervej</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, recusandae, quaerat earum numquam a est ut ullam autem ipsa commodi dolorem dolore error harum nemo incidunt quasi at libero mollitia placeat quis atque iusto fugit sed eveniet amet eum optio alias! Nihil, natus laboriosam porro. Alias quisquam recusandae reprehenderit nam molestiae soluta veritatis dicta beatae esse. Ducimus, dignissimos, debitis nostrum possimus eaque recusandae delectus at quis est nulla sequi consequatur quidem illum accusantium blanditiis mollitia quia esse. Alias, harum, commodi, ad, reprehenderit tempore officia sequi voluptates voluptate ducimus fuga perferendis quis dignissimos suscipit accusantium velit fugiat porro voluptatum aperiam eum.</p>
+                </div>
+            </div>
+        </div> 
+        <div class="gclear"></div> 
+        <div class="g12-1">
+            <div class="imgtext">
+                <div class="img-wrap hide">
+                    <a href="#"><img src="_/img/content/170x145.png" class="img-responsive" alt=""></a>
+                </div>
+                <div class="text">
+                    <div class="meta">
+                        <span class="date">21 okt. 2013</span> <span class="category">kort nyt</span>
+                    </div>
+                    <h2>Alle børn har ret til et godt liv</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, animi, aperiam laboriosam molestias illum nihil sit neque ipsam quasi nulla doloremque reiciendis odit eveniet dolorem quidem labore facere corrupti ratione.</p>
+                </div>
+            </div>
+        </div>
+        <div class="gclear"></div>
+        <div class="g12-1">
+            <div class="imgtext">
+                <div class="img-wrap">
+                    <a href="#"><img src="holder.js/400x325/#00b38a:#fff" class="img-responsive" alt=""></a>
+                </div>
+                <div class="text">
+                    <p>Susanne Bidstrup arbejder både med drejede brugsting og unikke former i stentøjsler og porcelæn. Hun bruger ofte skrifttegn i sine dekorationer. Gentagelsen og rytmen giver en fornemmelse af ro, og udover det rent dekorative, udtrykker skrifttegnene også kommunikation mellem mennesker – også på tværs af tid og sted. Inspirationen kommer mange steder fra og det er hensigten på samme tid at skabe noget genkendeligt og nyt, hvor det æstetiske udtryk er væsentligt. Se mere på hjemme-siden <a href="">www.bidstrupkeramik.dk</a> Udstillingen kan ses i bibliotekets åbningstid.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="gclear spacer"></div>
+        
+        <div class="g12-1">
+            <i class="fa fa-quote-left fa-2x pull-left fa-border"></i>
+        </div>
+        <div class="gclear"></div>
         <div class="g12-1">
                  <nav class="navbar navbar-default" role="navigation">
                     <div class="navbar-header">
@@ -743,24 +825,19 @@ BUGS:
         <div class="g6-1 responsive">
             <div class="imgtext">
                 <div class="img-wrap shrink">
-                    <a href="#"><img src="holder.js/270x190/#00b38a:#fff" class="img-responsive" alt=""></a>
+                    <a href="#"><img src="_/img/content/270x190.png" class="img-responsive" alt=""></a>
                 </div>
                 <div class="text">
                     <h3>Biblioteket <br> Rentemestervej</h3>
-                    <p>Rentemestervej 76
-                        <br>2400 København NV
-                        <br>
-                        <br>+45 82321600
-                        <br>
-                        <a href="">bibbro@kff.kk.dk</a>
-                    </p>
+                    <p>Rentemestervej 76<br>2400 København NV</p>
+                    <p>+45 82321600<br><a href="">bibbro@kff.kk.dk</a></p>
                 </div>
             </div>
         </div>  
         <div class="g6-7 responsive">
             <div class="imgtext">
                 <div class="img-wrap hide">
-                    <a href="#"><img src="holder.js/170x145/#00b38a:#fff" class="img-responsive" alt=""></a>
+                    <a href="#"><img src="_/img/content/170x145.png" class="img-responsive" alt=""></a>
                 </div>
                 <div class="text">
                     <div class="meta">
@@ -882,11 +959,11 @@ BUGS:
     </div>
 
     <script src="bower_components/jquery/jquery.min.js"></script>
-    <script src="bower_components/jquery.transit/jquery.transit.js"></script>
+<!--    <script src="bower_components/jquery.transit/jquery.transit.js"></script>-->
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/holderjs/holder.js"></script>
-    <script src="bower_components/respond/dest/respond.min.js"></script>
-    <script src="_/js/grid_bookmark.js"></script>
+    <script type="text/javascript" src="bower_components/respond/dest/respond.src.js"></script>
+<!--    <script src="_/js/grid_bookmark.js"></script>-->
     <script>
         $(document).ready(function(){
             $('[data-toggle="popup"]').popover();

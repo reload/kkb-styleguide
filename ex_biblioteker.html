@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Styleguide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="bower_components/modernizr/modernizr.js"></script>
+    <script type="text/javascript" src="//use.typekit.net/qqr6kuv.js"></script>
+    <script type="text/javascript">
+        try {
+            Typekit.load();
+        } catch (e) {}
+    </script>
+
+    <script>
+    </script>
+    <!--[if (gte IE 6)&(lte IE 8)]>
+      <script type="text/javascript" src="bower_components/selectivizr/selectivizr.js"></script>
+    <![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,900,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="_/css/zengrid.css">
+    <link rel="stylesheet" href="_/css/style.css">
+</head>
+
+<body>
+    <style>
+        .color{
+            background-color: rgba(0,0,0,0.1);
+        }
+        
+        .color.sm{
+           background-color: rgba(0,0,0,0.2); 
+        }
+        .color.md{
+           background-color: rgba(0,0,0,0.4); 
+        }
+        .color.lg{
+           background-color: rgba(0,0,0,0.6); 
+        }
+    </style>
+    <div id="teller"></div>
+    <div class="container">
+
+        <div class="g6-1">
+            <div class="imgtext column scale">
+                <div class="img-wrap">
+                    <a href="#">
+                        <img src="_/img/content/270x190.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="text">
+                    <h3>Biblioteket
+                        <br>Rentemestervej</h3>
+                    <p>Rentemestervej 76
+                        <br>2400 København NV</p>
+                    <p>+45 82321600
+                        <br>
+                        <a href="">bibbro@kff.kk.dk</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="nested">
+                <div class="g6-1">
+                    <div class="underline">
+                        <p>Mandag
+                            <br>09:00 - 10:00 Selvbetjent
+                            <br>10:00 - 19:00</p>
+                    </div>
+                </div>
+                <div class="g6-7">
+                    <div class="underline">
+                        <p>Tirsdag
+                            <br>09:00 - 10:00 Selvbetjent
+                            <br>10:00 - 19:00</p>
+                    </div>
+                </div>
+                <div class="gclear"></div>
+                <div class="g12-1">
+                    <div class="dropdown">
+                        <input type="checkbox" id="dropdown2">
+                        <label for="dropdown2">
+                            <span class="dropdown-title secondary">Flere åbningstider
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </span>
+                        </label>
+                        <div class="dropdown-content">
+                            <div class="dropdown-content-wrap">
+                                <div class="underline">
+                                    <p>Onsdag
+                                        <br>09:00 - 10:00 Selvbetjent
+                                        <br>10:00 - 19:00</p>
+                                </div>
+                                <div class="underline">
+                                    <p>Torsdag
+                                        <br>09:00 - 10:00 Selvbetjent
+                                        <br>10:00 - 19:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="g6-7">
+            <div class="imgtext column scale">
+                <div class="img-wrap">
+                    <a href="#">
+                        <img src="_/img/content/270x190.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="text">
+                    <h3>Bibliotekshuset</h3>
+                    <p>Rodosvej 4
+                        <br>2300 København S</p>
+                    <p>+45 82321600
+                        <br>
+                        <a href="">bibbro@kff.kk.dk</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/holderjs/holder.js"></script>
+    <script type="text/javascript" src="bower_components/respond/dest/respond.src.js"></script>
+    <script src="_/js/grid_bookmark.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="popup"]').popover();
+            $('.modal').on('shown.bs.modal', function() {
+                var wheight = $(window).height();
+                var initModalHeight = $('.modal-dialog').outerHeight();
+                if(initModalHeight<wheight) $('.modal-dialog').css('margin-top', (wheight/2) - (initModalHeight/2));
+            });
+        })
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

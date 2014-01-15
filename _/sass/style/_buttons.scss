@@ -97,9 +97,14 @@ Styleguide 2.0
     }
 }
 
+.btn-sidebyside{
+    margin-right: 4px;
+}
+
 button.close{
     background-color: transparent;
     box-shadow: none;
+    border: 0;
     float: right;
     font-size: 21px;
     font-weight: bold;

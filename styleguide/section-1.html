@@ -109,7 +109,7 @@
             padding-top: 50px;
         }
         
-        .kss-modifier div, .kss-modifier .kss-description > p{
+        .kss-modifier>div, .kss-modifier .kss-description > p{
             margin: 0;padding: 0;
         }
         .kss-modifier p{
@@ -157,6 +157,20 @@
             font-size: 13px;
             font-weight: 200;
         }
+        
+        code{
+            background-color: rgba(255,255,255,0.75);
+            color:black;
+            padding: 2px 4px;
+            border: 1px solid rgba(0,0,0,0.1);
+            font-size: 13px;
+        }
+        
+        code.block{
+/*            display:inline-block;*/
+/*            margin: 20px 0 20px 0;*/
+        }        
+        
         
         @media only screen and (max-width: 768px) {
             .kss-section{
@@ -216,7 +230,7 @@
                               
                         
                             
-                                <li><a href="section-3.html#3.1">3.1 Vertical List</a></li>
+                                <li><a href="section-3.html#3.1">3.1 Vertical List with grey links</a></li>
                               
                         
                             
@@ -225,6 +239,10 @@
                         
                             
                                 <li><a href="section-3.html#3.3">3.3 Vertical List With Forms</a></li>
+                              
+                        
+                            
+                                <li><a href="section-3.html#3.4">3.4 Vertical List With Icons</a></li>
                               
                         
                         </ul>
@@ -264,10 +282,66 @@
                         </ul>
                     </li>
                 
-                    <li><a href="section-6.html">6.0: Form</a>
+                    <li><a href="section-6.html">6.0: Forms</a>
                         <ul>
                         
                             
+                              
+                        
+                            
+                                <li><a href="section-6.html#6.1">6.1 Checkbox &amp; Radial</a></li>
+                              
+                        
+                            
+                                <li><a href="section-6.html#6.2">6.2 Select</a></li>
+                              
+                        
+                        </ul>
+                    </li>
+                
+                    <li><a href="section-7.html">7.0: Images &amp; Text</a>
+                        <ul>
+                        
+                            
+                              
+                        
+                            
+                                <li><a href="section-7.html#7.1">7.1 Image hide</a></li>
+                              
+                        
+                            
+                                <li><a href="section-7.html#7.2">7.2 Image underline &amp; image round corners</a></li>
+                              
+                        
+                        </ul>
+                    </li>
+                
+                    <li><a href="section-8.html">8.0: Tip / Popover</a>
+                        <ul>
+                        
+                            
+                              
+                        
+                        </ul>
+                    </li>
+                
+                    <li><a href="section-9.html">9.0: Modal</a>
+                        <ul>
+                        
+                            
+                              
+                        
+                        </ul>
+                    </li>
+                
+                    <li><a href="section-10.html">10.0: Alerts</a>
+                        <ul>
+                        
+                            
+                              
+                        
+                            
+                                <li><a href="section-10.html#10.1">10.1 Alerts colors</a></li>
                               
                         
                         </ul>
@@ -314,7 +388,6 @@
                 
                 <a href="#" style="float: right;">to top</a>
                 
-              
           </div>
         
             <div class="kss-section" id="1.1">
@@ -356,7 +429,6 @@
                 
                 <a href="#" style="float: right;">to top</a>
                 
-              
           </div>
         
             <div class="kss-section" id="1.2">
@@ -420,18 +492,30 @@
                 
                 <a href="#" style="float: right;">to top</a>
                 
-              
           </div>
         
       
     </div>
 </div>
       
+      
 
   <!-- SCRIPTS -->
-  <script src="public/kss.js"></script>
-  <script src="public/prettify.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!--  <script src="public/kss.js"></script>-->
+<!--  <script src="public/prettify.js"></script>-->
+<!--  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+    <script src="public/js/jquery.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="popup"]').popover();
+            $('.modal').on('shown.bs.modal', function() {
+                var wheight = $(window).height();
+                var initModalHeight = $('.modal-dialog').outerHeight();
+                if(initModalHeight<wheight) $('.modal-dialog').css('margin-top', (wheight/2) - (initModalHeight/2));
+            });
+        })
+    </script>
     
     
 </div>

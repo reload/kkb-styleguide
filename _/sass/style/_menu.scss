@@ -1,3 +1,4 @@
+@import '../bootstrap/forms';
 @import '../bootstrap/navbar';
 @import '../bootstrap/navs';
 
@@ -26,11 +27,11 @@
             padding-left: 0;padding-right: 0;
             min-width:60px;
             text-align: center;
-//            color:white;
+            color:white;
             background-color: transparent;
             margin-bottom: 0;
             &:hover{
-                //color:white;
+                color:white;
                 border-bottom:5px solid white;
                 background-color: transparent;
             }
@@ -72,7 +73,7 @@
 
 @include small-medium(){
     .navbar{
-        background-color: rgba(0,0,0,0.1);
+        background-color: white;
         border-radius:4px;
     }
     .navbar-header{
@@ -84,31 +85,38 @@
         display:block;
         width:100%;
         margin: 0; padding: 0;
-    }
-    .nav.navbar-nav li{
-        display:block;
-        float:none;
-        width:100%;
-        margin: 0;padding: 0;
-    }
-    
-    .nav.navbar-nav li:hover{
-        background-color: white;
-    }
-    
-    .nav.navbar-nav li:hover a{
-        border-bottom:0;
-    }
-    
-    .nav.navbar-nav li.active:hover a{
-        color: black;
-        border-bottom:5px solid black;
-    }
-    
-    .nav.navbar-nav li a{
-        width:100%;
-        padding-left: 20px;
-        text-align: left;
+        
+        li{
+            display:block;
+            float:none;
+            width:100%;
+            margin: 0;padding: 0;
+            
+            a{
+                width:100%;
+                padding-left: 20px;
+                text-align: left;
+                color:black;
+                border-bottom:0;
+                @include box-sizing(border-box);
+            }
+            
+            &:hover, &.active{
+                background-color: black;
+                
+                a{
+                    color:white;
+                    border-bottom:0;
+                }
+            }
+            
+            &.active:hover{ 
+                a{
+                    color: white;
+                    border-bottom:0;
+                }
+            }
+        }
     }
     
     .navbar-default .navbar-collapse, .navbar-collapse{
@@ -118,7 +126,12 @@
         border-top: 0;
         border-bottom: 0;
     }
-    .navbar-toggle.collapsed, .navbar-default .navbar-toggle.collapsed, .navbar-default .navbar-toggle, .navbar-default .navbar-toggle:hover{
-        background-color: white;                
+
+    .navbar-default{
+        .navbar-toggle{
+            &:hover, &:focus, &.active{
+                background-color: white;
+            }
+        }
     }
 }

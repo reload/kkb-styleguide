@@ -2,6 +2,23 @@
 
 
 // ----- P O P O V E R -----
+
+/*
+Tip / Popover
+
+To active the popovers, rund this code <code>$('[data-toggle="popup"]').popover();</code> when the document is ready. Change the title by change the <code>data-original-title</code> and change the content by changing the <code>data-content</code>.
+
+Markup: <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, pariatur. <span data-toggle="popup" data-placement="{$modifiers}" title="" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, pariatur." data-original-title="This is a title">?</span></p>
+
+auto - Auto placement
+top - Top placement
+left - Left placement
+bottom - Bottom placement
+right - Right placement
+
+Styleguide 8.0
+*/
+
 .popover{
     h3{
         @extend h3;

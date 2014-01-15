@@ -109,7 +109,7 @@
             padding-top: 50px;
         }
         
-        .kss-modifier div, .kss-modifier .kss-description > p{
+        .kss-modifier>div, .kss-modifier .kss-description > p{
             margin: 0;padding: 0;
         }
         .kss-modifier p{
@@ -157,6 +157,20 @@
             font-size: 13px;
             font-weight: 200;
         }
+        
+        code{
+            background-color: rgba(255,255,255,0.75);
+            color:black;
+            padding: 2px 4px;
+            border: 1px solid rgba(0,0,0,0.1);
+            font-size: 13px;
+        }
+        
+        code.block{
+/*            display:inline-block;*/
+/*            margin: 20px 0 20px 0;*/
+        }        
+        
         
         @media only screen and (max-width: 768px) {
             .kss-section{
@@ -244,27 +258,42 @@
                     </div>
                     
                 {{else}}
+                    
                     {{#if description}}
                       <div style="background:rgba(0, 255, 148, 0.1); padding:10px; margin:10px;">
                           {{html description}}
                       </div>
                     {{/if}}
+                    
+                    
                 {{/ifAny}}
                 
                 <a href="#" style="float: right;">to top</a>
                 
-              
           </div>
         {{/eachSection}}
       {{/if}}
     </div>
 </div>
       
+      
 
   <!-- SCRIPTS -->
-  <script src="public/kss.js"></script>
-  <script src="public/prettify.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!--  <script src="public/kss.js"></script>-->
+<!--  <script src="public/prettify.js"></script>-->
+<!--  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+    <script src="public/js/jquery.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="popup"]').popover();
+            $('.modal').on('shown.bs.modal', function() {
+                var wheight = $(window).height();
+                var initModalHeight = $('.modal-dialog').outerHeight();
+                if(initModalHeight<wheight) $('.modal-dialog').css('margin-top', (wheight/2) - (initModalHeight/2));
+            });
+        })
+    </script>
     
     
 </div>

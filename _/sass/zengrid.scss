@@ -10,15 +10,20 @@ $zen-gutter-width: 20px;
 .container{
     @include zen-grid-container;
     padding-top:24px;
-    //max-width:1170px;
+    max-width:1170px;
     margin:auto;
+}
+
+.nested{
+    margin-left:-10px;
+    margin-right:-10px;
 }
 
 @mixin responsive(){
     @include small-medium(){
         @include zen-grid-item(12,1);  
         @include zen-clear();
-        margin:24px 0 24px 0;
+        margin:12px 0 12px 0;
     }
 }
 

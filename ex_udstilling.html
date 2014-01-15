@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Styleguide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="bower_components/modernizr/modernizr.js"></script>
+    <script type="text/javascript" src="//use.typekit.net/qqr6kuv.js"></script>
+    <script type="text/javascript">
+        try {
+            Typekit.load();
+        } catch (e) {}
+    </script>
+
+    <script>
+    </script>
+    <!--[if (gte IE 6)&(lte IE 8)]>
+      <script type="text/javascript" src="bower_components/selectivizr/selectivizr.js"></script>
+    <![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,900,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="_/css/zengrid.css">
+    <link rel="stylesheet" href="_/css/style.css">
+</head>
+
+<body>
+    <style>
+        .color{
+            background-color: rgba(0,0,0,0.1);
+        }
+        
+        .color.sm{
+           background-color: rgba(0,0,0,0.2); 
+        }
+        .color.md{
+           background-color: rgba(0,0,0,0.4); 
+        }
+        .color.lg{
+           background-color: rgba(0,0,0,0.6); 
+        }
+    </style>
+    <div id="teller"></div>
+    <div class="container">
+        
+        <div class="g3-1">
+            <div class="vertical-list">
+                <h3>Event category</h3>
+                <ul class="vertical-list-links">
+                    <li><a href="">Alle kategorier</a></li>
+                    <li><a href="">Børn</a></li>
+                    <li><a href="">Diverse</a></li>
+                    <li><a href="">Foredrag & debat</a></li>
+                    <li><a href="">Internet & undervisning</a></li>
+                    <li><a href="">Litteratur</a></li>
+                    <li><a href="">Musik</a></li>
+                    <li><a href="">Udstilling</a></li>
+                    <li><a href="">Workshop</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="g9-1-right">
+            <h4>Inspirerende udstilling</h4><br>
+            <h1>Keramiker Susanne Bidstrup udstiller på Viby Bibliotek</h1>
+        </div>
+        <div class="g3-1-right gclear-right">
+            <div class="vertical-list">
+                <ul class="vertical-list-icons">
+                    <li><p><i class="fa fa-calendar"></i>Torsdag 12. december til Fredag 20. december</p></li>
+                    <li><p><i class="fa fa-clock-o"></i>10:00 til 17:00</p></li>
+                    <li><p><i class="fa fa-home"></i><a href="">Risskov Biliotek</a></p></li>
+                    <li><p><i class="fa fa-user"></i>For alle</p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="g6-4-right">
+            <div class="imgtext">
+                <div class="img-wrap">
+                    <a href="#"><img src="holder.js/300x225/#00b38a:#fff" class="img-responsive" alt=""></a>
+                </div>
+                <div class="text">
+                    <p>Susanne Bidstrup arbejder både med drejede brugsting og unikke former i stentøjsler og porcelæn. Hun bruger ofte skrifttegn i sine dekorationer. Gentagelsen og rytmen giver en fornemmelse af ro, og udover det rent dekorative, udtrykker skrifttegnene også kommunikation mellem mennesker – også på tværs af tid og sted. Inspirationen kommer mange steder fra og det er hensigten på samme tid at skabe noget genkendeligt og nyt, hvor det æstetiske udtryk er væsentligt. Se mere på hjemme-siden <a href="">www.bidstrupkeramik.dk</a> Udstillingen kan ses i bibliotekets åbningstid.</p>
+                </div>
+            </div>
+            
+            <button class="btn btn-small btn-sidebyside">Udstilling</button>
+            <button class="btn btn-small btn-sidebyside">Keramik</button>
+            <button class="btn btn-small btn-sidebyside">Risskov Bibliotek</button>
+        </div>
+        
+        <div class="gclear"></div>
+        
+        
+        
+    </div>
+    
+
+    
+    
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/holderjs/holder.js"></script>
+    <script type="text/javascript" src="bower_components/respond/dest/respond.src.js"></script>
+    <script src="_/js/grid_bookmark.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="popup"]').popover();
+            $('.modal').on('shown.bs.modal', function() {
+                var wheight = $(window).height();
+                var initModalHeight = $('.modal-dialog').outerHeight();
+                if(initModalHeight<wheight) $('.modal-dialog').css('margin-top', (wheight/2) - (initModalHeight/2));
+            });
+        })
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
