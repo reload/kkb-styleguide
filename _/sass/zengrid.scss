@@ -22,7 +22,10 @@ $zen-gutter-width: 20px;
     @include small-medium(){
         @include zen-grid-item(12,1);  
         @include zen-clear();
-        margin:12px 0 12px 0;
+        //margin:12px 0 12px 0;
+        margin: 1px;
+        
+        
     }
 }
 
@@ -53,12 +56,20 @@ $zen-gutter-width: 20px;
 
 @include small-medium(){
     .r2-1{
-       @include zen-grid-item(6,1); 
+       @include zen-grid-item(6,1, left); 
         clear:none;
     }
     .r2-2{
-        @include zen-grid-item(6,7);
+        @include zen-grid-item(6,7, left);
         clear:none;
+    }
+    
+    .rclear{
+        @include zen-clear();
+    }
+    
+    .rspacer{
+        height:24px;
     }
 }
 
@@ -73,6 +84,8 @@ $zen-gutter-width: 20px;
 .gclear-right{@include zen-clear(right);}
 .gclear-left{@include zen-clear(left);}
 .spacer{height: 96px;}
+.spacer-md{height: 48px;}
+.spacer-sm{height: 24px;}
 // http://www.chromaticsites.com/blog/responsive-grid-building-sass-and-zen-grids-tale-breakpoint-grid-breakdown-mixin
 // http://zengrids.com/
 

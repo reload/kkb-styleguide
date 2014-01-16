@@ -17,6 +17,19 @@ Markup: <div class="rating {$modifiers}">
 Styleguide 99.0
 */
 
+/*
+Rating interactive
+
+Markup: <div class="rating rating-md rating-interactive ">
+    <span><i class="fa fa-star-o"></i></span>
+    <span><i class="fa fa-star-o"></i></span>
+    <span><i class="fa fa-star-o"></i></span>
+    <span class="checked"><i class="fa fa-star-o"></i></span>
+    <span><i class="fa fa-star-o"></i></span>
+</div>
+
+Styleguide 99.1
+*/
 .rating {
     unicode-bidi: bidi-override;
     direction: rtl;
@@ -32,18 +45,22 @@ Styleguide 99.0
     float: right;
     display: table-cell;
     position: relative;
-    cursor: pointer;
     font-size: 20px;
     padding-right: 5px;
 }
+
+.rating.rating-interactive{
+    cursor: pointer;
+}
+
 .rating > span > i {
     color: desaturate(darken($color-sand, 20), 20);
 }
+
 .rating > span.checked i:before,
 .rating > span.checked ~ span i:before,
-.rating > span:hover i:before,
-.rating > span:hover ~ span i:before {
-    display: inline-block;
+.rating.rating-interactive > span:hover i:before,
+.rating.rating-interactive > span:hover ~ span i:before {
     content: "\f005";
     color: $color-mint-green;
 }

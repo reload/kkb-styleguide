@@ -32,7 +32,7 @@ Markup: <div class="vertical-list">
 <ul class="vertical-list-links">
     <li><a href="">Lorem ipsum dolor sit.</a></li>
     <li><a href="">Molestiae, unde delectus laborum.</a></li>
-    <li><a href="" class="active">Nesciunt porro fuga delectus.</a></li>
+    <li class="active"><a href="" >Nesciunt porro fuga delectus.</a></li>
     <li><a href="">Accusantium, incidunt dignissimos quos?</a></li>
 </ul>
 </div>
@@ -157,6 +157,12 @@ Styleguide 3.4
                 color: lighten($color-grey, 20);
             }
         }
+
+        li.active{
+            a{
+                 color:$color-orange-bright;
+            }
+        }
         
     } // &.vertical-list-menu
 
@@ -166,7 +172,13 @@ Styleguide 3.4
             color: $color-grey-light;
             font-weight: 300;
             &:hover {
-                color: lighten($color-grey, 20);
+                color: $color-mint-green;
+            }
+        }
+    
+        li.active{
+            a{
+                 color:$color-mint-green;
             }
         }
     }
