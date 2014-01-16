@@ -128,3 +128,10 @@ button.close{
         filter: alpha(opacity=50);
     }
 }
+
+// Firefox fix
+@-moz-document url-prefix() {
+   input[type="submit"].btn{
+        padding: 3px;
+    }
+}

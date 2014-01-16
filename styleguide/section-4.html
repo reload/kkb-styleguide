@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <title>Styleguide</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="../bower_components/modernizr/modernizr.js"></script>
+    <script type="text/javascript" src="public/js/modernizr.js"></script>
     <script type="text/javascript" src="//use.typekit.net/qqr6kuv.js"></script>
     <script type="text/javascript">
         try {
@@ -17,9 +17,8 @@
 
     <script>
     </script>
-    <!-- http://ie7-js.googlecode.com/svn/test/index.html -->
-    <!--[if lt IE 9]>
-        <script src="_/js/IE9.js"></script>
+    <!--[if (gte IE 6)&(lte IE 8)]>
+      <script type="text/javascript" src="public/js/selectivizr.js"></script>
     <![endif]-->
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,900,700italic,900italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="public/normalize-css/normalize.css">
@@ -262,6 +261,10 @@
                                 <li><a href="section-4.html#4.2">4.2 Table in dropdown</a></li>
                               
                         
+                            
+                                <li><a href="section-4.html#4.3">4.3 Data pair</a></li>
+                              
+                        
                         </ul>
                     </li>
                 
@@ -298,6 +301,10 @@
                         
                             
                                 <li><a href="section-6.html#6.2">6.2 Select</a></li>
+                              
+                        
+                            
+                                <li><a href="section-6.html#6.3">6.3 Select Multiple</a></li>
                               
                         
                         </ul>
@@ -375,6 +382,15 @@
                         
                             
                                 <li><a href="section-11.html#11.1">11.1 Mini searchbar</a></li>
+                              
+                        
+                        </ul>
+                    </li>
+                
+                    <li><a href="section-99.html">99.0: Rating</a>
+                        <ul>
+                        
+                            
                               
                         
                         </ul>
@@ -796,6 +812,87 @@
                 
           </div>
         
+            <div class="kss-section" id="4.3">
+                <div class="kss-header">
+                    
+                           <h1 class="kss-title"><span class="kss-reference">4.3</span> Data pair</h1>
+                      
+                    
+                </div>
+                
+                        
+                    
+                    
+                    <div class="kss-markup">
+                        <table class="table table-data">
+    <tbody>
+        <tr>
+            <td>
+                <h4>Lorem ipsum.</h4>
+                <td>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4>Facilis, mollitia.</h4>
+                <td>
+                    <p>Ratione saepe suscipit repellendus voluptas!</p>
+                </td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4>Quidem, animi.</h4>
+                <td>
+                    <p>Debitis provident pariatur nobis quas!</p>
+                </td>
+            </td>
+        </tr>
+    </tbody>
+</table>
+                    </div>  
+                    
+                    
+                    
+                    <div class="kss-code">
+                        <pre class="prettyprint lang-html">&lt;table class=&quot;table table-data&quot;&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;
+                &lt;h4&gt;Lorem ipsum.&lt;/h4&gt;
+                &lt;td&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+                &lt;/td&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;
+                &lt;h4&gt;Facilis, mollitia.&lt;/h4&gt;
+                &lt;td&gt;
+                    &lt;p&gt;Ratione saepe suscipit repellendus voluptas!&lt;/p&gt;
+                &lt;/td&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;
+                &lt;h4&gt;Quidem, animi.&lt;/h4&gt;
+                &lt;td&gt;
+                    &lt;p&gt;Debitis provident pariatur nobis quas!&lt;/p&gt;
+                &lt;/td&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</pre>
+                    </div>
+                    
+                
+                
+                <a href="#" style="float: right;">to top</a>
+                
+          </div>
+        
       
     </div>
 </div>
@@ -803,12 +900,10 @@
       
 
   <!-- SCRIPTS -->
-<!--  <script src="public/kss.js"></script>-->
-<!--  <script src="public/prettify.js"></script>-->
-<!--  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
     <script src="public/js/jquery.min.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/holder.js"></script>
+    <script src="public/js/respond.min.js"></script>
     <script>
         $(document).ready(function(){
             $('[data-toggle="popup"]').popover();
@@ -819,8 +914,6 @@
             });
         })
     </script>
-    
-    
 </div>
 </body>
 </html>

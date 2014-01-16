@@ -15,11 +15,13 @@ $border-radius: 4px;
 
 // ----- M A I N  C O L O R S -----
 
+// MAIN
 $color-sand: #f1f1e7;
 $color-brown: #b39c86;
 $color-mudgreen: #798881;
 $color-black: #5f6062;
 
+// PRIMARY
 $color-orange:#ff7275;
 $color-purple:#696092;
 $color-blue:#278fb5;
@@ -27,6 +29,7 @@ $color-yellow:#ffba48;
 $color-green: #7cbf9e;
 $color-pink:#dc90b5;
 
+// HELPERS
 $color-grey: #5f6062;
 $color-grey-light: #b1b1ad;
 $color-orange-bright: #f47049;
@@ -51,10 +54,6 @@ $color-mint-green: #00b38a;
     }
 }
 
-body{
-    padding-top: 72px;
-}
-
 @import 'style/menu';
 @import 'style/vgrid';
 @import 'style/typo';
@@ -68,6 +67,7 @@ body{
 @import 'style/modals';
 @import 'style/alerts';
 @import 'style/search';
+@import 'style/rating';
 @import 'bootstrap/glyphicons';
 @import 'bootstrap/code';
 @import 'font-awesome/font-awesome';

@@ -53,10 +53,30 @@ Markup: <form action="">
             <option value="audi">Audi</option>
         </select>
     </div>
+    <input type="submit" value="Submit" class="btn btn-small">
 </form>
 
 Styleguide 6.2
 */
+
+/*
+Select Multiple
+
+Markup: <form action="">
+    <div class="form-group">
+        <select name="cars" multiple class="select-multiple">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+        </select>
+    </div>
+    <input type="submit" value="Submit" class="btn btn-small">
+</form>
+
+Styleguide 6.3
+*/
+
 
 $inputPaddingVer: 10px;
 $inputPaddingHor: 20px;
@@ -75,16 +95,18 @@ input, textarea{
     border-radius:$border-radius;
     box-shadow:inset 1px 1px 2px $color-grey-light;
     border: 0;
-    border: 1px solid #d6d6d6\9; /*<=IE8*/
+//    border: 1px solid #d6d6d6\9; /*<=IE8*/
     padding: 5px 10px;
     outline:0;
     width:100%;
 }
 
+
+
 select{
     width:100%;
     outline:0;
-    &.select{
+    &.select, &.select-multiple{
         color: $color-mudgreen;
         display: block;
         width: 100%;
@@ -96,6 +118,10 @@ select{
         border: 1px solid #ccc;
         border-radius:$border-radius;
         font-size: 16px;
+    }
+    
+    &.select-multiple{
+        height:auto;
     }
 }
 
@@ -145,7 +171,7 @@ input[type="radio"].input:checked + label.label:before, input[type="checkbox"].i
 input[type="radio"].input:checked + label.label:before{
     content: "\2022";
     font-size: 22px;
-    line-height: 18px;
+    line-height: 15px;
     
 }
 input[type="checkbox"].input:checked + label.label:before {  
@@ -166,4 +192,26 @@ fieldset{
 
 label{
     font-weight: normal;
+}
+
+
+// IE8 FIX
+.lt-ie9 input, textarea{
+    border: 1px solid #d6d6d6;
+}
+
+.lt-ie9 input[type="radio"].input, 
+.lt-ie9 input[type="checkbox"].input{
+    display: inline;
+    border:0;
+}
+
+.lt-ie9 input[type="radio"].input + label.label, 
+.lt-ie9 input[type="checkbox"].input + label.label{
+    display:inline;
+    padding-left: 0px;
+   &:before{
+        content: "";  
+        display: none;  
+    } 
 }

@@ -3,7 +3,7 @@ Searchbar
 
 Searchbaren er en mørkere farve en primær farverne.
 
-Markup: <div class="color {$modifiers}"> <!-- Skal ikke med, bruges blot for at vise kontrast -->
+Markup: <div class="color {$modifiers}"> <!-- .color skal ikke med, bruges blot for at vise kontrast -->
     <div class="search-bar {$modifiers} ">
             <div class="icon-search"><span class="glyphicon glyphicon-search"></span></div>
          <form action="" class="">

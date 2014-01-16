@@ -2,17 +2,13 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 
 <head>
     <meta charset="UTF-8">
     <title>Styleguide</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="bower_components/modernizr/modernizr.js"></script>
-    <!--    <script type="text/javascript" src="bower_components/respond/dest/respond.min.js"></script>-->
-
     <script type="text/javascript" src="//use.typekit.net/qqr6kuv.js"></script>
     <script type="text/javascript">
         try {
@@ -37,25 +33,29 @@
 http://reload.github.io/supershop/
 
 MISSING:
-- select multiple
-? logo (Skal have logo fra hvem der har det)
-? favicon (Hvem laver det, og hvad skal det være)
-v (data pairs -> table)
-- menu  
-V tips
-~ tabs
-V messages / alerts
-~ loader
-V modal (overview/popup)
 - rating
 - copy
+~ tabs
+~ loader
+? logo (Skal have logo fra hvem der har det)
+? favicon (Hvem laver det, og hvad skal det være)
+v menu (Skal lige finde ud af, hvordan den skal være responsive)  
+V select multiple
+V (data pairs -> table)
+V tips
+V messages / alerts
+V modal (overview/popup)
 
 MISSING from design:
-- Dato calendar
+? Dato calendar
+? data "stamp"
+- søgnings resultat header
 v menu
 V modal (popup)
-- søgnings resultat header
-- searchbar
+V searchbar
+
+STYLEGUIDE:
+- Update text with new elements
 
 EXAMPLE PAGES:
 - http://ding2tal.ting.dk/arrangementer/udstilling/keramiker-susanne-bidstrup-udstiller-paa-viby-bibliotek
@@ -63,9 +63,10 @@ EXAMPLE PAGES:
 - http://ding2tal.ting.dk/ting/object/870970-basis%3A26917921
 
 BUGS:
-- checkboks & radio  IE8
-- submit btn FIREFOX
-- responsive imgtext FIREFOX
+V checkboks & radio  IE8
+V submit btn FIREFOX
+V responsive imgtext FIREFOX
+
 -->
     <div id="teller"></div>
         
@@ -86,17 +87,39 @@ BUGS:
     </div>
 -->
     
-<!--    
-    $color-orange:#ff7275;
-$color-purple:#696092;
-$color-blue:#278fb5;
-$color-yellow:#ffba48;
-$color-green: #7cbf9e;
-$color-pink:#dc90b5;
-    -->
     <div class="container">
         <div class="gclear spacer"></div>
+        <div class="g12-1">
             
+            
+            
+            <div class="rating">
+                <span><i class="fa fa-star-o"></i></span>
+                <span><i class="fa fa-star-o"></i></span>
+                <span class="checked"><i class="fa fa-star-o"></i></span>
+                <span><i class="fa fa-star-o"></i></span>
+                <span><i class="fa fa-star-o"></i></span>
+            </div>
+            
+            <div class="rating rating-md">
+                <span><i class="fa fa-star-o"></i></span>
+                <span><i class="fa fa-star-o"></i></span>
+                <span><i class="fa fa-star-o"></i></span>
+                <span class="checked"><i class="fa fa-star-o"></i></span>
+                <span><i class="fa fa-star-o"></i></span>
+            </div>
+                
+            <div class="rating rating-lg">
+                <span><i class="fa fa-star-o"></i></span>
+                <span><i class="fa fa-star-o"></i></span>
+                <span><i class="fa fa-star-o"></i></span>
+                <span><i class="fa fa-star-o"></i></span>
+                <span class="checked"><i class="fa fa-star-o"></i></span>
+            </div>
+            
+            
+        </div>
+        <div class="gclear spacer"></div>        
         <div class="g12-1">
             
             <div class="pt color-orange">
@@ -313,9 +336,6 @@ $color-pink:#dc90b5;
 
         <div class="gclear spacer"></div>
 
-        <div class="g12-1">
-            <i class="fa fa-quote-left fa-2x pull-left fa-border"></i>
-        </div>
         <div class="gclear"></div>
         <div class="g12-1">
             <nav class="navbar navbar-default" role="navigation">
@@ -942,6 +962,39 @@ $color-pink:#dc90b5;
             </table>
         </div>
         <div class="gclear spacer"></div>
+        <div class="g5-1">
+            
+            <table class="table table-data">
+                <tbody>
+                    <tr>
+                        <td>
+                            <h4>Lorem ipsum.</h4>
+                            <td>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Facilis, mollitia.</h4>
+                            <td>
+                                <p>Ratione saepe suscipit repellendus voluptas!</p>
+                            </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Quidem, animi.</h4>
+                            <td>
+                                <p>Debitis provident pariatur nobis quas!</p>
+                            </td>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        
+        </div>
+        <div class="gclear spacer"></div>
         <div class="g3-1">
             <h3>Lorem ipsum dolor sit.</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, assumenda, doloremque corporis optio aut voluptates expedita obcaecati quasi dolorum sit repellendus suscipit fuga molestias laboriosam quae nostrum ut cum autem aliquam nam dolor exercitationem in esse adipisci et accusamus a. Molestiae, repellat, libero consequuntur nulla perferendis eius modi officia qui quia accusantium debitis est temporibus vitae vel nam aspernatur quisquam maxime iusto mollitia repellendus veritatis quae quos illo eum alias itaque amet atque neque perspiciatis enim porro ullam quam tempore? Cumque, facilis, non incidunt fuga quos suscipit quod quasi nam soluta cum dignissimos sapiente saepe at harum in quo similique!</p>
@@ -1147,10 +1200,9 @@ $color-pink:#dc90b5;
     </div>
 
     <script src="bower_components/jquery/jquery.min.js"></script>
-    <!--    <script src="bower_components/jquery.transit/jquery.transit.js"></script>-->
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/holderjs/holder.js"></script>
-    <script type="text/javascript" src="bower_components/respond/dest/respond.src.js"></script>
+    <script type="text/javascript" src="bower_components/respond/dest/respond.min.js"></script>
     <!--    <script src="_/js/grid_bookmark.js"></script>-->
     <script>
         $(document).ready(function(){
@@ -1162,63 +1214,6 @@ $color-pink:#dc90b5;
             });
         })
     </script>
-
-
-
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

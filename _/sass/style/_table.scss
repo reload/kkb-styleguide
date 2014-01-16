@@ -185,9 +185,49 @@ Markup: <div class="dropdown">
 
 Styleguide 4.2
 */
+
+
+/*
+Data pair
+
+Markup: <table class="table table-data">
+    <tbody>
+        <tr>
+            <td>
+                <h4>Lorem ipsum.</h4>
+                <td>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4>Facilis, mollitia.</h4>
+                <td>
+                    <p>Ratione saepe suscipit repellendus voluptas!</p>
+                </td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4>Quidem, animi.</h4>
+                <td>
+                    <p>Debitis provident pariatur nobis quas!</p>
+                </td>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+Styleguide 4.3
+*/
 .table {
     min-width:100%;
     margin-top: 5px;
+    
+    &.table-data{
+        min-width:0px;
+    }
     
     >thead{
         border-bottom:1px solid darken($color-dark-sand, 10);

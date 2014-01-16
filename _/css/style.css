@@ -17,10 +17,6 @@
   }
 }
 
-body {
-  padding-top: 72px;
-}
-
 fieldset {
   padding: 0;
   margin: 0;
@@ -1690,9 +1686,46 @@ Markup: <div class="dropdown">
 
 Styleguide 4.2
 */
+/*
+Data pair
+
+Markup: <table class="table table-data">
+    <tbody>
+        <tr>
+            <td>
+                <h4>Lorem ipsum.</h4>
+                <td>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4>Facilis, mollitia.</h4>
+                <td>
+                    <p>Ratione saepe suscipit repellendus voluptas!</p>
+                </td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4>Quidem, animi.</h4>
+                <td>
+                    <p>Debitis provident pariatur nobis quas!</p>
+                </td>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+Styleguide 4.3
+*/
 .table {
   min-width: 100%;
   margin-top: 5px;
+}
+.table.table-data {
+  min-width: 0px;
 }
 .table > thead {
   border-bottom: 1px solid #d3d3c4;
@@ -1842,6 +1875,12 @@ button.close:hover {
   cursor: pointer;
   opacity: .5;
   filter: alpha(opacity=50);
+}
+
+@-moz-document url-prefix() {
+  input[type="submit"].btn {
+    padding: 3px;
+  }
 }
 
 /*
@@ -2145,9 +2184,27 @@ Markup: <form action="">
             <option value="audi">Audi</option>
         </select>
     </div>
+    <input type="submit" value="Submit" class="btn btn-small">
 </form>
 
 Styleguide 6.2
+*/
+/*
+Select Multiple
+
+Markup: <form action="">
+    <div class="form-group">
+        <select name="cars" multiple class="select-multiple">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+        </select>
+    </div>
+    <input type="submit" value="Submit" class="btn btn-small">
+</form>
+
+Styleguide 6.3
 */
 form {
   padding: 0px 20px 0px 0px;
@@ -2163,8 +2220,6 @@ input, textarea {
   border-radius: 4px;
   box-shadow: inset 1px 1px 2px #b1b1ad;
   border: 0;
-  border: 1px solid #d6d6d6 \9;
-  /*<=IE8*/
   padding: 5px 10px;
   outline: 0;
   width: 100%;
@@ -2174,7 +2229,7 @@ select {
   width: 100%;
   outline: 0;
 }
-select.select {
+select.select, select.select-multiple {
   color: #798881;
   display: block;
   width: 100%;
@@ -2186,6 +2241,9 @@ select.select {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
+}
+select.select-multiple {
+  height: auto;
 }
 
 input[type="checkbox"], input[type="submit"], input[type="radio"] {
@@ -2233,7 +2291,7 @@ input[type="radio"].input:checked + label.label:before, input[type="checkbox"].i
 input[type="radio"].input:checked + label.label:before {
   content: "\2022";
   font-size: 22px;
-  line-height: 18px;
+  line-height: 15px;
 }
 
 input[type="checkbox"].input:checked + label.label:before {
@@ -2253,6 +2311,27 @@ fieldset input {
 
 label {
   font-weight: normal;
+}
+
+.lt-ie9 input, textarea {
+  border: 1px solid #d6d6d6;
+}
+
+.lt-ie9 input[type="radio"].input,
+.lt-ie9 input[type="checkbox"].input {
+  display: inline;
+  border: 0;
+}
+
+.lt-ie9 input[type="radio"].input + label.label,
+.lt-ie9 input[type="checkbox"].input + label.label {
+  display: inline;
+  padding-left: 0px;
+}
+.lt-ie9 input[type="radio"].input + label.label:before,
+.lt-ie9 input[type="checkbox"].input + label.label:before {
+  content: "";
+  display: none;
 }
 
 /*
@@ -2907,7 +2986,7 @@ Searchbar
 
 Searchbaren er en mørkere farve en primær farverne.
 
-Markup: <div class="color {$modifiers}"> <!-- Skal ikke med, bruges blot for at vise kontrast -->
+Markup: <div class="color {$modifiers}"> <!-- .color skal ikke med, bruges blot for at vise kontrast -->
     <div class="search-bar {$modifiers} ">
             <div class="icon-search"><span class="glyphicon glyphicon-search"></span></div>
          <form action="" class="">
@@ -3054,6 +3133,60 @@ Styleguide 11.1
 
 :-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
+}
+
+/*
+Rating
+
+Use the <code>.checked</code> class on the <code>span</code> element, to checke the stars.
+
+Markup: <div class="rating {$modifiers}">
+    <span><i class="fa fa-star-o"></i></span>
+    <span><i class="fa fa-star-o"></i></span>
+    <span><i class="fa fa-star-o"></i></span>
+    <span class="checked"><i class="fa fa-star-o"></i></span>
+    <span><i class="fa fa-star-o"></i></span>
+</div>
+
+.rating-md - Medium Size
+.rating-lg - Large Size
+
+Styleguide 99.0
+*/
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  display: table;
+}
+
+.rating.rating-md > span {
+  font-size: 40px;
+}
+
+.rating.rating-lg > span {
+  font-size: 50px;
+}
+
+.rating > span {
+  float: right;
+  display: table-cell;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+.rating > span > i {
+  color: #bdbdb5;
+}
+
+.rating > span.checked i:before,
+.rating > span.checked ~ span i:before,
+.rating > span:hover i:before,
+.rating > span:hover ~ span i:before {
+  display: inline-block;
+  content: "\f005";
+  color: #00b38a;
 }
 
 @font-face {
