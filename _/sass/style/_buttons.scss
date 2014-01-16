@@ -54,6 +54,7 @@ Styleguide 2.0
     }
 
     &:hover, &.pseudo-class-hover{
+        color:white;
         background-color: darken($color-mint-green, 2);
     }
 }

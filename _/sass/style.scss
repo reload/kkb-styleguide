@@ -51,6 +51,10 @@ $color-mint-green: #00b38a;
     }
 }
 
+body{
+    padding-top: 72px;
+}
+
 @import 'style/menu';
 @import 'style/vgrid';
 @import 'style/typo';
@@ -63,6 +67,7 @@ $color-mint-green: #00b38a;
 @import 'style/tip-popover';
 @import 'style/modals';
 @import 'style/alerts';
+@import 'style/search';
 @import 'bootstrap/glyphicons';
 @import 'bootstrap/code';
 @import 'font-awesome/font-awesome';

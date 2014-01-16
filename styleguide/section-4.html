@@ -258,6 +258,10 @@
                                 <li><a href="section-4.html#4.1">4.1 Tables for data</a></li>
                               
                         
+                            
+                                <li><a href="section-4.html#4.2">4.2 Table in dropdown</a></li>
+                              
+                        
                         </ul>
                     </li>
                 
@@ -306,11 +310,27 @@
                               
                         
                             
-                                <li><a href="section-7.html#7.1">7.1 Image hide</a></li>
+                                <li><a href="section-7.html#7.1">7.1 Reponsive image</a></li>
                               
                         
                             
-                                <li><a href="section-7.html#7.2">7.2 Image underline &amp; image round corners</a></li>
+                                <li><a href="section-7.html#7.2">7.2 Image limited center</a></li>
+                              
+                        
+                            
+                                <li><a href="section-7.html#7.3">7.3 Image &amp; Text in columns</a></li>
+                              
+                        
+                            
+                                <li><a href="section-7.html#7.4">7.4 Image &amp; Text in columns with scale</a></li>
+                              
+                        
+                            
+                                <li><a href="section-7.html#7.5">7.5 Image hide</a></li>
+                              
+                        
+                            
+                                <li><a href="section-7.html#7.6">7.6 Image underline &amp; image round corners</a></li>
                               
                         
                         </ul>
@@ -342,6 +362,19 @@
                         
                             
                                 <li><a href="section-10.html#10.1">10.1 Alerts colors</a></li>
+                              
+                        
+                        </ul>
+                    </li>
+                
+                    <li><a href="section-11.html">11.0: Searchbar</a>
+                        <ul>
+                        
+                            
+                              
+                        
+                            
+                                <li><a href="section-11.html#11.1">11.1 Mini searchbar</a></li>
                               
                         
                         </ul>
@@ -541,6 +574,228 @@
                 
           </div>
         
+            <div class="kss-section" id="4.2">
+                <div class="kss-header">
+                    
+                           <h1 class="kss-title"><span class="kss-reference">4.2</span> Table in dropdown</h1>
+                      
+                    
+                </div>
+                
+                        
+                    
+                        <div class="kss-description">
+                                <p>Add a <code>.light</code> to the <code>table</code> for better maching odd/evens to white background.</p>
+
+                        </div>
+                    
+                    
+                    <div class="kss-markup">
+                        <div class="dropdown">
+    <input type="checkbox" id="dropdown1">
+    <label for="dropdown1">
+        <span class="dropdown-title secondary">Se alle eksemplarer
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </span>
+    </label>
+    <div class="dropdown-content">
+        <div class="dropdown-content-wrap">
+            <p>Vi har indkøbt 42 eksemplarer. Der er 1 reservering til dette materiale.</p>
+            <table class="table table-even light">
+                <thead>
+                    <tr>
+                        <td>
+                            <h4>Biblioteker og opstilling</h4>
+                        </td>
+                        <td class="center">
+                            <h4>Antal</h4>
+                        </td>
+                        <td class="center">
+                            <h4>På hylden</h4>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>Beder-Malling &gt; Børn &gt; Fantasi/Fantasy &gt; Rowling</p>
+                        </td>
+                        <td class="center">
+                            <p>1</p>
+                        </td>
+                        <td class="center">
+                            <p>1</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Egå &gt; Børn &gt; Rowling</p>
+                        </td>
+                        <td class="center">
+                            <p>2</p>
+                        </td>
+                        <td class="center">
+                            <p>1</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Egå &gt; Skolebibliotek &gt; Sølystskolen &gt; Rowling</p>
+                        </td>
+                        <td class="center">
+                            <p>1</p>
+                        </td>
+                        <td class="center">
+                            <p>1</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Gellerup &gt; Børn &gt; Fantasi/Fantasy &gt; Rowling</p>
+                        </td>
+                        <td class="center">
+                            <p>2</p>
+                        </td>
+                        <td class="center">
+                            <p>1</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Kolt-Hasselager &gt; Børn &gt; Fantasi/Fantasy &gt; Rowling</p>
+                        </td>
+                        <td class="center">
+                            <p>1</p>
+                        </td>
+                        <td class="center">
+                            <p>1</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Kolt-Hasselager &gt; Børn &gt; Rowling</p>
+                        </td>
+                        <td class="center">
+                            <p>2</p>
+                        </td>
+                        <td class="center">
+                            <p>2</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+                    </div>  
+                    
+                    
+                    
+                    <div class="kss-code">
+                        <pre class="prettyprint lang-html">&lt;div class=&quot;dropdown&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;dropdown1&quot;&gt;
+    &lt;label for=&quot;dropdown1&quot;&gt;
+        &lt;span class=&quot;dropdown-title secondary&quot;&gt;Se alle eksemplarer
+            &lt;span class=&quot;glyphicon glyphicon-chevron-down&quot;&gt;&lt;/span&gt;
+        &lt;/span&gt;
+    &lt;/label&gt;
+    &lt;div class=&quot;dropdown-content&quot;&gt;
+        &lt;div class=&quot;dropdown-content-wrap&quot;&gt;
+            &lt;p&gt;Vi har indkøbt 42 eksemplarer. Der er 1 reservering til dette materiale.&lt;/p&gt;
+            &lt;table class=&quot;table table-even light&quot;&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;
+                            &lt;h4&gt;Biblioteker og opstilling&lt;/h4&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;center&quot;&gt;
+                            &lt;h4&gt;Antal&lt;/h4&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;center&quot;&gt;
+                            &lt;h4&gt;På hylden&lt;/h4&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;
+                            &lt;p&gt;Beder-Malling &amp;gt; Børn &amp;gt; Fantasi/Fantasy &amp;gt; Rowling&lt;/p&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;center&quot;&gt;
+                            &lt;p&gt;1&lt;/p&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;center&quot;&gt;
+                            &lt;p&gt;1&lt;/p&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;
+                            &lt;p&gt;Egå &amp;gt; Børn &amp;gt; Rowling&lt;/p&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;center&quot;&gt;
+                            &lt;p&gt;2&lt;/p&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;center&quot;&gt;
+                            &lt;p&gt;1&lt;/p&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;
+                            &lt;p&gt;Egå &amp;gt; Skolebibliotek &amp;gt; Sølystskolen &amp;gt; Rowling&lt;/p&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;center&quot;&gt;
+                            &lt;p&gt;1&lt;/p&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;center&quot;&gt;
+                            &lt;p&gt;1&lt;/p&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;
+                            &lt;p&gt;Gellerup &amp;gt; Børn &amp;gt; Fantasi/Fantasy &amp;gt; Rowling&lt;/p&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;center&quot;&gt;
+                            &lt;p&gt;2&lt;/p&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;center&quot;&gt;
+                            &lt;p&gt;1&lt;/p&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;
+                            &lt;p&gt;Kolt-Hasselager &amp;gt; Børn &amp;gt; Fantasi/Fantasy &amp;gt; Rowling&lt;/p&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;center&quot;&gt;
+                            &lt;p&gt;1&lt;/p&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;center&quot;&gt;
+                            &lt;p&gt;1&lt;/p&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;
+                            &lt;p&gt;Kolt-Hasselager &amp;gt; Børn &amp;gt; Rowling&lt;/p&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;center&quot;&gt;
+                            &lt;p&gt;2&lt;/p&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;center&quot;&gt;
+                            &lt;p&gt;2&lt;/p&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                    </div>
+                    
+                
+                
+                <a href="#" style="float: right;">to top</a>
+                
+          </div>
+        
       
     </div>
 </div>
@@ -553,6 +808,7 @@
 <!--  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
     <script src="public/js/jquery.min.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/holder.js"></script>
     <script>
         $(document).ready(function(){
             $('[data-toggle="popup"]').popover();

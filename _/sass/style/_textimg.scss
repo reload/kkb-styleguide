@@ -3,20 +3,98 @@
 /*
 Images & Text
 
-The image wrapper has a <code>.shrink</code> class. When breakpoint is met, the image begins to shrink.
-
 Markup: <div class="imgtext">
-    <div class="img-wrap shrink">
-        <a href="#"><img src="_/img/content/270x190.png" class="img-responsive" alt=""></a>
+    <div class="img-wrap">
+        <a href="#"><img src="_/img/content/270x190.png" alt=""></a>
     </div>
     <div class="text">
-        <h3>Biblioteket <br> Rentemestervej</h3>
-        <p>Rentemestervej 76<br>2400 København NV</p>
-        <p>+45 82321600<br><a href="">bibbro@kff.kk.dk</a></p>
+        <h3>Some header here</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, recusandae, quaerat earum numquam a est ut ullam autem ipsa commodi dolorem dolore error harum nemo incidunt quasi at libero mollitia placeat quis atque iusto fugit sed eveniet amet eum optio alias! Nihil, natus laboriosam porro. Alias quisquam recusandae reprehenderit nam molestiae soluta veritatis dicta beatae esse. Ducimus, dignissimos, debitis nostrum possimus eaque recusandae delectus at quis est nulla sequi consequatur quidem illum accusantium blanditiis mollitia quia esse. Alias, harum, commodi, ad, reprehenderit tempore officia sequi voluptates voluptate ducimus fuga perferendis quis dignissimos suscipit accusantium velit fugiat porro voluptatum aperiam eum.</p>
     </div>
 </div>
 
 Styleguide 7.0
+*/
+
+
+/*
+Reponsive image
+
+To make a image responsive add the <code>.img-responsive</code>
+
+Markup: <div class="imgtext">
+    <div class="img-wrap">
+        <a href="#"><img src="_/img/content/270x190.png" class="img-responsive" alt=""></a>
+    </div>
+    <div class="text">
+        <h3>Some header here</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, recusandae, quaerat earum numquam a est ut ullam autem ipsa commodi dolorem dolore error harum nemo incidunt quasi at libero mollitia placeat quis atque iusto fugit sed eveniet amet eum optio alias! Nihil, natus laboriosam porro. Alias quisquam recusandae reprehenderit nam molestiae soluta veritatis dicta beatae esse. Ducimus, dignissimos, debitis nostrum possimus eaque recusandae delectus at quis est nulla sequi consequatur quidem illum accusantium blanditiis mollitia quia esse. Alias, harum, commodi, ad, reprehenderit tempore officia sequi voluptates voluptate ducimus fuga perferendis quis dignissimos suscipit accusantium velit fugiat porro voluptatum aperiam eum.</p>
+    </div>
+</div>
+
+Styleguide 7.1
+*/
+
+/*
+Image limited center
+
+To limit the responsiveness add <code>.limit-height</code> to the img. To place the image in center add <code>.img-center</code> to the image wrapper.
+
+Markup: <div class="nested">
+    <div class="g3-1">
+        <div class="img-wrap img-center">
+            <a href="#">
+                        <img src="holder.js/1200x1906/#00b38a:#fff" class="img-responsive limit-height">
+            </a>
+        </div>
+    </div>
+    
+    <div class="g9-4">
+        <div class="text">
+            <h3>Some header here</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, recusandae, quaerat earum numquam a est ut ullam autem ipsa commodi dolorem dolore error harum nemo incidunt quasi at libero mollitia placeat quis atque iusto fugit sed eveniet amet eum optio alias! Nihil, natus laboriosam porro. Alias quisquam recusandae reprehenderit nam molestiae soluta veritatis dicta beatae esse. Ducimus, dignissimos, debitis nostrum possimus eaque recusandae delectus at quis est nulla sequi consequatur quidem illum accusantium blanditiis mollitia quia esse. Alias, harum, commodi, ad, reprehenderit tempore officia sequi voluptates voluptate ducimus fuga perferendis quis dignissimos suscipit accusantium velit fugiat porro voluptatum aperiam eum.</p>
+        </div>
+    </div>
+</div>
+<div class="gclear"></div>
+
+Styleguide 7.2
+*/
+
+/*
+Image & Text in columns
+
+To avoid some of the text running under the image add <code>.column</code> to the <code>.imgtext</code> class. 
+
+Markup: <div class="imgtext column">
+    <div class="img-wrap">
+        <a href="#"><img src="_/img/content/270x190.png" class="img-responsive" alt=""></a>
+    </div>
+    <div class="text">
+        <h3>Some header here</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, recusandae, quaerat earum numquam a est ut ullam autem ipsa commodi dolorem dolore error harum nemo incidunt quasi at libero mollitia placeat quis atque iusto fugit sed eveniet amet eum optio alias! Nihil, natus laboriosam porro. Alias quisquam recusandae reprehenderit nam molestiae soluta veritatis dicta beatae esse. Ducimus, dignissimos, debitis nostrum possimus eaque recusandae delectus at quis est nulla sequi consequatur quidem illum accusantium blanditiis mollitia quia esse. Alias, harum, commodi, ad, reprehenderit tempore officia sequi voluptates voluptate ducimus fuga perferendis quis dignissimos suscipit accusantium velit fugiat porro voluptatum aperiam eum.</p>
+    </div>
+</div>
+
+Styleguide 7.3
+*/
+
+/*
+Image & Text in columns with scale
+
+To make the image scale in "column" mode add <code>.scale</code> to the <code>.imgtext</code> class.
+
+Markup: <div class="imgtext column scale">
+    <div class="img-wrap">
+        <a href="#"><img src="_/img/content/270x190.png" class="img-responsive" alt=""></a>
+    </div>
+    <div class="text">
+        <h3>Some header here</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, animi, aperiam laboriosam molestias illum nihil sit neque ipsam quasi nulla doloremque reiciendis odit eveniet dolorem quidem labore facere corrupti ratione.</p>
+    </div>
+</div>
+
+Styleguide 7.4
 */
 
 /*
@@ -37,7 +115,7 @@ Markup: <div class="imgtext">
     </div>
 </div>
 
-Styleguide 7.1
+Styleguide 7.5
 */
 
 /*
@@ -55,18 +133,10 @@ Markup: <div class="imgtext underline">
         </div>
 </div>
 
-Styleguide 7.2
+Styleguide 7.6
 */
 
-
-/*
-NEW
-
-.hide
-.column
-.column .scale
-*/
- .meta{
+.meta{
     margin-bottom: unit(1);
 }
 
@@ -85,7 +155,7 @@ NEW
     }
     
     &.scale{
-        display:table;
+        //display:table;
         
         .img-wrap{
             display:table-cell;
@@ -93,12 +163,14 @@ NEW
             height:auto;
             vertical-align:top;
             text-align: left;
+            width:50%\9;
         }
         
         .text{
             vertical-align:top;
             display:table-cell;
             text-align: left;
+            width: auto;
         }
     } 
     
@@ -112,10 +184,13 @@ NEW
         &.scale .img-wrap, &.scale .text{
             display:table-cell;
         }
+        
         &.scale .img-wrap{
             padding-right: 20px;
             padding-bottom: 8px;
+            width:50%;
         }
+        
     }
 }
 
@@ -125,6 +200,13 @@ NEW
     float:left;
     margin:0 20px unit(1) 0;
     
+    &.img-center{
+        width:100%;
+        background-color: desaturate( darken($color-sand, 3), 5);
+        border: 1px solid desaturate( darken($color-sand, 5), 10);
+        text-align: center;
+    }
+    
     &.hide{
         @include small-medium() {
             display:none;
@@ -132,6 +214,8 @@ NEW
     }
 }
 
+
+/* !important is only temp */
 .img-responsive{
     width:100% !important;
     max-width:100% !important;
@@ -140,10 +224,16 @@ NEW
     margin: 0 auto;
     
     &.limit-height{
-        max-height:400px !important;
+        max-height:500px !important;
         width:auto !important;
+        
+        @include small(){
+            max-height:300px !important;        
+        }
+        
     }
 }
+
 
 .img-round{
     border-radius:100%;

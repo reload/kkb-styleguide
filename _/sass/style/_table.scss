@@ -81,6 +81,110 @@ Markup: <table class="table table-even">
 Styleguide 4.1
 */
 
+/*
+Table in dropdown
+
+Add a <code>.light</code> to the <code>table</code> for better maching odd/evens to white background.
+
+Markup: <div class="dropdown">
+    <input type="checkbox" id="dropdown1">
+    <label for="dropdown1">
+        <span class="dropdown-title secondary">Se alle eksemplarer
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </span>
+    </label>
+    <div class="dropdown-content">
+        <div class="dropdown-content-wrap">
+            <p>Vi har indkøbt 42 eksemplarer. Der er 1 reservering til dette materiale.</p>
+            <table class="table table-even light">
+                <thead>
+                    <tr>
+                        <td>
+                            <h4>Biblioteker og opstilling</h4>
+                        </td>
+                        <td class="center">
+                            <h4>Antal</h4>
+                        </td>
+                        <td class="center">
+                            <h4>På hylden</h4>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>Beder-Malling &gt; Børn &gt; Fantasi/Fantasy &gt; Rowling</p>
+                        </td>
+                        <td class="center">
+                            <p>1</p>
+                        </td>
+                        <td class="center">
+                            <p>1</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Egå &gt; Børn &gt; Rowling</p>
+                        </td>
+                        <td class="center">
+                            <p>2</p>
+                        </td>
+                        <td class="center">
+                            <p>1</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Egå &gt; Skolebibliotek &gt; Sølystskolen &gt; Rowling</p>
+                        </td>
+                        <td class="center">
+                            <p>1</p>
+                        </td>
+                        <td class="center">
+                            <p>1</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Gellerup &gt; Børn &gt; Fantasi/Fantasy &gt; Rowling</p>
+                        </td>
+                        <td class="center">
+                            <p>2</p>
+                        </td>
+                        <td class="center">
+                            <p>1</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Kolt-Hasselager &gt; Børn &gt; Fantasi/Fantasy &gt; Rowling</p>
+                        </td>
+                        <td class="center">
+                            <p>1</p>
+                        </td>
+                        <td class="center">
+                            <p>1</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Kolt-Hasselager &gt; Børn &gt; Rowling</p>
+                        </td>
+                        <td class="center">
+                            <p>2</p>
+                        </td>
+                        <td class="center">
+                            <p>2</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+Styleguide 4.2
+*/
 .table {
     min-width:100%;
     margin-top: 5px;
@@ -113,6 +217,15 @@ Styleguide 4.1
     }
     &.table-odd tr:nth-child(odd), tr.highlight{
         background-color: $color-dark-sand;
+    }
+        
+    &.light{
+        &.table-even tr:nth-child(even){
+             background-color: lighten($color-dark-sand, 6);
+        }
+        &.table-odd tr:nth-child(odd), tr.highlight{
+            background-color: lighten($color-dark-sand, 6);
+        }
     }
 
 

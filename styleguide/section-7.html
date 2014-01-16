@@ -258,6 +258,10 @@
                                 <li><a href="section-4.html#4.1">4.1 Tables for data</a></li>
                               
                         
+                            
+                                <li><a href="section-4.html#4.2">4.2 Table in dropdown</a></li>
+                              
+                        
                         </ul>
                     </li>
                 
@@ -306,11 +310,27 @@
                               
                         
                             
-                                <li><a href="section-7.html#7.1">7.1 Image hide</a></li>
+                                <li><a href="section-7.html#7.1">7.1 Reponsive image</a></li>
                               
                         
                             
-                                <li><a href="section-7.html#7.2">7.2 Image underline &amp; image round corners</a></li>
+                                <li><a href="section-7.html#7.2">7.2 Image limited center</a></li>
+                              
+                        
+                            
+                                <li><a href="section-7.html#7.3">7.3 Image &amp; Text in columns</a></li>
+                              
+                        
+                            
+                                <li><a href="section-7.html#7.4">7.4 Image &amp; Text in columns with scale</a></li>
+                              
+                        
+                            
+                                <li><a href="section-7.html#7.5">7.5 Image hide</a></li>
+                              
+                        
+                            
+                                <li><a href="section-7.html#7.6">7.6 Image underline &amp; image round corners</a></li>
                               
                         
                         </ul>
@@ -347,6 +367,19 @@
                         </ul>
                     </li>
                 
+                    <li><a href="section-11.html">11.0: Searchbar</a>
+                        <ul>
+                        
+                            
+                              
+                        
+                            
+                                <li><a href="section-11.html#11.1">11.1 Mini searchbar</a></li>
+                              
+                        
+                        </ul>
+                    </li>
+                
             </ul>
         </div>
     </div>
@@ -367,21 +400,15 @@
                 
                         
                     
-                        <div class="kss-description">
-                                <p>The image wrapper has a <code>.shrink</code> class. When breakpoint is met, the image begins to shrink.</p>
-
-                        </div>
-                    
                     
                     <div class="kss-markup">
                         <div class="imgtext">
-    <div class="img-wrap shrink">
-        <a href="#"><img src="_/img/content/270x190.png" class="img-responsive" alt=""></a>
+    <div class="img-wrap">
+        <a href="#"><img src="_/img/content/270x190.png" alt=""></a>
     </div>
     <div class="text">
-        <h3>Biblioteket <br> Rentemestervej</h3>
-        <p>Rentemestervej 76<br>2400 København NV</p>
-        <p>+45 82321600<br><a href="">bibbro@kff.kk.dk</a></p>
+        <h3>Some header here</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, recusandae, quaerat earum numquam a est ut ullam autem ipsa commodi dolorem dolore error harum nemo incidunt quasi at libero mollitia placeat quis atque iusto fugit sed eveniet amet eum optio alias! Nihil, natus laboriosam porro. Alias quisquam recusandae reprehenderit nam molestiae soluta veritatis dicta beatae esse. Ducimus, dignissimos, debitis nostrum possimus eaque recusandae delectus at quis est nulla sequi consequatur quidem illum accusantium blanditiis mollitia quia esse. Alias, harum, commodi, ad, reprehenderit tempore officia sequi voluptates voluptate ducimus fuga perferendis quis dignissimos suscipit accusantium velit fugiat porro voluptatum aperiam eum.</p>
     </div>
 </div>
                     </div>  
@@ -390,13 +417,12 @@
                     
                     <div class="kss-code">
                         <pre class="prettyprint lang-html">&lt;div class=&quot;imgtext&quot;&gt;
-    &lt;div class=&quot;img-wrap shrink&quot;&gt;
-        &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;_/img/content/270x190.png&quot; class=&quot;img-responsive&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
+    &lt;div class=&quot;img-wrap&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;_/img/content/270x190.png&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
     &lt;/div&gt;
     &lt;div class=&quot;text&quot;&gt;
-        &lt;h3&gt;Biblioteket &lt;br&gt; Rentemestervej&lt;/h3&gt;
-        &lt;p&gt;Rentemestervej 76&lt;br&gt;2400 København NV&lt;/p&gt;
-        &lt;p&gt;+45 82321600&lt;br&gt;&lt;a href=&quot;&quot;&gt;bibbro@kff.kk.dk&lt;/a&gt;&lt;/p&gt;
+        &lt;h3&gt;Some header here&lt;/h3&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, recusandae, quaerat earum numquam a est ut ullam autem ipsa commodi dolorem dolore error harum nemo incidunt quasi at libero mollitia placeat quis atque iusto fugit sed eveniet amet eum optio alias! Nihil, natus laboriosam porro. Alias quisquam recusandae reprehenderit nam molestiae soluta veritatis dicta beatae esse. Ducimus, dignissimos, debitis nostrum possimus eaque recusandae delectus at quis est nulla sequi consequatur quidem illum accusantium blanditiis mollitia quia esse. Alias, harum, commodi, ad, reprehenderit tempore officia sequi voluptates voluptate ducimus fuga perferendis quis dignissimos suscipit accusantium velit fugiat porro voluptatum aperiam eum.&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</pre>
                     </div>
@@ -410,7 +436,215 @@
             <div class="kss-section" id="7.1">
                 <div class="kss-header">
                     
-                           <h1 class="kss-title"><span class="kss-reference">7.1</span> Image hide</h1>
+                           <h1 class="kss-title"><span class="kss-reference">7.1</span> Reponsive image</h1>
+                      
+                    
+                </div>
+                
+                        
+                    
+                        <div class="kss-description">
+                                <p>To make a image responsive add the <code>.img-responsive</code></p>
+
+                        </div>
+                    
+                    
+                    <div class="kss-markup">
+                        <div class="imgtext">
+    <div class="img-wrap">
+        <a href="#"><img src="_/img/content/270x190.png" class="img-responsive" alt=""></a>
+    </div>
+    <div class="text">
+        <h3>Some header here</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, recusandae, quaerat earum numquam a est ut ullam autem ipsa commodi dolorem dolore error harum nemo incidunt quasi at libero mollitia placeat quis atque iusto fugit sed eveniet amet eum optio alias! Nihil, natus laboriosam porro. Alias quisquam recusandae reprehenderit nam molestiae soluta veritatis dicta beatae esse. Ducimus, dignissimos, debitis nostrum possimus eaque recusandae delectus at quis est nulla sequi consequatur quidem illum accusantium blanditiis mollitia quia esse. Alias, harum, commodi, ad, reprehenderit tempore officia sequi voluptates voluptate ducimus fuga perferendis quis dignissimos suscipit accusantium velit fugiat porro voluptatum aperiam eum.</p>
+    </div>
+</div>
+                    </div>  
+                    
+                    
+                    
+                    <div class="kss-code">
+                        <pre class="prettyprint lang-html">&lt;div class=&quot;imgtext&quot;&gt;
+    &lt;div class=&quot;img-wrap&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;_/img/content/270x190.png&quot; class=&quot;img-responsive&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;text&quot;&gt;
+        &lt;h3&gt;Some header here&lt;/h3&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, recusandae, quaerat earum numquam a est ut ullam autem ipsa commodi dolorem dolore error harum nemo incidunt quasi at libero mollitia placeat quis atque iusto fugit sed eveniet amet eum optio alias! Nihil, natus laboriosam porro. Alias quisquam recusandae reprehenderit nam molestiae soluta veritatis dicta beatae esse. Ducimus, dignissimos, debitis nostrum possimus eaque recusandae delectus at quis est nulla sequi consequatur quidem illum accusantium blanditiis mollitia quia esse. Alias, harum, commodi, ad, reprehenderit tempore officia sequi voluptates voluptate ducimus fuga perferendis quis dignissimos suscipit accusantium velit fugiat porro voluptatum aperiam eum.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                    </div>
+                    
+                
+                
+                <a href="#" style="float: right;">to top</a>
+                
+          </div>
+        
+            <div class="kss-section" id="7.2">
+                <div class="kss-header">
+                    
+                           <h1 class="kss-title"><span class="kss-reference">7.2</span> Image limited center</h1>
+                      
+                    
+                </div>
+                
+                        
+                    
+                        <div class="kss-description">
+                                <p>To limit the responsiveness add <code>.limit-height</code> to the img. To place the image in center add <code>.img-center</code> to the image wrapper.</p>
+
+                        </div>
+                    
+                    
+                    <div class="kss-markup">
+                        <div class="nested">
+    <div class="g3-1">
+        <div class="img-wrap img-center">
+            <a href="#">
+                        <img src="holder.js/1200x1906/#00b38a:#fff" class="img-responsive limit-height">
+            </a>
+        </div>
+    </div>
+    
+    <div class="g9-4">
+        <div class="text">
+            <h3>Some header here</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, recusandae, quaerat earum numquam a est ut ullam autem ipsa commodi dolorem dolore error harum nemo incidunt quasi at libero mollitia placeat quis atque iusto fugit sed eveniet amet eum optio alias! Nihil, natus laboriosam porro. Alias quisquam recusandae reprehenderit nam molestiae soluta veritatis dicta beatae esse. Ducimus, dignissimos, debitis nostrum possimus eaque recusandae delectus at quis est nulla sequi consequatur quidem illum accusantium blanditiis mollitia quia esse. Alias, harum, commodi, ad, reprehenderit tempore officia sequi voluptates voluptate ducimus fuga perferendis quis dignissimos suscipit accusantium velit fugiat porro voluptatum aperiam eum.</p>
+        </div>
+    </div>
+</div>
+<div class="gclear"></div>
+                    </div>  
+                    
+                    
+                    
+                    <div class="kss-code">
+                        <pre class="prettyprint lang-html">&lt;div class=&quot;nested&quot;&gt;
+    &lt;div class=&quot;g3-1&quot;&gt;
+        &lt;div class=&quot;img-wrap img-center&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                        &lt;img src=&quot;holder.js/1200x1906/#00b38a:#fff&quot; class=&quot;img-responsive limit-height&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;g9-4&quot;&gt;
+        &lt;div class=&quot;text&quot;&gt;
+            &lt;h3&gt;Some header here&lt;/h3&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, recusandae, quaerat earum numquam a est ut ullam autem ipsa commodi dolorem dolore error harum nemo incidunt quasi at libero mollitia placeat quis atque iusto fugit sed eveniet amet eum optio alias! Nihil, natus laboriosam porro. Alias quisquam recusandae reprehenderit nam molestiae soluta veritatis dicta beatae esse. Ducimus, dignissimos, debitis nostrum possimus eaque recusandae delectus at quis est nulla sequi consequatur quidem illum accusantium blanditiis mollitia quia esse. Alias, harum, commodi, ad, reprehenderit tempore officia sequi voluptates voluptate ducimus fuga perferendis quis dignissimos suscipit accusantium velit fugiat porro voluptatum aperiam eum.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;gclear&quot;&gt;&lt;/div&gt;</pre>
+                    </div>
+                    
+                
+                
+                <a href="#" style="float: right;">to top</a>
+                
+          </div>
+        
+            <div class="kss-section" id="7.3">
+                <div class="kss-header">
+                    
+                           <h1 class="kss-title"><span class="kss-reference">7.3</span> Image &amp; Text in columns</h1>
+                      
+                    
+                </div>
+                
+                        
+                    
+                        <div class="kss-description">
+                                <p>To avoid some of the text running under the image add <code>.column</code> to the <code>.imgtext</code> class. </p>
+
+                        </div>
+                    
+                    
+                    <div class="kss-markup">
+                        <div class="imgtext column">
+    <div class="img-wrap">
+        <a href="#"><img src="_/img/content/270x190.png" class="img-responsive" alt=""></a>
+    </div>
+    <div class="text">
+        <h3>Some header here</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, recusandae, quaerat earum numquam a est ut ullam autem ipsa commodi dolorem dolore error harum nemo incidunt quasi at libero mollitia placeat quis atque iusto fugit sed eveniet amet eum optio alias! Nihil, natus laboriosam porro. Alias quisquam recusandae reprehenderit nam molestiae soluta veritatis dicta beatae esse. Ducimus, dignissimos, debitis nostrum possimus eaque recusandae delectus at quis est nulla sequi consequatur quidem illum accusantium blanditiis mollitia quia esse. Alias, harum, commodi, ad, reprehenderit tempore officia sequi voluptates voluptate ducimus fuga perferendis quis dignissimos suscipit accusantium velit fugiat porro voluptatum aperiam eum.</p>
+    </div>
+</div>
+                    </div>  
+                    
+                    
+                    
+                    <div class="kss-code">
+                        <pre class="prettyprint lang-html">&lt;div class=&quot;imgtext column&quot;&gt;
+    &lt;div class=&quot;img-wrap&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;_/img/content/270x190.png&quot; class=&quot;img-responsive&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;text&quot;&gt;
+        &lt;h3&gt;Some header here&lt;/h3&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, recusandae, quaerat earum numquam a est ut ullam autem ipsa commodi dolorem dolore error harum nemo incidunt quasi at libero mollitia placeat quis atque iusto fugit sed eveniet amet eum optio alias! Nihil, natus laboriosam porro. Alias quisquam recusandae reprehenderit nam molestiae soluta veritatis dicta beatae esse. Ducimus, dignissimos, debitis nostrum possimus eaque recusandae delectus at quis est nulla sequi consequatur quidem illum accusantium blanditiis mollitia quia esse. Alias, harum, commodi, ad, reprehenderit tempore officia sequi voluptates voluptate ducimus fuga perferendis quis dignissimos suscipit accusantium velit fugiat porro voluptatum aperiam eum.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                    </div>
+                    
+                
+                
+                <a href="#" style="float: right;">to top</a>
+                
+          </div>
+        
+            <div class="kss-section" id="7.4">
+                <div class="kss-header">
+                    
+                           <h1 class="kss-title"><span class="kss-reference">7.4</span> Image &amp; Text in columns with scale</h1>
+                      
+                    
+                </div>
+                
+                        
+                    
+                        <div class="kss-description">
+                                <p>To make the image scale in &quot;column&quot; mode add <code>.scale</code> to the <code>.imgtext</code> class.</p>
+
+                        </div>
+                    
+                    
+                    <div class="kss-markup">
+                        <div class="imgtext column scale">
+    <div class="img-wrap">
+        <a href="#"><img src="_/img/content/270x190.png" class="img-responsive" alt=""></a>
+    </div>
+    <div class="text">
+        <h3>Some header here</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, animi, aperiam laboriosam molestias illum nihil sit neque ipsam quasi nulla doloremque reiciendis odit eveniet dolorem quidem labore facere corrupti ratione.</p>
+    </div>
+</div>
+                    </div>  
+                    
+                    
+                    
+                    <div class="kss-code">
+                        <pre class="prettyprint lang-html">&lt;div class=&quot;imgtext column scale&quot;&gt;
+    &lt;div class=&quot;img-wrap&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;_/img/content/270x190.png&quot; class=&quot;img-responsive&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;text&quot;&gt;
+        &lt;h3&gt;Some header here&lt;/h3&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, animi, aperiam laboriosam molestias illum nihil sit neque ipsam quasi nulla doloremque reiciendis odit eveniet dolorem quidem labore facere corrupti ratione.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                    </div>
+                    
+                
+                
+                <a href="#" style="float: right;">to top</a>
+                
+          </div>
+        
+            <div class="kss-section" id="7.5">
+                <div class="kss-header">
+                    
+                           <h1 class="kss-title"><span class="kss-reference">7.5</span> Image hide</h1>
                       
                     
                 </div>
@@ -461,10 +695,10 @@
                 
           </div>
         
-            <div class="kss-section" id="7.2">
+            <div class="kss-section" id="7.6">
                 <div class="kss-header">
                     
-                           <h1 class="kss-title"><span class="kss-reference">7.2</span> Image underline &amp; image round corners</h1>
+                           <h1 class="kss-title"><span class="kss-reference">7.6</span> Image underline &amp; image round corners</h1>
                       
                     
                 </div>
@@ -521,6 +755,7 @@
 <!--  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
     <script src="public/js/jquery.min.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/holder.js"></script>
     <script>
         $(document).ready(function(){
             $('[data-toggle="popup"]').popover();

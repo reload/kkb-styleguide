@@ -9,7 +9,6 @@ $zen-gutter-width: 20px;
 
 .container{
     @include zen-grid-container;
-    padding-top:24px;
     max-width:1170px;
     margin:auto;
 }
