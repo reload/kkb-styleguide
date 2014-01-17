@@ -1,36 +1,65 @@
 // ----- M A I N  C O L O R S -----
-
 // MAIN
-$color-sand: #f1f1e7;
-$color-brown: #b39c86;
-$color-mudgreen: #798881;
-$color-black: #5f6062;
-
+$color-sand:#f1f1e7;
+ $color-brown:#b39c86;
+ $color-mudgreen:#798881;
+ $color-black:#5f6062;
 // PRIMARY
 $color-orange:#ff7275;
-$color-purple:#696092;
-$color-blue:#278fb5;
-$color-yellow:#ffba48;
-$color-green: #7cbf9e;
-$color-pink:#dc90b5;
-
+ $color-purple:#696092;
+ $color-blue:#278fb5;
+ $color-yellow:#ffba48;
+ $color-green:#7cbf9e;
+ $color-pink:#dc90b5;
 // HELPERS
-$color-grey: #5f6062;
-$color-grey-light: #b1b1ad;
-$color-orange-bright: #f47049;
-$color-dark-sand: #e9e9e1;
-$color-dark-grey: #313233; // footer color
+$color-grey:#5f6062;
+ $color-grey-light:#b1b1ad;
+ $color-orange-bright:#f47049;
+ $color-dark-sand:#e9e9e1;
+ $color-dark-grey:#313233; // footer color
+ $color-mint-green:#00b38a;
 
-$color-mint-green: #00b38a;
+
+.color-orange {
+    background-color: $color-orange;
+}
+.color-purple {
+    background-color: $color-purple;
+}
+.color-blue {
+    background-color: $color-blue;
+}
+.color-yellow {
+    background-color: $color-yellow;
+}
+.color-green {
+    background-color: $color-green;
+}
+.color-pink {
+    background-color: $color-pink;
+}
 
 
-.color-orange{background-color: $color-orange;}
-.color-purple{background-color: $color-purple;}
-.color-blue{background-color: $color-blue;}
-.color-yellow{background-color: $color-yellow;}
-.color-green{background-color: $color-green;}
-.color-pink{background-color: $color-pink;}
+.color-orange-light {
+    background-color: desaturate(lighten($color-orange,10),10);
+}
+.color-purple-light {
+    background-color: desaturate(lighten($color-purple,10),10);
+}
+.color-blue-light {
+    background-color: desaturate(lighten($color-blue,10),10);
+}
+.color-yellow-light {
+    background-color: desaturate(lighten($color-yellow,10),10);
+}
+.color-green-light {
+    background-color: desaturate(lighten($color-green,10),10);
+}
+.color-pink-light {
+    background-color: desaturate(lighten($color-pink,10),10);
+}
 
-.font-white{
-    color: white;   
+
+.font-white {
+    color: white;
 }

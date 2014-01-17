@@ -23,6 +23,30 @@
   background-color: #dc90b5;
 }
 
+.color-orange-light {
+  background-color: #fba9ab;
+}
+
+.color-purple-light {
+  background-color: #8b879e;
+}
+
+.color-blue-light {
+  background-color: #46a6c9;
+}
+
+.color-yellow-light {
+  background-color: #f8cc82;
+}
+
+.color-green-light {
+  background-color: #a5c9b7;
+}
+
+.color-pink-light {
+  background-color: #e3bccf;
+}
+
 .font-white {
   color: white;
 }
@@ -1086,7 +1110,7 @@ textarea.input-lg {
 
 @media only screen and (max-width: 768px) {
   .navbar {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #847ca9;
     border-radius: 0;
     z-index: 99;
   }
@@ -1113,21 +1137,21 @@ textarea.input-lg {
     width: 100%;
     padding-left: 20px;
     text-align: left;
-    color: black;
+    color: white;
     border-bottom: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
   .nav.navbar-nav li:hover, .nav.navbar-nav li.active {
-    background-color: black;
+    background-color: white;
   }
   .nav.navbar-nav li:hover a, .nav.navbar-nav li.active a {
-    color: white;
+    color: black;
     border-bottom: 0;
   }
   .nav.navbar-nav li.active:hover a {
-    color: white;
+    color: black;
     border-bottom: 0;
   }
 
