@@ -255,6 +255,17 @@ a{
 }
 
 
+// META
+.meta{
+    margin-bottom: unit(1);
+}
+
+.meta-form{
+    font-size: 12px;
+    color: $color-grey-light;
+    line-height:12px;
+}
+
 .meta-primary{
     font-size:12px;
     font-weight: 600;
