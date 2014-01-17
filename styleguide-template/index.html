@@ -194,14 +194,17 @@
         <div class="kss-head-menu">
             <h1>Ding2 Styleguide</h1>
             <ul>
-                <li><a href="index.html">0.0: Overview</a></li>
+<!--                <li><a href="index.html">0.0 Overview</a></li>-->
+                <li><a href="index.html">Overview</a></li>
                 {{#eachRoot}}
-                    <li><a href="section-{{reference}}.html">{{reference}}.0: {{header}}</a>
+<!--                    <li><a href="section-{{reference}}.html">{{reference}}.0: {{header}}</a>-->
+                    <li><a href="section-{{reference}}.html">{{header}}</a>
                         <ul>
                         {{#eachSection reference}}
                             {{#whenDepth 1}}
                               {{else}}
-                                <li><a href="section-{{sectionsRootNumber reference}}.html#{{reference}}">{{reference}} {{header}}</a></li>
+<!--                                <li><a href="section-{{sectionsRootNumber reference}}.html#{{reference}}">{{reference}} {{header}}</a></li>-->
+                                <li><a href="section-{{sectionsRootNumber reference}}.html#{{reference}}">{{header}}</a></li>
                               {{/whenDepth}}
                         {{/eachSection}}
                         </ul>
@@ -223,12 +226,8 @@
         {{#eachSection rootNumber}}
             <div class="kss-section" id="{{reference}}">
                 <div class="kss-header">
-                    {{#whenDepth 1}}
-                          <h1 class="kss-title"><span class="kss-reference">{{ reference }}.0</span> {{ header }}</h1>
-                      {{else}}
-                           <h1 class="kss-title"><span class="kss-reference">{{ reference }}</span> {{ header }}</h1>
-                      {{/whenDepth}}
-                    
+<!--                        <h1 class="kss-title"><span class="kss-reference">{{ reference }}.0</span> {{ header }}</h1>-->
+                        <h1 class="kss-title">{{ header }}</h1>
                 </div>
                 {{#ifAny markup modifiers}}
                         

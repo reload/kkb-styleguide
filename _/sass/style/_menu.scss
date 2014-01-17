@@ -74,13 +74,33 @@
 @include small-medium(){
     .navbar{
         background-color: lighten($color-purple,10);
-        //background-color: rgba(255,255,255,0.5);
         border-radius:0;
         z-index:99;
+        margin: 0;
+        
+        &.color-orange {
+            background-color: lighten($color-orange,10);
+        }
+        &.color-purple {
+            background-color: lighten($color-purple,10);
+        }
+        &.color-blue {
+            background-color: lighten($color-blue,10);
+        }
+        &.color-yellow {
+            background-color: lighten($color-yellow,10);
+        }
+        &.color-green {
+            background-color: lighten($color-green,10);
+        }
+        &.color-pink {
+            background-color: lighten($color-pink,10);
+        }
     }
     .navbar-header{
         border-top: 0;
         border-bottom: 0;
+        min-height: 45px;
     }
     
     .nav.navbar-nav{
@@ -134,6 +154,7 @@
             &:hover, &:focus, &.active{
                 background-color: white;
             }
+             padding: 6px;    
         }
     }
 }
