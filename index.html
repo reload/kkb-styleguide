@@ -2,7 +2,9 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
 <head>
     <meta charset="UTF-8">
@@ -33,8 +35,7 @@
 http://reload.github.io/supershop/
 
 MISSING:
-- colors
-- copy
+- Forms
 - Header med links indeni, eller uden på.. kig på ding2
 ~ Google maps
 ~ tabs
@@ -42,6 +43,7 @@ MISSING:
 ? logo (Skal have logo fra hvem der har det)
 ? favicon (Hvem laver det, og hvad skal det være)
 v menu (Skal lige finde ud af, hvordan den skal være responsive)  
+V copy
 V rating
 V select multiple
 V (data pairs -> table)
@@ -72,123 +74,397 @@ V responsive imgtext FIREFOX
 
 -->
     <div id="teller"></div>
-        
-        
-<!--
-    <div class="search-bar search-bar-purple">
-        <div class="container">
-            <div class="g12-1">
-                <div class="search-bar search-bar-purple">
-                        <div class="icon-search"><span class="glyphicon glyphicon-search"></span></div>
-                     <form action="" class="">
-                        <input type="text" placeholder="Skriv f.eks. Harry Potter, krimi eller lignende">
-                    </form>
-                </div>
-                
-            </div>
-        </div>
-    </div>
--->
-    
+
+
+
     <div class="container">
         <div class="gclear spacer"></div>
-        <div class="g12-1">
-            
-            
-            
-            <div class="rating ">
-                <span><i class="fa fa-star-o"></i></span>
-                <span><i class="fa fa-star-o"></i></span>
-                <span class="checked"><i class="fa fa-star-o"></i></span>
-                <span><i class="fa fa-star-o"></i></span>
-                <span><i class="fa fa-star-o"></i></span>
-            </div>
-            
-            <div class="rating  rating-md">
-                <span><i class="fa fa-star-o"></i></span>
-                <span><i class="fa fa-star-o"></i></span>
-                <span><i class="fa fa-star-o"></i></span>
-                <span class="checked"><i class="fa fa-star-o"></i></span>
-                <span><i class="fa fa-star-o"></i></span>
-            </div>
-                
-            <div class="rating rating-interactive rating-lg">
-                <span><i class="fa fa-star-o"></i></span>
-                <span><i class="fa fa-star-o"></i></span>
-                <span><i class="fa fa-star-o"></i></span>
-                <span><i class="fa fa-star-o"></i></span>
-                <span class="checked"><i class="fa fa-star-o"></i></span>
-            </div>
-            
-            
+
+        
+        
+        
+        
+        
+        <div class="gclear spacer"></div>
+        <style>
+                .fix_color{
+                    padding: 15px 0px 15px 15px;
+                    color:rgba(255,255,255,0.75);
+                    font-size: 12px;
+                }
+                .fix_color_small{
+                    height:20px;
+                }
+                .fix_border{
+                border: 1px solid #D8D8D0;
+                color: rgba(120, 135, 128, 0.75);
+                padding: 14px 0px 14px 15px;
+            }
+            </style>
+        <div class="nested">
+            <div class="g4-1 fix_color color-sand fix_border"><strong>Sand</strong> - Baggrundsfarve</div>
+            <div class="g4-5 fix_color color-mudgreen"><strong>Mud Green</strong> - Brødtekst</div>
+            <div class="g4-9 fix_color color-black"><strong>Black</strong> - Headers, (Footer)</div>
         </div>
-        <div class="gclear spacer"></div>        
-        <div class="g12-1">
+        <div class="gclear"></div>
+        <div class="nested">
+            <div class="g4-1 fix_color color-grey"><strong>Grey</strong> - Header 3</div>
+            <div class="g4-5 fix_color color-grey-light"><strong>Grey Light</strong> - Links, Knapper</div>
+            <div class="g4-9 fix_color color-dark-sand fix_border"><strong>Tinted Sand</strong> - Odd/even tabeller</div>
+        </div>
+        <div class="gclear"></div>
+        <div class="nested">
+            <div class="g6-1 fix_color color-red-bright"><strong>Bright red</strong> - VTL Menu Active</div>
+            <div class="g6-7 fix_color color-mint-green"><strong>Mint Green</strong> - Links, Knapper</div>
+        </div>
+        
+        
+        <div class="gclear spacer"></div>
+        <div class="g9-1">
             
-            <div class="pt color-orange">
-                <div class="search-bar search-bar-orange ">
-                        <div class="icon-search"><span class="glyphicon glyphicon-search"></span></div>
-                     <form action="" class="">
+            
+            <div class="nested">
+                <div class="g12-1">
+                    <p>Her ses de primære farver, som vil optræde i header, searchbar og menu:</p>
+                </div>
+            </div> 
+            <div class="gclear"></div>
+            <div class="nested">
+                <div class="g2-1 color-red-font">red</div>
+                <div class="g2-3 color-purple-font">Purple</div>
+                <div class="g2-5 color-blue-font">Blue</div>
+                <div class="g2-7 color-yellow-font">Yellow</div>
+                <div class="g2-9 color-green-font">Green</div>
+                <div class="g2-11 color-pink-font">Pink</div>
+            </div>
+            <div class="gclear"></div>
+            <div class="nested">
+                <div class="g2-1 color-red-light fix_color_small _small"></div>
+                <div class="g2-3 color-purple-light fix_color_small"></div>
+                <div class="g2-5 color-blue-light fix_color_small "></div>
+                <div class="g2-7 color-yellow-light fix_color_small "></div>
+                <div class="g2-9 color-green-light fix_color_small "></div>
+                <div class="g2-11 color-pink-light fix_color_small "></div>
+            </div>
+            <div class="gclear"></div>
+            <div class="nested">
+                <div class="g2-1 color-red fix_color_small "></div>
+                <div class="g2-3 color-purple fix_color_small "></div>
+                <div class="g2-5 color-blue fix_color_small "></div>
+                <div class="g2-7 color-yellow fix_color_small "></div>
+                <div class="g2-9 color-green fix_color_small "></div>
+                <div class="g2-11 color-pink fix_color_small "></div>
+            </div>
+            <div class="gclear"></div>
+            <div class="nested">
+                <div class="g2-1 color-red-dark fix_color_small "></div>
+                <div class="g2-3 color-purple-dark fix_color_small "></div>
+                <div class="g2-5 color-blue-dark fix_color_small "></div>
+                <div class="g2-7 color-yellow-dark fix_color_small "></div>
+                <div class="g2-9 color-green-dark fix_color_small "></div>
+                <div class="g2-11 color-pink-dark fix_color_small "></div>
+            </div>
+            <div class="gclear spacer-md"></div>
+            
+            <div class="nested">
+                <div class="g12-1">
+                    <p>
+                        Farverne der bliver brugt til baggrundsfarve på headeren er fx. <code>.color-red</code> eller <code>.color-purple</code> etc.
+                    </p>
+                </div>
+            </div>
+            <div class="gclear"></div>
+            <div class="nested">
+                <div class="g2-1 color-red fix_color">.color-red</div>
+                <div class="g2-3 color-purple fix_color">.color-purple</div>
+                <div class="g2-5 color-blue fix_color">.color-blue</div>
+                <div class="g2-7 color-yellow fix_color">.color-yellow</div>
+                <div class="g2-9 color-green fix_color">.color-green</div>
+                <div class="g2-11 color-pink fix_color">.color-pink</div>
+            </div>
+            <div class="gclear spacer-md"></div>
+            
+            <div class="nested">
+                <div class="g12-1">
+                    <p>
+                        Farverne der bliver brugt til searchbaren er fx. <code>.color-blue-dark</code> eller <code>.color-yellow-dark</code> etc.
+                    </p>
+                </div>
+            </div>
+            <div class="gclear"></div>
+            <div class="nested">
+                <div class="g2-1 color-red-dark fix_color">.color-red-dark</div>
+                <div class="g2-3 color-purple-dark fix_color">.color-purple-dark</div>
+                <div class="g2-5 color-blue-dark fix_color">.color-blue-dark</div>
+                <div class="g2-7 color-yellow-dark fix_color">.color-yellow-dark</div>
+                <div class="g2-9 color-green-dark fix_color">.color-green-dark</div>
+                <div class="g2-11 color-pink-dark fix_color">.color-pink-dark</div>
+            </div>
+            <div class="gclear spacer-md"></div>
+            
+            <div class="nested">
+                <div class="g12-1">
+                    <p>
+                        Farverne der bliver brugt til menu når den bliver responsive er fx. <code>.color-green-light</code> eller <code>.color-pink-light</code> etc.
+                    </p>
+                </div>
+            </div>
+            <div class="gclear"></div>
+            <div class="nested">
+                <div class="g2-1 color-red-light fix_color">.color-red-light</div>
+                <div class="g2-3 color-purple-light fix_color">.color-purple-light</div>
+                <div class="g2-5 color-blue-light fix_color">.color-blue-light</div>
+                <div class="g2-7 color-yellow-light fix_color">.color-yellow-light</div>
+                <div class="g2-9 color-green-light fix_color">.color-green-light</div>
+                <div class="g2-11 color-pink-light fix_color">.color-pink-light</div>
+            </div>
+            <div class="gclear spacer-md"></div>
+            
+            
+        
+        </div>
+        <div class="gclear spacer"></div>
+        <div class="g12-1">
+
+            <div class="nested">
+                <div class="g2-1 color-red-light fix_color">.color-red-light</div>
+                <div class="g2-3 color-purple-light fix_color">.color-purple-light</div>
+                <div class="g2-5 color-blue-light fix_color">.color-blue-light</div>
+                <div class="g2-7 color-yellow-light fix_color">.color-yellow-light</div>
+                <div class="g2-9 color-green-light fix_color">.color-green-light</div>
+                <div class="g2-11 color-pink-light fix_color">.color-pink-light</div>
+            </div>
+            <div class="gclear"></div>
+            <div class="nested">
+                <div class="g2-1 color-red fix_color">.color-red</div>
+                <div class="g2-3 color-purple fix_color">.color-purple</div>
+                <div class="g2-5 color-blue fix_color">.color-blue</div>
+                <div class="g2-7 color-yellow fix_color">.color-yellow</div>
+                <div class="g2-9 color-green fix_color">.color-green</div>
+                <div class="g2-11 color-pink fix_color">.color-pink</div>
+            </div>
+            <div class="gclear"></div>
+            <div class="nested">
+                <div class="g2-1 color-red-dark fix_color">.color-red-dark</div>
+                <div class="g2-3 color-purple-dark fix_color">.color-purple-dark</div>
+                <div class="g2-5 color-blue-dark fix_color">.color-blue-dark</div>
+                <div class="g2-7 color-yellow-dark fix_color">.color-yellow-dark</div>
+                <div class="g2-9 color-green-dark fix_color">.color-green-dark</div>
+                <div class="g2-11 color-pink-dark fix_color">.color-pink-dark</div>
+            </div>
+
+        </div>
+
+
+        <div class="gclear spacer"></div>
+
+        <div class="g3-1">
+            <h3>Biblioteket
+                <br>Rentemestervej [H3]</h3>
+
+            <p>Rentemestervej 76
+                <br>2400 København NV [P]</p>
+
+            <p>+45 82 32 16 00
+                <br>
+                <a href="">bibbro@kff.kk.dk [A]</a>
+            </p>
+        </div>
+
+        <div class="g9-4">
+            <h4>Af
+                <a href="">Joanne K. Rowling</a>(2007) [H4]</h4>
+            <br>
+            <h1>Harry Potter og dødsregalierne [H1]</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, necessitatibus soluta maxime recusandae voluptatem hic facilis veniam a dolorum eaque eius repudiandae veritatis doloremque commodi quam dolore odio sit accusamus fugit quidem vel reprehenderit possimus consectetur iure tempore quo omnis enim ipsa excepturi est. Aliquid inventore reprehenderit hic quidem libero. [P]</p>
+        </div>
+
+        <div class="gclear spacer-sm"></div>
+
+        <div class="g3-1">
+            <div class="vertical-list vertical-list-menu">
+                <h3>Filtrér din søgning [H3]</h3>
+                <h4>Efter materialetype [H4]</h4>
+                <ul class="vertical-list-plain">
+                    <li>
+                        <a href="">Resumé [A]</a>
+                    </li>
+                    <li>
+                        <a href="">Anmeldelser</a>
+                    </li>
+                    <li class="active">
+                        <a href="">Om Joanne K. Rowling</a>
+                    </li>
+                    <li>
+                        <a href="">Se alle eksemplarer</a>
+                    </li>
+                </ul>
+                <a href="">+ Flere typer</a>
+            </div>
+        </div>
+
+        <div class="g6-4">
+            <h2>Klassisk julemusik [H2]</h2>
+            <span class="meta">
+                <span class="meta-primary">Tirsdag 10. december 2013</span>
+                <span class="meta-secondary">af
+                    <a href="">Lene Frandsen</a>
+                </span>
+            </span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, quam ex quae et mollitia pariatur ea dolorem nesciunt iste eligendi? [P]</p>
+            <button class="btn btn-small btn-sidebyside">Klassisk</button>
+            <button class="btn btn-small btn-sidebyside">Jul</button>
+            <button class="btn btn-small btn-sidebyside">Hygge</button>
+        </div>
+
+        <div class="gclear spacer"></div>
+        <div class="g12-1">
+
+
+
+            <div class="rating ">
+                <span>
+                    <i class="fa fa-star-o"></i>
+                </span>
+                <span>
+                    <i class="fa fa-star-o"></i>
+                </span>
+                <span class="checked">
+                    <i class="fa fa-star-o"></i>
+                </span>
+                <span>
+                    <i class="fa fa-star-o"></i>
+                </span>
+                <span>
+                    <i class="fa fa-star-o"></i>
+                </span>
+            </div>
+
+            <div class="rating  rating-md">
+                <span>
+                    <i class="fa fa-star-o"></i>
+                </span>
+                <span>
+                    <i class="fa fa-star-o"></i>
+                </span>
+                <span>
+                    <i class="fa fa-star-o"></i>
+                </span>
+                <span class="checked">
+                    <i class="fa fa-star-o"></i>
+                </span>
+                <span>
+                    <i class="fa fa-star-o"></i>
+                </span>
+            </div>
+
+            <div class="rating rating-interactive rating-lg">
+                <span>
+                    <i class="fa fa-star-o"></i>
+                </span>
+                <span>
+                    <i class="fa fa-star-o"></i>
+                </span>
+                <span>
+                    <i class="fa fa-star-o"></i>
+                </span>
+                <span>
+                    <i class="fa fa-star-o"></i>
+                </span>
+                <span class="checked">
+                    <i class="fa fa-star-o"></i>
+                </span>
+            </div>
+
+
+        </div>
+        <div class="gclear spacer"></div>
+        <div class="g12-1">
+
+            <div class="pt color-red">
+                <div class="search-bar search-bar-red ">
+                    <div class="icon-search">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </div>
+                    <form action="" class="">
                         <input type="text" placeholder="Skriv f.eks. Harry Potter, krimi eller lignende">
                     </form>
                 </div>
             </div>
-            <br><br>
+            <br>
+            <br>
             <div class="pt color-purple">
                 <div class="search-bar search-bar-purple ">
-                        <div class="icon-search"><span class="glyphicon glyphicon-search"></span></div>
-                     <form action="" class="">
+                    <div class="icon-search">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </div>
+                    <form action="" class="">
                         <input type="text" placeholder="Skriv f.eks. Harry Potter, krimi eller lignende">
                     </form>
                 </div>
             </div>
-            <br><br>
+            <br>
+            <br>
             <div class="pt color-blue">
                 <div class="search-bar search-bar-blue ">
-                        <div class="icon-search"><span class="glyphicon glyphicon-search"></span></div>
-                     <form action="" class="">
+                    <div class="icon-search">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </div>
+                    <form action="" class="">
                         <input type="text" placeholder="Skriv f.eks. Harry Potter, krimi eller lignende">
                     </form>
                 </div>
             </div>
-            <br><br>
+            <br>
+            <br>
             <div class="pt color-yellow">
                 <div class="search-bar search-bar-yellow ">
-                        <div class="icon-search"><span class="glyphicon glyphicon-search"></span></div>
-                     <form action="" class="">
+                    <div class="icon-search">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </div>
+                    <form action="" class="">
                         <input type="text" placeholder="Skriv f.eks. Harry Potter, krimi eller lignende">
                     </form>
                 </div>
             </div>
-            <br><br>
+            <br>
+            <br>
             <div class="pt color-green">
                 <div class="search-bar search-bar-green ">
-                        <div class="icon-search"><span class="glyphicon glyphicon-search"></span></div>
-                     <form action="" class="">
+                    <div class="icon-search">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </div>
+                    <form action="" class="">
                         <input type="text" placeholder="Skriv f.eks. Harry Potter, krimi eller lignende">
                     </form>
                 </div>
             </div>
-            <br><br>
+            <br>
+            <br>
             <div class="pt color-pink">
                 <div class="search-bar search-bar-pink ">
-                        <div class="icon-search"><span class="glyphicon glyphicon-search"></span></div>
-                     <form action="" class="">
+                    <div class="icon-search">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </div>
+                    <form action="" class="">
                         <input type="text" placeholder="Skriv f.eks. Harry Potter, krimi eller lignende">
                     </form>
                 </div>
             </div>
-            <br><br>
-            
-            
+            <br>
+            <br>
+
+
             <div class="search-bar search-bar-small search-bar-dark">
-                    <div class="icon-search"><span class="glyphicon glyphicon-search"></span></div>
-                 <form action="" class="">
+                <div class="icon-search">
+                    <span class="glyphicon glyphicon-search"></span>
+                </div>
+                <form action="" class="">
                     <input type="text" placeholder="Skriv f.eks. Harry Potter, krimi eller lignende">
                 </form>
             </div>
-           
-            
+
+
         </div>
         <div class="gclear spacer"></div>
         <div class="g12-1">
@@ -314,8 +590,16 @@ V responsive imgtext FIREFOX
                 </div>
                 <div class="text">
                     <div class="meta">
-                        <span class="date">21 okt. 2013</span>
-                        <span class="category">kort nyt</span>
+                        <span class="meta-primary">21 okt. 2013</span>
+                        <span class="meta-secondary">kort nyt</span>
+                    </div>
+                    <div class="meta">
+                        <span class="meta-primary">
+                            <a href="">21 okt. 2013</a>
+                        </span>
+                        <span class="meta-secondary">af
+                            <a href="">Lene Frandsen</a>
+                        </span>
                     </div>
                     <h2>Alle børn har ret til et godt liv</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, animi, aperiam laboriosam molestias illum nihil sit neque ipsam quasi nulla doloremque reiciendis odit eveniet dolorem quidem labore facere corrupti ratione.</p>
@@ -472,17 +756,26 @@ V responsive imgtext FIREFOX
                     </li>
                 </ul>
             </div>
-            
-            <br><br>
+
+            <br>
+            <br>
             <div class="vertical-list">
                 <h3>Vertical List With Links</h3>
                 <ul class="vertical-list-links">
-                    <li><a href="">Lorem ipsum dolor sit.</a></li>
-                    <li><a href="">Molestiae, unde delectus laborum.</a></li>
-                    <li class="active"><a href="" >Nesciunt porro fuga delectus.</a></li>
-                    <li><a href="">Accusantium, incidunt dignissimos quos?</a></li>
+                    <li>
+                        <a href="">Lorem ipsum dolor sit.</a>
+                    </li>
+                    <li>
+                        <a href="">Molestiae, unde delectus laborum.</a>
+                    </li>
+                    <li class="active">
+                        <a href="">Nesciunt porro fuga delectus.</a>
+                    </li>
+                    <li>
+                        <a href="">Accusantium, incidunt dignissimos quos?</a>
+                    </li>
                 </ul>
-                </div>
+            </div>
 
         </div>
         <div class="g3-7">
@@ -977,7 +1270,7 @@ V responsive imgtext FIREFOX
         </div>
         <div class="gclear spacer"></div>
         <div class="g5-1">
-            
+
             <table class="table table-data">
                 <tbody>
                     <tr>
@@ -1006,7 +1299,7 @@ V responsive imgtext FIREFOX
                     </tr>
                 </tbody>
             </table>
-        
+
         </div>
         <div class="gclear spacer"></div>
         <div class="g3-1">

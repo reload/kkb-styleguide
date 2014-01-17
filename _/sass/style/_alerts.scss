@@ -1,24 +1,37 @@
 @import '../bootstrap/alerts';
 
+@mixin ss_alert($color){
+    background-color: desaturate(lighten($color,5),5);
+    border-color: darken($color,20);
+    color: darken($color,20);
+}
+
 
 .alert{
     position: relative;
     .btn{
         margin: 10px 0 3px 0;
     }
-    @extend .alert-danger;
+    @include ss_alert($color-red);
+    
+    p{
+        color:white;
+    }
 }
 
 .alert.alert-warning{
-    @extend .alert-warning;
+//    @extend .alert-warning;
+    @include ss_alert($color-yellow);
 }
 
 .alert.alert-info{
-    @extend .alert-info;
+//    @extend .alert-info;
+    @include ss_alert($color-blue);
 }
 
 .alert.alert-success{
-    @extend .alert-success;
+//    @extend .alert-success;
+    @include ss_alert($color-green);
 }
 
 
@@ -32,7 +45,7 @@ Markup: <div class="alert alert-danger">
         <button class="btn btn-danger" data-dismiss="alert">Okay jeg forstår</button>
 </div>
 
-Styleguide 10.0
+Styleguide 99.6
 */
 
 /*
@@ -44,10 +57,10 @@ Markup: <div class="alert {$modifiers}">
     <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
 </div>
 
-.alert-danger     - Danger
-.alert-warning     - Warning
+.alert-danger   - Danger
+.alert-warning  - Warning
 .alert-info     - Info 
-.alert-success     - Success 
+.alert-success  - Success 
 
-Styleguide 10.1
+Styleguide 99.7
 */

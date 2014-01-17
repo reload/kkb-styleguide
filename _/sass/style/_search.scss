@@ -12,7 +12,7 @@ Markup: <div class="color {$modifiers}"> <!-- .color skal ikke med, bruges blot 
     </div>
 </div>
 
-.search-bar-orange - Orange
+.search-bar-red - red
 .search-bar-purple - Purple
 .search-bar-blue - Blue
 .search-bar-yellow - Yellow
@@ -37,7 +37,7 @@ Styleguide 11.1
 
 
 
-.color.search-bar-orange{background-color: $color-orange; padding: 72px 0 0 0;}
+.color.search-bar-red{background-color: $color-red; padding: 72px 0 0 0;}
 .color.search-bar-purple{background-color: $color-purple; padding: 72px 0 0 0;}
 .color.search-bar-blue{background-color: $color-blue; padding: 72px 0 0 0;}
 .color.search-bar-yellow{background-color: $color-yellow; padding: 72px 0 0 0;}
@@ -65,8 +65,8 @@ Styleguide 11.1
         }
     }
     
-    &.search-bar-orange{
-        background-color: desaturate(darken($color-orange, 12), 5);
+    &.search-bar-red{
+        background-color: desaturate(darken($color-red, 12), 5);
     } 
     &.search-bar-purple{
         background-color: desaturate(darken($color-purple, 10), 2);

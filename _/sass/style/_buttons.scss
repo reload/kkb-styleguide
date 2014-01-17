@@ -15,7 +15,7 @@ Markup: <button type="button" class="btn {$modifiers}">
 .btn-secondary - Secondary color.
 .btn-danger - Danger / Warning color.
 
-Styleguide 2.0
+Styleguide 99.1
 */
 .btn{
     display: inline-block;
@@ -86,15 +86,15 @@ Styleguide 2.0
 
 
 .btn-danger{
-    background-color: $color-orange;
-    box-shadow:0px 1px 2px darken($color-orange, 30);
+    background-color: $color-red;
+    box-shadow:0px 1px 2px darken($color-red, 30);
     
     &:hover, &.pseudo-class-hover{
-        background-color: darken($color-orange, 4);
+        background-color: darken($color-red, 4);
     }
     &:active, &.pseudo-class-active{
-        box-shadow:inset 1px 1px 4px darken($color-orange, 15);
-        color: tint($color-orange, 80);
+        box-shadow:inset 1px 1px 4px darken($color-red, 15);
+        color: tint($color-red, 80);
     }
 }
 

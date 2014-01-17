@@ -16,6 +16,14 @@ $border-radius: 4px;
 
 // ----- I N C L U D E -----
 
+
+/*
+Objects
+
+Styleguide 99.0
+*/
+
+
 @import 'style/color';
 @import 'style/menu';
 @import 'style/vgrid';
@@ -57,6 +65,7 @@ $border-radius: 4px;
 }
 
 #footer{
-    background-color: $color-dark-grey;
+    background-color: $color-black;
     min-height:400px;
 }
+

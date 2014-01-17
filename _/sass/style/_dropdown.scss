@@ -23,7 +23,7 @@ Markup: <div class="dropdown">
 .secondary - Secondary color
 .danger - Danger color
 
-Styleguide 5.0
+Styleguide 90.0
 */
 
 /*
@@ -46,7 +46,7 @@ Markup: <div class="dropdown">
     </div>
 </div>
 
-Styleguide 5.1
+Styleguide 90.1
 */
 
 /*
@@ -67,7 +67,7 @@ Markup: <div class="dropdown">
     </div>
 </div>
 
-Styleguide 5.2
+Styleguide 90.2
 */
 
 /*
@@ -109,7 +109,7 @@ Markup: <div class="dropdown">
     </div>
 </div>
 
-Styleguide 5.3
+Styleguide 90.3
 */
 .dropdown{
     display: block;
@@ -212,9 +212,9 @@ Styleguide 5.3
         }
         
         &.danger{
-            box-shadow:inset 1px 1px 4px darken($color-orange, 15);
-            color: tint($color-orange, 80);
-            background-color: darken($color-orange, 4);
+            box-shadow:inset 1px 1px 4px darken($color-red, 15);
+            color: tint($color-red, 80);
+            background-color: darken($color-red, 4);
         }
     }
     

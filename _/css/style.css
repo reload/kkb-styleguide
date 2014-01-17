@@ -1,5 +1,186 @@
 @charset "UTF-8";
-.color-orange {
+/*
+Objects
+
+Styleguide 99.0
+*/
+/*
+Farver
+
+Styleguide 2.0
+*/
+/*
+Primær Farver
+
+<div>
+    <div class="g4-1 fix_color color-sand fix_border"><strong>Sand</strong> - Baggrundsfarve</div>
+    <div class="g4-5 fix_color color-mudgreen"><strong>Mud Green</strong> - Brødtekst</div>
+    <div class="g4-9 fix_color color-black"><strong>Black</strong> - Headers, (Footer)</div>
+</div>
+<div class="gclear"></div>
+<div >
+    <div class="g4-1 fix_color color-grey"><strong>Grey</strong> - Header 3</div>
+    <div class="g4-5 fix_color color-grey-light"><strong>Grey Light</strong> - Links, Knapper</div>
+    <div class="g4-9 fix_color color-dark-sand fix_border"><strong>Tinted Sand</strong> - Odd/even tabeller</div>
+</div>
+<div class="gclear"></div>
+<div >
+    <div class="g6-1 fix_color color-red-bright"><strong>Bright Red</strong> - VTL Menu Active</div>
+    <div class="g6-7 fix_color color-mint-green"><strong>Mint Green</strong> - Links, Knapper</div>
+</div>
+
+Styleguide 2.1
+*/
+/*
+Tema Farver
+
+ <style>
+    .fix_color{
+        padding: 15px 0px 15px 15px;
+        color:rgba(255,255,255,0.75);
+        font-size: 12px;
+    }
+    .fix_color_small{
+        height:30px;
+    }
+    .fix_border{
+        border: 1px solid #D8D8D0;
+        color: rgba(120, 135, 128, 0.75);
+        padding: 14px 0px 14px 15px;
+    }
+</style>
+<div >
+    <div class="g12-1">
+        <p>Her ses de tema farverne, som vil optræde i header, searchbar og menu:</p>
+    </div>
+</div> 
+<div class="gclear"></div>
+<div >
+    <div class="g2-1 color-red-font">Red</div>
+    <div class="g2-3 color-purple-font">Purple</div>
+    <div class="g2-5 color-blue-font">Blue</div>
+    <div class="g2-7 color-yellow-font">Yellow</div>
+    <div class="g2-9 color-green-font">Green</div>
+    <div class="g2-11 color-pink-font">Pink</div>
+</div>
+<div class="gclear"></div>
+<div >
+    <div class="g2-1 color-red-light fix_color_small _small"></div>
+    <div class="g2-3 color-purple-light fix_color_small"></div>
+    <div class="g2-5 color-blue-light fix_color_small "></div>
+    <div class="g2-7 color-yellow-light fix_color_small "></div>
+    <div class="g2-9 color-green-light fix_color_small "></div>
+    <div class="g2-11 color-pink-light fix_color_small "></div>
+</div>
+<div class="gclear"></div>
+<div >
+    <div class="g2-1 color-red fix_color_small "></div>
+    <div class="g2-3 color-purple fix_color_small "></div>
+    <div class="g2-5 color-blue fix_color_small "></div>
+    <div class="g2-7 color-yellow fix_color_small "></div>
+    <div class="g2-9 color-green fix_color_small "></div>
+    <div class="g2-11 color-pink fix_color_small "></div>
+</div>
+<div class="gclear"></div>
+<div >
+    <div class="g2-1 color-red-dark fix_color_small "></div>
+    <div class="g2-3 color-purple-dark fix_color_small "></div>
+    <div class="g2-5 color-blue-dark fix_color_small "></div>
+    <div class="g2-7 color-yellow-dark fix_color_small "></div>
+    <div class="g2-9 color-green-dark fix_color_small "></div>
+    <div class="g2-11 color-pink-dark fix_color_small "></div>
+</div>
+<div class="gclear spacer-md"></div>
+
+<div >
+    <div class="g12-1">
+        <p>
+            Farverne der bliver brugt til baggrundsfarve på headeren er fx. <code>red</code> eller <code>purple</code> etc.
+        </p>
+    </div>
+</div>
+<div class="gclear"></div>
+<div >
+    <div class="g2-1 color-red fix_color">red</div>
+    <div class="g2-3 color-purple fix_color">purple</div>
+    <div class="g2-5 color-blue fix_color">blue</div>
+    <div class="g2-7 color-yellow fix_color">yellow</div>
+    <div class="g2-9 color-green fix_color">green</div>
+    <div class="g2-11 color-pink fix_color">pink</div>
+</div>
+<div class="gclear spacer-md"></div>
+
+<div >
+    <div class="g12-1">
+        <p>
+            Farverne der bliver brugt til searchbaren er fx. <code>blue dark</code> eller <code>yellow dark</code> etc.
+        </p>
+    </div>
+</div>
+<div class="gclear"></div>
+<div >
+    <div class="g2-1 color-red-dark fix_color">red dark</div>
+    <div class="g2-3 color-purple-dark fix_color">purple dark</div>
+    <div class="g2-5 color-blue-dark fix_color">blue dark</div>
+    <div class="g2-7 color-yellow-dark fix_color">yellow dark</div>
+    <div class="g2-9 color-green-dark fix_color">green dark</div>
+    <div class="g2-11 color-pink-dark fix_color">pink dark</div>
+</div>
+<div class="gclear spacer-md"></div>
+
+<div >
+    <div class="g12-1">
+        <p>
+            Farverne der bliver brugt til menu når den bliver responsive er fx. <code>green light</code> eller <code>pink light</code> etc.
+        </p>
+    </div>
+</div>
+<div class="gclear"></div>
+<div >
+    <div class="g2-1 color-red-light fix_color">red light</div>
+    <div class="g2-3 color-purple-light fix_color">purple light</div>
+    <div class="g2-5 color-blue-light fix_color">blue light</div>
+    <div class="g2-7 color-yellow-light fix_color">yellow light</div>
+    <div class="g2-9 color-green-light fix_color">green light</div>
+    <div class="g2-11 color-pink-light fix_color">pink light</div>
+</div>
+<div class="gclear spacer-md"></div>
+
+Styleguide 2.2
+*/
+.color-sand {
+  background-color: #f1f1e7;
+}
+
+.color-mudgreen {
+  background-color: #798881;
+}
+
+.color-black {
+  background-color: #313233;
+}
+
+.color-grey {
+  background-color: #5f6062;
+}
+
+.color-grey-light {
+  background-color: #b1b1ad;
+}
+
+.color-red-bright {
+  background-color: #f47049;
+}
+
+.color-dark-sand {
+  background-color: #e9e9e1;
+}
+
+.color-mint-green {
+  background-color: #00b38a;
+}
+
+.color-red {
   background-color: #ff7275;
 }
 
@@ -23,7 +204,31 @@
   background-color: #dc90b5;
 }
 
-.color-orange-light {
+.color-red-font {
+  color: #ff7275;
+}
+
+.color-purple-font {
+  color: #696092;
+}
+
+.color-blue-font {
+  color: #278fb5;
+}
+
+.color-yellow-font {
+  color: #ffba48;
+}
+
+.color-green-font {
+  color: #7cbf9e;
+}
+
+.color-pink-font {
+  color: #dc90b5;
+}
+
+.color-red-light {
   background-color: #fba9ab;
 }
 
@@ -45,6 +250,30 @@
 
 .color-pink-light {
   background-color: #e3bccf;
+}
+
+.color-red-dark {
+  background-color: #fa3a3e;
+}
+
+.color-purple-dark {
+  background-color: #544e71;
+}
+
+.color-blue-dark {
+  background-color: #206d89;
+}
+
+.color-yellow-dark {
+  background-color: #f9a111;
+}
+
+.color-green-dark {
+  background-color: #5aa47f;
+}
+
+.color-pink-dark {
+  background-color: #c96696;
 }
 
 .font-white {
@@ -1115,7 +1344,7 @@ textarea.input-lg {
     z-index: 99;
     margin: 0;
   }
-  .navbar.color-orange {
+  .navbar.color-red {
     background-color: #ffa5a7;
   }
   .navbar.color-purple {
@@ -1204,34 +1433,116 @@ h1, h2, h3, .popover h3, h4, h5, h6, p, a {
 }
 
  /*
-Basic Typografi
-
-Markup: <h1>Lorem ipsum dolor sit.</h1>
-<h2>Lorem ipsum dolor sit.</h2>
-<h3>Lorem ipsum dolor sit.</h3>
-<h4>Lorem ipsum dolor sit.</h4>
+Typografi
 
 Styleguide 1.0
 */
  /*
-Header Brødtekst
+Headers
 
-Markup: <h1>Lorem ipsum dolor sit.</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, expedita, eum, vero in provident nulla unde commodi nam ullam asperiores quia temporibus eligendi rerum minus eius. Voluptas, doloremque sequi modi!</p>
-<h2>Lorem ipsum dolor sit.</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, expedita, eum, vero in provident nulla unde commodi nam ullam asperiores quia temporibus eligendi rerum minus eius. Voluptas, doloremque sequi modi!</p>
-<h3>Lorem ipsum dolor sit.</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, expedita, eum, vero in provident nulla unde commodi nam ullam asperiores quia temporibus eligendi rerum minus eius. Voluptas, doloremque sequi modi!</p>
-<h4>Lorem ipsum dolor sit.</h4>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, expedita, eum, vero in provident nulla unde commodi nam ullam asperiores quia temporibus eligendi rerum minus eius. Voluptas, doloremque sequi modi!</p>
+Markup: <h1>H1: Merriweather 700 42/48</h1>
+<h2>H2: Merriweather 700 20/24</h2>
+<h3>H3: Merriweather 300 20/24</h3>
+<h4>H4: Proxima Nova 400 16/24</h4> <br>
+<p>P: Proxima Nova 300 16/24</p>
 
 Styleguide 1.1
+*/
+/*
+Links
+
+Markup: <a href="#" class="{$modifiers}">Lorem ipsum color deme</a>
+
+:hover - Highlight the button when hovered.
+:active - Highlight when active.
+.link-secondary - Secondary link.
+.link-danger - Warning/danger link.
+
+Styleguide 1.2
+*/
+ /*
+Meta data
+
+Meta data kan bruges til at vise datoer, kategorier, forfattere etc.
+
+Markup: <div class="meta">
+    <span class="meta-primary">21 okt. 2013</span>
+    <span class="meta-secondary">kort nyt</span>
+</div>
+<div class="meta">
+    <span class="meta-primary"><a href="">21 okt. 2013</a></span>
+    <span class="meta-secondary">af <a href="">Lene Frandsen</a></span>
+</div>
+
+Styleguide 1.2
+*/
+ /*
+Copy H1, H4
+
+Et eksempel på brug af <code>H1</code> kunne være ved overskrifter på materiale sider eller udstillingssider.
+Brug af <code>H4</code> kunne være til at vise forfatteren eller udstillingsbeskrivelse.
+
+Markup: <h4>Af <a href="">Joanne K. Rowling</a> (2007) [H4]</h4> <br>
+<h1>Harry Potter og dødsregalierne [H1]</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, necessitatibus soluta maxime recusandae voluptatem hic facilis veniam a dolorum eaque eius repudiandae veritatis doloremque commodi quam dolore odio sit accusamus fugit quidem vel reprehenderit possimus consectetur iure tempore quo omnis enim ipsa excepturi est. Aliquid inventore reprehenderit hic quidem libero. [P]</p>
+
+Styleguide 1.3
+*/
+ /*
+Copy H2
+
+Brug af <code>H2</code> kunne være ved visning af nyheder.
+
+Markup: <h2>Klassisk julemusik [H2]</h2>
+<span class="meta">
+    <span class="meta-primary">Tirsdag 10. december 2013</span>
+    <span class="meta-secondary">af <a href="">Lene Frandsen</a></span>
+</span>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, quam ex quae et mollitia pariatur ea dolorem nesciunt iste eligendi? [P]</p>
+<button class="btn btn-small btn-sidebyside">Klassisk</button>
+<button class="btn btn-small btn-sidebyside">Jul</button>
+<button class="btn btn-small btn-sidebyside">Hygge</button>
+
+Styleguide 1.3
+*/
+ /*
+Copy H3
+
+Et eksempel på brug af <code>H3</code> kunne være ved adressevisning af et bibliotek.
+
+Markup: <h3>Biblioteket <br>
+        Rentemestervej [H3]</h3>
+<p>Rentemestervej 76 <br> 
+    2400 København NV [P]</p>
+<p>+45 82 32 16 00 <br>
+    <a href="">bibbro@kff.kk.dk [A]</a></p>
+
+Styleguide 1.3
+*/
+ /*
+Copy H3, H4
+
+Brug af <code>H3</code> og <code>H4</code> kunne være ved en filtreringsmenu.
+
+Markup: <div class="vertical-list vertical-list-menu">
+    <h3>Filtrér din søgning [H3]</h3>
+    <h4>Efter materialetype [H4]</h4>
+    <ul class="vertical-list-plain">
+        <li><a href="">Resumé [A]</a></li>
+        <li><a href="">Anmeldelser</a></li>
+        <li class="active"><a href="">Om Joanne K. Rowling</a></li>
+        <li><a href="">Se alle eksemplarer</a></li>
+    </ul>
+    <a href="">+ Flere typer</a>
+</div>
+
+Styleguide 1.3
 */
 h1 {
   font-family: 'Merriweather', serif;
   font-weight: 700;
   font-size: 42px;
-  color: #5f6062;
+  color: #313233;
   line-height: 48px;
   margin-top: 0px;
   margin-bottom: 24px;
@@ -1253,7 +1564,7 @@ h2 {
   font-family: 'Merriweather', serif;
   font-weight: 700;
   font-size: 20px;
-  color: #5f6062;
+  color: #313233;
   line-height: 24px;
   margin-top: 0px;
   margin-bottom: 24px;
@@ -1263,7 +1574,7 @@ h3, .popover h3 {
   font-family: 'Merriweather',sans-serif;
   font-size: 18px;
   font-weight: 300;
-  color: #5f6062;
+  color: #313233;
   line-height: 24px;
   margin-top: 0px;
   margin-bottom: 24px;
@@ -1308,18 +1619,6 @@ p a {
   margin-bottom: 0;
 }
 
-/*
-Links
-
-Markup: <a href="#" class="{$modifiers}">Lorem ipsum color deme</a>
-
-:hover - Highlight the button when hovered.
-:active - Highlight when active.
-.link-secondary - Secondary link.
-.link-danger - Warning/danger link.
-
-Styleguide 1.2
-*/
 a {
   font-family: 'proxima-nova',sans-serif;
   font-size: 16px;
@@ -1349,7 +1648,7 @@ a.link-danger:hover, a.link-danger:active {
   color: #d80005;
 }
 
-.date {
+.meta-primary, .meta-primary a {
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1358,11 +1657,25 @@ a.link-danger:hover, a.link-danger:active {
   display: inline-block;
 }
 
-.category {
+.meta-primary a {
+  margin-right: 0;
+}
+.meta-primary a:hover {
+  color: #009a76;
+}
+
+.meta-secondary, .meta-secondary a {
   font-size: 12px;
   text-transform: uppercase;
   color: #b1b1ad;
   display: inline-block;
+}
+
+.meta-secondary a {
+  margin-right: 0;
+}
+.meta-secondary a:hover {
+  color: #989893;
 }
 
 /*
@@ -1474,6 +1787,11 @@ Styleguide 3.4
 .vertical-list ul li:first-child, .vertical-list ol li:first-child {
   padding: 0;
 }
+.vertical-list ul li a, .vertical-list ol li a {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
 .vertical-list ul li p, .vertical-list ol li p {
   margin: 0;
   padding: 0;
@@ -1484,18 +1802,16 @@ Styleguide 3.4
   border-bottom: 1px solid #d6d6d4;
 }
 .vertical-list.vertical-list-menu a {
-  margin-top: 8px;
   color: #b1b1ad;
   font-weight: 300;
 }
 .vertical-list.vertical-list-menu a:hover {
-  color: #929395;
+  color: #8c8c86;
 }
 .vertical-list.vertical-list-menu li.active a {
   color: #f47049;
 }
 .vertical-list ul.vertical-list-links a {
-  margin-top: 8px;
   color: #b1b1ad;
   font-weight: 300;
 }
@@ -1513,6 +1829,9 @@ Styleguide 3.4
   position: relative;
   padding: 0;
   margin: 0 0 8px 0;
+}
+.vertical-list ul.vertical-list-icons li a {
+  display: inline-block;
 }
 .vertical-list ul.vertical-list-icons li i, .vertical-list ul.vertical-list-icons li span {
   margin-left: -25px;
@@ -1836,7 +2155,7 @@ Markup: <button type="button" class="btn {$modifiers}">
 .btn-secondary - Secondary color.
 .btn-danger - Danger / Warning color.
 
-Styleguide 2.0
+Styleguide 99.1
 */
 .btn {
   display: inline-block;
@@ -1970,7 +2289,7 @@ Markup: <div class="dropdown">
 .secondary - Secondary color
 .danger - Danger color
 
-Styleguide 5.0
+Styleguide 90.0
 */
 /*
 Dropdown with links
@@ -1992,7 +2311,7 @@ Markup: <div class="dropdown">
     </div>
 </div>
 
-Styleguide 5.1
+Styleguide 90.1
 */
 /*
 Dropdown with content
@@ -2012,7 +2331,7 @@ Markup: <div class="dropdown">
     </div>
 </div>
 
-Styleguide 5.2
+Styleguide 90.2
 */
 /*
 Dropdown with Vertical list
@@ -2053,7 +2372,7 @@ Markup: <div class="dropdown">
     </div>
 </div>
 
-Styleguide 5.3
+Styleguide 90.3
 */
 .dropdown {
   display: block;
@@ -2500,7 +2819,7 @@ Markup: <div class="imgtext">
     </div>
     <div class="text">
         <div class="meta">
-            <span class="date">21 okt. 2013</span> <span class="category">kort nyt</span>
+            <span class="meta-primary">21 okt. 2013</span> <span class="meta-secondary">kort nyt</span>
         </div>
         <h2>Alle børn har ret til et godt liv</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, animi, aperiam laboriosam molestias illum nihil sit neque ipsam quasi nulla doloremque reiciendis odit eveniet dolorem quidem labore facere corrupti ratione.</p>
@@ -2749,7 +3068,7 @@ left - Left placement
 bottom - Bottom placement
 right - Right placement
 
-Styleguide 8.0
+Styleguide 99.2
 */
 .popover h3 {
   border-bottom: none;
@@ -2929,7 +3248,7 @@ Markup: <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="
   </div>
 </div>
 
-Styleguide 9.0
+Styleguide 9.3
 */
 .alert {
   padding: 15px;
@@ -2962,59 +3281,83 @@ Styleguide 9.0
   color: inherit;
 }
 
-.alert-success, .alert.alert-success {
+.alert-success {
   background-color: #dff0d8;
   border-color: #d6e9c6;
   color: #468847;
 }
-.alert-success hr, .alert.alert-success hr {
+.alert-success hr {
   border-top-color: #c9e2b3;
 }
 .alert-success .alert-link {
   color: #356635;
 }
 
-.alert-info, .alert.alert-info {
+.alert-info {
   background-color: #d9edf7;
   border-color: #bce8f1;
   color: #3a87ad;
 }
-.alert-info hr, .alert.alert-info hr {
+.alert-info hr {
   border-top-color: #a6e1ec;
 }
 .alert-info .alert-link {
   color: #2d6987;
 }
 
-.alert-warning, .alert.alert-warning {
+.alert-warning {
   background-color: #fcf8e3;
   border-color: #faebcc;
   color: #c09853;
 }
-.alert-warning hr, .alert.alert-warning hr {
+.alert-warning hr {
   border-top-color: #f7e1b5;
 }
 .alert-warning .alert-link {
   color: #a47e3c;
 }
 
-.alert-danger, .alert {
+.alert-danger {
   background-color: #f2dede;
   border-color: #ebccd1;
   color: #b94a48;
 }
-.alert-danger hr, .alert hr {
+.alert-danger hr {
   border-top-color: #e4b9c0;
 }
-.alert-danger .alert-link, .alert .alert-link {
+.alert-danger .alert-link {
   color: #953b39;
 }
 
 .alert {
   position: relative;
+  background-color: #fc8e91;
+  border-color: #ff0c11;
+  color: #ff0c11;
 }
 .alert .btn {
   margin: 10px 0 3px 0;
+}
+.alert p {
+  color: white;
+}
+
+.alert.alert-warning {
+  background-color: #fbc365;
+  border-color: #e18c00;
+  color: #e18c00;
+}
+
+.alert.alert-info {
+  background-color: #329dc4;
+  border-color: #154d61;
+  color: #154d61;
+}
+
+.alert.alert-success {
+  background-color: #91c3ab;
+  border-color: #468f6b;
+  color: #468f6b;
 }
 
 /*
@@ -3027,7 +3370,7 @@ Markup: <div class="alert alert-danger">
         <button class="btn btn-danger" data-dismiss="alert">Okay jeg forstår</button>
 </div>
 
-Styleguide 10.0
+Styleguide 99.6
 */
 /*
 Alerts colors
@@ -3038,12 +3381,12 @@ Markup: <div class="alert {$modifiers}">
     <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
 </div>
 
-.alert-danger     - Danger
-.alert-warning     - Warning
+.alert-danger   - Danger
+.alert-warning  - Warning
 .alert-info     - Info 
-.alert-success     - Success 
+.alert-success  - Success 
 
-Styleguide 10.1
+Styleguide 99.7
 */
 /*
 Searchbar
@@ -3059,7 +3402,7 @@ Markup: <div class="color {$modifiers}"> <!-- .color skal ikke med, bruges blot 
     </div>
 </div>
 
-.search-bar-orange - Orange
+.search-bar-red - red
 .search-bar-purple - Purple
 .search-bar-blue - Blue
 .search-bar-yellow - Yellow
@@ -3080,7 +3423,7 @@ Markup: <div class="search-bar search-bar-small search-bar-dark">
 
 Styleguide 11.1
 */
-.color.search-bar-orange {
+.color.search-bar-red {
   background-color: #ff7275;
   padding: 72px 0 0 0;
 }
@@ -3129,7 +3472,7 @@ Styleguide 11.1
   min-width: 55px;
   width: 5%;
 }
-.search-bar.search-bar-orange {
+.search-bar.search-bar-red {
   background-color: #fa3a3e;
 }
 .search-bar.search-bar-purple {
@@ -3215,7 +3558,7 @@ Markup: <div class="rating {$modifiers}">
 .rating-md - Medium Size
 .rating-lg - Large Size
 
-Styleguide 99.0
+Styleguide 99.4
 */
 /*
 Rating interactive
@@ -3228,7 +3571,7 @@ Markup: <div class="rating rating-md rating-interactive ">
     <span><i class="fa fa-star-o"></i></span>
 </div>
 
-Styleguide 99.1
+Styleguide 99.5
 */
 .rating {
   unicode-bidi: bidi-override;

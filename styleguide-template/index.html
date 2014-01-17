@@ -32,6 +32,7 @@
         }
         
         
+        /* MENU */
         .kss-head ul{
             margin:0 0 0 10px; padding: 0;
         }
@@ -42,13 +43,13 @@
         
         .kss-head ul li a{
             display:block;
-            border-bottom: 1px solid rgba(0,0,0,0.05);
+/*            border-bottom: 1px solid rgba(0,0,0,0.05);*/
             padding-bottom: 5px;
         }
         
         
         .kss-head ul li ul{
-            margin: 5px 0 0 0; padding: 0;            
+            margin: 0; padding: 0;            
         }
         
         .kss-head ul li ul li{
@@ -67,6 +68,7 @@
         }
         
         
+        /* SECTION */
         .kss-section{
            margin: 25px 100px 100px 0px;
         }
@@ -83,6 +85,16 @@
             line-height: 24px;
             padding-top: 25px;         
         }
+        
+        .kss-title-top{
+            font-family: 'Merriweather',serif;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 24px;
+            padding-top: 25px;
+            color: #00b38a;     
+        }
+        
         .kss-reference{
             font-weight: 400;
             color: #00b38a;
@@ -224,51 +236,56 @@
       {{else}}
         
         {{#eachSection rootNumber}}
-            <div class="kss-section" id="{{reference}}">
-                <div class="kss-header">
-<!--                        <h1 class="kss-title"><span class="kss-reference">{{ reference }}.0</span> {{ header }}</h1>-->
-                        <h1 class="kss-title">{{ header }}</h1>
-                </div>
                 {{#ifAny markup modifiers}}
-                        
-                    {{#if description}}
-                        <div class="kss-description">
-                                {{html description}}
+                <div class="kss-section" id="{{reference}}">
+                        <div class="kss-header">
+                            <!-- <h1 class="kss-title"><span class="kss-reference">{{ reference }}.0</span> {{ header }}</h1>-->
+                            <h1 class="kss-title">{{ header }}</h1>
                         </div>
-                    {{/if}}
-                    
-                    <div class="kss-markup">
-                        {{modifierMarkup}}
-                    </div>  
-                    
-                    {{#eachModifier}}
+                            
+                                    
+                        {{#if description}}
+                            <div class="kss-description">
+                                    {{html description}}
+                            </div>
+                        {{/if}}
                         
-                        <div class="kss-modifier" style="">
-                            <div class="kss-description">{{html description}}</div>
-                            <div class="kss-name">{{name}}</div>
-                            <div class="kss-markup">{{modifierMarkup}}</div>
+                        <div class="kss-markup">
+                            {{modifierMarkup}}
+                        </div>  
+                        
+                        {{#eachModifier}}
+                            
+                            <div class="kss-modifier" style="">
+                                <div class="kss-description">{{html description}}</div>
+                                <div class="kss-name">{{name}}</div>
+                                <div class="kss-markup">{{modifierMarkup}}</div>
+                            </div>
+                            
+                        {{/eachModifier}}
+                        
+                        <div class="kss-code">
+                            <pre class="prettyprint lang-html">{{markup}}</pre>
                         </div>
                         
-                    {{/eachModifier}}
-                    
-                    <div class="kss-code">
-                        <pre class="prettyprint lang-html">{{markup}}</pre>
-                    </div>
-                    
+                        <a href="#" style="float: right;">to top</a>
+                </div>    
                 {{else}}
                     
                     {{#if description}}
-                      <div style="background:rgba(0, 255, 148, 0.1); padding:10px; margin:10px;">
-                          {{html description}}
-                      </div>
+                    <div class="kss-section" id="{{reference}}">
+                        <div class="kss-header">
+                            <h1 class="kss-title">{{ header }}</h1>
+                        </div>
+                        <div class="kss-description">
+                            {{html description}}
+                        </div>
+                    </div>
                     {{/if}}
-                    
                     
                 {{/ifAny}}
                 
-                <a href="#" style="float: right;">to top</a>
                 
-          </div>
         {{/eachSection}}
       {{/if}}
     </div>

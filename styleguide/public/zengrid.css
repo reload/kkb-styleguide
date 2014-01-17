@@ -1,11 +1,5 @@
-/* Breakpoints
-   ========================================================================== */
-/* Media query
-   ========================================================================== */
-/* Breakpoints
-   ========================================================================== */
 .container {
-  padding-top: "";
+  max-width: 1170px;
   margin: auto;
 }
 .container:before, .container:after {
@@ -14,6 +8,11 @@
 }
 .container:after {
   clear: both;
+}
+
+.nested {
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .g1-1 {
@@ -43,7 +42,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -74,7 +73,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -105,7 +104,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -136,7 +135,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -167,7 +166,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -198,7 +197,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -229,7 +228,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -260,7 +259,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -291,7 +290,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -322,7 +321,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -353,7 +352,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -384,7 +383,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -415,7 +414,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -446,7 +445,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -477,7 +476,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -508,7 +507,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -539,7 +538,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -570,7 +569,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -601,7 +600,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -632,7 +631,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -663,7 +662,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -694,7 +693,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -725,7 +724,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -756,7 +755,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -787,7 +786,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -818,7 +817,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -849,7 +848,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -880,7 +879,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -911,7 +910,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -942,7 +941,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -973,7 +972,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1004,7 +1003,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1035,7 +1034,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1066,7 +1065,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1097,7 +1096,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1128,7 +1127,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1159,7 +1158,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1190,7 +1189,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1221,7 +1220,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1252,7 +1251,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1283,7 +1282,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1314,7 +1313,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1345,7 +1344,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1376,7 +1375,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1407,7 +1406,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1438,7 +1437,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1469,7 +1468,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1500,7 +1499,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1531,7 +1530,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1562,7 +1561,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1593,7 +1592,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1624,7 +1623,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1655,7 +1654,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1686,7 +1685,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1717,7 +1716,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1748,7 +1747,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1779,7 +1778,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1810,7 +1809,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1841,7 +1840,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1872,7 +1871,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1903,7 +1902,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1934,7 +1933,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1965,7 +1964,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -1996,7 +1995,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2027,7 +2026,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2058,7 +2057,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2089,7 +2088,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2120,7 +2119,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2151,7 +2150,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2182,7 +2181,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2213,7 +2212,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2244,7 +2243,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2275,7 +2274,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2306,7 +2305,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2337,7 +2336,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2368,7 +2367,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2399,7 +2398,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2430,7 +2429,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2461,7 +2460,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2492,7 +2491,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2523,7 +2522,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2554,7 +2553,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2585,7 +2584,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2616,7 +2615,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2647,7 +2646,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2678,7 +2677,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2709,7 +2708,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2740,7 +2739,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2771,7 +2770,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2802,7 +2801,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2833,7 +2832,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2864,7 +2863,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2895,7 +2894,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2926,7 +2925,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2957,7 +2956,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -2988,7 +2987,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3019,7 +3018,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3050,7 +3049,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3081,7 +3080,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3112,7 +3111,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3143,7 +3142,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3174,7 +3173,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3205,7 +3204,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3236,7 +3235,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3267,7 +3266,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3298,7 +3297,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3329,7 +3328,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3360,7 +3359,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3391,7 +3390,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3422,7 +3421,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3453,7 +3452,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3484,7 +3483,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3515,7 +3514,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3546,7 +3545,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3577,7 +3576,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3608,7 +3607,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3639,7 +3638,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3670,7 +3669,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3701,7 +3700,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3732,7 +3731,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3763,7 +3762,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3794,7 +3793,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3825,7 +3824,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3856,7 +3855,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3887,7 +3886,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3918,7 +3917,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3949,7 +3948,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -3980,7 +3979,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4011,7 +4010,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4042,7 +4041,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4073,7 +4072,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4104,7 +4103,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4135,7 +4134,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4166,7 +4165,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4197,7 +4196,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4228,7 +4227,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4259,7 +4258,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4290,7 +4289,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4321,7 +4320,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4352,7 +4351,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4383,7 +4382,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4414,7 +4413,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4445,7 +4444,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4476,7 +4475,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4507,7 +4506,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4538,7 +4537,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4569,7 +4568,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4600,7 +4599,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4631,7 +4630,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4662,7 +4661,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4693,7 +4692,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4724,7 +4723,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4755,7 +4754,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4786,7 +4785,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4817,7 +4816,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4848,7 +4847,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4879,7 +4878,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4910,7 +4909,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4941,7 +4940,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -4972,7 +4971,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5003,7 +5002,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5034,7 +5033,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5065,7 +5064,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5096,7 +5095,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5127,7 +5126,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5158,7 +5157,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5189,7 +5188,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5220,7 +5219,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5251,7 +5250,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5282,7 +5281,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5313,7 +5312,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5344,7 +5343,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5375,7 +5374,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5406,7 +5405,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5437,7 +5436,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5468,7 +5467,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5499,7 +5498,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5530,7 +5529,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5561,7 +5560,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5592,7 +5591,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5623,7 +5622,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5654,7 +5653,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5685,7 +5684,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5716,7 +5715,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5747,7 +5746,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5778,7 +5777,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5809,7 +5808,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5840,7 +5839,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5871,7 +5870,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5902,7 +5901,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5933,7 +5932,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5964,7 +5963,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -5995,7 +5994,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6026,7 +6025,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6057,7 +6056,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6088,7 +6087,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6119,7 +6118,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6150,7 +6149,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6181,7 +6180,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6212,7 +6211,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6243,7 +6242,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6274,7 +6273,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6305,7 +6304,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6336,7 +6335,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6367,7 +6366,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6398,7 +6397,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6429,7 +6428,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6460,7 +6459,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6491,7 +6490,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6522,7 +6521,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6553,7 +6552,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6584,7 +6583,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6615,7 +6614,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6646,7 +6645,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6677,7 +6676,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6708,7 +6707,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6739,7 +6738,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6770,7 +6769,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6801,7 +6800,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6832,7 +6831,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6863,7 +6862,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6894,7 +6893,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6925,7 +6924,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6956,7 +6955,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -6987,7 +6986,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7018,7 +7017,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7049,7 +7048,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7080,7 +7079,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7111,7 +7110,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7142,7 +7141,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7173,7 +7172,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7204,7 +7203,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7235,7 +7234,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7266,7 +7265,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7297,7 +7296,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7328,7 +7327,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7359,7 +7358,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7390,7 +7389,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7421,7 +7420,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7452,7 +7451,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7483,7 +7482,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7514,7 +7513,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7545,7 +7544,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7576,7 +7575,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7607,7 +7606,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7638,7 +7637,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7669,7 +7668,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7700,7 +7699,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7731,7 +7730,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7762,7 +7761,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7793,7 +7792,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7824,7 +7823,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7855,7 +7854,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7886,7 +7885,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7917,7 +7916,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7948,7 +7947,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -7979,7 +7978,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8010,7 +8009,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8041,7 +8040,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8072,7 +8071,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8103,7 +8102,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8134,7 +8133,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8165,7 +8164,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8196,7 +8195,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8227,7 +8226,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8258,7 +8257,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8289,7 +8288,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8320,7 +8319,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8351,7 +8350,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8382,7 +8381,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8413,7 +8412,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8444,7 +8443,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8475,7 +8474,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8506,7 +8505,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8537,7 +8536,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8568,7 +8567,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8599,7 +8598,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8630,7 +8629,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8661,7 +8660,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8692,7 +8691,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8723,7 +8722,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8754,7 +8753,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8785,7 +8784,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8816,7 +8815,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8847,7 +8846,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8878,7 +8877,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8909,7 +8908,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8940,7 +8939,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -8971,7 +8970,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9002,7 +9001,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9033,7 +9032,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9064,7 +9063,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9095,7 +9094,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9126,7 +9125,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9157,7 +9156,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9188,7 +9187,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9219,7 +9218,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9250,7 +9249,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9281,7 +9280,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9312,7 +9311,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9343,7 +9342,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9374,7 +9373,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9405,7 +9404,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9436,7 +9435,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9467,7 +9466,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9498,7 +9497,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9529,7 +9528,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9560,7 +9559,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9591,7 +9590,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9622,7 +9621,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9653,7 +9652,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9684,7 +9683,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9715,7 +9714,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9746,7 +9745,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9777,7 +9776,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9808,7 +9807,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9839,7 +9838,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9870,7 +9869,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9901,7 +9900,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9932,7 +9931,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9963,7 +9962,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -9994,7 +9993,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10025,7 +10024,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10056,7 +10055,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10087,7 +10086,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10118,7 +10117,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10149,7 +10148,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10180,7 +10179,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10211,7 +10210,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10242,7 +10241,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10273,7 +10272,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10304,7 +10303,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10335,7 +10334,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10366,7 +10365,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10397,7 +10396,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10428,7 +10427,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10459,7 +10458,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10490,7 +10489,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10521,7 +10520,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10552,7 +10551,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10583,7 +10582,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10614,7 +10613,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10645,7 +10644,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10676,7 +10675,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10707,7 +10706,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10738,7 +10737,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10769,7 +10768,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10800,7 +10799,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10831,7 +10830,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10862,7 +10861,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10893,7 +10892,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10924,7 +10923,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10955,7 +10954,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -10986,7 +10985,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11017,7 +11016,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11048,7 +11047,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11079,7 +11078,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11110,7 +11109,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11141,7 +11140,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11172,7 +11171,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11203,7 +11202,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11234,7 +11233,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11265,7 +11264,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11296,7 +11295,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11327,7 +11326,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11358,7 +11357,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11389,7 +11388,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11420,7 +11419,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11451,7 +11450,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11482,7 +11481,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11513,7 +11512,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11544,7 +11543,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11575,7 +11574,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11606,7 +11605,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11637,7 +11636,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11668,7 +11667,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11699,7 +11698,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11730,7 +11729,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11761,7 +11760,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11792,7 +11791,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11823,7 +11822,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11854,7 +11853,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11885,7 +11884,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11916,7 +11915,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11947,7 +11946,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -11978,7 +11977,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12009,7 +12008,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12040,7 +12039,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12071,7 +12070,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12102,7 +12101,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12133,7 +12132,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12164,7 +12163,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12195,7 +12194,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12226,7 +12225,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12257,7 +12256,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12288,7 +12287,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12319,7 +12318,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12350,7 +12349,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12381,7 +12380,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12412,7 +12411,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12443,7 +12442,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12474,7 +12473,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12505,7 +12504,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12536,7 +12535,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12567,7 +12566,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12598,7 +12597,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12629,7 +12628,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12660,7 +12659,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12691,7 +12690,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12722,7 +12721,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12753,7 +12752,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12784,7 +12783,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12815,7 +12814,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12846,7 +12845,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12877,7 +12876,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12908,7 +12907,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12939,7 +12938,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -12970,7 +12969,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -13001,7 +13000,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -13032,7 +13031,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -13063,7 +13062,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -13094,7 +13093,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -13125,7 +13124,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -13156,7 +13155,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -13187,7 +13186,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -13218,7 +13217,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -13249,7 +13248,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -13280,7 +13279,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -13311,7 +13310,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -13342,7 +13341,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -13373,7 +13372,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
@@ -13404,10 +13403,65 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    margin: 24px 0 24px 0;
+    margin: 1px;
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .r2-1 {
+    float: left;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: none;
+  }
+
+  .r2-2 {
+    float: left;
+    width: 50%;
+    margin-left: 50%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: none;
+  }
+
+  .rclear {
+    clear: left;
+  }
+
+  .rspacer {
+    height: 24px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .r2-1, .r2-2 {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: left;
+  }
+}
 .gclear {
   clear: left;
 }
@@ -13421,5 +13475,13 @@
 }
 
 .spacer {
-  height: "";
+  height: 96px;
+}
+
+.spacer-md {
+  height: 48px;
+}
+
+.spacer-sm {
+  height: 24px;
 }

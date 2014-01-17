@@ -13,32 +13,126 @@ h1,h2,h3,h4,h5,h6,p,a{
     margin:0; padding: 0;
 }
 
+
+
+
+$TYPO: 1;
  /*
-Basic Typografi
+Typografi
 
-Markup: <h1>Lorem ipsum dolor sit.</h1>
-<h2>Lorem ipsum dolor sit.</h2>
-<h3>Lorem ipsum dolor sit.</h3>
-<h4>Lorem ipsum dolor sit.</h4>
+Styleguide #{$TYPO}.0
+*/
 
-Styleguide 1.0
+ /*
+Headers
+
+Markup: <h1>H1: Merriweather 700 42/48</h1>
+<h2>H2: Merriweather 700 20/24</h2>
+<h3>H3: Merriweather 300 20/24</h3>
+<h4>H4: Proxima Nova 400 16/24</h4> <br>
+<p>P: Proxima Nova 300 16/24</p>
+
+Styleguide #{$TYPO}.1
+*/
+
+
+/*
+Links
+
+Markup: <a href="#" class="{$modifiers}">Lorem ipsum color deme</a>
+
+:hover - Highlight the button when hovered.
+:active - Highlight when active.
+.link-secondary - Secondary link.
+.link-danger - Warning/danger link.
+
+Styleguide #{$TYPO}.2
+*/
+
+ /*
+Meta data
+
+Meta data kan bruges til at vise datoer, kategorier, forfattere etc.
+
+Markup: <div class="meta">
+    <span class="meta-primary">21 okt. 2013</span>
+    <span class="meta-secondary">kort nyt</span>
+</div>
+<div class="meta">
+    <span class="meta-primary"><a href="">21 okt. 2013</a></span>
+    <span class="meta-secondary">af <a href="">Lene Frandsen</a></span>
+</div>
+
+Styleguide #{$TYPO}.2
 */
 
 
  /*
-Header Brødtekst
+Copy H1, H4
 
-Markup: <h1>Lorem ipsum dolor sit.</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, expedita, eum, vero in provident nulla unde commodi nam ullam asperiores quia temporibus eligendi rerum minus eius. Voluptas, doloremque sequi modi!</p>
-<h2>Lorem ipsum dolor sit.</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, expedita, eum, vero in provident nulla unde commodi nam ullam asperiores quia temporibus eligendi rerum minus eius. Voluptas, doloremque sequi modi!</p>
-<h3>Lorem ipsum dolor sit.</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, expedita, eum, vero in provident nulla unde commodi nam ullam asperiores quia temporibus eligendi rerum minus eius. Voluptas, doloremque sequi modi!</p>
-<h4>Lorem ipsum dolor sit.</h4>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, expedita, eum, vero in provident nulla unde commodi nam ullam asperiores quia temporibus eligendi rerum minus eius. Voluptas, doloremque sequi modi!</p>
+Et eksempel på brug af <code>H1</code> kunne være ved overskrifter på materiale sider eller udstillingssider.
+Brug af <code>H4</code> kunne være til at vise forfatteren eller udstillingsbeskrivelse.
 
-Styleguide 1.1
+Markup: <h4>Af <a href="">Joanne K. Rowling</a> (2007) [H4]</h4> <br>
+<h1>Harry Potter og dødsregalierne [H1]</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, necessitatibus soluta maxime recusandae voluptatem hic facilis veniam a dolorum eaque eius repudiandae veritatis doloremque commodi quam dolore odio sit accusamus fugit quidem vel reprehenderit possimus consectetur iure tempore quo omnis enim ipsa excepturi est. Aliquid inventore reprehenderit hic quidem libero. [P]</p>
+
+Styleguide #{$TYPO}.3
 */
+
+ /*
+Copy H2
+
+Brug af <code>H2</code> kunne være ved visning af nyheder.
+
+Markup: <h2>Klassisk julemusik [H2]</h2>
+<span class="meta">
+    <span class="meta-primary">Tirsdag 10. december 2013</span>
+    <span class="meta-secondary">af <a href="">Lene Frandsen</a></span>
+</span>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, quam ex quae et mollitia pariatur ea dolorem nesciunt iste eligendi? [P]</p>
+<button class="btn btn-small btn-sidebyside">Klassisk</button>
+<button class="btn btn-small btn-sidebyside">Jul</button>
+<button class="btn btn-small btn-sidebyside">Hygge</button>
+
+Styleguide #{$TYPO}.3
+*/
+
+ /*
+Copy H3
+
+Et eksempel på brug af <code>H3</code> kunne være ved adressevisning af et bibliotek.
+
+Markup: <h3>Biblioteket <br>
+        Rentemestervej [H3]</h3>
+<p>Rentemestervej 76 <br> 
+    2400 København NV [P]</p>
+<p>+45 82 32 16 00 <br>
+    <a href="">bibbro@kff.kk.dk [A]</a></p>
+
+Styleguide #{$TYPO}.3
+*/
+
+ /*
+Copy H3, H4
+
+Brug af <code>H3</code> og <code>H4</code> kunne være ved en filtreringsmenu.
+
+Markup: <div class="vertical-list vertical-list-menu">
+    <h3>Filtrér din søgning [H3]</h3>
+    <h4>Efter materialetype [H4]</h4>
+    <ul class="vertical-list-plain">
+        <li><a href="">Resumé [A]</a></li>
+        <li><a href="">Anmeldelser</a></li>
+        <li class="active"><a href="">Om Joanne K. Rowling</a></li>
+        <li><a href="">Se alle eksemplarer</a></li>
+    </ul>
+    <a href="">+ Flere typer</a>
+</div>
+
+Styleguide #{$TYPO}.3
+*/
+
 
 h1{
     font-family: 'Merriweather', serif;
@@ -76,7 +170,8 @@ h3{
     font-family: 'Merriweather',sans-serif;
     font-size: 18px; // 20
     font-weight: 300;   
-    color:$color-grey;
+//    color:$color-grey;
+    color:$color-black;
     @include lineHeight(3);
     @include margin(0,3);
     
@@ -125,18 +220,7 @@ p{
     
 }
 
-/*
-Links
 
-Markup: <a href="#" class="{$modifiers}">Lorem ipsum color deme</a>
-
-:hover - Highlight the button when hovered.
-:active - Highlight when active.
-.link-secondary - Secondary link.
-.link-danger - Warning/danger link.
-
-Styleguide 1.2
-*/
 a{
     font-family: 'proxima-nova',sans-serif;
     font-size: 16px;
@@ -163,14 +247,15 @@ a{
         }
     }
     &.link-danger{
-        color:$color-orange;
+        color:$color-red;
         &:hover, &:active{
-            color: darken($color-orange, 30);    
+            color: darken($color-red, 30);    
         }
     }
 }
 
-.date{
+
+.meta-primary{
     font-size:12px;
     font-weight: 600;
     text-transform: uppercase;
@@ -179,9 +264,25 @@ a{
     display:inline-block;
 }
 
-.category{
+.meta-primary a{
+    @extend .meta-primary;
+    margin-right: 0;
+    &:hover{
+        color: darken($color-mint-green, 5);
+    }
+}
+
+.meta-secondary{
     font-size: 12px;
     text-transform: uppercase;
     color: $color-grey-light;
     display:inline-block;
+}
+
+.meta-secondary a{
+    @extend .meta-secondary;
+    margin-right: 0;
+    &:hover{
+        color: darken($color-grey-light, 10);
+    }
 }
