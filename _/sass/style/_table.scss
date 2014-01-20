@@ -190,6 +190,8 @@ Styleguide 4.2
 /*
 Data pair
 
+Brug <code>.table-data</code> når data mængden er forholdsvis lille. Hvis der er mere en 2-3 linjer, brug da en alm. tabel med odd/even.
+
 Markup: <table class="table table-data">
     <tbody>
         <tr>

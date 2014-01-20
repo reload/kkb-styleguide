@@ -30,24 +30,71 @@
 </head>
 
 <body>
-    <style>
-        .color{
-            background-color: rgba(0,0,0,0.1);
-        }
-        
-        .color.sm{
-           background-color: rgba(0,0,0,0.2); 
-        }
-        .color.md{
-           background-color: rgba(0,0,0,0.4); 
-        }
-        .color.lg{
-           background-color: rgba(0,0,0,0.6); 
-        }
-    </style>
-    <div id="teller"></div>
-    <div class="container">
+    <div id="header" class="color-blue">
+        <div class="container">
+            <div class="g9-4" style="position:relative">
 
+                <div style="position:absolute; width:100%; top:410px; left:0px;">
+
+                    <nav class="navbar navbar-default color-blue" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="#">Arrangementer</a>
+                                </li>
+                                <li>
+                                    <a href="#">Biblioteker</a>
+                                </li>
+                                <li>
+                                    <a href="#">Temaer</a>
+                                </li>
+                                <li>
+                                    <a href="#">Materialer</a>
+                                </li>
+                                <li>
+                                    <a href="#">Nyheder</a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Log ind</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search-bar search-bar-blue">
+        <div class="container">
+            <div class="g12-1">
+                <div class="search-bar search-bar-blue">
+                    <div class="icon-search">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </div>
+                    <form action="" class="">
+                        <input type="text" placeholder="Skriv f.eks. Harry Potter, krimi eller lignende">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="spacer-md"></div>
+        <div class="spacer-sm"></div>
         <div class="g3-1">
             <div class="vertical-list">
                 <h3>Title findes som</h3>
@@ -94,9 +141,9 @@
                 </div>
                 <div class="g5-4">
                     <p>Fantasy. Harry Potter er sammen med sine gode venner Ron og Hermione taget ud på en farlig færd. De skal finde den onde troldmand Voldemorts Horcruxer og ødelægge dem. Deres søgen bringer dem mange steder hen og ofte er de i livsfare. Men Voldemort og hans kumpaner er også på jagt efter de forsvundne Horcruxer</p>
-                    <button class="btn btn-small btn-sidebyside">Fantasy</button>
-                    <button class="btn btn-small btn-sidebyside">Magi</button>
-                    <button class="btn btn-small btn-sidebyside">Troldmænd</button>
+                    <a href="" class="tag">Fantasy</a>
+                    <a href="" class="tag">Magi</a>
+                    <a href="" class="tag">Troldmænd</a>
                 </div>
                 <div class="g4-9">
                     <button type="button" class="btn">
@@ -125,11 +172,21 @@
                     </div>
                     <br>
                     <div class="rating">
-                        <span><i class="fa fa-star-o"></i></span>
-                        <span><i class="fa fa-star-o"></i></span>
-                        <span class="checked"><i class="fa fa-star-o"></i></span>
-                        <span><i class="fa fa-star-o"></i></span>
-                        <span><i class="fa fa-star-o"></i></span>
+                        <span>
+                            <i class="fa fa-star-o"></i>
+                        </span>
+                        <span>
+                            <i class="fa fa-star-o"></i>
+                        </span>
+                        <span class="checked">
+                            <i class="fa fa-star-o"></i>
+                        </span>
+                        <span>
+                            <i class="fa fa-star-o"></i>
+                        </span>
+                        <span>
+                            <i class="fa fa-star-o"></i>
+                        </span>
                     </div>
                 </div>
                 <div class="g8-1 gclear">
@@ -289,39 +346,157 @@
                             </div>
                         </div>
                     </div>
-                    
-                <div class="dropdown">
-                    <input type="checkbox" id="dropdown11">
-                    <label for="dropdown11">
-                        <span class="dropdown-title secondary">Om forfatteren
-                            <span class="glyphicon glyphicon-chevron-down"></span>
-                        </span>
-                    </label>
-                    <div class="dropdown-content">
-                        <div class="dropdown-content-wrap">
-                            <div class="underline">
-                                <h3>A guide to the Harry Potter novels</h3> <a href="#" class="btn btn-small">Lån bogen</a>
-                            </div>
-                            <div class="underline">
-                                <h3>Harry Potters eventyrlige univers : en skatkiste af myter, sagn og fascinerende fakta</h3> <a href="#" class="btn btn-small">Lån bogen</a>
-                            </div>
-                            <div class="underline">
-                                <h3>J.K. Rowling's Harry Potter novels : a reader's guide</h3> <a href="#" class="btn btn-small">Lån bogen</a>
+
+                    <div class="dropdown">
+                        <input type="checkbox" id="dropdown11">
+                        <label for="dropdown11">
+                            <span class="dropdown-title secondary">Om forfatteren
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </span>
+                        </label>
+                        <div class="dropdown-content">
+                            <div class="dropdown-content-wrap">
+                                <div class="underline">
+                                    <h3>A guide to the Harry Potter novels</h3>
+                                    <a href="#" class="btn btn-small">Lån bogen</a>
+                                </div>
+                                <div class="underline">
+                                    <h3>Harry Potters eventyrlige univers : en skatkiste af myter, sagn og fascinerende fakta</h3>
+                                    <a href="#" class="btn btn-small">Lån bogen</a>
+                                </div>
+                                <div class="underline">
+                                    <h3>J.K. Rowling's Harry Potter novels : a reader's guide</h3>
+                                    <a href="#" class="btn btn-small">Lån bogen</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                </div>
             </div>
         </div>
-
-
-        <div class="gclear"></div>
-
-
-
     </div>
-
+    <div class="gclear spacer"></div>
+    <div id="footer">
+        <div class="container">
+            <div class="gclear spacer-md"></div>
+            <div class="g3-1 r2-1">
+                <div class="vertical-list">
+                    <h3 class="font-white">Bibliotekerne tilbyder</h3>
+                    <ul class="vertical-list-links">
+                        <li>
+                            <a href="">Lorem ipsum.</a>
+                        </li>
+                        <li>
+                            <a href="">Unde, sequi!</a>
+                        </li>
+                        <li>
+                            <a href="">Adipisci, praesentium!</a>
+                        </li>
+                        <li>
+                            <a href="">Facere, qui.</a>
+                        </li>
+                        <li>
+                            <a href="">Nesciunt, ratione.</a>
+                        </li>
+                        <li>
+                            <a href="">Magnam, obcaecati.</a>
+                        </li>
+                        <li>
+                            <a href="">Sit, impedit!</a>
+                        </li>
+                        <li>
+                            <a href="">Ad, minus.</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="g3-4 r2-2">
+                <div class="vertical-list">
+                    <h3 class="font-white">Online tilbud</h3>
+                    <ul class="vertical-list-links">
+                        <li>
+                            <a href="">Lorem ipsum.</a>
+                        </li>
+                        <li>
+                            <a href="">Unde, sequi!</a>
+                        </li>
+                        <li>
+                            <a href="">Adipisci, praesentium!</a>
+                        </li>
+                        <li>
+                            <a href="">Facere, qui.</a>
+                        </li>
+                        <li>
+                            <a href="">Nesciunt, ratione.</a>
+                        </li>
+                        <li>
+                            <a href="">Magnam, obcaecati.</a>
+                        </li>
+                        <li>
+                            <a href="">Sit, impedit!</a>
+                        </li>
+                        <li>
+                            <a href="">Ad, minus.</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rclear"></div>
+            <div class="g3-4-right gclear-right r2-1 ">
+                <div class="vertical-list">
+                    <h3 class="font-white">Om KBHs Bilioteker</h3>
+                    <ul class="vertical-list-links">
+                        <li>
+                            <a href="">Lorem ipsum.</a>
+                        </li>
+                        <li>
+                            <a href="">Unde, sequi!</a>
+                        </li>
+                        <li>
+                            <a href="">Adipisci, praesentium!</a>
+                        </li>
+                        <li>
+                            <a href="">Facere, qui.</a>
+                        </li>
+                        <li>
+                            <a href="">Nesciunt, ratione.</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="g3-1-right r2-2">
+                <div class="vertical-list">
+                    <h3 class="font-white">Om hjemmesiden</h3>
+                    <ul class="vertical-list-links">
+                        <li>
+                            <a href="">Lorem ipsum.</a>
+                        </li>
+                        <li>
+                            <a href="">Unde, sequi!</a>
+                        </li>
+                        <li>
+                            <a href="">Adipisci, praesentium!</a>
+                        </li>
+                        <li>
+                            <a href="">Facere, qui.</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rclear"></div>
+            <div class="g5-2-right gclear-right" style="padding-top:24px">
+                <div class="search-bar search-bar-small search-bar-dark">
+                    <div class="icon-search">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </div>
+                    <form action="" class="">
+                        <input type="text" placeholder="Skriv f.eks. Harry Potter, krimi eller lignende">
+                    </form>
+                </div>
+            </div>
+            <div class="gclear spacer-md"></div>
+        </div>
+    </div>
 
 
 
@@ -329,7 +504,7 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/holderjs/holder.js"></script>
     <script type="text/javascript" src="bower_components/respond/dest/respond.src.js"></script>
-    <script src="_/js/grid_bookmark.js"></script>
+<!--    <script src="_/js/grid_bookmark.js"></script>-->
     <script>
         $(document).ready(function(){
             $('[data-toggle="popup"]').popover();

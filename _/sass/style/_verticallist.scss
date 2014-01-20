@@ -166,6 +166,7 @@ Styleguide 3.4
                  color:$color-mint-green;
             }
         }
+
     }
 
     ul.vertical-list-plain{
@@ -252,3 +253,10 @@ Styleguide 3.4
     } // ul.vertical-list-check
     
 } // .vertical-list
+
+
+#footer .vertical-list{
+    @include small-medium(){
+        margin-bottom: 36px;
+    }
+}

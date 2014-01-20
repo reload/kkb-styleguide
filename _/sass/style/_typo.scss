@@ -68,6 +68,20 @@ Styleguide #{$TYPO}.2
 
 
  /*
+Tags
+
+Markup: <a href="" class="tag">Fantasy</a>
+<a href="" class="tag">Magi</a>
+<a href="" class="tag">Troldmænd</a>
+
+Styleguide #{$TYPO}.3
+*/
+
+
+
+$COPY: 4;
+
+ /*
 Copy H1, H4
 
 Et eksempel på brug af <code>H1</code> kunne være ved overskrifter på materiale sider eller udstillingssider.
@@ -77,7 +91,7 @@ Markup: <h4>Af <a href="">Joanne K. Rowling</a> (2007) [H4]</h4> <br>
 <h1>Harry Potter og dødsregalierne [H1]</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, necessitatibus soluta maxime recusandae voluptatem hic facilis veniam a dolorum eaque eius repudiandae veritatis doloremque commodi quam dolore odio sit accusamus fugit quidem vel reprehenderit possimus consectetur iure tempore quo omnis enim ipsa excepturi est. Aliquid inventore reprehenderit hic quidem libero. [P]</p>
 
-Styleguide #{$TYPO}.3
+Styleguide #{$TYPO}.#{$COPY}
 */
 
  /*
@@ -95,7 +109,7 @@ Markup: <h2>Klassisk julemusik [H2]</h2>
 <button class="btn btn-small btn-sidebyside">Jul</button>
 <button class="btn btn-small btn-sidebyside">Hygge</button>
 
-Styleguide #{$TYPO}.3
+Styleguide #{$TYPO}.#{$COPY}
 */
 
  /*
@@ -110,7 +124,7 @@ Markup: <h3>Biblioteket <br>
 <p>+45 82 32 16 00 <br>
     <a href="">bibbro@kff.kk.dk [A]</a></p>
 
-Styleguide #{$TYPO}.3
+Styleguide #{$TYPO}.#{$COPY}
 */
 
  /*
@@ -130,7 +144,7 @@ Markup: <div class="vertical-list vertical-list-menu">
     <a href="">+ Flere typer</a>
 </div>
 
-Styleguide #{$TYPO}.3
+Styleguide #{$TYPO}.#{$COPY}
 */
 
 
@@ -199,6 +213,23 @@ h4,h5,h6, legend{
 }
 
 
+h1 a, h1 a:hover{
+    @extend h1;
+}
+
+h2 a, h2 a:hover{
+    @extend h2;
+}
+
+h3 a, h3 a:hover{
+    @extend h3;
+}
+
+h4 a, h4 a:hover,
+h5 a, h5 a:hover,
+h6 a, h6 a:hover{
+    @extend h4;
+}
 
 p{
     font-family: 'proxima-nova',sans-serif;
@@ -255,6 +286,7 @@ a{
 }
 
 
+
 // META
 .meta{
     margin-bottom: unit(1);
@@ -263,7 +295,9 @@ a{
 .meta-form{
     font-size: 12px;
     color: $color-grey-light;
-    line-height:12px;
+    line-height: 16px;
+    display: inline-block;
+    margin: 6px 0 0 0;
 }
 
 .meta-primary{
@@ -296,4 +330,11 @@ a{
     &:hover{
         color: darken($color-grey-light, 10);
     }
+}
+
+// Tags
+
+.tag{
+    @extend .btn;
+    @extend .btn-small;
 }

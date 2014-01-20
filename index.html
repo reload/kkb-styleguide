@@ -35,14 +35,14 @@
 http://reload.github.io/supershop/
 
 MISSING:
-- Forms
-- Header med links indeni, eller uden på.. kig på ding2
 ~ Google maps
 ~ tabs
 ~ loader
 ? logo (Skal have logo fra hvem der har det)
 ? favicon (Hvem laver det, og hvad skal det være)
 v menu (Skal lige finde ud af, hvordan den skal være responsive)  
+V Header med links indeni, eller uden på.. kig på ding2
+V Forms
 V copy
 V rating
 V select multiple
@@ -60,7 +60,16 @@ V modal (popup)
 V searchbar
 
 STYLEGUIDE:
-- Update text with new elements
+- Beskrivelse af alle elementer og deres brug.
+- elementer som kombinere de forskellige items vi har lavet.
+- find et iconsæt som dækker deres behov.
+- hvad gør vi med headeren når den er på mobil?
+~ Lav typo responsive (er faktisk fin)
+V Forms: Fieldset legend
+V fix font visning proxima nova, smid op på ftp.
+V uddyb font brug & og vis navn i steder for "Lorem ipsum".
+V definer farver og brug.
+
 
 EXAMPLE PAGES:
 - http://ding2tal.ting.dk/arrangementer/udstilling/keramiker-susanne-bidstrup-udstiller-paa-viby-bibliotek
@@ -73,36 +82,101 @@ V submit btn FIREFOX
 V responsive imgtext FIREFOX
 
 -->
-    <div id="teller"></div>
 
-
-
+    
+<!--    
+    - Nyhed (http://ding2tal.ting.dk/nyheder)
+    - arrangement (http://ding2tal.ting.dk/arrangementer)
+    - temaer (http://ding2tal.ting.dk/temaer)    
+    - søgning (http://ding2tal.ting.dk/search/ting/Krimi)
+-->
     <div class="container">
         <div class="gclear spacer"></div>
-
         
         
-        <div class="g4-5">
-            <form action="">
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email">
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password">
-                </div>  
-                
-                <div class="form-group">
-                    <textarea rows="4" cols="50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, id, illo, error quo repellat quasi atque doloribus ducimus asperiores modi adipisci rerum aperiam beatae eveniet voluptates dolorum culpa maiores sit.</textarea>
-                    <span class="meta-form">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-                </div>
-                
-                <input type="submit" value="Submit" class="btn ">
-                <button class="btn  btn-secondary">Cancel</button>
-            </form>
+        
+        
+        <div class="gclear spacer"></div>
+        <div class="g12-1">
+            
+            <a href="" class="tag">Fantasy</a>
+            <a href="" class="tag">Magi</a>
+            <a href="" class="tag">Troldmænd</a>
+            
+            <h1><a href="">H1: Merriweather 700 42/48</a></h1>
+            <h2><a href="">H2: Merriweather 700 20/24</a></h2>
+            <h3><a href="">H3: Merriweather 300 20/24</a></h3>
+            <h4><a href="">H4: Proxima Nova 400 16/24</a></h4> <br>
+            <p><a href="">P: Proxima Nova 300 16/24</a></p>
+        
         </div>
+        <div class="gclear spacer"></div>
         
+        <div class="g12-1">
+            <div class="nested">
+                <div class="g4-1">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="textinput">Basic Text input</label>
+                            <input type="text" id="textinput" name="textinput" placeholder="Basic text input">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Password">
+                        </div>  
+                        <div class="form-group">
+                            <label for="message">Text Area</label>
+                            <textarea rows="5" cols="50" id="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, id, illo, error quo repellat quasi atque doloribus ducimus asperiores modi adipisci rerum aperiam beatae eveniet voluptates dolorum culpa maiores sit.</textarea>
+                            <span class="meta-form"><strong>Note:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                        </div>
+                        <div class="form-group">
+                            <label>Checkboxes</label><br>
+                            <input id="checkboxone" class="input" type="checkbox" name="checkboxone" value="Checkbox One" checked >
+                            <label class="label label-checkbox" for="checkboxone">Checkbox One</label><br>
+                            <input id="checkboxtwo" class="input" type="checkbox" name="checkboxtwo" value="Checkbox One" >
+                            <label class="label label-checkbox" for="checkboxtwo">Checkbox Two</label><br>
+                            <input id="checkboxthree" class="input" type="checkbox" name="checkboxthree" value="Checkbox One" >
+                            <label class="label label-checkbox" for="checkboxthree">Checkbox Three</label>
+                        </div>
+                        <div class="form-group">
+                            <label>Radios</label><br>
+                            <input id="radioone" class="input" type="radio" name="radio" value="Radio One" checked>
+                            <label class="label label-radio" for="radioone">Radio One</label><br>
+                            <input id="radiotwo" class="input" type="radio" name="radio" value="Radio Two">
+                            <label class="label label-radio" for="radiotwo">Radio Two</label><br>
+                            <input id="radiothree" class="input" type="radio" name="radio" value="Radio Three">
+                            <label class="label label-radio" for="radiothree">Radio Three</label><br>
+                        </div>
+                        <div class="form-group">
+                            <label for="select">Select</label>
+                            <select id="select" name="select" class="select">
+                                <option value="Option One">Option One</option>
+                                <option value="Option Two">Option Two</option>
+                                <option value="Option Three">Option Three</option>
+                                <option value="Option Four">Option Four</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="selectmultiple">Select Multiple</label>
+                            <select id="selectmultiple" multiple class="select-multiple">
+                                <option value="Option One">Option One</option>
+                                <option value="Option Two">Option Two</option>
+                                <option value="Option Three">Option Three</option>
+                                <option value="Option Four">Option Four</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Submit" class="btn ">
+                            <button class="btn  btn-secondary">Cancel</button>
+                        </div>
+                    </form>
+                </div>   
+            </div>
+        </div>     
         
         
         
@@ -1034,12 +1108,25 @@ V responsive imgtext FIREFOX
             <form action="">
                 <fieldset>
                     <legend>Personal information:</legend>
-                    Name:
-                    <input type="text" size="30">
-                    <br>E-mail:
-                    <input type="text" size="30">
-                    <br>Date of birth:
-                    <input type="text" size="10">
+                    <div class="form-group">
+                        <label for="textinput">Basic Text input</label>
+                        <input type="text" id="textinput" name="textinput" placeholder="Basic text input">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Password">
+                    </div>  
+                    <div class="form-group">
+                        <label for="message">Text Area</label>
+                        <textarea rows="5" cols="50" id="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, id, illo, error quo repellat quasi atque doloribus ducimus asperiores modi adipisci rerum aperiam beatae eveniet voluptates dolorum culpa maiores sit.</textarea>
+                        <span class="meta-form"><strong>Note:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                    </div>
+                    <button class="btn  btn-primary btn-sidebyside">Stop</button>
+                    <a href="" class="btn btn-secondary">Info</a>
                 </fieldset>
             </form>
 

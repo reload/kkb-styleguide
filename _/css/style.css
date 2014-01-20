@@ -1427,7 +1427,9 @@ body {
   color: #798881;
 }
 
-h1, h2, h3, .popover h3, h4, h5, h6, p, a {
+h1, h1 a, h1 a:hover, h2, h2 a, h2 a:hover, h3, h3 a, h3 a:hover, .popover h3, h4, h4 a, h4 a:hover,
+h5 a, h5 a:hover,
+h6 a, h6 a:hover, h5, h6, p, a {
   margin: 0;
   padding: 0;
 }
@@ -1477,6 +1479,15 @@ Markup: <div class="meta">
 Styleguide 1.2
 */
  /*
+Tags
+
+Markup: <a href="" class="tag">Fantasy</a>
+<a href="" class="tag">Magi</a>
+<a href="" class="tag">Troldmænd</a>
+
+Styleguide 1.3
+*/
+ /*
 Copy H1, H4
 
 Et eksempel på brug af <code>H1</code> kunne være ved overskrifter på materiale sider eller udstillingssider.
@@ -1486,7 +1497,7 @@ Markup: <h4>Af <a href="">Joanne K. Rowling</a> (2007) [H4]</h4> <br>
 <h1>Harry Potter og dødsregalierne [H1]</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, necessitatibus soluta maxime recusandae voluptatem hic facilis veniam a dolorum eaque eius repudiandae veritatis doloremque commodi quam dolore odio sit accusamus fugit quidem vel reprehenderit possimus consectetur iure tempore quo omnis enim ipsa excepturi est. Aliquid inventore reprehenderit hic quidem libero. [P]</p>
 
-Styleguide 1.3
+Styleguide 1.4
 */
  /*
 Copy H2
@@ -1503,7 +1514,7 @@ Markup: <h2>Klassisk julemusik [H2]</h2>
 <button class="btn btn-small btn-sidebyside">Jul</button>
 <button class="btn btn-small btn-sidebyside">Hygge</button>
 
-Styleguide 1.3
+Styleguide 1.4
 */
  /*
 Copy H3
@@ -1517,7 +1528,7 @@ Markup: <h3>Biblioteket <br>
 <p>+45 82 32 16 00 <br>
     <a href="">bibbro@kff.kk.dk [A]</a></p>
 
-Styleguide 1.3
+Styleguide 1.4
 */
  /*
 Copy H3, H4
@@ -1536,9 +1547,9 @@ Markup: <div class="vertical-list vertical-list-menu">
     <a href="">+ Flere typer</a>
 </div>
 
-Styleguide 1.3
+Styleguide 1.4
 */
-h1 {
+h1, h1 a, h1 a:hover {
   font-family: 'Merriweather', serif;
   font-weight: 700;
   font-size: 42px;
@@ -1547,7 +1558,7 @@ h1 {
   margin-top: 0px;
   margin-bottom: 24px;
 }
-h1 .results {
+h1 .results, h1 a:hover .results {
   padding-left: 5px;
   font-size: 26px;
   height: 26px;
@@ -1556,11 +1567,11 @@ h1 .results {
   color: #798881;
   display: inline-block;
 }
-h1.subject {
+h1.subject, h1 a.subject {
   font-size: 26px;
 }
 
-h2 {
+h2, h2 a, h2 a:hover {
   font-family: 'Merriweather', serif;
   font-weight: 700;
   font-size: 20px;
@@ -1570,7 +1581,7 @@ h2 {
   margin-bottom: 24px;
 }
 
-h3, .popover h3 {
+h3, h3 a, h3 a:hover, .popover h3 {
   font-family: 'Merriweather',sans-serif;
   font-size: 18px;
   font-weight: 300;
@@ -1579,13 +1590,15 @@ h3, .popover h3 {
   margin-top: 0px;
   margin-bottom: 24px;
 }
-h3.title {
+h3.title, h3 a.title {
   min-height: 48px;
   padding-top: 21px;
   padding-bottom: 3px;
 }
 
-h4, h5, h6, legend {
+h4, h4 a, h4 a:hover,
+h5 a, h5 a:hover,
+h6 a, h6 a:hover, h5, h6, legend {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1594,7 +1607,9 @@ h4, h5, h6, legend {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-h4.big, h5.big, h6.big, legend.big {
+h4.big, h4 a.big,
+h5 a.big,
+h6 a.big, h5.big, h6.big, legend.big {
   font-size: 24px;
   margin-bottom: 8px;
   font-weight: 100;
@@ -1655,7 +1670,9 @@ a.link-danger:hover, a.link-danger:active {
 .meta-form {
   font-size: 12px;
   color: #b1b1ad;
-  line-height: 12px;
+  line-height: 16px;
+  display: inline-block;
+  margin: 6px 0 0 0;
 }
 
 .meta-primary, .meta-primary a {
@@ -1772,10 +1789,14 @@ Markup: <div class="vertical-list">
 
 Styleguide 3.4
 */
-.vertical-list h2, .vertical-list h3 {
+.vertical-list h2, .vertical-list h2 a, h2 .vertical-list a, .vertical-list h3, .vertical-list h3 a, h3 .vertical-list a {
   margin-top: 0;
 }
-.vertical-list h4,
+.vertical-list h4, .vertical-list h4 a, h4 .vertical-list a,
+.vertical-list h5 a,
+h5 .vertical-list a,
+.vertical-list h6 a,
+h6 .vertical-list a,
 .vertical-list h5,
 .vertical-list h6 {
   margin-bottom: 8px;
@@ -1894,6 +1915,12 @@ Styleguide 3.4
   position: absolute;
   left: 0px;
   color: #ff7275;
+}
+
+@media only screen and (max-width: 768px) {
+  #footer .vertical-list {
+    margin-bottom: 36px;
+  }
 }
 
 /*
@@ -2082,6 +2109,8 @@ Styleguide 4.2
 /*
 Data pair
 
+Brug <code>.table-data</code> når data mængden er forholdsvis lille. Hvis der er mere en 2-3 linjer, brug da en alm. tabel med odd/even.
+
 Markup: <table class="table table-data">
     <tbody>
         <tr>
@@ -2167,7 +2196,7 @@ Markup: <button type="button" class="btn {$modifiers}">
 
 Styleguide 99.1
 */
-.btn {
+.btn, .tag {
   display: inline-block;
   padding: 5px 16px;
   margin-bottom: 14px;
@@ -2185,8 +2214,9 @@ Styleguide 99.1
   font-size: 16px;
   background-color: #00b38a;
   box-shadow: 0px 1px 2px #004d3b;
+  margin-right: 4px;
 }
-.btn span.glyphicon {
+.btn span.glyphicon, .tag span.glyphicon {
   color: black;
   -moz-opacity: 0.25;
   opacity: .25;
@@ -2195,22 +2225,22 @@ Styleguide 99.1
   margin-right: 8px;
   display: inline-block;
 }
-.btn:active, .btn.pseudo-class-active {
+.btn:active, .tag:active, .btn.pseudo-class-active, .pseudo-class-active.tag {
   padding: 4px 16px 6px 16px;
   box-shadow: inset 1px 1px 4px #008063;
   color: #d8f3ed;
 }
-.btn:hover, .btn.pseudo-class-hover {
+.btn:hover, .tag:hover, .btn.pseudo-class-hover, .pseudo-class-hover.tag {
   color: white;
   background-color: #00a982;
 }
 
-.btn-small {
+.btn-small, .tag {
   font-size: 12px;
   line-height: 22px;
   padding: 0px 6px;
 }
-.btn-small:active {
+.btn-small:active, .tag:active {
   padding: 0px 6px 1px 6px;
   line-height: 21px;
 }
@@ -2237,10 +2267,6 @@ Styleguide 99.1
 .btn-danger:active, .dropdown .dropdown-title.danger:active, .btn-danger.pseudo-class-active, .dropdown .pseudo-class-active.dropdown-title.danger {
   box-shadow: inset 1px 1px 4px #ff252a;
   color: #ffe2e3;
-}
-
-.btn-sidebyside {
-  margin-right: 4px;
 }
 
 button.close {
@@ -2271,7 +2297,7 @@ button.close:hover {
 }
 
 @-moz-document url-prefix() {
-  input[type="submit"].btn {
+  input[type="submit"].btn, input[type="submit"].tag {
     padding: 3px;
   }
 }
@@ -2528,79 +2554,134 @@ Styleguide 90.3
 /*
 Forms
 
-Markup: <form action="">
-    <div class="form-group">First name:
-        <input type="text" name="firstname">
-        <br>Last name:
-        <input type="text" name="lastname">
-    </div>
-    <div class="form-group">
-        <textarea rows="4" cols="50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, id, illo, error quo repellat quasi atque doloribus ducimus asperiores modi adipisci rerum aperiam beatae eveniet voluptates dolorum culpa maiores sit.</textarea>
-    </div>
-    <input type="submit" value="Submit" class="btn btn-small">
-    <button class="btn btn-small btn-secondary">Cancel</button>
-</form>
-
 Styleguide 6.0
 */
 /*
-Checkbox & Radial
+Inputs
 
 Markup: <form action="">
-     <div class="form-group">
-        <input id="checkbox5" class="input" type="checkbox" name="vehicle" value="Bike" checked >
-        <label class="label label-checkbox" for="checkbox5">I have a bike</label>
-        <br>
-        <input id="checkbox6" class="input" type="checkbox" name="vehicle" value="Car">
-        <label class="label label-checkbox" for="checkbox6">I have a car</label>
+    <div class="form-group">
+        <label for="textinput">Basic Text input</label>
+        <input type="text" id="textinput" name="textinput" placeholder="Basic text input">
     </div>
     <div class="form-group">
-        <input id="radio5" class="input" type="radio" name="sex" value="male" checked>
-        <label class="label label-radio" for="radio5">Male</label>
-        <br>
-        <input id="radio6" class="input" type="radio" name="sex" value="female" >
-        <label class="label label-radio" for="radio6"  >Female</label>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password">
+    </div>  
+    <div class="form-group">
+        <label for="message">Text Area</label>
+        <textarea rows="5" cols="50" id="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, id, illo, error quo repellat quasi atque doloribus ducimus asperiores modi adipisci rerum aperiam beatae eveniet voluptates dolorum culpa maiores sit.</textarea>
+        <span class="meta-form"><strong>Note:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Submit" class="btn ">
+        <button class="btn  btn-secondary">Cancel</button>
     </div>
 </form>
 
 Styleguide 6.1
 */
 /*
-Select
+Checkbox & Radial
 
 Markup: <form action="">
     <div class="form-group">
-        <select name="cars" class="select">
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="fiat" selected="">Fiat</option>
-            <option value="audi">Audi</option>
-        </select>
+        <label>Checkboxes</label><br>
+        <input id="checkboxone" class="input" type="checkbox" name="checkboxone" value="Checkbox One" checked >
+        <label class="label label-checkbox" for="checkboxone">Checkbox One</label><br>
+        <input id="checkboxtwo" class="input" type="checkbox" name="checkboxtwo" value="Checkbox One" >
+        <label class="label label-checkbox" for="checkboxtwo">Checkbox Two</label><br>
+        <input id="checkboxthree" class="input" type="checkbox" name="checkboxthree" value="Checkbox One" >
+        <label class="label label-checkbox" for="checkboxthree">Checkbox Three</label>
     </div>
-    <input type="submit" value="Submit" class="btn btn-small">
+    <div class="form-group">
+        <label>Radios</label><br>
+        <input id="radioone" class="input" type="radio" name="radio" value="Radio One" checked>
+        <label class="label label-radio" for="radioone">Radio One</label><br>
+        <input id="radiotwo" class="input" type="radio" name="radio" value="Radio Two">
+        <label class="label label-radio" for="radiotwo">Radio Two</label><br>
+        <input id="radiothree" class="input" type="radio" name="radio" value="Radio Three">
+        <label class="label label-radio" for="radiothree">Radio Three</label><br>
+    </div>
 </form>
 
 Styleguide 6.2
 */
 /*
-Select Multiple
+Select
 
 Markup: <form action="">
     <div class="form-group">
-        <select name="cars" multiple class="select-multiple">
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="opel">Opel</option>
-            <option value="audi">Audi</option>
+        <label for="select">Select</label>
+        <select id="select" name="select" class="select">
+            <option value="Option One">Option One</option>
+            <option value="Option Two">Option Two</option>
+            <option value="Option Three">Option Three</option>
+            <option value="Option Four">Option Four</option>
         </select>
     </div>
-    <input type="submit" value="Submit" class="btn btn-small">
+    <div class="form-group">
+        <label for="selectmultiple">Select Multiple</label>
+        <select id="selectmultiple" multiple class="select-multiple">
+            <option value="Option One">Option One</option>
+            <option value="Option Two">Option Two</option>
+            <option value="Option Three">Option Three</option>
+            <option value="Option Four">Option Four</option>
+        </select>
+    </div>
 </form>
 
 Styleguide 6.3
 */
-form {
-  padding: 0px 20px 0px 0px;
+/*
+Fieldset Legend
+
+Markup: <form action="">
+    <fieldset>
+        <legend>I'm Legend</legend>
+        <div class="form-group">
+            <label for="textinput">Basic Text input</label>
+            <input type="text" id="textinput" name="textinput" placeholder="Basic text input">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password">
+        </div>  
+        <div class="form-group">
+            <label for="message">Text Area</label>
+            <textarea rows="5" cols="50" id="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, id, illo, error quo repellat quasi atque doloribus ducimus asperiores modi adipisci rerum aperiam beatae eveniet voluptates dolorum culpa maiores sit.</textarea>
+            <span class="meta-form"><strong>Note:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+        </div>
+        <button class="btn  btn-primary btn-sidebyside">Submit</button>
+        <a href="" class="btn btn-secondary">Cancel</a>
+    </fieldset>
+</form>
+
+Styleguide 6.4
+*/
+form ::-webkit-input-placeholder {
+  color: #d8dcda;
+}
+form :-moz-placeholder {
+  color: #d8dcda;
+}
+form ::-moz-placeholder {
+  color: #d8dcda;
+}
+form :-ms-input-placeholder {
+  color: #d8dcda;
+}
+
+form * {
+  box-sizing: border-box;
 }
 
 .form-group {
@@ -2695,11 +2776,19 @@ input[type="checkbox"].input:checked + label.label:before {
 }
 
 fieldset {
-  padding: 15px 35px 15px 15px;
+  padding: 15px;
+  border: 1px solid #b1b1ad;
+  border-radius: 4px;
 }
 fieldset input {
   width: auto;
   min-width: 100%;
+}
+fieldset legend {
+  border-bottom: 0;
+  padding: 0px 10px 0 10px;
+  margin: 0px 0px 0 -10px;
+  width: auto;
 }
 
 label {
@@ -2855,10 +2944,6 @@ Markup: <div class="imgtext underline">
 
 Styleguide 7.6
 */
-.meta {
-  margin-bottom: 8px;
-}
-
 .imgtext.column .img-wrap {
   display: table-cell;
 }
@@ -3080,7 +3165,7 @@ right - Right placement
 
 Styleguide 99.2
 */
-.popover h3 {
+.popover h3 a, h3 .popover a, .popover h3 {
   border-bottom: none;
   border-radius: 4px;
   background-color: transparent;
@@ -3210,11 +3295,11 @@ Styleguide 99.2
 .modal-footer:after {
   clear: both;
 }
-.modal-footer .btn + .btn {
+.modal-footer .btn + .btn, .modal-footer .tag + .btn, .modal-footer .btn + .tag, .modal-footer .tag + .tag {
   margin-left: 5px;
   margin-bottom: 0;
 }
-.modal-footer .btn-group .btn + .btn {
+.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group .tag + .btn, .modal-footer .btn-group .btn + .tag, .modal-footer .btn-group .tag + .tag {
   margin-left: -1px;
 }
 .modal-footer .btn-block + .btn-block {
@@ -3266,7 +3351,11 @@ Styleguide 9.3
   border: 1px solid transparent;
   border-radius: 4px;
 }
-.alert h4 {
+.alert h4, .alert h4 a, h4 .alert a,
+.alert h5 a,
+h5 .alert a,
+.alert h6 a,
+h6 .alert a {
   margin-top: 0;
   color: inherit;
 }
@@ -3345,7 +3434,7 @@ Styleguide 9.3
   border-color: #ff0c11;
   color: #ff0c11;
 }
-.alert .btn {
+.alert .btn, .alert .tag {
   margin: 10px 0 3px 0;
 }
 .alert p {
@@ -3531,25 +3620,21 @@ Styleguide 11.1
   text-align: center;
   vertical-align: middle;
 }
+.search-bar ::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.search-bar :-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.search-bar ::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.search-bar :-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
 
 .lt-ie9 .search-bar form input[type=text] {
   padding-top: 25px;
-}
-
-::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-:-moz-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
 }
 
 /*
@@ -3590,11 +3675,11 @@ Styleguide 99.5
 }
 
 .rating.rating-md > span {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .rating.rating-lg > span {
-  font-size: 50px;
+  font-size: 45px;
 }
 
 .rating > span {
@@ -6224,24 +6309,6 @@ pre code {
 
 .fa-plus-square-o:before {
   content: "\f196";
-}
-
-#teller {
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  height: 2px;
-  background-color: grey;
-}
-@media only screen and (max-width: 768px) {
-  #teller {
-    background-color: yellow;
-  }
-}
-@media only screen and (max-width: 480px) {
-  #teller {
-    background-color: red;
-  }
 }
 
 #header {
