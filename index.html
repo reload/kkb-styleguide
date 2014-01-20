@@ -40,7 +40,7 @@ MISSING:
 ~ loader
 ? logo (Skal have logo fra hvem der har det)
 ? favicon (Hvem laver det, og hvad skal det være)
-v menu (Skal lige finde ud af, hvordan den skal være responsive)  
+/ menu (Skal lige finde ud af, hvordan den skal være responsive)  
 V Header med links indeni, eller uden på.. kig på ding2
 V Forms
 V copy
@@ -55,16 +55,16 @@ MISSING from design:
 ? Dato calendar
 ? data "stamp"
 - søgnings resultat header
-v menu
+/ menu
 V modal (popup)
 V searchbar
 
 STYLEGUIDE:
 - Beskrivelse af alle elementer og deres brug.
-- elementer som kombinere de forskellige items vi har lavet.
 - find et iconsæt som dækker deres behov.
 - hvad gør vi med headeren når den er på mobil?
 ~ Lav typo responsive (er faktisk fin)
+/ elementer som kombinere de forskellige items vi har lavet.
 V Forms: Fieldset legend
 V fix font visning proxima nova, smid op på ftp.
 V uddyb font brug & og vis navn i steder for "Lorem ipsum".
@@ -91,10 +91,97 @@ V responsive imgtext FIREFOX
     - søgning (http://ding2tal.ting.dk/search/ting/Krimi)
 -->
     <div class="container">
+        <div class="gclear spacer-sm"></div>
+        
+        <!-- Nyhed -->
+        <div class="g12-1">
+            <ul class="content-list">
+                <li>
+                    <div class="imgtext column">
+                        <div class="img-wrap hide">
+                            <a href="#"><img src="_/img/content/150x112.png"  alt=""></a>
+                        </div>
+                        <div class="text">
+                            <h2><a href="">Nickelback – drengerøve, romantikere, nostalgikere</a></h2>
+                            <div class="meta">
+                                <span class="meta-primary"><a href="">Mandag 18. november 2013</a></span>
+                                <span class="meta-secondary">af <a href="">Lene Frandsen</a></span>
+                            </div>
+                            <a href="" class="tag">Bøger</a>
+                            <p>Nickelback er som et hvert andet rockband: masser af guitar, masser af aggressioner og til tider en stille ballade. For mig er de dog meget mere end det. Det er ikke kun </p>
+                        </div>
+                    </div>    
+                    <button class="btn btn-primary btn-right">Læs mere</button>
+                </li>
+                <li>
+                    <div class="imgtext column">
+                        <div class="img-wrap hide">
+                            <a href="#"><img src="_/img/content/150x112.png"  alt=""></a>
+                        </div>
+                        <div class="text">
+                            <h2><a href="">Efterårsaktviteter for børn i Skrotlab</a></h2>
+                            <div class="meta">
+                                <span class="meta-primary"><a href="">Mandag 18. november 2013</a></span>
+                                <span class="meta-secondary">af <a href="">David Hansen</a></span>
+                            </div>
+                            <a href="" class="tag">Kort nyt</a>
+                            <p>Genbrug og skrot bruges i hele verden! Kom og lav en drage af genbrugt emballage som i Indien, en petroleumslampe af brugte dåser som i Thailand..</p>
+                        </div> 
+                    </div>    
+                    <button class="btn btn-primary btn-right">Læs mere</button>
+                </li>
+                <li>
+                    <div class="imgtext column">
+                        <div class="img-wrap hide">
+                            <a href="#"><img src="_/img/content/150x112.png"  alt=""></a>
+                        </div>
+                        <div class="text">
+                            <h2><a href="">Bliv klar til køreprøven med Turteori.dk</a></h2>
+                            <div class="meta">
+                                <span class="meta-primary"><a href="">Onsdag 02. november 2013</a></span>
+                                <span class="meta-secondary">af <a href="">Troels Tomsen</a></span>
+                            </div>
+                            <a href="" class="tag">Anbefalinger</a>
+                            <p>Nu er det muligt at få et projekt eller arrangement op at stå via bibliotekernes nye crowdfundingside www.folkevent.nu</p>
+                        </div> 
+                    </div>    
+                    <button class="btn btn-primary btn-right">Læs mere</button>
+                </li>
+            </ul>
+        </div>
         <div class="gclear spacer"></div>
         
-        
-        
+        <!-- Temaer -->
+        <div class="g12-1">
+            <h1>Temaer</h1>
+            <ul class="content-list">
+                <li>
+                    <div class="imgtext column">
+                        <div class="img-wrap hide">
+                            <a href="#"><img src="_/img/content/150x112.png"  alt=""></a>
+                        </div>
+                        <div class="text">
+                            <h2><a href="">Biblioteket tilbyder også</a></h2>
+                            <p>Her kan du se hvad bibliotekerne også tilbyder</p>
+                        </div>
+                    </div>    
+                    <button class="btn btn-primary btn-right">Læs mere</button>
+                </li>
+                <li>
+                    <div class="imgtext column">
+                        <div class="img-wrap hide">
+                            <a href="#"><img src="_/img/content/150x112.png"  alt=""></a>
+                        </div>
+                        <div class="text">
+                            <h2><a href="">Faglitteratur - uhmm!</a></h2>
+                            <p>Hobby, interesse, fag - udforsk bibliotekets univers med de bedste bøger om alle emner i verden</p>
+                        </div> 
+                    </div>    
+                    <button class="btn btn-primary btn-right">Læs mere</button>
+                </li>
+            </ul>
+        </div>
+        <div class="gclear spacer"></div>
         
         <div class="gclear spacer"></div>
         <div class="g12-1">
@@ -568,7 +655,7 @@ V responsive imgtext FIREFOX
                 <div class="g3-1">
                     <div class="img-wrap img-center">
                         <a href="#">
-                            <img src="holder.js/1200x1906/#00b38a:#fff" class="img-responsive limit-height">
+                            <img src="" class="img-responsive limit-height">
                         </a>
                     </div>
                 </div>

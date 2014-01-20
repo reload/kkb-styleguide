@@ -136,10 +136,8 @@ Markup: <div class="imgtext underline">
 Styleguide 7.6
 */
 
-
 .imgtext{
     
-
     
     &.column{
         .img-wrap{
@@ -176,16 +174,25 @@ Styleguide 7.6
             display:block;
             width: 100%;
             float:none;
+            &.hide{
+                display:none;
+            }
         }
         
         &.scale .img-wrap, &.scale .text{
             display:table-cell;
+            &.hide{
+                display:none;
+            }
         }
         
         &.scale .img-wrap{
             padding-right: 20px;
             padding-bottom: 8px;
             width:50%;
+            &.hide{
+                display:none;
+            }
         }
         
     }

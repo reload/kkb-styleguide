@@ -337,4 +337,11 @@ a{
 .tag{
     @extend .btn;
     @extend .btn-small;
+    @extend .btn-secondary;
+}
+
+body .tag {
+    @include small(){
+        width:auto;
+    }
 }
