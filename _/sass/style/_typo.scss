@@ -52,7 +52,7 @@ Styleguide #{$TYPO}.2
  /*
 Meta data
 
-Meta data kan bruges til at vise datoer, kategorier, forfattere, arrangementer etc.
+Meta data kan bruges til at vise datoer, kategorier, forfattere, arrangementer etc. Brug <code>.meta-form</code> som hints til forms.
 
 Markup: <div class="meta">
     <span class="meta-primary">21 okt. 2013</span>
@@ -66,7 +66,8 @@ Markup: <div class="meta">
     <span class="meta-primary"><i class="fa fa-calendar"></i> <a href="">Torsdag 21. august 2014</a></span>
     <span class="meta-secondary">19:00 til 20:00</span> <span class="meta-secondary meta-strong">GRATIS</span><br>
     <span class="meta-location"><i class="fa fa-map-marker"></i> <a href="">Biblioteket Rentemestervej</a></span>
-</div>
+</div><br>
+<span class="meta-form"><strong>Note:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
 
 Styleguide #{$TYPO}.2
 */
@@ -74,6 +75,8 @@ Styleguide #{$TYPO}.2
 
  /*
 Tags
+
+Tags skal bruges som de bruges på ding2 websitet.
 
 Markup: <a href="" class="tag">Fantasy</a>
 <a href="" class="tag">Magi</a>
@@ -102,17 +105,18 @@ Styleguide #{$TYPO}.#{$COPY}
  /*
 Copy H2
 
-Brug af <code>H2</code> kunne være ved visning af nyheder.
+Brug af <code>H2</code> kunne være ved visning af content i form af: nyheder, arrangementer etc.
 
-Markup: <h2>Klassisk julemusik [H2]</h2>
+Markup: 
 <span class="meta">
     <span class="meta-primary">Tirsdag 10. december 2013</span>
     <span class="meta-secondary">af <a href="">Lene Frandsen</a></span>
 </span>
+<h2>Klassisk julemusik [H2]</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, quam ex quae et mollitia pariatur ea dolorem nesciunt iste eligendi? [P]</p>
-<button class="btn btn-small btn-sidebyside">Klassisk</button>
-<button class="btn btn-small btn-sidebyside">Jul</button>
-<button class="btn btn-small btn-sidebyside">Hygge</button>
+<a href="" class="tag">Klassisk</a>
+<a href="" class="tag">Jul</a>
+<a href="" class="tag">Hygge</a>
 
 Styleguide #{$TYPO}.#{$COPY}
 */

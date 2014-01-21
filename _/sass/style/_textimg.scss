@@ -119,18 +119,18 @@ Styleguide 7.5
 */
 
 /*
-Image underline & image round corners
+Image underline
 
-The image text wrapper has a <code>.imgtext-underline</code> class. That gives the content an underline. Give the image <code>.img-round</code> for rounded corners.
+For at skille content ad, brug da <code>.imgtext-underline</code>. Det giver containeren en bund linje.
 
 Markup: <div class="imgtext underline">
     <div class="img-wrap">
-            <a href="#"><img src="_/img/content/60x60.png" class="img-responsive img-round"></a>
-        </div>
-        <div class="text">
-            <h4 class="big">Litteratur og lydbøger</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, porro!</p>
-        </div>
+        <a href="#"><img src="_/img/content/60x60.png" class="img-responsive"></a>
+    </div>
+    <div class="text">
+        <h4 class="big">Litteratur og lydbøger</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, porro!</p>
+    </div>
 </div>
 
 Styleguide 7.6

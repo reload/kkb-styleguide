@@ -1580,7 +1580,7 @@ Styleguide 1.2
  /*
 Meta data
 
-Meta data kan bruges til at vise datoer, kategorier, forfattere, arrangementer etc.
+Meta data kan bruges til at vise datoer, kategorier, forfattere, arrangementer etc. Brug <code>.meta-form</code> som hints til forms.
 
 Markup: <div class="meta">
     <span class="meta-primary">21 okt. 2013</span>
@@ -1594,12 +1594,15 @@ Markup: <div class="meta">
     <span class="meta-primary"><i class="fa fa-calendar"></i> <a href="">Torsdag 21. august 2014</a></span>
     <span class="meta-secondary">19:00 til 20:00</span> <span class="meta-secondary meta-strong">GRATIS</span><br>
     <span class="meta-location"><i class="fa fa-map-marker"></i> <a href="">Biblioteket Rentemestervej</a></span>
-</div>
+</div><br>
+<span class="meta-form"><strong>Note:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
 
 Styleguide 1.2
 */
  /*
 Tags
+
+Tags skal bruges som de bruges på ding2 websitet.
 
 Markup: <a href="" class="tag">Fantasy</a>
 <a href="" class="tag">Magi</a>
@@ -1622,17 +1625,18 @@ Styleguide 1.4
  /*
 Copy H2
 
-Brug af <code>H2</code> kunne være ved visning af nyheder.
+Brug af <code>H2</code> kunne være ved visning af content i form af: nyheder, arrangementer etc.
 
-Markup: <h2>Klassisk julemusik [H2]</h2>
+Markup: 
 <span class="meta">
     <span class="meta-primary">Tirsdag 10. december 2013</span>
     <span class="meta-secondary">af <a href="">Lene Frandsen</a></span>
 </span>
+<h2>Klassisk julemusik [H2]</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, quam ex quae et mollitia pariatur ea dolorem nesciunt iste eligendi? [P]</p>
-<button class="btn btn-small btn-sidebyside">Klassisk</button>
-<button class="btn btn-small btn-sidebyside">Jul</button>
-<button class="btn btn-small btn-sidebyside">Hygge</button>
+<a href="" class="tag">Klassisk</a>
+<a href="" class="tag">Jul</a>
+<a href="" class="tag">Hygge</a>
 
 Styleguide 1.4
 */
@@ -2152,13 +2156,13 @@ Styleguide 4.1
 /*
 Table in dropdown
 
-Add a <code>.light</code> to the <code>table</code> for better maching odd/evens to white background.
+Tilføj <code>.light</code> til <code>table</code> for bedre at matche odd/evens til den hvide baggrund.
 
 Markup: <div class="dropdown">
-    <input type="checkbox" id="dropdown1">
+    <input type="checkbox" id="dropdown1" checked>
     <label for="dropdown1">
         <span class="dropdown-title secondary">Se alle eksemplarer
-            <span class="glyphicon glyphicon-chevron-down"></span>
+            <i class="fa fa-chevron-down"></i>
         </span>
     </label>
     <div class="dropdown-content">
@@ -2332,7 +2336,7 @@ Buttons
 Buttons description
 
 Markup: <button type="button" class="btn {$modifiers}">
-<span class="glyphicon glyphicon-briefcase"></span>Reservér bogen nu</button>
+<i class="fa fa-briefcase"></i>Reservér bogen nu</button>
 <br/>
 <button type="button" class="btn btn-small {$modifiers}">Reservér bogen nu</button>
 
@@ -3088,18 +3092,18 @@ Markup: <div class="imgtext">
 Styleguide 7.5
 */
 /*
-Image underline & image round corners
+Image underline
 
-The image text wrapper has a <code>.imgtext-underline</code> class. That gives the content an underline. Give the image <code>.img-round</code> for rounded corners.
+For at skille content ad, brug da <code>.imgtext-underline</code>. Det giver containeren en bund linje.
 
 Markup: <div class="imgtext underline">
     <div class="img-wrap">
-            <a href="#"><img src="_/img/content/60x60.png" class="img-responsive img-round"></a>
-        </div>
-        <div class="text">
-            <h4 class="big">Litteratur og lydbøger</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, porro!</p>
-        </div>
+        <a href="#"><img src="_/img/content/60x60.png" class="img-responsive"></a>
+    </div>
+    <div class="text">
+        <h4 class="big">Litteratur og lydbøger</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, porro!</p>
+    </div>
 </div>
 
 Styleguide 7.6

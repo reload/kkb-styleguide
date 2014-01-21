@@ -84,13 +84,13 @@ Styleguide 4.1
 /*
 Table in dropdown
 
-Add a <code>.light</code> to the <code>table</code> for better maching odd/evens to white background.
+Tilføj <code>.light</code> til <code>table</code> for bedre at matche odd/evens til den hvide baggrund.
 
 Markup: <div class="dropdown">
-    <input type="checkbox" id="dropdown1">
+    <input type="checkbox" id="dropdown1" checked>
     <label for="dropdown1">
         <span class="dropdown-title secondary">Se alle eksemplarer
-            <span class="glyphicon glyphicon-chevron-down"></span>
+            <i class="fa fa-chevron-down"></i>
         </span>
     </label>
     <div class="dropdown-content">
