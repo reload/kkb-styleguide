@@ -52,15 +52,20 @@ Styleguide #{$TYPO}.2
  /*
 Meta data
 
-Meta data kan bruges til at vise datoer, kategorier, forfattere etc.
+Meta data kan bruges til at vise datoer, kategorier, forfattere, arrangementer etc.
 
 Markup: <div class="meta">
     <span class="meta-primary">21 okt. 2013</span>
     <span class="meta-secondary">kort nyt</span>
-</div>
+</div> <br>
 <div class="meta">
     <span class="meta-primary"><a href="">21 okt. 2013</a></span>
     <span class="meta-secondary">af <a href="">Lene Frandsen</a></span>
+</div> <br>
+<div class="meta">
+    <span class="meta-primary"><i class="fa fa-calendar"></i> <a href="">Torsdag 21. august 2014</a></span>
+    <span class="meta-secondary">19:00 til 20:00</span> <span class="meta-secondary meta-strong">GRATIS</span><br>
+    <span class="meta-location"><i class="fa fa-map-marker"></i> <a href="">Biblioteket Rentemestervej</a></span>
 </div>
 
 Styleguide #{$TYPO}.2
@@ -290,7 +295,22 @@ a{
 // META
 .meta{
     margin-bottom: unit(1);
+    display:inline-block;
 }
+
+%meta{
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    display:inline-block;
+    margin-right:4px;
+    i.fa, span{
+        margin-right: 4px;
+        text-align: center;
+        min-width:12px;
+    }
+}
+
 
 .meta-form{
     font-size: 12px;
@@ -301,12 +321,9 @@ a{
 }
 
 .meta-primary{
-    font-size:12px;
+    @extend %meta;
     font-weight: 600;
-    text-transform: uppercase;
     color: $color-mint-green;
-    margin-right:4px;
-    display:inline-block;
 }
 
 .meta-primary a{
@@ -318,13 +335,11 @@ a{
 }
 
 .meta-secondary{
-    font-size: 12px;
-    text-transform: uppercase;
+    @extend %meta;
     color: $color-grey-light;
-    display:inline-block;
 }
 
-.meta-secondary a{
+.meta-secondary a, .meta-location a{
     @extend .meta-secondary;
     margin-right: 0;
     &:hover{
@@ -332,12 +347,27 @@ a{
     }
 }
 
+.meta-location{
+    
+    @extend .meta-secondary;
+}
+
+.meta-strong{
+    font-weight: 600;
+}
+
 // Tags
 
+.tags{
+    @include small(){
+        margin-bottom: unit(3);
+    }
+}
 .tag{
     @extend .btn;
     @extend .btn-small;
     @extend .btn-secondary;
+    display:inline-block;
 }
 
 body .tag {

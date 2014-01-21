@@ -38,12 +38,12 @@ Styleguide 99.1
     background-color: $color-mint-green;
     box-shadow:0px 1px 2px darken($color-mint-green, 20);
 
-    span.glyphicon{
+    span.glyphicon, i.fa{
         color:black;
         -moz-opacity: 0.25;
         opacity:.25;
         filter: alpha(opacity=25);
-        top: 3px;
+        top: 4px;
         margin-right:unit(1);
         display:inline-block;
     }

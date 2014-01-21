@@ -406,16 +406,31 @@
                         </ul>
                     </li>
                 
-<!--                    <li><a href="section-11.html">11.0: Searchbar</a>-->
-                    <li><a href="section-11.html">Searchbar</a>
+<!--                    <li><a href="section-70.html">70.0: Menu</a>-->
+                    <li><a href="section-70.html">Menu</a>
                         <ul>
                         
                             
                               
                         
                             
-<!--                                <li><a href="section-11.html#11.1">11.1 Mini searchbar</a></li>-->
-                                <li><a href="section-11.html#11.1">Mini searchbar</a></li>
+<!--                                <li><a href="section-70.html#70.1">70.1 Menu Colors</a></li>-->
+                                <li><a href="section-70.html#70.1">Menu Colors</a></li>
+                              
+                        
+                        </ul>
+                    </li>
+                
+<!--                    <li><a href="section-75.html">75.0: Searchbar</a>-->
+                    <li><a href="section-75.html">Searchbar</a>
+                        <ul>
+                        
+                            
+                              
+                        
+                            
+<!--                                <li><a href="section-75.html#75.1">75.1 Mini searchbar</a></li>-->
+                                <li><a href="section-75.html#75.1">Mini searchbar</a></li>
                               
                         
                         </ul>
@@ -434,8 +449,13 @@
                               
                         
                             
-<!--                                <li><a href="section-80.html#80.2">80.2 Content List (Temaer)</a></li>-->
-                                <li><a href="section-80.html#80.2">Content List (Temaer)</a></li>
+<!--                                <li><a href="section-80.html#80.2">80.2 Arrangement</a></li>-->
+                                <li><a href="section-80.html#80.2">Arrangement</a></li>
+                              
+                        
+                            
+<!--                                <li><a href="section-80.html#80.3">80.3 Temaer</a></li>-->
+                                <li><a href="section-80.html#80.3">Temaer</a></li>
                               
                         
                         </ul>
@@ -517,44 +537,163 @@
         
         
                 
-                <div class="kss-section" id="11">
+                    
+                    
+                    <div class="kss-section" id="70">
                         <div class="kss-header">
-                            <!-- <h1 class="kss-title"><span class="kss-reference">11.0</span> Searchbar</h1>-->
-                            <h1 class="kss-title">Searchbar</h1>
+                            <h1 class="kss-title">Menu</h1>
+                        </div>
+                        <div class="kss-description">
+                            <p>Menuen skal højre stilles <em>(se eksempelsider)</em>. 
+Menuen skal have samme grund tema farve som headeren, dog skal den være lysere for at skille sig ud fra headeren og søgebaren.
+
+</p>
+<div class="color-green" style="padding:30px 0 0 0"> <!-- div.color-green skal ikke med, blot for at vise farve -->
+    <nav class="navbar navbar-default color-green-light" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 0px;">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#">Arrangementer</a>
+                </li>
+                <li>
+                    <a href="#">Biblioteker</a>
+                </li>
+                <li>
+                    <a href="#">Temaer</a>
+                </li>
+                <li>
+                    <a href="#">Materialer</a>
+                </li>
+                <li>
+                    <a href="#">Nyheder</a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <i class="fa fa-search"></i> 
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Log ind</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="color-green-dark" style="height:30px"></div> <!-- div.color-green-dark skal ikke med, blot for at vise farve -->
+</div>
+                        </div>
+                    </div>
+                    
+                    
+                
+                
+                
+        
+                
+                <div class="kss-section" id="70.1">
+                        <div class="kss-header">
+                            <!-- <h1 class="kss-title"><span class="kss-reference">70.1.0</span> Menu Colors</h1>-->
+                            <h1 class="kss-title">Menu Colors</h1>
                         </div>
                             
                                     
                         
-                            <div class="kss-description">
-                                    <p>Searchbaren er en mørkere farve en primær farverne.</p>
-
-                            </div>
-                        
                         
                         <div class="kss-markup">
-                            <div class="color {$modifiers}"> <!-- .color skal ikke med, bruges blot for at vise kontrast -->
-    <div class="search-bar {$modifiers} ">
-            <div class="icon-search"><span class="glyphicon glyphicon-search"></span></div>
-         <form action="" class="">
-            <input type="text" placeholder="Skriv f.eks. Harry Potter, krimi eller lignende">
-        </form>
-    </div>
+                            <div class="color-{$modifiers}" style="padding:30px 0 0 0"> <!-- div.color-green skal ikke med, blot for at vise farve -->
+    <nav class="navbar navbar-default color-{$modifiers}-light" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-{$modifiers}">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-{$modifiers}" style="height: 0px;">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#">Arrangementer</a>
+                </li>
+                <li>
+                    <a href="#">Biblioteker</a>
+                </li>
+                <li>
+                    <a href="#">Temaer</a>
+                </li>
+                <li>
+                    <a href="#">Materialer</a>
+                </li>
+                <li>
+                    <a href="#">Nyheder</a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <i class="fa fa-search"></i> 
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Log ind</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="color-{$modifiers}-dark" style="height:30px"></div> <!-- div.color-green-dark skal ikke med, blot for at vise farve -->
 </div>
                         </div>  
                         
                         
                             
                             <div class="kss-modifier" style="">
-                                <div class="kss-description"><p>red</p>
+                                <div class="kss-description"><p>Red</p>
 </div>
-                                <div class="kss-name">.search-bar-red</div>
-                                <div class="kss-markup"><div class="color search-bar-red"> <!-- .color skal ikke med, bruges blot for at vise kontrast -->
-    <div class="search-bar search-bar-red ">
-            <div class="icon-search"><span class="glyphicon glyphicon-search"></span></div>
-         <form action="" class="">
-            <input type="text" placeholder="Skriv f.eks. Harry Potter, krimi eller lignende">
-        </form>
-    </div>
+                                <div class="kss-name">red</div>
+                                <div class="kss-markup"><div class="color-red" style="padding:30px 0 0 0"> <!-- div.color-green skal ikke med, blot for at vise farve -->
+    <nav class="navbar navbar-default color-red-light" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-red">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-red" style="height: 0px;">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#">Arrangementer</a>
+                </li>
+                <li>
+                    <a href="#">Biblioteker</a>
+                </li>
+                <li>
+                    <a href="#">Temaer</a>
+                </li>
+                <li>
+                    <a href="#">Materialer</a>
+                </li>
+                <li>
+                    <a href="#">Nyheder</a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <i class="fa fa-search"></i> 
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Log ind</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="color-red-dark" style="height:30px"></div> <!-- div.color-green-dark skal ikke med, blot for at vise farve -->
 </div></div>
                             </div>
                             
@@ -563,14 +702,46 @@
                             <div class="kss-modifier" style="">
                                 <div class="kss-description"><p>Purple</p>
 </div>
-                                <div class="kss-name">.search-bar-purple</div>
-                                <div class="kss-markup"><div class="color search-bar-purple"> <!-- .color skal ikke med, bruges blot for at vise kontrast -->
-    <div class="search-bar search-bar-purple ">
-            <div class="icon-search"><span class="glyphicon glyphicon-search"></span></div>
-         <form action="" class="">
-            <input type="text" placeholder="Skriv f.eks. Harry Potter, krimi eller lignende">
-        </form>
-    </div>
+                                <div class="kss-name">purple</div>
+                                <div class="kss-markup"><div class="color-purple" style="padding:30px 0 0 0"> <!-- div.color-green skal ikke med, blot for at vise farve -->
+    <nav class="navbar navbar-default color-purple-light" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-purple">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-purple" style="height: 0px;">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#">Arrangementer</a>
+                </li>
+                <li>
+                    <a href="#">Biblioteker</a>
+                </li>
+                <li>
+                    <a href="#">Temaer</a>
+                </li>
+                <li>
+                    <a href="#">Materialer</a>
+                </li>
+                <li>
+                    <a href="#">Nyheder</a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <i class="fa fa-search"></i> 
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Log ind</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="color-purple-dark" style="height:30px"></div> <!-- div.color-green-dark skal ikke med, blot for at vise farve -->
 </div></div>
                             </div>
                             
@@ -579,14 +750,46 @@
                             <div class="kss-modifier" style="">
                                 <div class="kss-description"><p>Blue</p>
 </div>
-                                <div class="kss-name">.search-bar-blue</div>
-                                <div class="kss-markup"><div class="color search-bar-blue"> <!-- .color skal ikke med, bruges blot for at vise kontrast -->
-    <div class="search-bar search-bar-blue ">
-            <div class="icon-search"><span class="glyphicon glyphicon-search"></span></div>
-         <form action="" class="">
-            <input type="text" placeholder="Skriv f.eks. Harry Potter, krimi eller lignende">
-        </form>
-    </div>
+                                <div class="kss-name">blue</div>
+                                <div class="kss-markup"><div class="color-blue" style="padding:30px 0 0 0"> <!-- div.color-green skal ikke med, blot for at vise farve -->
+    <nav class="navbar navbar-default color-blue-light" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-blue">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-blue" style="height: 0px;">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#">Arrangementer</a>
+                </li>
+                <li>
+                    <a href="#">Biblioteker</a>
+                </li>
+                <li>
+                    <a href="#">Temaer</a>
+                </li>
+                <li>
+                    <a href="#">Materialer</a>
+                </li>
+                <li>
+                    <a href="#">Nyheder</a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <i class="fa fa-search"></i> 
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Log ind</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="color-blue-dark" style="height:30px"></div> <!-- div.color-green-dark skal ikke med, blot for at vise farve -->
 </div></div>
                             </div>
                             
@@ -595,14 +798,46 @@
                             <div class="kss-modifier" style="">
                                 <div class="kss-description"><p>Yellow</p>
 </div>
-                                <div class="kss-name">.search-bar-yellow</div>
-                                <div class="kss-markup"><div class="color search-bar-yellow"> <!-- .color skal ikke med, bruges blot for at vise kontrast -->
-    <div class="search-bar search-bar-yellow ">
-            <div class="icon-search"><span class="glyphicon glyphicon-search"></span></div>
-         <form action="" class="">
-            <input type="text" placeholder="Skriv f.eks. Harry Potter, krimi eller lignende">
-        </form>
-    </div>
+                                <div class="kss-name">yellow</div>
+                                <div class="kss-markup"><div class="color-yellow" style="padding:30px 0 0 0"> <!-- div.color-green skal ikke med, blot for at vise farve -->
+    <nav class="navbar navbar-default color-yellow-light" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-yellow">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-yellow" style="height: 0px;">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#">Arrangementer</a>
+                </li>
+                <li>
+                    <a href="#">Biblioteker</a>
+                </li>
+                <li>
+                    <a href="#">Temaer</a>
+                </li>
+                <li>
+                    <a href="#">Materialer</a>
+                </li>
+                <li>
+                    <a href="#">Nyheder</a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <i class="fa fa-search"></i> 
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Log ind</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="color-yellow-dark" style="height:30px"></div> <!-- div.color-green-dark skal ikke med, blot for at vise farve -->
 </div></div>
                             </div>
                             
@@ -611,14 +846,46 @@
                             <div class="kss-modifier" style="">
                                 <div class="kss-description"><p>Green</p>
 </div>
-                                <div class="kss-name">.search-bar-green</div>
-                                <div class="kss-markup"><div class="color search-bar-green"> <!-- .color skal ikke med, bruges blot for at vise kontrast -->
-    <div class="search-bar search-bar-green ">
-            <div class="icon-search"><span class="glyphicon glyphicon-search"></span></div>
-         <form action="" class="">
-            <input type="text" placeholder="Skriv f.eks. Harry Potter, krimi eller lignende">
-        </form>
-    </div>
+                                <div class="kss-name">green</div>
+                                <div class="kss-markup"><div class="color-green" style="padding:30px 0 0 0"> <!-- div.color-green skal ikke med, blot for at vise farve -->
+    <nav class="navbar navbar-default color-green-light" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-green">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-green" style="height: 0px;">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#">Arrangementer</a>
+                </li>
+                <li>
+                    <a href="#">Biblioteker</a>
+                </li>
+                <li>
+                    <a href="#">Temaer</a>
+                </li>
+                <li>
+                    <a href="#">Materialer</a>
+                </li>
+                <li>
+                    <a href="#">Nyheder</a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <i class="fa fa-search"></i> 
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Log ind</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="color-green-dark" style="height:30px"></div> <!-- div.color-green-dark skal ikke med, blot for at vise farve -->
 </div></div>
                             </div>
                             
@@ -627,63 +894,91 @@
                             <div class="kss-modifier" style="">
                                 <div class="kss-description"><p>Pink</p>
 </div>
-                                <div class="kss-name">.search-bar-pink</div>
-                                <div class="kss-markup"><div class="color search-bar-pink"> <!-- .color skal ikke med, bruges blot for at vise kontrast -->
-    <div class="search-bar search-bar-pink ">
-            <div class="icon-search"><span class="glyphicon glyphicon-search"></span></div>
-         <form action="" class="">
-            <input type="text" placeholder="Skriv f.eks. Harry Potter, krimi eller lignende">
-        </form>
-    </div>
+                                <div class="kss-name">pink</div>
+                                <div class="kss-markup"><div class="color-pink" style="padding:30px 0 0 0"> <!-- div.color-green skal ikke med, blot for at vise farve -->
+    <nav class="navbar navbar-default color-pink-light" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-pink">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-pink" style="height: 0px;">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#">Arrangementer</a>
+                </li>
+                <li>
+                    <a href="#">Biblioteker</a>
+                </li>
+                <li>
+                    <a href="#">Temaer</a>
+                </li>
+                <li>
+                    <a href="#">Materialer</a>
+                </li>
+                <li>
+                    <a href="#">Nyheder</a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <i class="fa fa-search"></i> 
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Log ind</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="color-pink-dark" style="height:30px"></div> <!-- div.color-green-dark skal ikke med, blot for at vise farve -->
 </div></div>
                             </div>
                             
                         
                         
                         <div class="kss-code">
-                            <pre class="prettyprint lang-html">&lt;div class=&quot;color {$modifiers}&quot;&gt; &lt;!-- .color skal ikke med, bruges blot for at vise kontrast --&gt;
-    &lt;div class=&quot;search-bar {$modifiers} &quot;&gt;
-            &lt;div class=&quot;icon-search&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/span&gt;&lt;/div&gt;
-         &lt;form action=&quot;&quot; class=&quot;&quot;&gt;
-            &lt;input type=&quot;text&quot; placeholder=&quot;Skriv f.eks. Harry Potter, krimi eller lignende&quot;&gt;
-        &lt;/form&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</pre>
-                        </div>
-                        
-                        <a href="#" style="float: right;">to top</a>
-                </div>    
-                
-                
-                
-        
-                
-                <div class="kss-section" id="11.1">
-                        <div class="kss-header">
-                            <!-- <h1 class="kss-title"><span class="kss-reference">11.1.0</span> Mini searchbar</h1>-->
-                            <h1 class="kss-title">Mini searchbar</h1>
-                        </div>
-                            
-                                    
-                        
-                        
-                        <div class="kss-markup">
-                            <div class="search-bar search-bar-small search-bar-dark">
-    <div class="icon-search"><span class="glyphicon glyphicon-search"></span></div>
-    <form action="" class="">
-        <input type="text" placeholder="Skriv f.eks. Harry Potter, krimi eller lignende">
-    </form>
-</div>
-                        </div>  
-                        
-                        
-                        
-                        <div class="kss-code">
-                            <pre class="prettyprint lang-html">&lt;div class=&quot;search-bar search-bar-small search-bar-dark&quot;&gt;
-    &lt;div class=&quot;icon-search&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/span&gt;&lt;/div&gt;
-    &lt;form action=&quot;&quot; class=&quot;&quot;&gt;
-        &lt;input type=&quot;text&quot; placeholder=&quot;Skriv f.eks. Harry Potter, krimi eller lignende&quot;&gt;
-    &lt;/form&gt;
+                            <pre class="prettyprint lang-html">&lt;div class=&quot;color-{$modifiers}&quot; style=&quot;padding:30px 0 0 0&quot;&gt; &lt;!-- div.color-green skal ikke med, blot for at vise farve --&gt;
+    &lt;nav class=&quot;navbar navbar-default color-{$modifiers}-light&quot; role=&quot;navigation&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#bs-example-navbar-collapse-{$modifiers}&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot; id=&quot;bs-example-navbar-collapse-{$modifiers}&quot; style=&quot;height: 0px;&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot;&gt;Arrangementer&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot;&gt;Biblioteker&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot;&gt;Temaer&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot;&gt;Materialer&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot;&gt;Nyheder&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;active&quot;&gt;
+                    &lt;a href=&quot;#&quot;&gt;
+                        &lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt; 
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot;&gt;Log ind&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+    &lt;div class=&quot;color-{$modifiers}-dark&quot; style=&quot;height:30px&quot;&gt;&lt;/div&gt; &lt;!-- div.color-green-dark skal ikke med, blot for at vise farve --&gt;
 &lt;/div&gt;</pre>
                         </div>
                         

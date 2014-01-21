@@ -8,11 +8,7 @@
 
 // ----- O P T I O N S -----
 
-$icon-font-path:          "../css/fonts/" !default;
-$icon-font-name:          "glyphicons-halflings-regular" !default;
-
 $border-radius: 4px;
-
 
 // ----- I N C L U D E -----
 
@@ -39,16 +35,35 @@ Styleguide 99.0
 @import 'style/search';
 @import 'style/rating';
 @import 'style/content';
-@import 'bootstrap/glyphicons';
 @import 'bootstrap/code';
 @import 'font-awesome/font-awesome';
 
 #header{
     height: 456px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    
+    @include small-medium(){
+        background-image: none !important;
+        height:179px;
+        
+        #helper{
+            top:133px !important;
+        }
+    }
 }
 
 #footer{
     background-color: $color-black;
     min-height:400px;
 }
-
+        
+.logo{
+    top:40px; 
+    position:absolute;            
+    
+    @include small-medium(){
+        left:50%;
+        margin-left: -100px;
+    }
+}

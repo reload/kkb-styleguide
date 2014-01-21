@@ -5,21 +5,20 @@ $color-sand:#f1f1e7;
 $color-mudgreen:#798881;
 $color-black:#313233; //#5f6062;
 
-
-// PRIMARY
-$color-red:#ff7275;
-$color-purple:#696092;
-$color-blue:#278fb5;
-$color-yellow:#ffba48;
-$color-green:#7cbf9e;
-$color-pink:#dc90b5;
-
 // HELPERS
 $color-grey: #5f6062;
 $color-grey-light:#b1b1ad;
 $color-red-bright:#f47049;
 $color-dark-sand:#e9e9e1;
 $color-mint-green:#00b38a;
+
+// TEMA
+$color-red:#ff7275;
+$color-purple:#696092;
+$color-blue:#278fb5;
+$color-yellow:#ffba48;
+$color-green:#7cbf9e;
+$color-pink:#dc90b5;
 
 /*
 Farver
@@ -148,7 +147,7 @@ Tema Farver
 </div>
 <div class="gclear spacer-md"></div>
 
-<div >
+<div>
     <div class="g12-1">
         <p>
             Farverne der bliver brugt til menu når den bliver responsive er fx. <code>green light</code> eller <code>pink light</code> etc.
@@ -171,7 +170,7 @@ Styleguide 2.2
 
 
 
-// MAIN
+// PRIMARY
 .color-sand{
     background-color: $color-sand;
 }
@@ -187,8 +186,6 @@ Styleguide 2.2
 .color-black{
     background-color: $color-black;
 }
-
-// HELPERS
 
 .color-grey{
     background-color: $color-grey;
@@ -211,25 +208,9 @@ Styleguide 2.2
 }
 
 
-// PRIMARY
-.color-red {
-    background-color: $color-red;
-}
-.color-purple {
-    background-color: $color-purple;
-}
-.color-blue {
-    background-color: $color-blue;
-}
-.color-yellow {
-    background-color: $color-yellow;
-}
-.color-green {
-    background-color: $color-green;
-}
-.color-pink {
-    background-color: $color-pink;
-}
+
+
+// FONT
 
 .color-red-font {
     color: $color-red;
@@ -250,42 +231,80 @@ Styleguide 2.2
     color: $color-pink;
 }
 
-.color-red-light {
-    background-color: desaturate(lighten($color-red,10),10);
+
+
+// TEMA
+.color-red {
+    background-color: $color-red;
 }
-.color-purple-light {
-    background-color: desaturate(lighten($color-purple,10),10);
+.color-purple {
+    background-color: $color-purple;
 }
-.color-blue-light {
-    background-color: desaturate(lighten($color-blue,10),10);
+.color-blue {
+    background-color: $color-blue;
 }
-.color-yellow-light {
-    background-color: desaturate(lighten($color-yellow,10),10);
+.color-yellow {
+    background-color: $color-yellow;
 }
-.color-green-light {
-    background-color: desaturate(lighten($color-green,10),10);
+.color-green {
+    background-color: $color-green;
 }
-.color-pink-light {
-    background-color: desaturate(lighten($color-pink,10),10);
+.color-pink {
+    background-color: $color-pink;
 }
 
+
+$red-light:     desaturate(lighten($color-red,5),5);
+$purple-light:  desaturate(lighten($color-purple,10),0);
+$blue-light:    desaturate(lighten($color-blue,10),10);
+$yellow-light:  desaturate(lighten($color-yellow,10),10);
+$green-light:   desaturate(lighten($color-green,10),0);
+$pink-light:    desaturate(lighten($color-pink,5),0);
+
+
+.color-red-light {
+    background-color: $red-light;
+}
+.color-purple-light {
+    background-color: $purple-light;
+}
+.color-blue-light {
+    background-color: $blue-light;
+}
+.color-yellow-light {
+    background-color: $yellow-light;
+}
+.color-green-light {
+    background-color: $green-light;
+}
+.color-pink-light {
+    background-color: $pink-light;
+}
+
+$red-dark:     desaturate(darken($color-red, 12), 5);
+$purple-dark:  desaturate(darken($color-purple, 10), 2);
+$blue-dark:    desaturate(darken($color-blue, 10), 2);
+$yellow-dark:  desaturate(darken($color-yellow, 12), 5);
+$green-dark:   desaturate(darken($color-green, 12), 5);
+$pink-dark:    desaturate(darken($color-pink, 12), 4);
+
 .color-red-dark{
-    background-color: desaturate(darken($color-red, 12), 5);
+    background-color: $red-dark;
 } 
 .color-purple-dark{
-    background-color: desaturate(darken($color-purple, 10), 2);
+    background-color: $purple-dark;
 } 
 .color-blue-dark{
-    background-color: desaturate(darken($color-blue, 10), 2);
+    background-color: $blue-dark;
 } 
 .color-yellow-dark{
-    background-color: desaturate(darken($color-yellow, 12), 5);
+    background-color: $yellow-dark;
 } 
 .color-green-dark{
-    background-color: desaturate(darken($color-green, 12), 5);
+    background-color: $green-dark;
 } 
 .color-pink-dark{
-    background-color: desaturate(darken($color-pink, 12), 4);
+    background-color: $pink-dark;
 }
 
 

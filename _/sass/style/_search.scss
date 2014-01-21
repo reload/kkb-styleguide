@@ -5,7 +5,7 @@ Searchbaren er en mørkere farve en primær farverne.
 
 Markup: <div class="color {$modifiers}"> <!-- .color skal ikke med, bruges blot for at vise kontrast -->
     <div class="search-bar {$modifiers} ">
-            <div class="icon-search"><span class="glyphicon glyphicon-search"></span></div>
+            <div class="icon-search"><i class="fa fa-search"></i></div>
          <form action="" class="">
             <input type="text" placeholder="Skriv f.eks. Harry Potter, krimi eller lignende">
         </form>
@@ -19,20 +19,20 @@ Markup: <div class="color {$modifiers}"> <!-- .color skal ikke med, bruges blot 
 .search-bar-green - Green
 .search-bar-pink - Pink
 
-Styleguide 11.0
+Styleguide 75.0
 */
 
 /*
 Mini searchbar
 
 Markup: <div class="search-bar search-bar-small search-bar-dark">
-    <div class="icon-search"><span class="glyphicon glyphicon-search"></span></div>
+    <div class="icon-search"><i class="fa fa-search"></i></div>
     <form action="" class="">
         <input type="text" placeholder="Skriv f.eks. Harry Potter, krimi eller lignende">
     </form>
 </div>
 
-Styleguide 11.1
+Styleguide 75.1
 */
 
 

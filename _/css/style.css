@@ -128,7 +128,7 @@ Tema Farver
 </div>
 <div class="gclear spacer-md"></div>
 
-<div >
+<div>
     <div class="g12-1">
         <p>
             Farverne der bliver brugt til menu når den bliver responsive er fx. <code>green light</code> eller <code>pink light</code> etc.
@@ -180,30 +180,6 @@ Styleguide 2.2
   background-color: #00b38a;
 }
 
-.color-red {
-  background-color: #ff7275;
-}
-
-.color-purple {
-  background-color: #696092;
-}
-
-.color-blue {
-  background-color: #278fb5;
-}
-
-.color-yellow {
-  background-color: #ffba48;
-}
-
-.color-green {
-  background-color: #7cbf9e;
-}
-
-.color-pink {
-  background-color: #dc90b5;
-}
-
 .color-red-font {
   color: #ff7275;
 }
@@ -228,12 +204,36 @@ Styleguide 2.2
   color: #dc90b5;
 }
 
+.color-red {
+  background-color: #ff7275;
+}
+
+.color-purple {
+  background-color: #696092;
+}
+
+.color-blue {
+  background-color: #278fb5;
+}
+
+.color-yellow {
+  background-color: #ffba48;
+}
+
+.color-green {
+  background-color: #7cbf9e;
+}
+
+.color-pink {
+  background-color: #dc90b5;
+}
+
 .color-red-light {
-  background-color: #fba9ab;
+  background-color: #fc8e91;
 }
 
 .color-purple-light {
-  background-color: #8b879e;
+  background-color: #847ca9;
 }
 
 .color-blue-light {
@@ -245,11 +245,11 @@ Styleguide 2.2
 }
 
 .color-green-light {
-  background-color: #a5c9b7;
+  background-color: #9ed0b7;
 }
 
 .color-pink-light {
-  background-color: #e3bccf;
+  background-color: #e2a3c2;
 }
 
 .color-red-dark {
@@ -1270,12 +1270,117 @@ textarea.input-lg {
   border-top-left-radius: 0;
 }
 
+/*
+Menu
+
+Menuen skal højre stilles <em>(se eksempelsider)</em>. 
+Menuen skal have samme grund tema farve som headeren, dog skal den være lysere for at skille sig ud fra headeren og søgebaren.
+
+<div class="color-green" style="padding:30px 0 0 0"> <!-- div.color-green skal ikke med, blot for at vise farve -->
+    <nav class="navbar navbar-default color-green-light" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 0px;">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#">Arrangementer</a>
+                </li>
+                <li>
+                    <a href="#">Biblioteker</a>
+                </li>
+                <li>
+                    <a href="#">Temaer</a>
+                </li>
+                <li>
+                    <a href="#">Materialer</a>
+                </li>
+                <li>
+                    <a href="#">Nyheder</a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <i class="fa fa-search"></i> 
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Log ind</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="color-green-dark" style="height:30px"></div> <!-- div.color-green-dark skal ikke med, blot for at vise farve -->
+</div>
+
+Styleguide 70.0
+*/
+/*
+
+Menu Colors
+
+Markup: <div class="color-{$modifiers}" style="padding:30px 0 0 0"> <!-- div.color-green skal ikke med, blot for at vise farve -->
+    <nav class="navbar navbar-default color-{$modifiers}-light" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-{$modifiers}">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-{$modifiers}" style="height: 0px;">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#">Arrangementer</a>
+                </li>
+                <li>
+                    <a href="#">Biblioteker</a>
+                </li>
+                <li>
+                    <a href="#">Temaer</a>
+                </li>
+                <li>
+                    <a href="#">Materialer</a>
+                </li>
+                <li>
+                    <a href="#">Nyheder</a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <i class="fa fa-search"></i> 
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Log ind</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="color-{$modifiers}-dark" style="height:30px"></div> <!-- div.color-green-dark skal ikke med, blot for at vise farve -->
+</div>
+
+red        - Red
+purple     - Purple
+blue       - Blue
+yellow     - Yellow
+green      - Green
+pink       - Pink
+
+Styleguide 70.1
+*/
 .navbar {
   margin-bottom: 0;
   width: 100%;
+  min-height: 0px;
 }
 
-.navbar-default, .navbar-collapse {
+.navbar-default,
+.navbar-collapse {
   background-color: transparent;
   border-color: transparent;
   border: 0;
@@ -1284,6 +1389,7 @@ textarea.input-lg {
 .nav.navbar-nav {
   display: table;
   width: 100%;
+  z-index: 99;
 }
 .nav.navbar-nav li {
   display: table-cell;
@@ -1314,20 +1420,6 @@ textarea.input-lg {
   background-color: transparent;
 }
 
-.navbar-toggle {
-  outline: 0;
-}
-.navbar-toggle .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-
 @media only screen and (max-width: 768px) {
   .navbar-collapse {
     display: none;
@@ -1339,28 +1431,27 @@ textarea.input-lg {
 
 @media only screen and (max-width: 768px) {
   .navbar {
-    background-color: #847ca9;
     border-radius: 0;
     z-index: 99;
     margin: 0;
   }
-  .navbar.color-red {
-    background-color: #ffa5a7;
+  .navbar.color-red-light {
+    background-color: #fc8e91;
   }
-  .navbar.color-purple {
+  .navbar.color-purple-light {
     background-color: #847ca9;
   }
-  .navbar.color-blue {
-    background-color: #3aabd5;
+  .navbar.color-blue-light {
+    background-color: #46a6c9;
   }
-  .navbar.color-yellow {
-    background-color: #ffcd7b;
+  .navbar.color-yellow-light {
+    background-color: #f8cc82;
   }
-  .navbar.color-green {
+  .navbar.color-green-light {
     background-color: #9ed0b7;
   }
-  .navbar.color-pink {
-    background-color: #e8b7cf;
+  .navbar.color-pink-light {
+    background-color: #e2a3c2;
   }
 
   .navbar-header {
@@ -1404,21 +1495,45 @@ textarea.input-lg {
     border-bottom: 0;
   }
 
-  .navbar-default .navbar-collapse, .navbar-collapse {
+  .navbar-default .navbar-collapse,
+  .navbar-collapse {
     margin: 0;
     padding: 0;
     border-color: transparent;
     border-top: 0;
     border-bottom: 0;
   }
-
-  .navbar-default .navbar-toggle {
-    padding: 6px;
-  }
-  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle.active {
-    background-color: white;
-  }
 }
+.navbar-default .navbar-toggle {
+  outline: 0;
+  border-color: white;
+  padding: 6px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+.navbar-default .navbar-toggle .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle.active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.lt-ie9 .navbar-default .navbar-toggle:hover, .lt-ie9 .navbar-default .navbar-toggle:focus, .lt-ie9 .navbar-default .navbar-toggle.active {
+  background-color: #bebebe;
+}
+
+.lt-ie9 .nav.navbar-nav li a {
+  height: 10px;
+}
+
 body {
   background-color: #f1f1e7;
   font-family: 'proxima-nova',sans-serif;
@@ -1465,15 +1580,20 @@ Styleguide 1.2
  /*
 Meta data
 
-Meta data kan bruges til at vise datoer, kategorier, forfattere etc.
+Meta data kan bruges til at vise datoer, kategorier, forfattere, arrangementer etc.
 
 Markup: <div class="meta">
     <span class="meta-primary">21 okt. 2013</span>
     <span class="meta-secondary">kort nyt</span>
-</div>
+</div> <br>
 <div class="meta">
     <span class="meta-primary"><a href="">21 okt. 2013</a></span>
     <span class="meta-secondary">af <a href="">Lene Frandsen</a></span>
+</div> <br>
+<div class="meta">
+    <span class="meta-primary"><i class="fa fa-calendar"></i> <a href="">Torsdag 21. august 2014</a></span>
+    <span class="meta-secondary">19:00 til 20:00</span> <span class="meta-secondary meta-strong">GRATIS</span><br>
+    <span class="meta-location"><i class="fa fa-map-marker"></i> <a href="">Biblioteket Rentemestervej</a></span>
 </div>
 
 Styleguide 1.2
@@ -1665,6 +1785,20 @@ a.link-danger:hover, a.link-danger:active {
 
 .meta {
   margin-bottom: 8px;
+  display: inline-block;
+}
+
+.meta-primary, .meta-primary a, .meta-secondary, .meta-secondary a, .meta-location a, .meta-location {
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 4px;
+}
+.meta-primary i.fa, .meta-secondary i.fa, .meta-location i.fa, .meta-primary span, .meta-secondary span, .meta-location span {
+  margin-right: 4px;
+  text-align: center;
+  min-width: 12px;
 }
 
 .meta-form {
@@ -1676,12 +1810,8 @@ a.link-danger:hover, a.link-danger:active {
 }
 
 .meta-primary, .meta-primary a {
-  font-size: 12px;
   font-weight: 600;
-  text-transform: uppercase;
   color: #00b38a;
-  margin-right: 4px;
-  display: inline-block;
 }
 
 .meta-primary a {
@@ -1691,18 +1821,29 @@ a.link-danger:hover, a.link-danger:active {
   color: #009a76;
 }
 
-.meta-secondary, .meta-secondary a {
-  font-size: 12px;
-  text-transform: uppercase;
+.meta-secondary, .meta-secondary a, .meta-location a, .meta-location {
   color: #b1b1ad;
-  display: inline-block;
 }
 
-.meta-secondary a {
+.meta-secondary a, .meta-location a, .meta-location a {
   margin-right: 0;
 }
-.meta-secondary a:hover {
+.meta-secondary a:hover, .meta-location a:hover, .meta-location a:hover {
   color: #989893;
+}
+
+.meta-strong {
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 480px) {
+  .tags {
+    margin-bottom: 24px;
+  }
+}
+
+.tag {
+  display: inline-block;
 }
 
 @media only screen and (max-width: 480px) {
@@ -2223,12 +2364,12 @@ Styleguide 99.1
   background-color: #00b38a;
   box-shadow: 0px 1px 2px #004d3b;
 }
-.btn span.glyphicon, .tag span.glyphicon {
+.btn span.glyphicon, .tag span.glyphicon, .btn i.fa, .tag i.fa {
   color: black;
   -moz-opacity: 0.25;
   opacity: .25;
   filter: alpha(opacity=25);
-  top: 3px;
+  top: 4px;
   margin-right: 8px;
   display: inline-block;
 }
@@ -2328,7 +2469,7 @@ Markup: <div class="dropdown">
     <input type="checkbox" id="dropdown-{$modifiers}"> <!-- ID must be uniq -->
     <label for="dropdown-{$modifiers}"> <!-- and same ID here --> 
         <span class="dropdown-title {$modifiers}">Dropdown
-            <span class="glyphicon glyphicon-chevron-down"></span>
+            <i class="fa fa-chevron-down"></i>
         </span>
     </label>
     <div class="dropdown-content">
@@ -2353,7 +2494,7 @@ Markup: <div class="dropdown">
     <input type="checkbox" id="dropdown1">
     <label for="dropdown1">
         <span class="dropdown-title">Dropdown with links
-            <span class="glyphicon glyphicon-chevron-down"></span>
+            <i class="fa fa-chevron-down"></i>
         </span>
     </label>
     <div class="dropdown-content">
@@ -2375,7 +2516,7 @@ Markup: <div class="dropdown">
     <input type="checkbox" id="dropdown2">
     <label for="dropdown2">
         <span class="dropdown-title secondary">Dropdown
-            <span class="glyphicon glyphicon-chevron-down"></span>
+            <i class="fa fa-chevron-down"></i>
         </span>
     </label>
     <div class="dropdown-content">
@@ -2395,7 +2536,7 @@ Markup: <div class="dropdown">
     <input type="checkbox" id="dropdown3">
     <label for="dropdown3">
         <span class="dropdown-title danger">Dropdown with vertical list
-            <span class="glyphicon glyphicon-chevron-down"></span>
+            <i class="fa fa-chevron-down"></i>
         </span>
     </label>
     <div class="dropdown-content">
@@ -2461,7 +2602,7 @@ Styleguide 90.3
   background-color: #00b38a;
   box-shadow: 0px 1px 2px #004d3b;
 }
-.dropdown .dropdown-title span.glyphicon {
+.dropdown .dropdown-title i.fa, .dropdown .dropdown-title span.glyphicon {
   -webkit-transition: all 0.5s ease 0.1s;
   transition: all 0.5s ease 0.1s;
   position: absolute;
@@ -2469,8 +2610,8 @@ Styleguide 90.3
   -moz-opacity: 0.25;
   opacity: .25;
   filter: alpha(opacity=25);
-  top: 9px;
-  right: 9px;
+  top: 7px;
+  right: 3px;
   margin-right: 8px;
   display: inline-block;
 }
@@ -2479,7 +2620,7 @@ Styleguide 90.3
   box-shadow: inset 1px 1px 4px #008063;
   color: #d8f3ed;
 }
-.dropdown .dropdown-title:active span.glyphicon, .dropdown .dropdown-title.active span.glyphicon {
+.dropdown .dropdown-title:active i.fa, .dropdown .dropdown-title:active span.glyphicon, .dropdown .dropdown-title.active i.fa, .dropdown .dropdown-title.active span.glyphicon {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -2503,7 +2644,7 @@ Styleguide 90.3
   color: #d8f3ed;
   background-color: #00a982;
 }
-.dropdown input[type="checkbox"]:checked ~ label .dropdown-title span.glyphicon {
+.dropdown input[type="checkbox"]:checked ~ label .dropdown-title i.fa, .dropdown input[type="checkbox"]:checked ~ label .dropdown-title span.glyphicon {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -3522,7 +3663,7 @@ Searchbaren er en mørkere farve en primær farverne.
 
 Markup: <div class="color {$modifiers}"> <!-- .color skal ikke med, bruges blot for at vise kontrast -->
     <div class="search-bar {$modifiers} ">
-            <div class="icon-search"><span class="glyphicon glyphicon-search"></span></div>
+            <div class="icon-search"><i class="fa fa-search"></i></div>
          <form action="" class="">
             <input type="text" placeholder="Skriv f.eks. Harry Potter, krimi eller lignende">
         </form>
@@ -3536,19 +3677,19 @@ Markup: <div class="color {$modifiers}"> <!-- .color skal ikke med, bruges blot 
 .search-bar-green - Green
 .search-bar-pink - Pink
 
-Styleguide 11.0
+Styleguide 75.0
 */
 /*
 Mini searchbar
 
 Markup: <div class="search-bar search-bar-small search-bar-dark">
-    <div class="icon-search"><span class="glyphicon glyphicon-search"></span></div>
+    <div class="icon-search"><i class="fa fa-search"></i></div>
     <form action="" class="">
         <input type="text" placeholder="Skriv f.eks. Harry Potter, krimi eller lignende">
     </form>
 </div>
 
-Styleguide 11.1
+Styleguide 75.1
 */
 .color.search-bar-red {
   background-color: #ff7275;
@@ -3745,21 +3886,28 @@ Content List
 Til visning af nyheder, temaer, arrangementer kunne man vælge at bruge <code>.content-list</code> i samarbejde med <code>.imgtext.column</code> med <code>.img-wrap.hide</code>.
 Elementet <code>.content-list</code> wrapper dataen i en let blød kasse, så det er nemmere at skilde dataen ad.
 Her kunne man evt give <code>.btn</code> en <code>.btn-right</code> for at få den til at holde højre kant.
+For at gøre det mere overskueligt, så kunne man give billedewrapperen <code>.img-wrap.hide</code>, for at skjule billede på mobiler. 
+<br><br>
+Det optimale antal tags pr. nyhed/arrangement er mellem 2-3.  
 
 Markup: <ul class="content-list">
     <li>
         <div class="imgtext column">
             <div class="img-wrap hide">
-                <a href="#"><img src="holder.js/150x112/#00b38a:#fff"  alt=""></a>
+                <a href="#"><img src="_/img/content/150x112.png"  alt=""></a>
             </div>
             <div class="text">
-                <h2><a href="">Nickelback – drengerøve, romantikere, nostalgikere</a></h2>
                 <div class="meta">
                     <span class="meta-primary"><a href="">Mandag 18. november 2013</a></span>
                     <span class="meta-secondary">af <a href="">Lene Frandsen</a></span>
                 </div>
-                <a href="" class="tag">Bøger</a>
+                <h2><a href="">Nickelback – drengerøve, romantikere, nostalgikere</a></h2>
                 <p>Nickelback er som et hvert andet rockband: masser af guitar, masser af aggressioner og til tider en stille ballade. For mig er de dog meget mere end det. Det er ikke kun </p>
+                <div class="tags">
+                    <a href="" class="tag">Bøger</a>
+                    <a href="" class="tag">Lystrup Bibliotek</a>
+                    <a href="" class="tag">Litteratur</a>
+                </div>
             </div>
         </div>    
         <button class="btn btn-primary btn-right">Læs mere</button>
@@ -3767,16 +3915,20 @@ Markup: <ul class="content-list">
     <li>
         <div class="imgtext column">
             <div class="img-wrap hide">
-                <a href="#"><img src="holder.js/150x112/#00b38a:#fff"  alt=""></a>
+                <a href="#"><img src="_/img/content/150x112.png"  alt=""></a>
             </div>
             <div class="text">
-                <h2><a href="">Efterårsaktviteter for børn i Skrotlab</a></h2>
                 <div class="meta">
-                    <span class="meta-primary"><a href="">Fredag 14. november 2013</a></span>
+                    <span class="meta-primary"><a href="">Mandag 18. november 2013</a></span>
                     <span class="meta-secondary">af <a href="">David Hansen</a></span>
                 </div>
-                <a href="" class="tag">Kort nyt</a>
+                <h2><a href="">Efterårsaktviteter for børn i Skrotlab</a></h2>
                 <p>Genbrug og skrot bruges i hele verden! Kom og lav en drage af genbrugt emballage som i Indien, en petroleumslampe af brugte dåser som i Thailand..</p>
+                <div class="tags">
+                    <a href="" class="tag">Kort nyt</a>
+                    <a href="" class="tag">Hovedbiblioteket</a>
+                    <a href="" class="tag">Skrotlab</a>
+                </div>
             </div> 
         </div>    
         <button class="btn btn-primary btn-right">Læs mere</button>
@@ -3784,16 +3936,19 @@ Markup: <ul class="content-list">
     <li>
         <div class="imgtext column">
             <div class="img-wrap hide">
-                <a href="#"><img src="holder.js/150x112/#00b38a:#fff"  alt=""></a>
+                <a href="#"><img src="_/img/content/150x112.png"  alt=""></a>
             </div>
             <div class="text">
-                <h2><a href="">Bliv klar til køreprøven med Turteori.dk</a></h2>
                 <div class="meta">
                     <span class="meta-primary"><a href="">Onsdag 02. november 2013</a></span>
                     <span class="meta-secondary">af <a href="">Troels Tomsen</a></span>
                 </div>
-                <a href="" class="tag">Anbefalinger</a>
+                <h2><a href="">Bliv klar til køreprøven med Turteori.dk</a></h2>
                 <p>Nu er det muligt at få et projekt eller arrangement op at stå via bibliotekernes nye crowdfundingside www.folkevent.nu</p>
+                <div class="tags">
+                    <a href="" class="tag">Anbefalinger</a>
+                    <a href="" class="tag">Egå Kombi-bibliotek</a>
+                </div>
             </div> 
         </div>    
         <button class="btn btn-primary btn-right">Læs mere</button>
@@ -3803,7 +3958,36 @@ Markup: <ul class="content-list">
 Styleguide 80.1
 */
 /*
-Content List (Temaer)
+Arrangement
+
+Markup: <ul class="content-list">
+    <li>
+        <div class="imgtext column">
+            <div class="img-wrap hide">
+                <a href="#"><img src="_/img/content/150x112.png"  alt=""></a>
+            </div>
+            <div class="text">
+                <div class="meta">
+                    <span class="meta-primary"><i class="fa fa-calendar"></i> <a href="">Torsdag 21. august 2014</a></span>
+                    <span class="meta-secondary">19:00 til 20:00</span> <span class="meta-secondary meta-strong">GRATIS</span><br>
+                    <span class="meta-location"><i class="fa fa-map-marker"></i> <a href="">Biblioteket Rentemestervej </a></span>
+                </div>
+                <h2><a href="">Tove Ditlevsens liv i litteratur og musik</a></h2>
+                <p>Bliv klogere på Tove Ditlevsen</p>
+                <div class="tags">
+                    <a href="" class="tag">Musik</a>
+                    <a href="" class="tag">Litteratur</a>
+                </div>
+            </div>
+        </div>    
+        <button class="btn btn-primary btn-right">Læs mere</button>
+    </li>
+</ul>
+
+Styleguide 80.2
+*/
+/*
+Temaer
 
 Markup: <h1>Temaer</h1>
 <ul class="content-list">
@@ -3833,7 +4017,7 @@ Markup: <h1>Temaer</h1>
     </li>
 </ul>
 
-Styleguide 80.2
+Styleguide 80.3
 */
 ul.content-list {
   list-style: none;
@@ -3846,8 +4030,8 @@ ul.content-list li {
   display: inline-block;
   width: 100%;
   box-sizing: border-box;
-  margin: 0px 0 20px 0;
-  padding: 20px;
+  margin: 0px 0 24px 0;
+  padding: 24px;
   border-radius: 4px;
   background-color: #f7f7f1;
   border: 1px solid #e8e8d7;
@@ -3856,827 +4040,6 @@ ul.content-list li {
   ul.content-list li {
     padding: 20px 10px 20px 10px;
   }
-}
-
-@font-face {
-  font-family: 'Glyphicons Halflings';
-  src: url("../css/fonts/glyphicons-halflings-regular.eot");
-  src: url("../css/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../css/fonts/glyphicons-halflings-regular.woff") format("woff"), url("../css/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../css/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
-}
-
-.glyphicon {
-  position: relative;
-  top: 1px;
-  display: inline-block;
-  font-family: 'Glyphicons Halflings';
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.glyphicon:empty {
-  width: 1em;
-}
-
-.glyphicon-asterisk:before {
-  content: "\2a";
-}
-
-.glyphicon-plus:before {
-  content: "\2b";
-}
-
-.glyphicon-euro:before {
-  content: "\20ac";
-}
-
-.glyphicon-minus:before {
-  content: "\2212";
-}
-
-.glyphicon-cloud:before {
-  content: "\2601";
-}
-
-.glyphicon-envelope:before {
-  content: "\2709";
-}
-
-.glyphicon-pencil:before {
-  content: "\270f";
-}
-
-.glyphicon-glass:before {
-  content: "\e001";
-}
-
-.glyphicon-music:before {
-  content: "\e002";
-}
-
-.glyphicon-search:before {
-  content: "\e003";
-}
-
-.glyphicon-heart:before {
-  content: "\e005";
-}
-
-.glyphicon-star:before {
-  content: "\e006";
-}
-
-.glyphicon-star-empty:before {
-  content: "\e007";
-}
-
-.glyphicon-user:before {
-  content: "\e008";
-}
-
-.glyphicon-film:before {
-  content: "\e009";
-}
-
-.glyphicon-th-large:before {
-  content: "\e010";
-}
-
-.glyphicon-th:before {
-  content: "\e011";
-}
-
-.glyphicon-th-list:before {
-  content: "\e012";
-}
-
-.glyphicon-ok:before {
-  content: "\e013";
-}
-
-.glyphicon-remove:before {
-  content: "\e014";
-}
-
-.glyphicon-zoom-in:before {
-  content: "\e015";
-}
-
-.glyphicon-zoom-out:before {
-  content: "\e016";
-}
-
-.glyphicon-off:before {
-  content: "\e017";
-}
-
-.glyphicon-signal:before {
-  content: "\e018";
-}
-
-.glyphicon-cog:before {
-  content: "\e019";
-}
-
-.glyphicon-trash:before {
-  content: "\e020";
-}
-
-.glyphicon-home:before {
-  content: "\e021";
-}
-
-.glyphicon-file:before {
-  content: "\e022";
-}
-
-.glyphicon-time:before {
-  content: "\e023";
-}
-
-.glyphicon-road:before {
-  content: "\e024";
-}
-
-.glyphicon-download-alt:before {
-  content: "\e025";
-}
-
-.glyphicon-download:before {
-  content: "\e026";
-}
-
-.glyphicon-upload:before {
-  content: "\e027";
-}
-
-.glyphicon-inbox:before {
-  content: "\e028";
-}
-
-.glyphicon-play-circle:before {
-  content: "\e029";
-}
-
-.glyphicon-repeat:before {
-  content: "\e030";
-}
-
-.glyphicon-refresh:before {
-  content: "\e031";
-}
-
-.glyphicon-list-alt:before {
-  content: "\e032";
-}
-
-.glyphicon-lock:before {
-  content: "\e033";
-}
-
-.glyphicon-flag:before {
-  content: "\e034";
-}
-
-.glyphicon-headphones:before {
-  content: "\e035";
-}
-
-.glyphicon-volume-off:before {
-  content: "\e036";
-}
-
-.glyphicon-volume-down:before {
-  content: "\e037";
-}
-
-.glyphicon-volume-up:before {
-  content: "\e038";
-}
-
-.glyphicon-qrcode:before {
-  content: "\e039";
-}
-
-.glyphicon-barcode:before {
-  content: "\e040";
-}
-
-.glyphicon-tag:before {
-  content: "\e041";
-}
-
-.glyphicon-tags:before {
-  content: "\e042";
-}
-
-.glyphicon-book:before {
-  content: "\e043";
-}
-
-.glyphicon-bookmark:before {
-  content: "\e044";
-}
-
-.glyphicon-print:before {
-  content: "\e045";
-}
-
-.glyphicon-camera:before {
-  content: "\e046";
-}
-
-.glyphicon-font:before {
-  content: "\e047";
-}
-
-.glyphicon-bold:before {
-  content: "\e048";
-}
-
-.glyphicon-italic:before {
-  content: "\e049";
-}
-
-.glyphicon-text-height:before {
-  content: "\e050";
-}
-
-.glyphicon-text-width:before {
-  content: "\e051";
-}
-
-.glyphicon-align-left:before {
-  content: "\e052";
-}
-
-.glyphicon-align-center:before {
-  content: "\e053";
-}
-
-.glyphicon-align-right:before {
-  content: "\e054";
-}
-
-.glyphicon-align-justify:before {
-  content: "\e055";
-}
-
-.glyphicon-list:before {
-  content: "\e056";
-}
-
-.glyphicon-indent-left:before {
-  content: "\e057";
-}
-
-.glyphicon-indent-right:before {
-  content: "\e058";
-}
-
-.glyphicon-facetime-video:before {
-  content: "\e059";
-}
-
-.glyphicon-picture:before {
-  content: "\e060";
-}
-
-.glyphicon-map-marker:before {
-  content: "\e062";
-}
-
-.glyphicon-adjust:before {
-  content: "\e063";
-}
-
-.glyphicon-tint:before {
-  content: "\e064";
-}
-
-.glyphicon-edit:before {
-  content: "\e065";
-}
-
-.glyphicon-share:before {
-  content: "\e066";
-}
-
-.glyphicon-check:before {
-  content: "\e067";
-}
-
-.glyphicon-move:before {
-  content: "\e068";
-}
-
-.glyphicon-step-backward:before {
-  content: "\e069";
-}
-
-.glyphicon-fast-backward:before {
-  content: "\e070";
-}
-
-.glyphicon-backward:before {
-  content: "\e071";
-}
-
-.glyphicon-play:before {
-  content: "\e072";
-}
-
-.glyphicon-pause:before {
-  content: "\e073";
-}
-
-.glyphicon-stop:before {
-  content: "\e074";
-}
-
-.glyphicon-forward:before {
-  content: "\e075";
-}
-
-.glyphicon-fast-forward:before {
-  content: "\e076";
-}
-
-.glyphicon-step-forward:before {
-  content: "\e077";
-}
-
-.glyphicon-eject:before {
-  content: "\e078";
-}
-
-.glyphicon-chevron-left:before {
-  content: "\e079";
-}
-
-.glyphicon-chevron-right:before {
-  content: "\e080";
-}
-
-.glyphicon-plus-sign:before {
-  content: "\e081";
-}
-
-.glyphicon-minus-sign:before {
-  content: "\e082";
-}
-
-.glyphicon-remove-sign:before {
-  content: "\e083";
-}
-
-.glyphicon-ok-sign:before {
-  content: "\e084";
-}
-
-.glyphicon-question-sign:before {
-  content: "\e085";
-}
-
-.glyphicon-info-sign:before {
-  content: "\e086";
-}
-
-.glyphicon-screenshot:before {
-  content: "\e087";
-}
-
-.glyphicon-remove-circle:before {
-  content: "\e088";
-}
-
-.glyphicon-ok-circle:before {
-  content: "\e089";
-}
-
-.glyphicon-ban-circle:before {
-  content: "\e090";
-}
-
-.glyphicon-arrow-left:before {
-  content: "\e091";
-}
-
-.glyphicon-arrow-right:before {
-  content: "\e092";
-}
-
-.glyphicon-arrow-up:before {
-  content: "\e093";
-}
-
-.glyphicon-arrow-down:before {
-  content: "\e094";
-}
-
-.glyphicon-share-alt:before {
-  content: "\e095";
-}
-
-.glyphicon-resize-full:before {
-  content: "\e096";
-}
-
-.glyphicon-resize-small:before {
-  content: "\e097";
-}
-
-.glyphicon-exclamation-sign:before {
-  content: "\e101";
-}
-
-.glyphicon-gift:before {
-  content: "\e102";
-}
-
-.glyphicon-leaf:before {
-  content: "\e103";
-}
-
-.glyphicon-fire:before {
-  content: "\e104";
-}
-
-.glyphicon-eye-open:before {
-  content: "\e105";
-}
-
-.glyphicon-eye-close:before {
-  content: "\e106";
-}
-
-.glyphicon-warning-sign:before {
-  content: "\e107";
-}
-
-.glyphicon-plane:before {
-  content: "\e108";
-}
-
-.glyphicon-calendar:before {
-  content: "\e109";
-}
-
-.glyphicon-random:before {
-  content: "\e110";
-}
-
-.glyphicon-comment:before {
-  content: "\e111";
-}
-
-.glyphicon-magnet:before {
-  content: "\e112";
-}
-
-.glyphicon-chevron-up:before {
-  content: "\e113";
-}
-
-.glyphicon-chevron-down:before {
-  content: "\e114";
-}
-
-.glyphicon-retweet:before {
-  content: "\e115";
-}
-
-.glyphicon-shopping-cart:before {
-  content: "\e116";
-}
-
-.glyphicon-folder-close:before {
-  content: "\e117";
-}
-
-.glyphicon-folder-open:before {
-  content: "\e118";
-}
-
-.glyphicon-resize-vertical:before {
-  content: "\e119";
-}
-
-.glyphicon-resize-horizontal:before {
-  content: "\e120";
-}
-
-.glyphicon-hdd:before {
-  content: "\e121";
-}
-
-.glyphicon-bullhorn:before {
-  content: "\e122";
-}
-
-.glyphicon-bell:before {
-  content: "\e123";
-}
-
-.glyphicon-certificate:before {
-  content: "\e124";
-}
-
-.glyphicon-thumbs-up:before {
-  content: "\e125";
-}
-
-.glyphicon-thumbs-down:before {
-  content: "\e126";
-}
-
-.glyphicon-hand-right:before {
-  content: "\e127";
-}
-
-.glyphicon-hand-left:before {
-  content: "\e128";
-}
-
-.glyphicon-hand-up:before {
-  content: "\e129";
-}
-
-.glyphicon-hand-down:before {
-  content: "\e130";
-}
-
-.glyphicon-circle-arrow-right:before {
-  content: "\e131";
-}
-
-.glyphicon-circle-arrow-left:before {
-  content: "\e132";
-}
-
-.glyphicon-circle-arrow-up:before {
-  content: "\e133";
-}
-
-.glyphicon-circle-arrow-down:before {
-  content: "\e134";
-}
-
-.glyphicon-globe:before {
-  content: "\e135";
-}
-
-.glyphicon-wrench:before {
-  content: "\e136";
-}
-
-.glyphicon-tasks:before {
-  content: "\e137";
-}
-
-.glyphicon-filter:before {
-  content: "\e138";
-}
-
-.glyphicon-briefcase:before {
-  content: "\e139";
-}
-
-.glyphicon-fullscreen:before {
-  content: "\e140";
-}
-
-.glyphicon-dashboard:before {
-  content: "\e141";
-}
-
-.glyphicon-paperclip:before {
-  content: "\e142";
-}
-
-.glyphicon-heart-empty:before {
-  content: "\e143";
-}
-
-.glyphicon-link:before {
-  content: "\e144";
-}
-
-.glyphicon-phone:before {
-  content: "\e145";
-}
-
-.glyphicon-pushpin:before {
-  content: "\e146";
-}
-
-.glyphicon-usd:before {
-  content: "\e148";
-}
-
-.glyphicon-gbp:before {
-  content: "\e149";
-}
-
-.glyphicon-sort:before {
-  content: "\e150";
-}
-
-.glyphicon-sort-by-alphabet:before {
-  content: "\e151";
-}
-
-.glyphicon-sort-by-alphabet-alt:before {
-  content: "\e152";
-}
-
-.glyphicon-sort-by-order:before {
-  content: "\e153";
-}
-
-.glyphicon-sort-by-order-alt:before {
-  content: "\e154";
-}
-
-.glyphicon-sort-by-attributes:before {
-  content: "\e155";
-}
-
-.glyphicon-sort-by-attributes-alt:before {
-  content: "\e156";
-}
-
-.glyphicon-unchecked:before {
-  content: "\e157";
-}
-
-.glyphicon-expand:before {
-  content: "\e158";
-}
-
-.glyphicon-collapse-down:before {
-  content: "\e159";
-}
-
-.glyphicon-collapse-up:before {
-  content: "\e160";
-}
-
-.glyphicon-log-in:before {
-  content: "\e161";
-}
-
-.glyphicon-flash:before {
-  content: "\e162";
-}
-
-.glyphicon-log-out:before {
-  content: "\e163";
-}
-
-.glyphicon-new-window:before {
-  content: "\e164";
-}
-
-.glyphicon-record:before {
-  content: "\e165";
-}
-
-.glyphicon-save:before {
-  content: "\e166";
-}
-
-.glyphicon-open:before {
-  content: "\e167";
-}
-
-.glyphicon-saved:before {
-  content: "\e168";
-}
-
-.glyphicon-import:before {
-  content: "\e169";
-}
-
-.glyphicon-export:before {
-  content: "\e170";
-}
-
-.glyphicon-send:before {
-  content: "\e171";
-}
-
-.glyphicon-floppy-disk:before {
-  content: "\e172";
-}
-
-.glyphicon-floppy-saved:before {
-  content: "\e173";
-}
-
-.glyphicon-floppy-remove:before {
-  content: "\e174";
-}
-
-.glyphicon-floppy-save:before {
-  content: "\e175";
-}
-
-.glyphicon-floppy-open:before {
-  content: "\e176";
-}
-
-.glyphicon-credit-card:before {
-  content: "\e177";
-}
-
-.glyphicon-transfer:before {
-  content: "\e178";
-}
-
-.glyphicon-cutlery:before {
-  content: "\e179";
-}
-
-.glyphicon-header:before {
-  content: "\e180";
-}
-
-.glyphicon-compressed:before {
-  content: "\e181";
-}
-
-.glyphicon-earphone:before {
-  content: "\e182";
-}
-
-.glyphicon-phone-alt:before {
-  content: "\e183";
-}
-
-.glyphicon-tower:before {
-  content: "\e184";
-}
-
-.glyphicon-stats:before {
-  content: "\e185";
-}
-
-.glyphicon-sd-video:before {
-  content: "\e186";
-}
-
-.glyphicon-hd-video:before {
-  content: "\e187";
-}
-
-.glyphicon-subtitles:before {
-  content: "\e188";
-}
-
-.glyphicon-sound-stereo:before {
-  content: "\e189";
-}
-
-.glyphicon-sound-dolby:before {
-  content: "\e190";
-}
-
-.glyphicon-sound-5-1:before {
-  content: "\e191";
-}
-
-.glyphicon-sound-6-1:before {
-  content: "\e192";
-}
-
-.glyphicon-sound-7-1:before {
-  content: "\e193";
-}
-
-.glyphicon-copyright-mark:before {
-  content: "\e194";
-}
-
-.glyphicon-registration-mark:before {
-  content: "\e195";
-}
-
-.glyphicon-cloud-download:before {
-  content: "\e197";
-}
-
-.glyphicon-cloud-upload:before {
-  content: "\e198";
-}
-
-.glyphicon-tree-conifer:before {
-  content: "\e199";
-}
-
-.glyphicon-tree-deciduous:before {
-  content: "\e200";
 }
 
 code,
@@ -6465,9 +5828,31 @@ pre code {
 
 #header {
   height: 456px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+@media only screen and (max-width: 768px) {
+  #header {
+    background-image: none !important;
+    height: 179px;
+  }
+  #header #helper {
+    top: 133px !important;
+  }
 }
 
 #footer {
   background-color: #313233;
   min-height: 400px;
+}
+
+.logo {
+  top: 40px;
+  position: absolute;
+}
+@media only screen and (max-width: 768px) {
+  .logo {
+    left: 50%;
+    margin-left: -100px;
+  }
 }
