@@ -25,11 +25,13 @@ Styleguide 3.0
 */
 
 /*
-Vertical List with grey links
+Vertical List Nav
+
+Denne vertical list kan bruges til navigation.
 
 Markup: <div class="vertical-list">
-<h3>Vertical List With Links</h3>
-<ul class="vertical-list-links">
+<h3>Vertical List Nav</h3>
+<ul class="vertical-list-nav">
     <li><a href="">Lorem ipsum dolor sit.</a></li>
     <li><a href="">Molestiae, unde delectus laborum.</a></li>
     <li class="active"><a href="" >Nesciunt porro fuga delectus.</a></li>
@@ -41,12 +43,14 @@ Styleguide 3.1
 */
 
 /*
-Vertical List Menu
+Vertical List Separator
 
-Markup: <div class="vertical-list vertical-list-menu">
+Denne vertical list kan bruges til filtrering af søgningsresultater. Brug den i forbindelse med <code>.vertical-list-nav</code>. 
+
+Markup: <div class="vertical-list vertical-list-separator">
 <h3>Filtrér din søgning</h3>
 <h4>Efter materialetype</h4>
-<ul class="vertical-list-plain">
+<ul class="vertical-list-nav">
     <li><a href="">Resumé</a></li>
     <li><a href="">Anmeldelser</a></li>
     <li class="active"><a href="">Om Joanne K. Rowling</a></li>
@@ -130,7 +134,7 @@ Styleguide 3.4
         } // >li
     }// ul, ol
     
-    &.vertical-list-menu{
+    &.vertical-list-separator{
         padding-bottom: unit(2);
         margin-bottom: unit(6) - 1px;
         border-bottom: 1px solid lighten($color-grey-light, 15);
@@ -140,19 +144,15 @@ Styleguide 3.4
             font-weight: 300;
     
             &:hover {
-                color: darken($color-grey-light, 15);
+                color: $color-mint-green;
             }
         }
 
-        li.active{
-            a{
-                 color:$color-red-bright;
-            }
-        }
         
-    } // &.vertical-list-menu
 
-    ul.vertical-list-links{
+    } // &.vertical-list-separator
+
+    ul.vertical-list-nav{
         a{
             color: $color-grey-light;
             font-weight: 300;
@@ -167,7 +167,7 @@ Styleguide 3.4
             }
         }
 
-    }
+    } // ul.vertical-list-nav
 
     ul.vertical-list-plain{
         li{

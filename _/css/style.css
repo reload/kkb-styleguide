@@ -1878,11 +1878,13 @@ Markup: <div class="vertical-list">
 Styleguide 3.0
 */
 /*
-Vertical List with grey links
+Vertical List Nav
+
+Denne vertical list kan bruges til navigation.
 
 Markup: <div class="vertical-list">
-<h3>Vertical List With Links</h3>
-<ul class="vertical-list-links">
+<h3>Vertical List Nav</h3>
+<ul class="vertical-list-nav">
     <li><a href="">Lorem ipsum dolor sit.</a></li>
     <li><a href="">Molestiae, unde delectus laborum.</a></li>
     <li class="active"><a href="" >Nesciunt porro fuga delectus.</a></li>
@@ -1893,12 +1895,14 @@ Markup: <div class="vertical-list">
 Styleguide 3.1
 */
 /*
-Vertical List Menu
+Vertical List Separator
 
-Markup: <div class="vertical-list vertical-list-menu">
+Denne vertical list kan bruges til filtrering af søgningsresultater. Brug den i forbindelse med <code>.vertical-list-nav</code>. 
+
+Markup: <div class="vertical-list vertical-list-separator">
 <h3>Filtrér din søgning</h3>
 <h4>Efter materialetype</h4>
-<ul class="vertical-list-plain">
+<ul class="vertical-list-nav">
     <li><a href="">Resumé</a></li>
     <li><a href="">Anmeldelser</a></li>
     <li class="active"><a href="">Om Joanne K. Rowling</a></li>
@@ -1978,29 +1982,26 @@ h6 .vertical-list a,
   margin: 0;
   padding: 0;
 }
-.vertical-list.vertical-list-menu {
+.vertical-list.vertical-list-separator {
   padding-bottom: 16px;
   margin-bottom: 47px;
   border-bottom: 1px solid #d6d6d4;
 }
-.vertical-list.vertical-list-menu a {
+.vertical-list.vertical-list-separator a {
   color: #b1b1ad;
   font-weight: 300;
 }
-.vertical-list.vertical-list-menu a:hover {
-  color: #8c8c86;
-}
-.vertical-list.vertical-list-menu li.active a {
-  color: #f47049;
-}
-.vertical-list ul.vertical-list-links a {
-  color: #b1b1ad;
-  font-weight: 300;
-}
-.vertical-list ul.vertical-list-links a:hover {
+.vertical-list.vertical-list-separator a:hover {
   color: #00b38a;
 }
-.vertical-list ul.vertical-list-links li.active a {
+.vertical-list ul.vertical-list-nav a {
+  color: #b1b1ad;
+  font-weight: 300;
+}
+.vertical-list ul.vertical-list-nav a:hover {
+  color: #00b38a;
+}
+.vertical-list ul.vertical-list-nav li.active a {
   color: #00b38a;
 }
 .vertical-list ul.vertical-list-plain li {
@@ -2332,8 +2333,6 @@ Styleguide 4.3
 
 /*
 Buttons
-
-Buttons description
 
 Markup: <button type="button" class="btn {$modifiers}">
 <i class="fa fa-briefcase"></i>Reservér bogen nu</button>
@@ -4044,6 +4043,75 @@ ul.content-list li {
   ul.content-list li {
     padding: 20px 10px 20px 10px;
   }
+}
+
+/*
+Loader
+
+Loaderen kan bruges i forbindelse med tema farverne. Standart farven er sort.  
+
+Markup: <div class="loader {$modifiers}">
+    <div class="loader-animation"></div>
+    <div class="loader-text">Søger - vent venligst</div>    
+</div>
+
+.color-red - Red 
+.color-purple - Purple
+.color-blue - Blue
+.color-yellow - Yellow
+.color-green - Green
+.color-pink - Pink
+
+Styleguide 99.8
+*/
+.loader {
+  border-radius: 8px;
+  width: 210px;
+  height: 200px;
+  text-align: center;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  background-color: #313233;
+}
+.loader .loader-animation {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  background-image: url("../img/book_loader.gif");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -55px;
+  margin-left: -45px;
+}
+.loader .loader-text {
+  display: inline-block;
+  color: white;
+  font-size: 12px;
+  position: relative;
+  top: 145px;
+  text-align: center;
+}
+.loader.color-red {
+  background-color: #ff7275;
+}
+.loader.color-purple {
+  background-color: #696092;
+}
+.loader.color-blue {
+  background-color: #278fb5;
+}
+.loader.color-yellow {
+  background-color: #ffba48;
+}
+.loader.color-green {
+  background-color: #7cbf9e;
+}
+.loader.color-pink {
+  background-color: #dc90b5;
 }
 
 code,
@@ -5860,3 +5928,12 @@ pre code {
     margin-left: -100px;
   }
 }
+
+/*
+Favicon
+
+ <img src="_/img/favicon@100.png" alt=""><br><br>
+Favicon realsize: <br><img src="_/img/favicon.ico" alt=""> 
+
+Styleguide 99.9
+*/

@@ -35,6 +35,7 @@ Styleguide 99.0
 @import 'style/search';
 @import 'style/rating';
 @import 'style/content';
+@import 'style/loader';
 @import 'bootstrap/code';
 @import 'font-awesome/font-awesome';
 
@@ -67,3 +68,12 @@ Styleguide 99.0
         margin-left: -100px;
     }
 }
+
+/*
+Favicon
+
+ <img src="_/img/favicon@100.png" alt=""><br><br>
+Favicon realsize: <br><img src="_/img/favicon.ico" alt=""> 
+
+Styleguide 99.9
+*/
