@@ -197,25 +197,25 @@ Markup: <table class="table table-data">
         <tr>
             <td>
                 <h4>Lorem ipsum.</h4>
-                <td>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </td>
+            </td>
+            <td>
+                <p>Lorem ipsum dolor sit amet.</p>
             </td>
         </tr>
         <tr>
             <td>
                 <h4>Facilis, mollitia.</h4>
-                <td>
-                    <p>Ratione saepe suscipit repellendus voluptas!</p>
-                </td>
+            </td>
+            <td>
+                <p>Ratione saepe suscipit repellendus voluptas!</p>
             </td>
         </tr>
         <tr>
             <td>
                 <h4>Quidem, animi.</h4>
-                <td>
-                    <p>Debitis provident pariatur nobis quas!</p>
-                </td>
+            </td>
+            <td>
+                <p>Debitis provident pariatur nobis quas!</p>
             </td>
         </tr>
     </tbody>
@@ -229,6 +229,14 @@ Styleguide 4.3
     
     &.table-data{
         min-width:0px;
+        margin-top: 0px;
+        >tbody{
+            >tr{
+                >td{
+                    padding-left: 0;
+                }
+            }
+        }
     }
     
     >thead{
@@ -242,10 +250,6 @@ Styleguide 4.3
             >td{
                 padding: 6px 10px 6px 10px;
                 border: 0px;
-                
-                &.center{
-                    text-align: center;
-                }
                 
                 >p{
                     margin: 0;padding: 0;

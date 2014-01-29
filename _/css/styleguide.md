@@ -15,7 +15,5 @@ Eksempel - [Materiale](http://style.stupid-studio.com/kbhbib/page/ex_materiale.h
 **Design & Udvikling:** <br/>
 Mads Hostrup <br/> _mads@stupid-studio.com_
 
-David Adalberth Andersen <br/> _david@stupid-studio.com_
-
 **Projekt styring** <br/>
 Mathias Uth Ovesen <br/> _mathias.u@stupid-studio.com_

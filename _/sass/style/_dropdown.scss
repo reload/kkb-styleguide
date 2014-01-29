@@ -128,6 +128,7 @@ Styleguide 90.3
         padding-right:unit(2);
     }
     
+    
     .dropdown-title{
         position:relative;
         width:100%;
@@ -154,8 +155,8 @@ Styleguide 90.3
             opacity:.25;
             filter: alpha(opacity=25);
             top: 7px;
-            right:3px;
-            margin-right:unit(1);
+            right:17px;
+            //margin-right:unit(1);
             display:inline-block;
         }
         
@@ -252,6 +253,9 @@ Styleguide 90.3
         }
     }
     
+    .dropdown-content-head {
+      margin: unit(1) 0;
+    }
     
     ul.dropdown-list{
         width:100%;

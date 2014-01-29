@@ -159,6 +159,8 @@ Styleguide 7.6
             vertical-align:top;
             text-align: left;
             width:50%\9;
+            float: none;
+            padding: 0px 20px 8px 0px;
         }
         
         .text{
@@ -174,27 +176,33 @@ Styleguide 7.6
             display:block;
             width: 100%;
             float:none;
-            &.hide{
-                display:none;
-            }
         }
         
         &.scale .img-wrap, &.scale .text{
             display:table-cell;
-            &.hide{
-                display:none;
-            }
         }
         
         &.scale .img-wrap{
             padding-right: 20px;
             padding-bottom: 8px;
             width:50%;
+            
+        }
+        
+        &.scale .img-wrap, &.scale .text, &.column .img-wrap, .img-wrap, &.column .text, .text{
             &.hide{
                 display:none;
             }
         }
         
+    }
+    
+    @include small(){
+        &.scale .img-wrap, &.scale .text, &.column .img-wrap, .img-wrap, &.column .text, .text{
+            &.hide-sm{
+                display:none;
+            }
+        }
     }
 }
 

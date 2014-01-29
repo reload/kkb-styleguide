@@ -36,8 +36,16 @@ Styleguide 99.0
 @import 'style/rating';
 @import 'style/content';
 @import 'style/loader';
+@import 'style/weekdisplay';
 @import 'bootstrap/code';
 @import 'font-awesome/font-awesome';
+
+*{
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility:    hidden;
+      -ms-backface-visibility:     hidden;
+          backface-visibility:     hidden; 
+}
 
 #header{
     height: 456px;

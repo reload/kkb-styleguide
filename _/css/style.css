@@ -1534,21 +1534,6 @@ Styleguide 70.1
   height: 10px;
 }
 
-body {
-  background-color: #f1f1e7;
-  font-family: 'proxima-nova',sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  color: #798881;
-}
-
-h1, h1 a, h1 a:hover, h2, h2 a, h2 a:hover, h3, h3 a, h3 a:hover, .popover h3, h4, h4 a, h4 a:hover,
-h5 a, h5 a:hover,
-h6 a, h6 a:hover, h5, h6, p, a {
-  margin: 0;
-  padding: 0;
-}
-
  /*
 Typografi
 
@@ -1673,6 +1658,22 @@ Markup: <div class="vertical-list vertical-list-menu">
 
 Styleguide 1.4
 */
+body {
+  background-color: #f1f1e7;
+  font-family: 'proxima-nova',sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #798881;
+  line-height: 24px;
+}
+
+h1, h1 a, h1 a:hover, h2, h2 a, h2 a:hover, h3, h3 a, h3 a:hover, .popover h3, h4, h4 a, h4 a:hover,
+h5 a, h5 a:hover,
+h6 a, h6 a:hover, h5, h6, p, a {
+  margin: 0;
+  padding: 0;
+}
+
 h1, h1 a, h1 a:hover {
   font-family: 'Merriweather', serif;
   font-weight: 700;
@@ -1840,6 +1841,9 @@ a.link-danger:hover, a.link-danger:active {
   font-weight: 600;
 }
 
+.tags {
+  display: inline-block;
+}
 @media only screen and (max-width: 480px) {
   .tags {
     margin-bottom: 24px;
@@ -1854,6 +1858,22 @@ a.link-danger:hover, a.link-danger:active {
   body .tag {
     width: auto;
   }
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
 }
 
 /*
@@ -2268,25 +2288,25 @@ Markup: <table class="table table-data">
         <tr>
             <td>
                 <h4>Lorem ipsum.</h4>
-                <td>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </td>
+            </td>
+            <td>
+                <p>Lorem ipsum dolor sit amet.</p>
             </td>
         </tr>
         <tr>
             <td>
                 <h4>Facilis, mollitia.</h4>
-                <td>
-                    <p>Ratione saepe suscipit repellendus voluptas!</p>
-                </td>
+            </td>
+            <td>
+                <p>Ratione saepe suscipit repellendus voluptas!</p>
             </td>
         </tr>
         <tr>
             <td>
                 <h4>Quidem, animi.</h4>
-                <td>
-                    <p>Debitis provident pariatur nobis quas!</p>
-                </td>
+            </td>
+            <td>
+                <p>Debitis provident pariatur nobis quas!</p>
             </td>
         </tr>
     </tbody>
@@ -2300,6 +2320,10 @@ Styleguide 4.3
 }
 .table.table-data {
   min-width: 0px;
+  margin-top: 0px;
+}
+.table.table-data > tbody > tr > td {
+  padding-left: 0;
 }
 .table > thead {
   border-bottom: 1px solid #d3d3c4;
@@ -2310,9 +2334,6 @@ Styleguide 4.3
 .table > tbody > tr > td, .table > thead > tr > td {
   padding: 6px 10px 6px 10px;
   border: 0px;
-}
-.table > tbody > tr > td.center, .table > thead > tr > td.center {
-  text-align: center;
 }
 .table > tbody > tr > td > p, .table > thead > tr > td > p {
   margin: 0;
@@ -2614,8 +2635,7 @@ Styleguide 90.3
   opacity: .25;
   filter: alpha(opacity=25);
   top: 7px;
-  right: 3px;
-  margin-right: 8px;
+  right: 17px;
   display: inline-block;
 }
 .dropdown .dropdown-title:active, .dropdown .dropdown-title.active {
@@ -2694,6 +2714,9 @@ Styleguide 90.3
   top: -10px;
   right: 14px;
   display: block;
+}
+.dropdown .dropdown-content-head {
+  margin: 8px 0;
 }
 .dropdown ul.dropdown-list {
   width: 100%;
@@ -3120,6 +3143,8 @@ Styleguide 7.6
   vertical-align: top;
   text-align: left;
   width: 50% \9;
+  float: none;
+  padding: 0px 20px 8px 0px;
 }
 .imgtext.scale .text {
   vertical-align: top;
@@ -3133,21 +3158,20 @@ Styleguide 7.6
     width: 100%;
     float: none;
   }
-  .imgtext.column .img-wrap.hide, .imgtext .img-wrap.hide, .imgtext.column .text.hide, .imgtext .text.hide {
-    display: none;
-  }
   .imgtext.scale .img-wrap, .imgtext.scale .text {
     display: table-cell;
-  }
-  .imgtext.scale .img-wrap.hide, .imgtext.scale .text.hide {
-    display: none;
   }
   .imgtext.scale .img-wrap {
     padding-right: 20px;
     padding-bottom: 8px;
     width: 50%;
   }
-  .imgtext.scale .img-wrap.hide {
+  .imgtext.scale .img-wrap.hide, .imgtext.scale .text.hide, .imgtext.column .img-wrap.hide, .imgtext .img-wrap.hide, .imgtext.column .text.hide, .imgtext .text.hide {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .imgtext.scale .img-wrap.hide-sm, .imgtext.scale .text.hide-sm, .imgtext.column .img-wrap.hide-sm, .imgtext .img-wrap.hide-sm, .imgtext.column .text.hide-sm, .imgtext .text.hide-sm {
     display: none;
   }
 }
@@ -4029,18 +4053,19 @@ ul.content-list {
   display: block;
   width: 100%;
 }
-ul.content-list li {
+
+.content-box, ul.content-list li {
   display: inline-block;
   width: 100%;
   box-sizing: border-box;
-  margin: 0px 0 24px 0;
-  padding: 24px;
+  margin: 0px 0 16px 0;
+  padding: 16px;
   border-radius: 4px;
   background-color: #f7f7f1;
   border: 1px solid #e8e8d7;
 }
 @media only screen and (max-width: 480px) {
-  ul.content-list li {
+  .content-box, ul.content-list li {
     padding: 20px 10px 20px 10px;
   }
 }
@@ -4048,7 +4073,7 @@ ul.content-list li {
 /*
 Loader
 
-Loaderen kan bruges i forbindelse med tema farverne. Standart farven er sort.  
+Loaderen kan bruges i forbindelse med tema farverne. Standard farven er sort.  
 
 Markup: <div class="loader {$modifiers}">
     <div class="loader-animation"></div>
@@ -4112,6 +4137,20 @@ Styleguide 99.8
 }
 .loader.color-pink {
   background-color: #dc90b5;
+}
+
+.week-display {
+  text-align: center;
+}
+.week-display a {
+  display: inline-block;
+  padding: 0 15px;
+}
+.week-display a.disable {
+  color: #cacac7;
+}
+.week-display .week-display-header {
+  display: inline-block;
 }
 
 code,
@@ -5896,6 +5935,13 @@ pre code {
 
 .fa-plus-square-o:before {
   content: "\f196";
+}
+
+* {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 #header {
