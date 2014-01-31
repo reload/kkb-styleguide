@@ -32,19 +32,17 @@
 </head>
 
 <body>
-
+    
     <style>
         #header{
-/*            background-image: url('_/img/content/byggemandbob.png');*/
+            background-image: url('_/img/content/byggemandbob.png');
         }
     </style>
     <div id="header" class="color-pink">
         <div class="container" style="position:relative;">
-            <a href="" class="logo">
-                <img src="_/img/kk_bib_logo.png" alt="">
-            </a>
+        <a href="" class="logo"><img src="_/img/kk_bib_logo.png"  alt=""></a>
             <div class="g9-4" style="position:relative">
-                <div id="helper" style="position:absolute; width:100%; top:61px; left:0px;">
+                <div id="helper" style="position:absolute; width:100%; top:411px; left:0px;">
                     <nav class="navbar navbar-default color-pink-light" role="navigation">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -71,12 +69,12 @@
                                 <li>
                                     <a href="#">Nyheder</a>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href="#">
-                                        <i class="fa fa-search"></i>
+                                        <i class="fa fa-search"></i> 
                                     </a>
                                 </li>
-                                <li class="active">
+                                <li>
                                     <a href="#">Log ind</a>
                                 </li>
                             </ul>
@@ -86,26 +84,21 @@
             </div>
         </div>
     </div>
-    <div class="color-pink-dark">
+    <div class="search-bar search-bar-pink">
         <div class="container">
             <div class="g12-1">
-                <form action="" class="login">
-                    <div class="form-group email">
-                        <label for="email" class="meta-form">Låner- eller cpr-nr.</label>
-                        <input type="text" id="email" name="email" placeholder="Nummeret er på 10 cifre">
+                <div class="search-bar search-bar-pink">
+                    <div class="icon-search">
+                        <i class="fa fa-search"></i>
                     </div>
-                    <div class="form-group password">
-                        <label for="password" class="meta-form">Pinkode</label>
-                        <input type="password" id="password" name="password" placeholder="Pinkoden er på 4 cifre">
-                        <input type="submit" value="Log ind" class="btn btn-secondary">
-                    </div>
-                </form>
+                    <form action="" class="">
+                        <input type="text" placeholder="Skriv f.eks. Harry Potter, krimi eller lignende">
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-    
 
-    
     <div class="container">
         <div class="spacer-md"></div>
         <div class="spacer-sm"></div>
@@ -139,7 +132,7 @@
         </div>
         <div class="g9-1-right ">
             <h4>Af
-                <a href="">Joanne K. Rowling</a>(2007)</h4>
+                <a href="">Joanne K. Rowling</a> (2007)</h4>
             <br>
             <h1>Harry Potter og dødsregalierne</h1>
         </div>
@@ -518,7 +511,7 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/holderjs/holder.js"></script>
     <script type="text/javascript" src="bower_components/respond/dest/respond.src.js"></script>
-    <!--    <script src="_/js/grid_bookmark.js"></script>-->
+<!--    <script src="_/js/grid_bookmark.js"></script>-->
     <script>
         $(document).ready(function(){
             $('[data-toggle="popup"]').popover();

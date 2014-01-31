@@ -48,16 +48,29 @@ Styleguide 99.0
 }
 
 #header{
-    height: 456px;
+    height: 106px;
     background-repeat: no-repeat;
     background-position: center bottom;
     
+    &.tema {
+        height: 456px;
+    }
+    
     @include small-medium(){
         background-image: none !important;
-        height:179px;
+        height: 173px;
+        
+        
+        &.tema{
+            height:179px;
+            
+            #helper{
+                top:133px !important;
+            }
+        }
         
         #helper{
-            top:133px !important;
+            top:127px !important;
         }
     }
 }

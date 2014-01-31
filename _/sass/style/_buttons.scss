@@ -15,7 +15,8 @@ Markup: <button type="button" class="btn {$modifiers}">
 
 Styleguide 99.1
 */
-.btn{
+
+.btn {
     display: inline-block;
     padding: 5px unit(2);
     margin-bottom: unit(2) - 2px;
@@ -28,90 +29,78 @@ Styleguide 99.1
     background-image: none;
     border: 1px solid transparent;
     border-radius: $border-radius;
-    outline:0;
-    color:white;
+    outline: 0;
+    color: white;
     font-size: 16px;
     margin-right: 4px;
     box-sizing: border-box;
     background-color: $color-mint-green;
-    box-shadow:0px 1px 2px darken($color-mint-green, 20);
-
-    span.glyphicon, i.fa{
-        color:black;
+    box-shadow: 0px 1px 2px darken($color-mint-green, 20);
+    span.glyphicon, i.fa {
+        color: black;
         -moz-opacity: 0.25;
-        opacity:.25;
+        opacity: .25;
         filter: alpha(opacity=25);
         top: 4px;
-        margin-right:unit(1);
-        display:inline-block;
+        margin-right: unit(1);
+        display: inline-block;
     }
-    
-    &:active, &.pseudo-class-active{
+    &:active,
+    &.pseudo-class-active {
         padding: 4px unit(2) 6px unit(2);
-        box-shadow:inset 1px 1px 4px darken($color-mint-green, 10);
+        box-shadow: inset 1px 1px 4px darken($color-mint-green, 10);
         color: tint($color-mint-green, 85);
     }
-
-    &:hover, &.pseudo-class-hover{
-        color:white;
+    &:hover,
+    &.pseudo-class-hover {
+        color: white;
         background-color: darken($color-mint-green, 2);
     }
-    
-    &.btn-right{
-        float:right;
+    &.btn-right {
+        float: right;
         margin-bottom: 0;
     }
-
-    @include small(){
-        width:100%;
-        &.btn-right{
-            float:none;
+    @include small() {
+        width: 100%;
+        &.btn-right {
+            float: none;
         }
     }
 }
-
-.btn-small{
+.btn-small {
     font-size: 12px;
-    line-height:22px;
+    line-height: 22px;
     padding: 0px 6px;
-    
-    &:active{
+    &:active {
         padding: 0px 6px 1px 6px;
-        line-height:21px;
+        line-height: 21px;
     }
-    
 }
-
-
-.btn-secondary{
+.btn-secondary {
     background-color: $color-grey-light;
-    box-shadow:0px 1px 2px darken($color-grey-light, 30);
-    
-    &:hover, &.pseudo-class-hover{
+    box-shadow: 0px 1px 2px darken($color-grey-light, 30);
+    &:hover, &.pseudo-class-hover {
         background-color: darken($color-grey-light, 4);
     }
-    &:active, &.pseudo-class-active{
-        box-shadow:inset 1px 1px 4px darken($color-grey-light, 15);
+    &:active,
+    &.pseudo-class-active {
+        box-shadow: inset 1px 1px 4px darken($color-grey-light, 15);
         color: tint($color-grey-light, 80);
     }
 }
-
-
-.btn-danger{
+.btn-danger {
     background-color: $color-red;
-    box-shadow:0px 1px 2px darken($color-red, 30);
-    
-    &:hover, &.pseudo-class-hover{
+    box-shadow: 0px 1px 2px darken($color-red, 30);
+    &:hover, &.pseudo-class-hover {
         background-color: darken($color-red, 4);
     }
-    &:active, &.pseudo-class-active{
-        box-shadow:inset 1px 1px 4px darken($color-red, 15);
+    &:active,
+    &.pseudo-class-active {
+        box-shadow: inset 1px 1px 4px darken($color-red, 15);
         color: tint($color-red, 80);
     }
 }
-
-
-button.close{
+button.close {
     background-color: transparent;
     box-shadow: none;
     border: 0;
@@ -122,25 +111,25 @@ button.close{
     color: #000;
     opacity: .2;
     filter: alpha(opacity=20);
-    width: 13px;
-    height: 17px;
     position: absolute;
     top: 10px;
     right: 10px;
+    padding: 1px 5px 5px 5px;
+    width: 22px;
+    height: 21px;
     margin: 0;
-    padding: 0;
-    &:hover{
+    cursor: pointer;
+    //z-index: 99;
+    &:hover {
         color: #000;
         text-decoration: none;
-        cursor: pointer;
         opacity: .5;
         filter: alpha(opacity=50);
     }
 }
-
 // Firefox fix
 @-moz-document url-prefix() {
-   input[type="submit"].btn{
+    input[type="submit"].btn {
         padding: 3px;
     }
 }

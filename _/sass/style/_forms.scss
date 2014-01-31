@@ -122,6 +122,32 @@ Styleguide 6.4
 */
 
 
+/*
+Login
+
+ <style>
+.color-pink-dark{
+    padding: 1px 20px;
+}
+</style>
+
+Markup: <div class="color-pink-dark">
+    <form action="" class="login">
+        <div class="form-group email">
+            <label for="email" class="meta-form">Låner- eller cpr-nr.</label>
+            <input type="text" id="email" name="email" placeholder="Nummeret er på 10 cifre">
+        </div>
+        <div class="form-group password">
+            <label for="password" class="meta-form">Pinkode</label>
+            <input type="password" id="password" name="password" placeholder="Pinkoden er på 4 cifre">
+            <input type="submit" value="Log ind" class="btn btn-secondary">
+        </div>
+    </form>
+</div>
+
+Styleguide 6.5
+*/
+
 $inputPaddingVer: 10px;
 $inputPaddingHor: 20px;
 
@@ -260,6 +286,44 @@ fieldset{
 label{
     font-weight: normal;
 }
+
+
+// LOGIN
+.login {
+  display: table;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  label {
+    color: white;
+  }
+  .form-group {
+    display: table-cell;
+    position: relative;
+  }
+  input {
+    &[type="text"], &[type="password"] {
+      padding: 16px;
+    }
+  }
+  .form-group {
+    &.email {
+      padding-right: 0px;
+      width: 49%;
+    }
+    &.password {
+      padding-left: 2%;
+    }
+  }
+  input[type="submit"] {
+    position: absolute;
+    top: 32px;
+    right: -8px;
+  }
+}
+
+
 
 
 // IE8 FIX

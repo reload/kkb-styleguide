@@ -1673,6 +1673,12 @@ h6 a, h6 a:hover, h5, h6, p, a {
   margin: 0;
   padding: 0;
 }
+h1.underline, h1 a.underline, h2.underline, h2 a.underline, h3.underline, h3 a.underline, h4.underline, h4 a.underline,
+h5 a.underline,
+h6 a.underline, h5.underline, h6.underline, p.underline, a.underline {
+  margin-top: 24px;
+  padding-bottom: 16px;
+}
 
 h1, h1 a, h1 a:hover {
   font-family: 'Merriweather', serif;
@@ -1864,7 +1870,7 @@ a.link-danger:hover, a.link-danger:active {
   display: inline-block;
 }
 
-.center {
+.center, .more {
   text-align: center;
 }
 
@@ -1874,6 +1880,11 @@ a.link-danger:hover, a.link-danger:active {
 
 .right {
   text-align: right;
+}
+
+.more {
+  margin-top: -8px;
+  margin-bottom: 24px;
 }
 
 /*
@@ -2464,18 +2475,18 @@ button.close {
   color: #000;
   opacity: .2;
   filter: alpha(opacity=20);
-  width: 13px;
-  height: 17px;
   position: absolute;
   top: 10px;
   right: 10px;
+  padding: 1px 5px 5px 5px;
+  width: 22px;
+  height: 21px;
   margin: 0;
-  padding: 0;
+  cursor: pointer;
 }
 button.close:hover {
   color: #000;
   text-decoration: none;
-  cursor: pointer;
   opacity: .5;
   filter: alpha(opacity=50);
 }
@@ -2687,6 +2698,7 @@ Styleguide 90.3
 }
 .dropdown input[type="checkbox"]:checked ~ .dropdown-content {
   display: block;
+  margin-bottom: 20px;
 }
 .dropdown .dropdown-content {
   width: 100%;
@@ -2853,6 +2865,31 @@ Markup: <form action="">
 
 Styleguide 6.4
 */
+/*
+Login
+
+ <style>
+.color-pink-dark{
+    padding: 1px 20px;
+}
+</style>
+
+Markup: <div class="color-pink-dark">
+    <form action="" class="login">
+        <div class="form-group email">
+            <label for="email" class="meta-form">Låner- eller cpr-nr.</label>
+            <input type="text" id="email" name="email" placeholder="Nummeret er på 10 cifre">
+        </div>
+        <div class="form-group password">
+            <label for="password" class="meta-form">Pinkode</label>
+            <input type="password" id="password" name="password" placeholder="Pinkoden er på 4 cifre">
+            <input type="submit" value="Log ind" class="btn btn-secondary">
+        </div>
+    </form>
+</div>
+
+Styleguide 6.5
+*/
 form ::-webkit-input-placeholder {
   color: #d8dcda;
 }
@@ -2979,6 +3016,36 @@ fieldset legend {
 
 label {
   font-weight: normal;
+}
+
+.login {
+  display: table;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.login label {
+  color: white;
+}
+.login .form-group {
+  display: table-cell;
+  position: relative;
+}
+.login input[type="text"], .login input[type="password"] {
+  padding: 16px;
+}
+.login .form-group.email {
+  padding-right: 0px;
+  width: 49%;
+}
+.login .form-group.password {
+  padding-left: 2%;
+}
+.login input[type="submit"] {
+  position: absolute;
+  top: 32px;
+  right: -8px;
 }
 
 .lt-ie9 input, textarea {
@@ -3116,7 +3183,7 @@ Styleguide 7.5
 /*
 Image underline
 
-For at skille content ad, brug da <code>.imgtext-underline</code>. Det giver containeren en bund linje.
+For at skille content ad, brug da <code>.imgtext .underline</code>. Det giver containeren en bund linje.
 
 Markup: <div class="imgtext underline">
     <div class="img-wrap">
@@ -3655,6 +3722,31 @@ h6 .alert a {
   color: #468f6b;
 }
 
+.alert.alert-infomation {
+  background-color: #313233;
+  margin-bottom: 32px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  color: white;
+}
+.alert.alert-infomation h1, .alert.alert-infomation h1 a, h1 .alert.alert-infomation a, .alert.alert-infomation h2, .alert.alert-infomation h2 a, h2 .alert.alert-infomation a, .alert.alert-infomation h3, .alert.alert-infomation h3 a, h3 .alert.alert-infomation a, .alert.alert-infomation h4, .alert.alert-infomation h4 a, h4 .alert.alert-infomation a,
+.alert.alert-infomation h5 a,
+h5 .alert.alert-infomation a,
+.alert.alert-infomation h6 a,
+h6 .alert.alert-infomation a, .alert.alert-infomation p {
+  color: white;
+}
+.alert.alert-infomation .close {
+  color: white;
+}
+.alert.alert-infomation .close:hover {
+  color: white;
+}
+.alert.alert-infomation .alert-wrapper {
+  padding: 24px 0 0 0;
+}
+
 /*
 Alerts
 
@@ -3680,6 +3772,7 @@ Markup: <div class="alert {$modifiers}">
 .alert-warning  - Warning
 .alert-info     - Info 
 .alert-success  - Success 
+.alert-infomation  - Information 
 
 Styleguide 99.7
 */
@@ -5945,17 +6038,26 @@ pre code {
 }
 
 #header {
-  height: 456px;
+  height: 106px;
   background-repeat: no-repeat;
   background-position: center bottom;
+}
+#header.tema {
+  height: 456px;
 }
 @media only screen and (max-width: 768px) {
   #header {
     background-image: none !important;
+    height: 173px;
+  }
+  #header.tema {
     height: 179px;
   }
-  #header #helper {
+  #header.tema #helper {
     top: 133px !important;
+  }
+  #header #helper {
+    top: 127px !important;
   }
 }
 

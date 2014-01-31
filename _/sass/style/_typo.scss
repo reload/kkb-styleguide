@@ -152,6 +152,11 @@ body{
 
 h1,h2,h3,h4,h5,h6,p,a{
     margin:0; padding: 0;
+    
+    &.underline{
+        margin-top: unit(3);
+        padding-bottom: unit(2);
+    }
 }
 
 
@@ -176,6 +181,7 @@ h1{
     &.subject{
         font-size: 26px;    
     }
+    
 }
 
 h2{
@@ -394,4 +400,10 @@ body .tag {
 
 .right{
     text-align: right;
+}
+
+.more{
+    @extend .center;
+    margin-top: -8px;
+    margin-bottom: unit(3);
 }

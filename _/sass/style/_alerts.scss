@@ -34,6 +34,28 @@
     @include ss_alert($color-green);
 }
 
+.alert.alert-infomation {
+  background-color: $color-black;
+  //padding-top: 32px;
+  margin-bottom: 32px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  color: white;
+  h1, h2, h3, h4, p {
+    color: white;
+  }
+  .close {
+    color: white;
+    &:hover {
+      color: white;
+    }
+  }
+    
+  .alert-wrapper{
+    padding: 24px 0 0 0;
+   }
+}
 
 /*
 Alerts
@@ -61,6 +83,7 @@ Markup: <div class="alert {$modifiers}">
 .alert-warning  - Warning
 .alert-info     - Info 
 .alert-success  - Success 
+.alert-infomation  - Information 
 
 Styleguide 99.7
 */
