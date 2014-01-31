@@ -15,7 +15,6 @@ Markup: <button type="button" class="btn {$modifiers}">
 
 Styleguide 99.1
 */
-
 .btn {
     display: inline-block;
     padding: 5px unit(2);
@@ -33,6 +32,7 @@ Styleguide 99.1
     color: white;
     font-size: 16px;
     margin-right: 4px;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     background-color: $color-mint-green;
     box-shadow: 0px 1px 2px darken($color-mint-green, 20);
@@ -130,6 +130,6 @@ button.close {
 // Firefox fix
 @-moz-document url-prefix() {
     input[type="submit"].btn {
-        padding: 3px;
+        padding: 7px unit(2);
     }
 }

@@ -111,6 +111,11 @@
         .kss-markup{
             margin-bottom:50px;
         }
+        .kss-markup:after{
+            content:'';
+            display:block;
+            clear: both;
+        }
         
         
         /* MODIFIER */
@@ -843,7 +848,16 @@
                             <div class="kss-description">
                                      <style>
 .color-pink-dark{
-    padding: 1px 20px;
+    padding: 0px 20px;
+    width:100%;
+    float:left;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.color-pink-dark:after{
+    content:&apos;&apos;;
+    display:block;
+    clear: both;
 }
 </style>
                             </div>

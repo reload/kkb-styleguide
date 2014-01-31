@@ -2395,6 +2395,7 @@ Styleguide 99.1
   color: white;
   font-size: 16px;
   margin-right: 4px;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #00b38a;
   box-shadow: 0px 1px 2px #004d3b;
@@ -2493,7 +2494,7 @@ button.close:hover {
 
 @-moz-document url-prefix() {
   input[type="submit"].btn, input[type="submit"].tag {
-    padding: 3px;
+    padding: 7px 16px;
   }
 }
 
@@ -2870,7 +2871,16 @@ Login
 
  <style>
 .color-pink-dark{
-    padding: 1px 20px;
+    padding: 0px 20px;
+    width:100%;
+    float:left;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.color-pink-dark:after{
+    content:'';
+    display:block;
+    clear: both;
 }
 </style>
 
@@ -2890,6 +2900,10 @@ Markup: <div class="color-pink-dark">
 
 Styleguide 6.5
 */
+form {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 form ::-webkit-input-placeholder {
   color: #d8dcda;
 }
@@ -2904,6 +2918,7 @@ form :-ms-input-placeholder {
 }
 
 form * {
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -3019,28 +3034,45 @@ label {
 }
 
 .login {
-  display: table;
   width: 100%;
-  overflow: hidden;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 8px;
 }
 .login label {
   color: white;
 }
 .login .form-group {
-  display: table-cell;
   position: relative;
+  float: left;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+}
+@media only screen and (max-width: 480px) {
+  .login .form-group {
+    float: none;
+    display: block;
+    width: 100%;
+  }
 }
 .login input[type="text"], .login input[type="password"] {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   padding: 16px;
+  width: 100%;
 }
 .login .form-group.email {
-  padding-right: 0px;
-  width: 49%;
+  padding-right: 20px;
 }
 .login .form-group.password {
-  padding-left: 2%;
+  padding-left: 20px;
+}
+@media only screen and (max-width: 480px) {
+  .login .form-group.email {
+    padding-right: 0px;
+  }
+  .login .form-group.password {
+    padding-left: 0px;
+  }
 }
 .login input[type="submit"] {
   position: absolute;

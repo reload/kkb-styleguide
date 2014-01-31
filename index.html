@@ -96,19 +96,48 @@ V responsive imgtext FIREFOX
         <div class="gclear spacer-sm"></div>
         
         <div class="g12-1">
-            <div class="color-pink-dark">
-                <form action="" class="login">
-                    <div class="form-group email">
-                        <label for="email" class="meta-form">Låner- eller cpr-nr.</label>
-                        <input type="text" id="email" name="email" placeholder="Nummeret er på 10 cifre">
-                    </div>
-                    <div class="form-group password">
-                        <label for="password" class="meta-form">Pinkode</label>
-                        <input type="password" id="password" name="password" placeholder="Pinkoden er på 4 cifre">
-                        <input type="submit" value="Log ind" class="btn btn-secondary">
-                    </div>
-                </form>
+            <style>
+                .color-pink-dark{
+                    padding: 0px 20px;
+                    width:100%;
+                    margin-bottom: 50px;
+                }
+                .color-pink-dark:after{
+                    content:'';
+                    display:block;
+                    clear: both;
+                }
+            </style>
+            <div class="kss-markup">
+                <div class="color-pink-dark">
+                    <form action="" class="login">
+                        <div class="form-group email">
+                <label for="email" class="meta-form">Låner- eller cpr-nr.</label>
+                <input type="text" id="email" name="email" placeholder="Nummeret er på 10 cifre">
+                        </div>
+                        <div class="form-group password">
+                <label for="password" class="meta-form">Pinkode</label>
+                <input type="password" id="password" name="password" placeholder="Pinkoden er på 4 cifre">
+                <input type="submit" value="Log ind" class="btn btn-secondary">
+                        </div>
+                    </form>
+                </div>
             </div>
+            <div class="kss-code">
+                            <pre class="prettyprint lang-html">&lt;div class="color-pink-dark"&gt;
+    &lt;form action="" class="login"&gt;
+        &lt;div class="form-group email"&gt;
+            &lt;label for="email" class="meta-form"&gt;Låner- eller cpr-nr.&lt;/label&gt;
+            &lt;input type="text" id="email" name="email" placeholder="Nummeret er på 10 cifre"&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group password"&gt;
+            &lt;label for="password" class="meta-form"&gt;Pinkode&lt;/label&gt;
+            &lt;input type="password" id="password" name="password" placeholder="Pinkoden er på 4 cifre"&gt;
+            &lt;input type="submit" value="Log ind" class="btn btn-secondary"&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/div&gt;</pre>
+                        </div>
             
         </div>
         <div class="gclear spacer"></div>

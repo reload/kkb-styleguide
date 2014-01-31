@@ -127,7 +127,16 @@ Login
 
  <style>
 .color-pink-dark{
-    padding: 1px 20px;
+    padding: 0px 20px;
+    width:100%;
+    float:left;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.color-pink-dark:after{
+    content:'';
+    display:block;
+    clear: both;
 }
 </style>
 
@@ -153,6 +162,8 @@ $inputPaddingHor: 20px;
 
 form{
     //padding: 0px $inputPaddingHor 0px 0px;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box;
     
     $placeholdercolor: lighten($color-mudgreen, 35);
     ::-webkit-input-placeholder {color: $placeholdercolor;}    
@@ -162,6 +173,7 @@ form{
 };
 
 form *{
+    -moz-box-sizing: border-box;
     box-sizing:border-box;
 }
 
@@ -290,31 +302,49 @@ label{
 
 // LOGIN
 .login {
-  display: table;
   width: 100%;
-  overflow: hidden;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 8px;
   label {
     color: white;
   }
   .form-group {
-    display: table-cell;
     position: relative;
+    float: left;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+        
+    @include small(){
+        float:none;
+        display:block;
+        width:100%;
+    }  
+        
   }
   input {
     &[type="text"], &[type="password"] {
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
       padding: 16px;
+      width: 100%;
     }
   }
   .form-group {
     &.email {
-      padding-right: 0px;
-      width: 49%;
+      padding-right: 20px;
     }
     &.password {
-      padding-left: 2%;
+      padding-left: 20px;
     }
+        
+    @include small(){
+        &.email {
+          padding-right: 0px;
+        }
+        &.password {
+          padding-left: 0px;
+        }
+    }  
   }
   input[type="submit"] {
     position: absolute;
