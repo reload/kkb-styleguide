@@ -124,10 +124,10 @@ Copy H3, H4
 
 Brug af <code>H3</code> og <code>H4</code> kunne være ved en filtreringsmenu.
 
-Markup: <div class="vertical-list vertical-list-menu">
+Markup: <div class="vertical-list">
     <h3>Filtrér din søgning [H3]</h3>
     <h4>Efter materialetype [H4]</h4>
-    <ul class="vertical-list-plain">
+    <ul class="vertical-list-nav">
         <li><a href="">Resumé [A]</a></li>
         <li><a href="">Anmeldelser</a></li>
         <li class="active"><a href="">Om Joanne K. Rowling</a></li>

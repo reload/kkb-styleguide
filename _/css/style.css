@@ -1644,10 +1644,10 @@ Copy H3, H4
 
 Brug af <code>H3</code> og <code>H4</code> kunne være ved en filtreringsmenu.
 
-Markup: <div class="vertical-list vertical-list-menu">
+Markup: <div class="vertical-list">
     <h3>Filtrér din søgning [H3]</h3>
     <h4>Efter materialetype [H4]</h4>
-    <ul class="vertical-list-plain">
+    <ul class="vertical-list-nav">
         <li><a href="">Resumé [A]</a></li>
         <li><a href="">Anmeldelser</a></li>
         <li class="active"><a href="">Om Joanne K. Rowling</a></li>
@@ -4276,6 +4276,122 @@ Styleguide 99.8
 }
 .week-display .week-display-header {
   display: inline-block;
+}
+
+.calendar:after {
+  display: block;
+  clear: both;
+}
+.calendar .calendar-entry-header {
+  margin-bottom: 0;
+}
+.calendar .calendar-week {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.calendar .calendar-week li {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 24px;
+}
+.calendar .calendar-content {
+  -webkit-transition: height 1s ease;
+  transition: height 1s ease;
+  position: relative;
+  background-color: white;
+  height: 400px;
+  width: 80%;
+  width: calc(100% - 80px);
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  float: left;
+  overflow: hidden;
+}
+.calendar .calendar-content .big {
+  margin-bottom: 24px;
+  color: #00b38a;
+}
+.calendar .calendar-content-wrap {
+  -webkit-transition: top 1.5s ease;
+  transition: top 1.5s ease;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.calendar .calendar-content-item {
+  margin-bottom: 24px;
+}
+.calendar .calendar-nav {
+  background-color: #b1b1ad;
+  min-height: 0%;
+  box-sizing: padding-box;
+  padding: 8px 0;
+  width: 80px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  float: left;
+}
+.calendar .calendar-nav a {
+  -webkit-transition: color 0.25s 0s ease;
+  transition: color 0.25s 0s ease;
+  color: white;
+  margin: 24px 0;
+  display: block;
+  position: relative;
+}
+.calendar .calendar-nav a .month {
+  position: relative;
+  z-index: 2;
+  display: block;
+  text-align: center;
+}
+.calendar .calendar-nav a .date {
+  position: relative;
+  z-index: 2;
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+}
+.calendar .calendar-nav a:after {
+  -webkit-transition: width 0.25s ease;
+  transition: width 0.25s ease;
+  content: "";
+  background-color: white;
+  display: block;
+  position: absolute;
+  width: 0px;
+  height: 61px;
+  top: -5px;
+  left: 0px;
+  z-index: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.calendar .calendar-nav a:hover, .calendar .calendar-nav a.active {
+  -webkit-transition: color 0.25s 0.125s ease;
+  transition: color 0.25s 0.125s ease;
+  color: #00b38a;
+}
+.calendar .calendar-nav a:hover:after, .calendar .calendar-nav a.active:after {
+  width: 70px;
+}
+.calendar .calendar-nav a:active {
+  -webkit-transition: color 0.1s 0s ease;
+  transition: color 0.1s 0s ease;
+  color: #00664f;
+}
+.calendar .calendar-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.calendar .calendar-nav ul li {
+  margin: 0;
+  padding: 0;
 }
 
 code,

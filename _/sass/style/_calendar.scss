@@ -1,0 +1,128 @@
+.calendar{
+    $calendar-nav-width: 80px;
+    
+    &:after{
+        display: block;
+        clear: both;
+    }
+    
+    .calendar-entry-header{
+        margin-bottom: 0;    
+    }
+    
+    .calendar-week{
+        list-style: none;
+        margin: 0; padding: 0;
+        box-sizing: border-box;
+        
+        li{
+            box-sizing: border-box;
+            margin: 0; padding: unit(3);
+        }
+    }
+    
+    .calendar-content{
+        @include transition(height 1s ease);
+        position: relative;
+        background-color: white;
+        height: 400px;
+        width:80%;
+        width: calc(100% - #{$calendar-nav-width});
+        border-top-left-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
+        float: left;
+        overflow: hidden;
+    
+        .big{
+            margin-bottom: unit(3);
+            color: $color-mint-green;
+        }
+    }
+    
+    .calendar-content-wrap{
+        @include transition(top 1.5s ease);
+        position: absolute;
+        top:0px;
+        left:0px;
+    }
+
+    .calendar-content-item{
+        margin-bottom: unit(3);
+    }
+
+    .calendar-nav{
+        background-color: $color-grey-light;
+        min-height: 0%;
+        box-sizing: padding-box;
+        padding: unit(1) 0 ;
+        width: $calendar-nav-width;
+        border-top-right-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+        float:left;
+        
+        a{
+            @include transition(color 0.25s 0s ease);
+            color: white;
+            margin: unit(3) 0;
+            display: block;
+            position: relative;
+            
+            .month{
+                position: relative;
+                z-index: 2;
+                display: block;
+                text-align: center;
+            }
+            
+            .date{
+                position: relative;
+                z-index: 2;
+                display: block;
+                text-align: center;
+                font-weight: 600;
+                font-size: 30px;
+            }
+            
+             &:after{
+                @include transition(width 0.25s ease);
+                content:"";
+                background-color: white;
+                display: block;
+                position: absolute;
+                width: 0px;
+                height: 61px;
+                top: -5px;
+                left: 0px;
+                z-index: 0;
+                border-top-right-radius: $border-radius;
+                border-bottom-right-radius: $border-radius;
+            }    
+
+            &:hover, &.active{
+                @include transition(color 0.25s 0.125s ease);
+                color: $color-mint-green;
+                
+                &:after{
+                    width: 70px;
+                }    
+            }
+            
+            &:active{
+                @include transition(color 0.1s 0s ease);
+                color: darken($color-mint-green, 15);    
+            }
+            
+        }
+        
+        ul{
+            
+            list-style: none;
+            margin: 0;padding: 0;
+            li{
+                margin: 0;padding: 0;
+            }
+        }
+    }
+    
+}
