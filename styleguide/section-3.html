@@ -8,6 +8,7 @@
     <title>Styleguide</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="public/js/modernizr.js"></script>
+    <script type="text/javascript" src="public/js/css-calc.js"></script>
     <script type="text/javascript" src="//use.typekit.net/qqr6kuv.js"></script>
     <script type="text/javascript">
         try {
@@ -106,6 +107,12 @@
         .kss-description{
             margin:0 0 50px 0;
         }
+        .kss-description:after{
+            content:"";
+            display: block;
+            clear: both;
+            float:none;
+        }
         .kss-description>p{
         }
         .kss-markup{
@@ -166,8 +173,10 @@
         .kss-modifier .kss-markup{
         }
         
-        .kss-code{
-/*            margin:50px 0 0 0;*/
+        .kss-code-special{
+            float: left;
+            width: 100%;
+            margin-top: 20px;
         }
         .kss-code pre{
             background-color: #FCFCF9;
@@ -545,6 +554,11 @@
                                 <li><a href="section-99.html#99.9">Favicon</a></li>
                               
                         
+                            
+<!--                                <li><a href="section-99.html#99.10">99.10 Kalender</a></li>-->
+                                <li><a href="section-99.html#99.10">Kalender</a></li>
+                              
+                        
                         </ul>
                     </li>
                 
@@ -869,6 +883,7 @@
     <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/holder.js"></script>
     <script src="public/js/respond.min.js"></script>
+    <script src="public/js/calendar.js"></script>
     <script>
         $(document).ready(function(){
             $('[data-toggle="popup"]').popover();

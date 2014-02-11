@@ -8,6 +8,7 @@
     <title>Styleguide</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="public/js/modernizr.js"></script>
+    <script type="text/javascript" src="public/js/css-calc.js"></script>
     <script type="text/javascript" src="//use.typekit.net/qqr6kuv.js"></script>
     <script type="text/javascript">
         try {
@@ -106,6 +107,12 @@
         .kss-description{
             margin:0 0 50px 0;
         }
+        .kss-description:after{
+            content:"";
+            display: block;
+            clear: both;
+            float:none;
+        }
         .kss-description>p{
         }
         .kss-markup{
@@ -166,8 +173,10 @@
         .kss-modifier .kss-markup{
         }
         
-        .kss-code{
-/*            margin:50px 0 0 0;*/
+        .kss-code-special{
+            float: left;
+            width: 100%;
+            margin-top: 20px;
         }
         .kss-code pre{
             background-color: #FCFCF9;
@@ -543,6 +552,11 @@
                             
 <!--                                <li><a href="section-99.html#99.9">99.9 Favicon</a></li>-->
                                 <li><a href="section-99.html#99.9">Favicon</a></li>
+                              
+                        
+                            
+<!--                                <li><a href="section-99.html#99.10">99.10 Kalender</a></li>-->
+                                <li><a href="section-99.html#99.10">Kalender</a></li>
                               
                         
                         </ul>
@@ -1096,6 +1110,258 @@ Favicon realsize: <br><img src="_/img/favicon.ico" alt=""> </p>
                 
                 
         
+                
+                    
+                    
+                    <div class="kss-section" id="99.10">
+                        <div class="kss-header">
+                            <h1 class="kss-title">Kalender</h1>
+                        </div>
+                        <div class="kss-description">
+                            <p>Kalenderen kan vise lige så mange arrangementer pr dag som man ønsker. Man tilføjer blot indholdet i <code>li.calender-weekday</code> som er dage som f.eks. Mandag, Tirsdag etc.
+
+</p>
+<p>For hver <code>li.calender-weekday</code> man opretter, skal der være et tilsvarende <code>li</code> element i <code>.calendar-nav</code> som er menuen. 
+
+</p>
+<p>Første element i <code>li.calender-weekday</code> svarer til første element i <code>.calendar-nav</code> menuen.
+
+</p>
+<p>Kalender funktionen er afhængig af jQuery, calendar.js, Modernizr + css-calc.js (for IE8). 
+
+</p>
+ <div class="calendar">
+                <div class="calendar-content">
+                    <div class="calendar-content-wrap">
+                        <ul class="calendar-week">
+                            <li class="calendar-weekday">
+                                <h4 class="big">Mandag</h4>
+                                <div class="calendar-content-item">
+                                    <div class="meta">
+                                        <span class="meta-primary"><a href="">15:00</a></span>
+                                        <span class="meta-secondary"><a href="">Kursus</a></span>
+                                    </div>
+                                    <h2 class="calendar-entry-header"><a href="">Tove Ditlevsens liv i litteratur og musik</a></h2>
+                                    <div class="meta">
+                                        <span class="meta-location"><a href=""><i class="fa fa-map-marker"></i>  Biblioteket Rentemestervej </a></span>
+                                    </div>
+                                </div>
+                                <div class="calendar-content-item">
+                                    <div class="meta">
+                                        <span class="meta-primary"><a href="">15:00</a></span>
+                                        <span class="meta-secondary"><a href="">Kursus</a></span>
+                                    </div>
+                                    <h2 class="calendar-entry-header"><a href="">Tove Ditlevsens liv i litteratur og musik</a></h2>
+                                    <div class="meta">
+                                        <span class="meta-location"><a href=""><i class="fa fa-map-marker"></i>  Biblioteket Rentemestervej </a></span>
+                                    </div>
+                                </div>
+                                <div class="calendar-content-item">
+                                    <div class="meta">
+                                        <span class="meta-primary"><a href="">15:00</a></span>
+                                        <span class="meta-secondary"><a href="">Kursus</a></span>
+                                    </div>
+                                    <h2 class="calendar-entry-header"><a href="">Tove Ditlevsens liv i litteratur og musik</a></h2>
+                                    <div class="meta">
+                                        <span class="meta-location"><a href=""><i class="fa fa-map-marker"></i>  Biblioteket Rentemestervej </a></span>
+                                    </div>
+                                </div><div class="calendar-content-item">
+                                    <div class="meta">
+                                        <span class="meta-primary"><a href="">15:00</a></span>
+                                        <span class="meta-secondary"><a href="">Kursus</a></span>
+                                    </div>
+                                    <h2 class="calendar-entry-header"><a href="">Tove Ditlevsens liv i litteratur og musik</a></h2>
+                                    <div class="meta">
+                                        <span class="meta-location"><a href=""><i class="fa fa-map-marker"></i>  Biblioteket Rentemestervej </a></span>
+                                    </div>
+                                </div>
+                                <div class="calendar-content-item">
+                                    <div class="meta">
+                                        <span class="meta-primary"><a href="">15:00</a></span>
+                                        <span class="meta-secondary"><a href="">Kursus</a></span>
+                                    </div>
+                                    <h2 class="calendar-entry-header"><a href="">Tove Ditlevsens liv i litteratur og musik</a></h2>
+                                    <div class="meta">
+                                        <span class="meta-location"><a href=""><i class="fa fa-map-marker"></i>  Biblioteket Rentemestervej </a></span>
+                                    </div>
+                                </div>
+                                <div class="calendar-content-item">
+                                    <div class="meta">
+                                        <span class="meta-primary"><a href="">15:00</a></span>
+                                        <span class="meta-secondary"><a href="">Kursus</a></span>
+                                    </div>
+                                    <h2 class="calendar-entry-header"><a href="">Tove Ditlevsens liv i litteratur og musik</a></h2>
+                                    <div class="meta">
+                                        <span class="meta-location"><a href=""><i class="fa fa-map-marker"></i>  Biblioteket Rentemestervej </a></span>
+                                    </div>
+                                </div>
+                                <div class="calendar-content-item">
+                                    <div class="meta">
+                                        <span class="meta-primary"><a href="">15:00</a></span>
+                                        <span class="meta-secondary"><a href="">Kursus</a></span>
+                                    </div>
+                                    <h2 class="calendar-entry-header"><a href="">Tove Ditlevsens liv i litteratur og musik</a></h2>
+                                    <div class="meta">
+                                        <span class="meta-location"><a href=""><i class="fa fa-map-marker"></i>  Biblioteket Rentemestervej </a></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="calendar-weekday">
+                                <h4 class="big">Tirsdag</h4>
+                                <div class="calendar-content-item">
+                                    <div class="meta">
+                                        <span class="meta-primary"><a href="">15:00</a></span>
+                                        <span class="meta-secondary"><a href="">Kursus</a></span>
+                                    </div>
+                                    <h2 class="calendar-entry-header"><a href="">Tove Ditlevsens liv i litteratur og musik</a></h2>
+                                    <div class="meta">
+                                        <span class="meta-location"><a href=""><i class="fa fa-map-marker"></i>  Biblioteket Rentemestervej </a></span>
+                                    </div>
+                                </div>
+                                <div class="calendar-content-item">
+                                    <div class="meta">
+                                        <span class="meta-primary"><a href="">15:00</a></span>
+                                        <span class="meta-secondary"><a href="">Kursus</a></span>
+                                    </div>
+                                    <h2 class="calendar-entry-header"><a href="">Tove Ditlevsens liv i litteratur og musik</a></h2>
+                                    <div class="meta">
+                                        <span class="meta-location"><a href=""><i class="fa fa-map-marker"></i>  Biblioteket Rentemestervej </a></span>
+                                    </div>
+                                </div>
+                                <div class="calendar-content-item">
+                                    <div class="meta">
+                                        <span class="meta-primary"><a href="">15:00</a></span>
+                                        <span class="meta-secondary"><a href="">Kursus</a></span>
+                                    </div>
+                                    <h2 class="calendar-entry-header"><a href="">Tove Ditlevsens liv i litteratur og musik</a></h2>
+                                    <div class="meta">
+                                        <span class="meta-location"><a href=""><i class="fa fa-map-marker"></i>  Biblioteket Rentemestervej </a></span>
+                                    </div>
+                                </div>
+                                <div class="calendar-content-item">
+                                    <div class="meta">
+                                        <span class="meta-primary"><a href="">15:00</a></span>
+                                        <span class="meta-secondary"><a href="">Kursus</a></span>
+                                    </div>
+                                    <h2 class="calendar-entry-header"><a href="">Tove Ditlevsens liv i litteratur og musik</a></h2>
+                                    <div class="meta">
+                                        <span class="meta-location"><a href=""><i class="fa fa-map-marker"></i>  Biblioteket Rentemestervej </a></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="calendar-weekday">
+                                <h4 class="big">Onsdag</h4>
+                                <div class="calendar-content-item">
+                                    <div class="meta">
+                                        <span class="meta-primary"><a href="">15:00</a></span>
+                                        <span class="meta-secondary"><a href="">Kursus</a></span>
+                                    </div>
+                                    <h2 class="calendar-entry-header"><a href="">Tove Ditlevsens liv i litteratur og musik</a></h2>
+                                    <div class="meta">
+                                        <span class="meta-location"><a href=""><i class="fa fa-map-marker"></i>  Biblioteket Rentemestervej </a></span>
+                                    </div>
+                                </div>
+                                <div class="calendar-content-item">
+                                    <div class="meta">
+                                        <span class="meta-primary"><a href="">15:00</a></span>
+                                        <span class="meta-secondary"><a href="">Kursus</a></span>
+                                    </div>
+                                    <h2 class="calendar-entry-header"><a href="">Tove Ditlevsens liv i litteratur og musik</a></h2>
+                                    <div class="meta">
+                                        <span class="meta-location"><a href=""><i class="fa fa-map-marker"></i>  Biblioteket Rentemestervej </a></span>
+                                    </div>
+                                </div>
+                                <div class="calendar-content-item">
+                                    <div class="meta">
+                                        <span class="meta-primary"><a href="">15:00</a></span>
+                                        <span class="meta-secondary"><a href="">Kursus</a></span>
+                                    </div>
+                                    <h2 class="calendar-entry-header"><a href="">Tove Ditlevsens liv i litteratur og musik</a></h2>
+                                    <div class="meta">
+                                        <span class="meta-location"><a href=""><i class="fa fa-map-marker"></i>  Biblioteket Rentemestervej </a></span>
+                                    </div>
+                                </div>
+                                <div class="calendar-content-item">
+                                    <div class="meta">
+                                        <span class="meta-primary"><a href="">15:00</a></span>
+                                        <span class="meta-secondary"><a href="">Kursus</a></span>
+                                    </div>
+                                    <h2 class="calendar-entry-header"><a href="">Tove Ditlevsens liv i litteratur og musik</a></h2>
+                                    <div class="meta">
+                                        <span class="meta-location"><a href=""><i class="fa fa-map-marker"></i>  Biblioteket Rentemestervej </a></span>
+                                    </div>
+                                </div>
+                                <div class="calendar-content-item">
+                                    <div class="meta">
+                                        <span class="meta-primary"><a href="">15:00</a></span>
+                                        <span class="meta-secondary"><a href="">Kursus</a></span>
+                                    </div>
+                                    <h2 class="calendar-entry-header"><a href="">Tove Ditlevsens liv i litteratur og musik</a></h2>
+                                    <div class="meta">
+                                        <span class="meta-location"><a href=""><i class="fa fa-map-marker"></i>  Biblioteket Rentemestervej </a></span>
+                                    </div>
+                                </div>
+                                <div class="calendar-content-item">
+                                    <div class="meta">
+                                        <span class="meta-primary"><a href="">15:00</a></span>
+                                        <span class="meta-secondary"><a href="">Kursus</a></span>
+                                    </div>
+                                    <h2 class="calendar-entry-header"><a href="">Tove Ditlevsens liv i litteratur og musik</a></h2>
+                                    <div class="meta">
+                                        <span class="meta-location"><a href=""><i class="fa fa-map-marker"></i>  Biblioteket Rentemestervej </a></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="calendar-nav">
+                    <ul>
+                        <li><a href=""><span class="month">JAN</span><span class="date">31</span></a></li>
+                        <li><a href=""><span class="month">FEB</span><span class="date">1</span></a></li>
+                        <li><a href=""><span class="month">FEB</span><span class="date">2</span></a></li>
+                    </ul><br>                </div>
+            </div>
+
+ <div class="kss-code kss-code-special">
+<pre class="prettyprint lang-html">
+&lt;div class=&quot;calendar-content&quot;&gt;
+    &lt;div class=&quot;calendar-content-wrap&quot;&gt;
+        &lt;ul class=&quot;calendar-week&quot;&gt;
+            &lt;li class=&quot;calendar-weekday&quot;&gt;
+                &lt;h4 class=&quot;big&quot;&gt;Mandag&lt;/h4&gt;
+                &lt;div class=&quot;calendar-content-item&quot;&gt;
+                    &lt;div class=&quot;meta&quot;&gt;
+                        &lt;span class=&quot;meta-primary&quot;&gt;&lt;a href=&quot;&quot;&gt;15:00&lt;/a&gt;&lt;/span&gt;
+                        &lt;span class=&quot;meta-secondary&quot;&gt;&lt;a href=&quot;&quot;&gt;Kursus&lt;/a&gt;&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;h2 class=&quot;calendar-entry-header&quot;&gt;&lt;a href=&quot;&quot;&gt;Tove Ditlevsens liv i litteratur og musik&lt;/a&gt;&lt;/h2&gt;
+                    &lt;div class=&quot;meta&quot;&gt;
+                        &lt;span class=&quot;meta-location&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;fa fa-map-marker&quot;&gt;&lt;/i&gt;Biblioteket Rentemestervej &lt;/a&gt;&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;calendar-content-item&quot;&gt; ... &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;calendar-weekday&quot;&gt; ... &lt;/li&gt;
+
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;calendar-nav&quot;&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span class=&quot;month&quot;&gt;JAN&lt;/span&gt;&lt;span class=&quot;date&quot;&gt;31&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt; ... &lt;/li&gt;
+    &lt;/ul&gt;<br>&lt;/div&gt;
+</pre>
+</div>
+                        </div>
+                    </div>
+                    
+                    
+                
+                
+                
+        
       
     </div>
 </div>
@@ -1107,6 +1373,7 @@ Favicon realsize: <br><img src="_/img/favicon.ico" alt=""> </p>
     <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/holder.js"></script>
     <script src="public/js/respond.min.js"></script>
+    <script src="public/js/calendar.js"></script>
     <script>
         $(document).ready(function(){
             $('[data-toggle="popup"]').popover();

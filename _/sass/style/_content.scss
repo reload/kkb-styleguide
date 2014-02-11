@@ -160,6 +160,7 @@ ul.content-list{
 .content-box{
         display:inline-block;
         width:100%;
+        -moz-box-sizing:border-box;
         box-sizing:border-box;
         margin: 0px 0 unit(2) 0; padding: unit(2);
         border-radius: $border-radius;

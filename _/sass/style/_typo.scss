@@ -312,11 +312,13 @@ a{
     text-transform: uppercase;
     display:inline-block;
     margin-right:4px;
+    
     i.fa, span{
         margin-right: 4px;
         text-align: center;
         min-width:12px;
     }
+
 }
 
 
@@ -356,7 +358,6 @@ a{
 }
 
 .meta-location{
-    
     @extend .meta-secondary;
 }
 
@@ -403,6 +404,8 @@ body .tag {
 }
 
 .more{
+    display: block;
+    clear: both;
     @extend .center;
     margin-top: -8px;
     margin-bottom: unit(3);

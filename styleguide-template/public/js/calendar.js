@@ -66,7 +66,7 @@
         })
         
         if(!Modernizr.csscalc){
-            container.css('width', '100%').css('width', '-=81px');    
+            container.css('width', '100%').css('width', '-=80px');    
         }
     }
     
