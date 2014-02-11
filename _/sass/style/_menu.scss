@@ -120,7 +120,7 @@ Styleguide 70.1
 
 
 
- .navbar {
+.navbar {
     margin-bottom: 0;
     width: 100%;
     min-height:0px;
@@ -172,6 +172,7 @@ Styleguide 70.1
         }
     }
 }
+
 @include small-medium() {
     .navbar {
         //background-color: lighten($color-purple, 10);
