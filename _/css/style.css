@@ -1420,6 +1420,39 @@ Styleguide 70.1
   background-color: transparent;
 }
 
+.navbar .nav.navbar-nav li.connected a {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.navbar .nav.navbar-nav li.connected.active a {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.navbar.color-red-light .nav.navbar-nav li.connected.active a {
+  border-bottom: 5px solid #fa3a3e;
+  background-color: #fa3a3e;
+}
+.navbar.color-purple-light .nav.navbar-nav li.connected.active a {
+  border-bottom: 5px solid #544e71;
+  background-color: #544e71;
+}
+.navbar.color-blue-light .nav.navbar-nav li.connected.active a {
+  border-bottom: 5px solid #206d89;
+  background-color: #206d89;
+}
+.navbar.color-yellow-light .nav.navbar-nav li.connected.active a {
+  border-bottom: 5px solid #f9a111;
+  background-color: #f9a111;
+}
+.navbar.color-green-light .nav.navbar-nav li.connected.active a {
+  border-bottom: 5px solid #5aa47f;
+  background-color: #5aa47f;
+}
+.navbar.color-pink-light .nav.navbar-nav li.connected.active a {
+  border-bottom: 5px solid #c96696;
+  background-color: #c96696;
+}
+
 @media only screen and (max-width: 768px) {
   .navbar-collapse {
     display: none;

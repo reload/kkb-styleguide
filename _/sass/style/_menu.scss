@@ -164,6 +164,43 @@ Styleguide 70.1
         }
     }
 }
+
+.navbar{
+
+    .nav.navbar-nav li.connected a{
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .nav.navbar-nav li.connected.active a{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    &.color-red-light .nav.navbar-nav li.connected.active a{
+        border-bottom: 5px solid $red-dark;
+        background-color: $red-dark;
+    }
+    &.color-purple-light .nav.navbar-nav li.connected.active a{
+        border-bottom: 5px solid $purple-dark;
+        background-color: $purple-dark;
+    }
+    &.color-blue-light .nav.navbar-nav li.connected.active a{
+        border-bottom: 5px solid $blue-dark;
+        background-color: $blue-dark;
+    }
+    &.color-yellow-light .nav.navbar-nav li.connected.active a{
+        border-bottom: 5px solid $yellow-dark;
+        background-color: $yellow-dark;
+    }
+    &.color-green-light .nav.navbar-nav li.connected.active a{
+        border-bottom: 5px solid $green-dark;
+        background-color: $green-dark;
+    }
+    &.color-pink-light .nav.navbar-nav li.connected.active a{
+        border-bottom: 5px solid $pink-dark;
+        background-color: $pink-dark;
+    }
+}
 .navbar-collapse {
     @include small-medium() {
         display: none;
