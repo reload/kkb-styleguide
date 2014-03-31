@@ -308,16 +308,19 @@ h6 a, h6 a:hover{
     @extend h4;
 }
 
+h1, h1 a, h1 a:hover, h2, h2 a, h2 a:hover{
+    font-family: 'merriweatherbold', serif;
+    font-weight: normal;
+}
+h3, h3 a, h3 a:hover{
+    font-family: 'merriweatherlight', serif;
+    font-weight: normal;
+}
 
-//.lt-ie9{
-    h1, h1 a, h1 a:hover, h2, h2 a, h2 a:hover{
-        font-family: 'merriweatherbold', serif;
-        font-weight: normal;
-    }
-    h3, h3 a, h3 a:hover{
-        font-family: 'merriweatherlight', serif;
-        font-weight: normal;
-    }
+
+//h1, h1 a, h1 a:hover, h2, h2 a, h2 a:hover,h3, h3 a, h3 a:hover{
+//    font-family: Georgia, serif;
+//    font-weight: bold;
 //}
 
 
