@@ -217,24 +217,13 @@
         var parser = new UAParser(),
             result = parser.getResult();
         
-        function appendStyle(styles) {
-          var css = document.createElement('style');
-          css.type = 'text/css';
-
-          if (css.styleSheet) css.styleSheet.cssText = styles;
-          else css.appendChild(document.createTextNode(styles));
-
-          document.getElementsByTagName("head")[0].appendChild(css);
-        }
-        
-        var styles = 'h1, h1 a, h1 a:hover, h2, h2 a, h2 a:hover,h3, h3 a, h3 a:hover{font-family: Georgia, serif;} ';
-           styles += 'h1, h1 a, h1 a:hover, h2, h2 a, h2 a:hover{font-weight: bold;} ';
-        
-        if(    result.os.name         === "Windows" 
-            && result.browser.name    === "Firefox"){
-                window.onload = function() { appendStyle(styles) };        
-        }
+        document.addEventListener('DOMContentLoaded', function() {
+            var html = document.getElementsByTagName('html')[0];
+            html.className += " " + result.os.name.split(' ').join('_').toLowerCase();
+            html.className += " " + result.browser.name.split(' ').join('_').toLowerCase();
+        })
     </script>
+
 </head>
 
 <body>

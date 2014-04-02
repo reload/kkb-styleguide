@@ -317,12 +317,15 @@ h3, h3 a, h3 a:hover{
     font-weight: normal;
 }
 
-
-//h1, h1 a, h1 a:hover, h2, h2 a, h2 a:hover,h3, h3 a, h3 a:hover{
-//    font-family: Georgia, serif;
-//    font-weight: bold;
-//}
-
+// Window Firefox Fix
+.windows.firefox{
+    h1, h1 a, h1 a:hover, h2, h2 a, h2 a:hover,h3, h3 a, h3 a:hover{
+        font-family: Georgia, serif;
+    }
+    h1, h1 a, h1 a:hover, h2, h2 a, h2 a:hover{
+        font-weight: bold;
+    }
+}
 
 p{
     font-family: 'proxima-nova',sans-serif;

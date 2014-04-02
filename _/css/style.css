@@ -1829,6 +1829,13 @@ h3, h3 a, h3 a:hover, .popover h3, h3 a, h3 a:hover a, .popover h3 a, h3 a:hover
   font-weight: normal;
 }
 
+.windows.firefox h1, .windows.firefox h1 a, h1 .windows.firefox a, .windows.firefox h1 a, h1 .windows.firefox a a, .windows.firefox h1 a:hover, h1 .windows.firefox a a:hover, .windows.firefox h2, .windows.firefox h2 a, h2 .windows.firefox a, .windows.firefox h2 a, h2 .windows.firefox a a, .windows.firefox h2 a:hover, h2 .windows.firefox a a:hover, .windows.firefox h3, .windows.firefox h3 a, h3 .windows.firefox a, .windows.firefox h3 a, h3 .windows.firefox a a, .windows.firefox h3 a:hover, h3 .windows.firefox a a:hover {
+  font-family: Georgia, serif;
+}
+.windows.firefox h1, .windows.firefox h1 a, h1 .windows.firefox a, .windows.firefox h1 a, h1 .windows.firefox a a, .windows.firefox h1 a:hover, h1 .windows.firefox a a:hover, .windows.firefox h2, .windows.firefox h2 a, h2 .windows.firefox a, .windows.firefox h2 a, h2 .windows.firefox a a, .windows.firefox h2 a:hover, h2 .windows.firefox a a:hover {
+  font-weight: bold;
+}
+
 p {
   font-family: 'proxima-nova',sans-serif;
   font-size: 16px;
