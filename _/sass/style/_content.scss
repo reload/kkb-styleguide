@@ -157,7 +157,7 @@ ul.content-list{
     }
 }
 
-.content-box{
+@mixin content-box {
         display:inline-block;
         width:100%;
         -moz-box-sizing:border-box;
@@ -170,6 +170,9 @@ ul.content-list{
         @include small(){
             padding: 20px 10px 20px 10px;    
         }
+}
+.content-box {
+  @include content-box;
 }
 
 //.content-event{
