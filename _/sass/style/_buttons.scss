@@ -71,16 +71,20 @@ Styleguide 99.1
   @include btn;
 }
 
-.btn-small {
-    font-size: 12px;
-    line-height: 22px;
-    padding: 0px 6px;
-    &:active {
-        padding: 0px 6px 1px 6px;
-        line-height: 21px;
-    }
+@mixin btn-small {
+  font-size: 12px;
+  line-height: 22px;
+  padding: 0px 6px;
+  &:active {
+    padding: 0px 6px 1px 6px;
+    line-height: 21px;
+  }
+
 }
-.btn-secondary {
+.btn-small {
+  @include btn-small;
+}
+@mixin btn-secondary {
     background-color: $color-grey-light;
     box-shadow: 0px 1px 2px darken($color-grey-light, 30);
     &:hover, &.pseudo-class-hover {
@@ -92,7 +96,10 @@ Styleguide 99.1
         color: tint($color-grey-light, 80);
     }
 }
-.btn-danger {
+.btn-secondary {
+  @include btn-secondary;
+}
+@mixin btn-danger {
     background-color: $color-red;
     box-shadow: 0px 1px 2px darken($color-red, 30);
     &:hover, &.pseudo-class-hover {
@@ -103,6 +110,9 @@ Styleguide 99.1
         box-shadow: inset 1px 1px 4px darken($color-red, 15);
         color: tint($color-red, 80);
     }
+}
+.btn-danger {
+  @include btn-danger;
 }
 button.close {
     background-color: transparent;

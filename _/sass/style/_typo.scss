@@ -455,11 +455,14 @@ a{
         margin-bottom: unit(3);
     }
 }
-.tag{
-    @extend .btn;
-    @extend .btn-small;
-    @extend .btn-secondary;
+@mixin tag{
+    @include btn;
+    @include btn-small;
+    @include btn-secondary;
     display:inline-block;
+}
+.tag {
+  @include tag;
 }
 
 body .tag {
