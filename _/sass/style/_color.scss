@@ -10,7 +10,8 @@ $color-grey: #5f6062;
 $color-grey-light:#686865;
 $color-red-bright:#f47049;
 $color-dark-sand:#e9e9e1;
-$color-mint-green:#01795d;
+$color-mint-green:#00b38a;
+$color-mint-green-dark: #01795d;
 
 // TEMA
 $color-red:#ff7275;
@@ -43,8 +44,9 @@ Primær Farver
 </div>
 <div class="gclear"></div>
 <div >
-    <div class="g6-1 fix_color color-red-bright"><strong>Bright Red</strong> - VTL Menu Active</div>
-    <div class="g6-7 fix_color color-mint-green"><strong>Mint Green</strong> - Links, Knapper</div>
+    <div class="g4-1 fix_color color-red-bright"><strong>Bright Red</strong> - VTL Menu Active</div>
+    <div class="g4-5 fix_color color-mint-green"><strong>Mint Green</strong> - Links, Knapper</div>
+    <div class="g4-9 fix_color color-mint-green-dark"><strong>Mint Green Dark</strong> - Links i brødtekst</div>
 </div>
 
 Styleguide 2.1
