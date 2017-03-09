@@ -1,3 +1,4 @@
+@charset "UTF-8";
 
 $TYPO: 1;
  /*
@@ -90,7 +91,7 @@ Copy H2
 
 Brug af <code>H2</code> kunne være ved visning af content i form af: nyheder, arrangementer etc.
 
-Markup: 
+Markup:
 <span class="meta">
     <span class="meta-primary">Tirsdag 10. december 2013</span>
     <span class="meta-secondary">af <a href="">Lene Frandsen</a></span>
@@ -111,7 +112,7 @@ Et eksempel på brug af <code>H3</code> kunne være ved adressevisning af et bib
 
 Markup: <h3>Biblioteket <br>
         Rentemestervej [H3]</h3>
-<p>Rentemestervej 76 <br> 
+<p>Rentemestervej 76 <br>
     2400 København NV [P]</p>
 <p>+45 82 32 16 00 <br>
     <a href="">bibbro@kff.kk.dk [A]</a></p>
@@ -213,7 +214,7 @@ body{
 
 h1,h2,h3,h4,h5,h6,p,a{
     margin:0; padding: 0;
-    
+
     &.underline{
         margin-top: unit(3);
         padding-bottom: unit(2);
@@ -229,7 +230,7 @@ h1{
     color:$color-black;
     @include lineHeight(6);
     @include margin(0,3);
-    
+
     .results{
         padding-left:5px;
         font-size: 26px;
@@ -239,11 +240,11 @@ h1{
         color:$color-mudgreen;
         display:inline-block;
     }
-    
+
     &.subject{
-        font-size: 26px;    
+        font-size: 26px;
     }
-    
+
 }
 
 h2{
@@ -257,13 +258,13 @@ h2{
 
 h3{
     font-family: 'Merriweather', serif;
-    font-weight: 300;   
+    font-weight: 300;
     font-size: 18px; // 20
 //    color:$color-grey;
     color:$color-black;
     @include lineHeight(3);
     @include margin(0,3);
-    
+
     &.title{
         min-height: unit(6);
         padding-top: 21px;
@@ -279,7 +280,7 @@ h4,h5,h6, legend{
     color:$color-grey;
     @include lineHeight(3);
     @include margin(0,0);
-    
+
     &.big{
         font-size: 24px;
         margin-bottom: unit(1);
@@ -333,9 +334,9 @@ p{
     color:$color-mudgreen;
     @include lineHeight(3);
     @include margin(0,3);
-    
+
     &.light{
-        color:$color-grey-light;    
+        color:$color-grey-light;
     }
     a{
         display:inline;
@@ -343,7 +344,7 @@ p{
         margin-top:0;
         margin-bottom:0;
     }
-    
+
 }
 
 
@@ -352,30 +353,30 @@ a{
     font-size: 16px;
     font-weight: 400;
     text-decoration: none;
-    color:$color-green; 
+    color:$color-green;
     @include lineHeight(3);
-    
+
     &:hover, &:active, &.pseudo-class-hover, &.pseudo-class-active{
         text-decoration: none;
         color: darken($color-green, 20);
     }
-    
+
     &.link{
         display:inline-block;
         margin-bottom: unit(1);
     }
-    
+
     &.link-primary{}
     &.link-secondary{
         color:$color-grey-light;
         &:hover, &:active{
-            color: darken($color-grey-light, 20);    
+            color: darken($color-grey-light, 20);
         }
     }
     &.link-danger{
         color:$color-red;
         &:hover, &:active{
-            color: darken($color-red, 30);    
+            color: darken($color-red, 30);
         }
     }
 }
@@ -394,7 +395,7 @@ a{
     text-transform: uppercase;
     display:inline-block;
     margin-right:4px;
-    
+
     i.fa, span{
         margin-right: 4px;
         text-align: center;

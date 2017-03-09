@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import '../bootstrap/forms';
 @import '../bootstrap/navbar';
 @import '../bootstrap/navs';
@@ -12,7 +13,7 @@
 /*
 Menu
 
-Menuen skal højre stilles <em>(se eksempelsider)</em>. 
+Menuen skal højre stilles <em>(se eksempelsider)</em>.
 Menuen skal have samme grund tema farve som headeren, dog skal den være lysere for at skille sig ud fra headeren og søgebaren.
 
 <div class="color-green" style="padding:30px 0 0 0"> <!-- div.color-green skal ikke med, blot for at vise farve -->
@@ -44,7 +45,7 @@ Menuen skal have samme grund tema farve som headeren, dog skal den være lysere 
                 </li>
                 <li class="active">
                     <a href="#">
-                        <i class="fa fa-search"></i> 
+                        <i class="fa fa-search"></i>
                     </a>
                 </li>
                 <li>
@@ -92,7 +93,7 @@ Markup: <div class="color-{$modifiers}" style="padding:30px 0 0 0"> <!-- div.col
                 </li>
                 <li class="active">
                     <a href="#">
-                        <i class="fa fa-search"></i> 
+                        <i class="fa fa-search"></i>
                     </a>
                 </li>
                 <li>
@@ -216,7 +217,7 @@ Styleguide 70.1
         border-radius: 0;
         z-index: 99;
         margin: 0;
-        
+
         &.color-red-light {
             background-color: $red-light;
         }
@@ -236,7 +237,7 @@ Styleguide 70.1
             background-color: $pink-light;
         }
     }
-    
+
     .navbar-header {
         border-top: 0;
         border-bottom: 0;
@@ -287,11 +288,11 @@ Styleguide 70.1
     }
 }
 .navbar-default {
-    
+
     .navbar-toggle {
         outline: 0;
         border-color:white;
-        
+
         .icon-bar{
             background-color: white;
         }
@@ -329,7 +330,3 @@ Styleguide 70.1
         }
     }
 }
-
-
-
-

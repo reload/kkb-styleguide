@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Searchbar
 
@@ -54,43 +55,43 @@ Styleguide 75.1
     display: table;
     margin: 0;
     padding: 0;
-    
+
     &.search-bar-small{
         height:48px;
-        
+
         .icon-search{
             font-size: 20px;
             min-width: 55px;
             width: 5%;
         }
     }
-    
+
     &.search-bar-red{
         background-color: desaturate(darken($color-red, 12), 5);
-    } 
+    }
     &.search-bar-purple{
         background-color: desaturate(darken($color-purple, 10), 2);
-    } 
+    }
     &.search-bar-blue{
         background-color: desaturate(darken($color-blue, 10), 2);
-    } 
+    }
     &.search-bar-yellow{
         background-color: desaturate(darken($color-yellow, 12), 5);
-    } 
+    }
     &.search-bar-green{
         background-color: desaturate(darken($color-green, 12), 5);
-    } 
+    }
     &.search-bar-pink{
         background-color: desaturate(darken($color-pink, 12), 4);
     }
-    
+
     &.search-bar-dark{
         background-color: #444545;
     }
-    
+
     form {
         height:inherit;
-        
+
         input[type=text] {
             box-sizing: border-box;
             outline: 0;
@@ -108,7 +109,7 @@ Styleguide 75.1
             color: white;
         }
     }
-    
+
     .icon-search {
         color: #f0f0e8;
         display: table-cell;
@@ -120,9 +121,9 @@ Styleguide 75.1
     }
 
     $placeholdercolor: rgba(255,255,255,0.5);
-    ::-webkit-input-placeholder {color: $placeholdercolor;}    
+    ::-webkit-input-placeholder {color: $placeholdercolor;}
     :-moz-placeholder {color: $placeholdercolor;}
-    ::-moz-placeholder {color: $placeholdercolor;}    
+    ::-moz-placeholder {color: $placeholdercolor;}
     :-ms-input-placeholder {color: $placeholdercolor;}
 }
 

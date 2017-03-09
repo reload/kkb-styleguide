@@ -1,3 +1,4 @@
+@charset "UTF-8";
 // ----- T A B L E -----
 
 /*
@@ -226,7 +227,7 @@ Styleguide 4.3
 .table {
     min-width:100%;
     margin-top: 5px;
-    
+
     &.table-data{
         min-width:0px;
         margin-top: 0px;
@@ -238,33 +239,33 @@ Styleguide 4.3
             }
         }
     }
-    
+
     >thead{
         border-bottom:1px solid darken($color-dark-sand, 10);
     }
-    
+
     >tbody, >thead{
         >tr{
             vertical-align:top;
-           
+
             >td{
                 padding: 6px 10px 6px 10px;
                 border: 0px;
-                
+
                 >p{
                     margin: 0;padding: 0;
-                }                
+                }
             }
         }
     }
-    
+
     &.table-even tr:nth-child(even){
          background-color: $color-dark-sand;
     }
     &.table-odd tr:nth-child(odd), tr.highlight{
         background-color: $color-dark-sand;
     }
-        
+
     &.light{
         &.table-even tr:nth-child(even){
              background-color: lighten($color-dark-sand, 6);

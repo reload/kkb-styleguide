@@ -1,13 +1,14 @@
+@charset "UTF-8";
 /*
 Kalender
 
 Kalenderen kan vise lige så mange arrangementer pr dag som man ønsker. Man tilføjer blot indholdet i <code>li.calender-weekday</code> som er dage som f.eks. Mandag, Tirsdag etc.
 
-For hver <code>li.calender-weekday</code> man opretter, skal der være et tilsvarende <code>li</code> element i <code>.calendar-nav</code> som er menuen. 
+For hver <code>li.calender-weekday</code> man opretter, skal der være et tilsvarende <code>li</code> element i <code>.calendar-nav</code> som er menuen.
 
 Første element i <code>li.calender-weekday</code> svarer til første element i <code>.calendar-nav</code> menuen.
 
-Kalender funktionen er afhængig af jQuery, calendar.js, Modernizr + css-calc.js (for IE8). 
+Kalender funktionen er afhængig af jQuery, calendar.js, Modernizr + css-calc.js (for IE8).
 
  <div class="calendar">
                 <div class="calendar-content">
@@ -199,7 +200,7 @@ Kalender funktionen er afhængig af jQuery, calendar.js, Modernizr + css-calc.js
                         <li><a href=""><span class="month">JAN</span><span class="date">31</span></a></li>
                         <li><a href=""><span class="month">FEB</span><span class="date">1</span></a></li>
                         <li><a href=""><span class="month">FEB</span><span class="date">2</span></a></li>
-                    </ul>        
+                    </ul>
                 </div>
             </div>
 
@@ -231,7 +232,7 @@ Kalender funktionen er afhængig af jQuery, calendar.js, Modernizr + css-calc.js
     &lt;ul&gt;
         &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span class=&quot;month&quot;&gt;JAN&lt;/span&gt;&lt;span class=&quot;date&quot;&gt;31&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt; ... &lt;/li&gt;
-    &lt;/ul&gt;        
+    &lt;/ul&gt;
 &lt;/div&gt;
 </pre>
 </div>
@@ -242,32 +243,32 @@ Styleguide 99.10
 
 .calendar{
     $calendar-nav-width: 80px;
-    
+
     &:after{
         display: block;
         clear: both;
         float: none;
     }
-    
+
     .calendar-entry-header{
         margin-bottom: 0;
-        
+
         @include small(){
             margin-bottom: unit(1);
         }
     }
-    
+
     .calendar-week{
         list-style: none;
         margin: 0; padding: 0;
         box-sizing: border-box;
-        
+
         li{
             box-sizing: border-box;
             margin: 0; padding: unit(3);
         }
     }
-    
+
     .calendar-content{
         @include transition(height 1s ease);
         position: relative;
@@ -280,20 +281,20 @@ Styleguide 99.10
         border-bottom-left-radius: $border-radius;
         float: left;
         overflow: hidden;
-    
+
         .big{
             margin-bottom: unit(3);
             color: $color-mint-green;
         }
-    
+
         &.resizing{
-            @include transition(height 0s ease);  
+            @include transition(height 0s ease);
             .calendar-content-wrap{
                 @include transition(top 0s ease);
             }
         }
     }
-    
+
     .calendar-content-wrap{
         @include transition(top 1.5s ease);
         position: absolute;
@@ -314,7 +315,7 @@ Styleguide 99.10
         border-top-right-radius: $border-radius;
         border-bottom-right-radius: $border-radius;
         float:left;
-        
+
         a{
             @include transition(color 0.25s 0s ease);
             color: white;
@@ -328,7 +329,7 @@ Styleguide 99.10
                 display: block;
                 text-align: center;
             }
-            
+
             .date{
                 position: relative;
                 z-index: 2;
@@ -337,7 +338,7 @@ Styleguide 99.10
                 font-weight: 600;
                 font-size: 30px;
             }
-            
+
              &:after{
                 @include transition(width 0.25s ease);
                 content:"";
@@ -351,26 +352,26 @@ Styleguide 99.10
                 z-index: 0;
                 border-top-right-radius: $border-radius;
                 border-bottom-right-radius: $border-radius;
-            }    
+            }
 
             &:hover, &.active{
                 @include transition(color 0.25s 0.125s ease);
                 color: $color-mint-green;
-                
+
                 &:after{
                     width: 70px;
-                }    
+                }
             }
-            
+
             &:active{
                 @include transition(color 0.1s 0s ease);
-                color: darken($color-mint-green, 15);    
+                color: darken($color-mint-green, 15);
             }
-            
+
         }
-        
+
         ul{
-            
+
             list-style: none;
             margin: 0;padding: 0;
             li{
@@ -378,7 +379,7 @@ Styleguide 99.10
             }
         }
     }
-    
+
 }
 
 /*

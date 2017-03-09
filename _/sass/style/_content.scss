@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Content
 
@@ -10,9 +11,9 @@ Content List
 Til visning af nyheder, temaer, arrangementer kunne man vælge at bruge <code>.content-list</code> i samarbejde med <code>.imgtext.column</code> med <code>.img-wrap.hide</code>.
 Elementet <code>.content-list</code> wrapper dataen i en let blød kasse, så det er nemmere at skilde dataen ad.
 Her kunne man evt give <code>.btn</code> en <code>.btn-right</code> for at få den til at holde højre kant.
-For at gøre det mere overskueligt, så kunne man give billedewrapperen <code>.img-wrap.hide</code>, for at skjule billede på mobiler. 
+For at gøre det mere overskueligt, så kunne man give billedewrapperen <code>.img-wrap.hide</code>, for at skjule billede på mobiler.
 <br><br>
-Det optimale antal tags pr. nyhed/arrangement er mellem 2-3.  
+Det optimale antal tags pr. nyhed/arrangement er mellem 2-3.
 
 Markup: <ul class="content-list">
     <li>
@@ -33,7 +34,7 @@ Markup: <ul class="content-list">
                     <a href="" class="tag">Litteratur</a>
                 </div>
             </div>
-        </div>    
+        </div>
         <button class="btn btn-primary btn-right">Læs mere</button>
     </li>
     <li>
@@ -53,8 +54,8 @@ Markup: <ul class="content-list">
                     <a href="" class="tag">Hovedbiblioteket</a>
                     <a href="" class="tag">Skrotlab</a>
                 </div>
-            </div> 
-        </div>    
+            </div>
+        </div>
         <button class="btn btn-primary btn-right">Læs mere</button>
     </li>
     <li>
@@ -73,8 +74,8 @@ Markup: <ul class="content-list">
                     <a href="" class="tag">Anbefalinger</a>
                     <a href="" class="tag">Egå Kombi-bibliotek</a>
                 </div>
-            </div> 
-        </div>    
+            </div>
+        </div>
         <button class="btn btn-primary btn-right">Læs mere</button>
     </li>
 </ul>
@@ -104,7 +105,7 @@ Markup: <ul class="content-list">
                     <a href="" class="tag">Litteratur</a>
                 </div>
             </div>
-        </div>    
+        </div>
         <button class="btn btn-primary btn-right">Læs mere</button>
     </li>
 </ul>
@@ -126,7 +127,7 @@ Markup: <h1>Temaer</h1>
                 <h2><a href="">Biblioteket tilbyder også</a></h2>
                 <p>Her kan du se hvad bibliotekerne også tilbyder</p>
             </div>
-        </div>    
+        </div>
         <button class="btn btn-primary btn-right">Læs mere</button>
     </li>
     <li>
@@ -137,8 +138,8 @@ Markup: <h1>Temaer</h1>
             <div class="text">
                 <h2><a href="">Faglitteratur - uhmm!</a></h2>
                 <p>Hobby, interesse, fag - udforsk bibliotekets univers med de bedste bøger om alle emner i verden</p>
-            </div> 
-        </div>    
+            </div>
+        </div>
         <button class="btn btn-primary btn-right">Læs mere</button>
     </li>
 </ul>
@@ -151,7 +152,7 @@ ul.content-list{
     margin: 0;padding: 0;
     display:block;
     width:100%;
-    
+
     li{
         @extend .content-box;
     }
@@ -166,9 +167,9 @@ ul.content-list{
         border-radius: $border-radius;
         background-color: lighten($color-sand, 3);
         border: 1px solid darken($color-sand, 5);
-        
+
         @include small(){
-            padding: 20px 10px 20px 10px;    
+            padding: 20px 10px 20px 10px;
         }
 }
 .content-box {

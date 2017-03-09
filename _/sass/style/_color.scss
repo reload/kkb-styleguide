@@ -1,3 +1,4 @@
+@charset "UTF-8";
 // ----- M A I N  C O L O R S -----
 // MAIN
 $color-sand:#f1f1e7;
@@ -74,7 +75,7 @@ Tema Farver
     <div class="g12-1">
         <p>Her ses de tema farverne, som vil optræde i header, searchbar og menu:</p>
     </div>
-</div> 
+</div>
 <div class="gclear"></div>
 <div >
     <div class="g2-1 color-red-font">Red</div>
@@ -292,19 +293,19 @@ $pink-dark:    desaturate(darken($color-pink, 12), 4);
 
 .color-red-dark{
     background-color: $red-dark;
-} 
+}
 .color-purple-dark{
     background-color: $purple-dark;
-} 
+}
 .color-blue-dark{
     background-color: $blue-dark;
-} 
+}
 .color-yellow-dark{
     background-color: $yellow-dark;
-} 
+}
 .color-green-dark{
     background-color: $green-dark;
-} 
+}
 .color-pink-dark{
     background-color: $pink-dark;
 }

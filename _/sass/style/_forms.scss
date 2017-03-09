@@ -1,3 +1,4 @@
+@charset "UTF-8";
 // ----- F O R M S -----
 
 
@@ -22,7 +23,7 @@ Markup: <form action="">
     <div class="form-group">
         <label for="password">Password</label>
         <input type="password" id="password" name="password" placeholder="Password">
-    </div>  
+    </div>
     <div class="form-group">
         <label for="message">Text Area</label>
         <textarea rows="5" cols="50" id="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, id, illo, error quo repellat quasi atque doloribus ducimus asperiores modi adipisci rerum aperiam beatae eveniet voluptates dolorum culpa maiores sit.</textarea>
@@ -107,7 +108,7 @@ Markup: <form action="">
         <div class="form-group">
             <label for="password">Password</label>
             <input type="password" id="password" name="password" placeholder="Password">
-        </div>  
+        </div>
         <div class="form-group">
             <label for="message">Text Area</label>
             <textarea rows="5" cols="50" id="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, id, illo, error quo repellat quasi atque doloribus ducimus asperiores modi adipisci rerum aperiam beatae eveniet voluptates dolorum culpa maiores sit.</textarea>
@@ -164,11 +165,11 @@ form{
     //padding: 0px $inputPaddingHor 0px 0px;
     -moz-box-sizing: border-box;
     box-sizing:border-box;
-    
+
     $placeholdercolor: lighten($color-mudgreen, 35);
-    ::-webkit-input-placeholder {color: $placeholdercolor;}    
+    ::-webkit-input-placeholder {color: $placeholdercolor;}
     :-moz-placeholder {color: $placeholdercolor;}
-    ::-moz-placeholder {color: $placeholdercolor;}    
+    ::-moz-placeholder {color: $placeholdercolor;}
     :-ms-input-placeholder {color: $placeholdercolor;}
 };
 
@@ -180,7 +181,7 @@ form *{
 .form-group{
     /* FIX FOR 100% WIDTH */
     margin-bottom: 20px;
-    
+
 }
 
 input, textarea{
@@ -212,7 +213,7 @@ select{
         border-radius:$border-radius;
         font-size: 16px;
     }
-    
+
     &.select-multiple{
         height:auto;
     }
@@ -236,21 +237,21 @@ input[type="radio"].input + label.label, input[type="checkbox"].input + label.la
     cursor:pointer;
     position:relative;
     padding-left:30px;
-    
+
     &:before{
-        content: "";  
-        display: inline-block;  
-        width: 16px;  
-        height: 16px;  
-        position: absolute;  
-        top:3px; left: 0;  
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top:3px; left: 0;
         background-color: white;
         border-radius:3px;
         box-shadow:inset 0px 1px 2px $color-grey-light;
     }
 
     &.label-radio:before{
-        border-radius: 8px;      
+        border-radius: 8px;
     }
 }
 
@@ -258,16 +259,16 @@ input[type="radio"].input:checked + label.label:before, input[type="checkbox"].i
     background-color: $color-mint-green;
     box-shadow:0px 1px 1px darken($color-grey-light, 20);
     color:white;
-    text-align: center;  
+    text-align: center;
 }
 
 input[type="radio"].input:checked + label.label:before{
     content: "\2022";
     font-size: 22px;
     line-height: 15px;
-    
+
 }
-input[type="checkbox"].input:checked + label.label:before {  
+input[type="checkbox"].input:checked + label.label:before {
     content: "";
     background-image: inline-image("checkmark2_small.svg");
     background-position: 3px center;
@@ -279,12 +280,12 @@ fieldset{
     padding: 15px;
     border: 1px solid $color-grey-light;
     border-radius: $border-radius;
-    
+
     input{
         width:auto;
         min-width:100%;
     }
-    
+
     legend{
         border-bottom: 0;
         padding: 0px 10px 0 10px;
@@ -313,13 +314,13 @@ label{
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 50%;
-        
+
     @include small(){
         float:none;
         display:block;
         width:100%;
-    }  
-        
+    }
+
   }
   input {
     &[type="text"], &[type="password"] {
@@ -336,7 +337,7 @@ label{
     &.password {
       padding-left: 20px;
     }
-        
+
     @include small(){
         &.email {
           padding-right: 0px;
@@ -344,7 +345,7 @@ label{
         &.password {
           padding-left: 0px;
         }
-    }  
+    }
   }
   input[type="submit"] {
     position: absolute;
@@ -361,18 +362,18 @@ label{
     border: 1px solid #d6d6d6;
 }
 
-.lt-ie9 input[type="radio"].input, 
+.lt-ie9 input[type="radio"].input,
 .lt-ie9 input[type="checkbox"].input{
     display: inline;
     border:0;
 }
 
-.lt-ie9 input[type="radio"].input + label.label, 
+.lt-ie9 input[type="radio"].input + label.label,
 .lt-ie9 input[type="checkbox"].input + label.label{
     display:inline;
     padding-left: 0px;
    &:before{
-        content: "";  
-        display: none;  
-    } 
+        content: "";
+        display: none;
+    }
 }

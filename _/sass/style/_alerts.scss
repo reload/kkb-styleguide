@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import '../bootstrap/alerts';
 
 @mixin ss_alert($color){
@@ -13,7 +14,7 @@
         margin: 10px 0 3px 0;
     }
     @include ss_alert($color-red);
-    
+
     p{
         color:white;
     }
@@ -51,7 +52,7 @@
       color: white;
     }
   }
-    
+
   .alert-wrapper{
     padding: 24px 0 0 0;
    }
@@ -81,9 +82,9 @@ Markup: <div class="alert {$modifiers}">
 
 .alert-danger   - Danger
 .alert-warning  - Warning
-.alert-info     - Info 
-.alert-success  - Success 
-.alert-infomation  - Information 
+.alert-info     - Info
+.alert-success  - Success
+.alert-infomation  - Information
 
 Styleguide 99.7
 */

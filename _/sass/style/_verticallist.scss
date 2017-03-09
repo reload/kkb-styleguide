@@ -1,3 +1,4 @@
+@charset "UTF-8";
 
 // ----- V E R T I C A L  L I S T -----
 
@@ -45,7 +46,7 @@ Styleguide 3.1
 /*
 Vertical List Separator
 
-Denne vertical list kan bruges til filtrering af søgningsresultater. Brug den i forbindelse med <code>.vertical-list-nav</code>. 
+Denne vertical list kan bruges til filtrering af søgningsresultater. Brug den i forbindelse med <code>.vertical-list-nav</code>.
 
 Markup: <div class="vertical-list vertical-list-separator">
 <h3>Filtrér din søgning</h3>
@@ -61,7 +62,7 @@ Markup: <div class="vertical-list vertical-list-separator">
 
 Styleguide 3.2
 */
-            
+
 /*
 Vertical List With Forms
 
@@ -78,7 +79,7 @@ Markup: <div class="vertical-list">
 </div>
 
 Styleguide 3.3
-*/     
+*/
 
 /*
 Vertical List With Icons
@@ -93,7 +94,7 @@ Markup: <div class="vertical-list">
 </div>
 
 Styleguide 3.4
-*/  
+*/
 
 
 .vertical-list {
@@ -105,35 +106,35 @@ Styleguide 3.4
     h6 {
         margin-bottom: unit(1);
     }
-    
+
     >a{
         margin-top: unit(1);
         display: inline-block;
     }
-    
+
     ul, ol {
         margin: 0; padding: 0;
-        
+
         li {
             margin: 0; padding: unit(1) 0 0 0;
             color:$color-mudgreen;
             list-style: none;
-            
+
             &:first-child {
                 padding: 0;
             }
-            
+
             a{
                 display:block;
                 margin: 0;padding: 0;
             }
-            
+
             p{
                 margin: 0; padding: 0;
             }
         } // >li
     }// ul, ol
-    
+
     &.vertical-list-separator{
         padding-bottom: unit(2);
         margin-bottom: unit(6) - 1px;
@@ -142,13 +143,13 @@ Styleguide 3.4
         a{
             color: $color-grey-light;
             font-weight: 300;
-    
+
             &:hover {
                 color: $color-mint-green;
             }
         }
 
-        
+
 
     } // &.vertical-list-separator
 
@@ -160,7 +161,7 @@ Styleguide 3.4
                 color: $color-mint-green;
             }
         }
-    
+
         li.active{
             a{
                  color:$color-mint-green;
@@ -181,43 +182,43 @@ Styleguide 3.4
             list-style: none;
             position:relative;
             padding: 0; margin: 0 0 8px 0;
-            
+
             a{
                 display:inline-block;
             }
-        
+
             i, span{
                 margin-left: -25px;
                 padding-right: 11px;
             }
-            
+
             p{
                  padding-left: 25px;
              }
         }
     } // ul.vertical-list-icons
-    
+
     ul.vertical-list-bullet{
         margin:0px 0px 0px 20px;
         li{
             list-style: disc ;
         }
     } // ul.vertical-list-bullet
-    
+
     ol, ol.vertical-list-number{
         margin:0px 0px 0px 23px;
-        
+
         li{
-            list-style: decimal;    
+            list-style: decimal;
         }
     } // ol, ol.vertical-list-number
-    
+
     ul.vertical-list-number{
         counter-reset: item;
         li{
             position:relative;
             padding-left:25px;
-            
+
             &:before{
                 content: counter(item) ". ";
                 counter-increment: item;
@@ -229,12 +230,12 @@ Styleguide 3.4
             }
         }
     } // ul.vertical-list-number
-    
+
     ul.vertical-list-check{
         li{
             position:relative;
             padding-left:25px;
-            
+
             &:before{
                 content: "";
                 background: inline-image('checkmark2.svg') no-repeat 0 5px;
@@ -251,7 +252,7 @@ Styleguide 3.4
             }
         }
     } // ul.vertical-list-check
-    
+
 } // .vertical-list
 
 

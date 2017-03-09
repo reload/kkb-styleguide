@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import 'bourbon/bourbon';
 @import 'bootstrap/bootstrap';
 
@@ -8,12 +9,12 @@
     z-index:99;
     height:1px;
 }
-@media (max-width: $screen-xs-max) { 
+@media (max-width: $screen-xs-max) {
     #resso{
         border-top:2px red solid;
     }
 }
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { 
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
     #resso{
         border-top:2px orange solid;
     }
@@ -93,7 +94,7 @@ $vertical-grid-size: 8px; //pxtoem(8, $basepx);
 body{
     background-color: $color-sand;
     min-height:1600px;
-    
+
     font-family: 'proxima-nova',sans-serif;
     font-size: 16px;
     @include lineHeight(3);
@@ -111,7 +112,7 @@ h1{
     color:$color-black;
     @include lineHeight(6);
     @include margin(0,3);
-    
+
     .results{
         padding-left:5px;
         font-size: 26px;
@@ -121,9 +122,9 @@ h1{
         color:$color-mudgreen;
         display:inline-block;
     }
-    
+
     &.subject{
-        font-size: 26px;    
+        font-size: 26px;
     }
 }
 
@@ -139,11 +140,11 @@ h2{
 h3{
     font-family: 'Merriweather',sans-serif;
     font-size: 18px; // 20
-    font-weight: 300;   
+    font-weight: 300;
     color:$color-grey;
     @include lineHeight(3);
     @include margin(0,3);
-    
+
     &.title{
         min-height: unit(6);
         padding-top: 21px;
@@ -167,9 +168,9 @@ p{
     color:$color-mudgreen;
     @include lineHeight(3);
     @include margin(0,3);
-    
+
     &.light{
-        color:$color-grey-light;    
+        color:$color-grey-light;
     }
     a{
         display:inline;
@@ -177,7 +178,7 @@ p{
         margin-top:0;
         margin-bottom:0;
     }
-    
+
 }
 
 a{
@@ -185,7 +186,7 @@ a{
     font-size: 16px;
     font-weight: 300;
     text-decoration: none;
-    color:$color-green; 
+    color:$color-green;
     @include lineHeight(3);
     @include margin(0,1);
     display:block;
@@ -199,7 +200,7 @@ a{
 @mixin text-search-bar{
     font-family: 'proxima-nova',sans-serif;
     font-size: 20px;
-    color:#f1f1f1;    
+    color:#f1f1f1;
 }
 
 @mixin header-header($color){
@@ -219,11 +220,11 @@ header{
     background-color: $color-green;
     background-position: 75% 0;
     background-repeat: no-repeat;
-    
+
     .header-content{
         padding-top: unit(6)search;
     }
-    
+
     img.header-background{
         position:absolute;
         top:0px;
@@ -236,7 +237,7 @@ body{
     &.category-children{
         $color: $color-pink;
         $secondary: darken($color, 35);
-        
+
         header{
             background-color: $color;
         }
@@ -248,7 +249,7 @@ body{
             //border-left: 1px solid transparentize($darken, 0.7);
         }
     }
-    
+
 }
 
 .logo{
@@ -257,7 +258,7 @@ body{
     background-position: 0 0;
     width: 201px;height: 50px;
     //position:fixed;
-    
+
 }
 
 // ----- M E N U S -----
@@ -276,11 +277,11 @@ body{
 .nav.navbar-nav{
     display:table;
     width:100%;
-    
+
     >li{
         display:table-cell;
         float:none;
-        
+
         a{
             display: inline-block;
             width:auto;
@@ -296,7 +297,7 @@ body{
                 background-color: transparent;
             }
         }
-        
+
         &.active{
             background-color: transparent;
             a, a:hover{
@@ -313,12 +314,12 @@ aside{
     h3{
         margin-top:0px;
     }
-    
+
     a{
         margin-bottom: 0;
         color:$color-grey-light;
     }
-    
+
     ul{
         margin: 0;padding: 0;
         li{
@@ -330,12 +331,12 @@ aside{
                 &:hover{
                     color: lighten($color-grey, 20);
                 }
-                
+
                 &:active{
                     color: $color-orange-bright;
                 }
             }
-            
+
             &.active{
                 a, a:hover{
                     color: $color-orange-bright;
@@ -343,7 +344,7 @@ aside{
             }
         }
     }
-    
+
     &.filter{
         padding-bottom: unit(3);
         margin-bottom: unit(3) - 1px;
@@ -357,7 +358,7 @@ aside{
     width: 100%;
     min-height:$height;
     position:relative;
-    left:0px; top:0px; 
+    left:0px; top:0px;
     background-color: darken($color-green, 25);
     margin-bottom: unit(12);
     form{
@@ -384,7 +385,7 @@ aside{
 
 // ----- S E A R C H   R E S U L T ----
 .search-result{
-    
+
     min-height:260px;
     margin-bottom: calcMargin(260px);
 }
@@ -396,7 +397,7 @@ img{
         margin-bottom:20px;
         line-height:40px;
     }
-    
+
     &.img-grid{
         margin-top: 6px;
     }
@@ -407,7 +408,7 @@ img{
     border:none;
     box-shadow:0px 1px 2px rgba(0,0,0,0.5);
     margin:8px 0px 9px 0;
-    
+
     span.glyphicon{
         color:black;
         opacity:0.25;
@@ -446,7 +447,7 @@ img{
                 border-top:0px;
                 p{
                     margin: 0;padding: 0;
-                }                
+                }
             }
         }
     }
@@ -458,7 +459,7 @@ img{
 }
 
 .red{
-    background-color: transparentize(red, 0.9);        
+    background-color: transparentize(red, 0.9);
 }
 
 .yellow{
